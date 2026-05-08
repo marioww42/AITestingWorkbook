@@ -1,0 +1,64 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "AITestingBook"
+  author: "Mario Winter"
+  date: last-modified
+  favicon: img/favicon.ico
+  search: true
+  sidebar:
+    logo: img/19811870MW.jpeg"
+  repo-url: https://github.com/marioww42/AITestingWorkbook
+  repo-actions: [edit, issue]
+  back-to-top-navigation: true
+  page-footer: 
+    center: "Created 2026 by Mario Winter, Wuppertal"
+
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - part: Start Here - AI QA Basics
+      chapters:
+        - Introduction to Artificial Intelligence.qmd
+        - AI System Types and Architectures.qmd
+        - AI Quality Characteristics and Risks.qmd
+        - AI Development, MLOps, and LLMOps Lifecycle.qmd
+    - part: Testing AI-Based Systems
+      chapters:
+        - Data Quality and Test Data.qmd
+        - Evaluating ML Models.qmd
+        - Testing LLMs, Chatbots, and Agents.qmd
+        - Monitoring AI Systems in Production.qmd
+    - part: AI Testing in Practice
+      chapters:
+        - AI Testing Tools and Frameworks.qmd
+        - Case Studies and Best Practices.qmd
+    - part: Appendices
+      chapters:
+        - Quarto Introduction.qmd
+        - Markdown Syntax.qmd
+        - MoreMarkdown.qmd
+        - git.qmd
+        - Glossary.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    Theme: cosmo
+    css: include/webex.css
+    include-after-body: include/webex.js
+    link-external-icon: true
+    link-external-newwindow: true
+    author-meta: "Mario Winter"
+    callout-appearance: simple
+    highlight-style: a11y
+  pdf:
+    documentclass: scrreprt
+
+
+

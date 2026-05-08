@@ -1,0 +1,12 @@
+---
+bibliography: references.bib
+client: "MW"
+---
+# Glossary
+
+For all terms related to Quarto, see the [Quarto Glossary](https://quarto.org/docs/authoring/glossary/). For a more general glossary of terms related to data science and AI, see the [Data Science Glossary](https://datascienceglossary.org/).
+
+For general terms related to testing, see the [ISTQB Glossary](https://glossary.istqb.org/en_US/search?term=&attributes=%5B%22name%22%2C%22abbreviation%22%2C%22synonyms%22%5D&exact_matches_first=true&second_language=de_DE).
+
+For terms related to git and GitHub, see the [git and GitHub section](#terminology) in the [Working with git and GitHub chapter](git.qmd).
+

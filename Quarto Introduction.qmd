@@ -1,0 +1,224 @@
+---
+bibliography: references.bib
+client: "MW"
+---
+
+# An Introduction to Quarto
+
+Quarto is a powerful document authoring system that enables you to create reports, presentations, books, and more from a single source file. It supports multiple output formats, including HTML, PDF, and DOCX, making it easy to share your work in the format that best suits your audience. Quarto is built on top of R Markdown, which means you can include executable code chunks in your documents. This allows you to create dynamic reports that automatically update when the underlying data changes.
+
+## What is Quarto?
+
+Quarto is an open-source scientific and technical publishing system built on Pandoc[^quarto-1].
+It provides a unified authoring framework for reproducible data science, combining code, results, and narrative to produce outputs like HTML, PDF, Word, and more in a seamless manner.
+A few of the key features of Quarto that are applicable to Quarto users at any level are listed below:
+
+[^quarto-1]: Pandoc is a tool that converts documents to different formats.
+    Quarto leverages it to convert markdown to a variety of output formats.
+
+1.  **Markdown authoring**: Quarto documents are authored using **markdown**, a straightforward plain text format that allows you to add formatting elements to plain text documents using a simple syntax.
+
+2.  **Code integration**: Quarto coordinates the execution of knitr, Jupyter or Observable to embed code and output from various languages, including Python, R, Julia, and JavaScript.
+
+3.  **Technical writing extensions**: Quarto markdown adds syntax for technical writing that covers features like cross-references, sub-figures, layout panels, hoverable citations and footnotes, and more.
+
+4.  **Project system**: Quarto provides a project system for managing groups of documents with shared options to produce aggregate output such as manuscripts, websites, and books.
+
+5.  **Editor compatibility:** Quarto supports authoring in various editors and notebooks, including JupyterLab, RStudio, and VS Code.
+    Many of these editors offer a visual markdown editor that is specifically designed to work well with Quarto, providing a productive writing interface for composing long-form documents.
+
+The best place to learn about Quarto and explore its capabilities, aside from this book, is [quarto.org](https://quarto.org/).
+
+Quarto is available under the [MIT license](https://quarto.org/license.html).
+
+Sometimes when we say "Quarto" we mean "a Quarto document", i.e., a plain-text Quarto markdown file with the extension `.qmd`.
+And sometimes when we say "Quarto" we mean the Quarto Command Line Interface (CLI), which can render `.qmd` files as well as `.ipynb` (Jupyter Notebook), `.Rmd` (R Markdown), and `.md` (Markdown) files.
+
+## Installation
+
+The Quarto CLI is the tool you need to render Quarto documents.
+Specifically, it gives you the command `quarto render`.
+You can download the latest release version of the Quarto CLI at [https://quarto.org/docs/get-started](https://quarto.org/docs/get-started/) and install it.
+
+::: callout-note
+You can also download development versions of Quarto at <https://quarto.org/docs/download/prerelease.html> however note that pre-release builds are intended for testing purposes, and are not recommended for general use.
+:::
+
+## Tools for authoring
+
+You do not need a specific tool for authoring and rendering Quarto documents.
+You can author Quarto documents in any plain text editor and render them with the `quarto render` command in your computer's terminal.
+
+However we recommend using an integrated development environment (IDE) when working with Quarto as they can enhance your authoring experience.
+Some compelling reasons for using an IDE with Quarto include preview and live rendering features that allow you to see how your content will look as you write it, syntax highlighting, project management features, version control integration, debugging tools, and efficiency and productivity features like snippets, templates, and keyboard shortcuts.
+Additionally, most modern IDEs offer intelligent code assistance, auto-completion, and error highlighting which can help you quickly find the right syntax and catch errors.
+
+In the next section we go into further detail about using Quarto in VS Code, and Jupyter Lab.
+
+## Working with Quarto in VS Code
+VS Code is a popular code editor that supports a wide range of programming languages and file formats, including Quarto documents.
+To work with Quarto in VS Code, you can install the "Quarto" extension from the VS Code marketplace.
+This extension provides features such as syntax highlighting, code snippets, and live preview for Quarto documents.
+Once you have the extension installed, you can create a new Quarto document by selecting "File" > "New File" and saving it with a `.qmd` extension.
+You can then start writing your Quarto document using markdown syntax and code chunks.
+To render your Quarto document, you can use the command palette (Ctrl+Shift+P) and select "Quarto: Render Document" or use the keyboard shortcut (Ctrl+Shift+R).    
+This will generate the output file in the same directory as your source file, with the appropriate extension based on the output format you specified in your document.
+
+## Working with Quarto in Jupyter Lab
+Jupyter Lab is an interactive development environment that allows you to create and share documents that contain live code, equations, visualizations, and narrative text.
+To work with Quarto in Jupyter Lab, you can install the "Quarto" extension from the Jupyter Lab extension manager.
+This extension provides features such as syntax highlighting, code snippets, and live preview for Quarto documents within the Jupyter Lab interface.
+Once you have the extension installed, you can create a new Quarto document by selecting "File" > "New" > "Quarto Document" from the Jupyter Lab menu.
+This will create a new `.qmd` file in your Jupyter Lab workspace where you can start writing your Quarto document using markdown syntax and code chunks.
+To render your Quarto document, you can use the command palette (Ctrl+Shift+C) and select "Quarto: Render Document" or use the keyboard shortcut (Ctrl+Shift+R).    
+This will generate the output file in the same directory as your source file, with the appropriate extension based on the output format you specified in your document. 
+
+## Using Quarto Markdown
+
+
+Quarto markdown is an extension of standard markdown that includes additional syntax for technical writing and reproducible research.
+In addition to the standard markdown syntax for formatting text, Quarto markdown includes features such as cross-references, sub-figures, layout panels, hoverable citations and footnotes, and more.
+These features allow you to create more complex and structured documents that are well-suited for scientific and technical writing.
+
+## Writing content {#sec-writing}
+
+Beyond the document header and executable code cells, the content of a Quarto document is written in markdown.
+But not just any flavor of markdown, Quarto's own flavor called **Quarto markdown**.
+In this chapter, you'll learn just enough about Quarto markdown to get you writing simple documents right away. 
+We'll tease you with some of the rich content you can create with Quarto markdown, but delay a comprehensive coverage of things like equations, cross-references, citations, callouts, figures and tables to @sec-authoring.
+
+### Basics
+
+Markdown is a plaintext syntax for describing document structure.
+Here's some example markdown in a Quarto document:
+
+```` {.markdown filename="document.qmd"}
+### My First Section
+
+This is the first paragraph with some **bold text** and *italic text*.
+You can also include `code` to show function names or variables.
+
+Here's a second paragraph with a [link to Quarto](https://quarto.org).
+You might also want to use *italic text* for emphasis.
+````
+
+Markdown is a popular format, so the syntax above may be familiar.
+You've likely used it if you've opened an issue on Github, or formatted some text in a Discord post.
+However, as markdown's popularity has grown, so has the number of variants, or flavors, of the syntax.
+
+The example above illustrates components of markdown syntax that are common across many markdown variants:
+
+* Headings: text prefaced by one or more hashes (`#`), surrounded by blank lines.
+
+* Paragraphs: text separated by blank lines.
+
+* Bold: text surrounded by `**`
+
+* Italic: text surrounded by `*`
+
+* Code: text surrounded by `` ` ``
+
+* Links: text inside square brackets (`[]`) followed by a URL in parentheses (`()`)
+
+When rendered the structure described by markdown is translated to the relevant components in the target format, e.g. HTML tags for `format: html`, or Typst functions for `format: typst`.
+
+TODO: screenshots of rendered output
+
+### Features of Quarto markdown
+
+Describing basic document structure, like headings and paragraphs, and simple text formatting is enough to get started with Quarto. 
+But you may soon be looking for richer content like tables, figures, code blocks, citations, and cross-references.
+Adding these components is a matter of adding the appropriate Quarto markdown.
+As a teaser, here's an example contains a callout and a cross-reference:
+
+````{.markdown filename="document.qmd" .code-overflow-wrap}
+{{< include _examples/writing/features/document.qmd >}}
+````
+
+It is important to remember that Quarto markdown is a specific flavor of markdown---although it shares much of its syntax with other variants you shouldn't expect a component of any arbitrary markdown variant to work with Quarto.
+
+The above example illustrates two pieces of syntax you'll see often in Quarto markdown that you might not have seen in other variants:
+
+* Attributes: additional metadata for a component specified inside curly braces, e.g the `{#fig-repsonse}` on the image. You'll see lots of examples in @sec-authoring, and can specifically learn more in @tip-attributes.
+
+* Fenced divs: blocks of content inside colon delimited sections, often with attributes attached, e.g. the callout:
+  
+  ```markdown
+  ::: {.callout-caution}
+  Content
+  :::
+  ``` 
+
+  Fenced divs are used in Quarto to implement lots of different block level treatments: callouts, figure or table panels, and complex layouts.
+
+@sec-authoring covers the most useful features of Quarto markdown in more detail.
+
+### Things to watch out for
+
+### White space matters (sometimes)
+
+You can often ignore whitespace when you are writing Quarto markdown.
+For example, extra spaces inline with text are ignored, as are newlines within a paragraph.
+That is, the following markdown snippets are equivalent:
+
+::: {layout-ncol=2}
+
+``` {.markdown}
+A sentence  with   weird     spacing.   And    another.
+This is on a new line.
+```
+
+```{.markdown}
+A sentence with weird spacing. And another. This is on a new line.
+```
+
+:::
+
+However, there are some places white space is important:
+
+* **Blank lines**: you must have a blank line before the items in a list, and before a code block or cell. Without the blank line, Quarto won't identify the component correctly, so you'll get list items that all appear on a single line, or a code block syntax (the `` ``` ``) showing up in the rendered document.
+
+* **Indentation**: items in a list need consistent indentation. Problems with indentation most often occur when an item has multiple paragraphs, or contains something like a code block. You'll notice that your items don't seem properly aligned in the output (usually not enough indentation), or something suddenly looks like a code block (usually too much indentation).
+
+If your content isn't rendering as expected, double-check your use of whitespace.
+
+### The difference between code blocks and code cells
+
+There is a distinction between:
+
+* **Code cells**, sometimes also called **code chunks**, are code that will be executed and replaced with computational output. Code cells use the syntax:
+
+    ````markdown
+    ```{{r}}
+    # Code to be executed
+    ```
+    ````
+
+    Code cells are the subject of the next chapter, @sec-code
+
+* **Code blocks** are code that should be syntax highlighted but simply displayed, not executed. Code blocks use the syntax:
+
+    ````markdown
+    ```{.r}
+    # Code to be displayed
+    ```
+    ````
+
+    Or the syntax:
+
+    ````markdown
+    ``` r
+    # Code to be displayed
+    ```
+    ````
+
+    You'll can more about code blocks in @sec-code-blocks.
+
+The syntax difference, as little as a `.`, means it is easy to mistake one for the other in your document.
+However, the differences in behavior are huge---code cells are handled by the computational engine, code blocks are not. 
+When you are reading examples, or trouble-shooting your own documents, keep that distinction in mind and be wary of trying to apply solutions for code blocks to code cells and vice versa.
+
+## Wrap Up
+In this chapter, you got a high-level overview of Quarto and how to get started with it.
+You learned about the Quarto CLI and how to install it, and about using Quarto in VS Code and Jupyter Lab.
+You also got a brief introduction to Quarto markdown, the syntax used to write content in Quarto documents, and some of the features and quirks of that syntax.
