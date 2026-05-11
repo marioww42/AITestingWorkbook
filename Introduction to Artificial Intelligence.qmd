@@ -1,0 +1,287 @@
+---
+title: Introduction to Artificial Intelligence
+---
+
+
+
+## Introduction to AI
+
+Adapted from [ISTQB Certified Tester - AI Testing Syllabus](https://istqb.org/certifications/certified-tester-ai-testing-ct-ai/); other sources are cited in the text.
+
+This chapter introduces key distinctions between conventional and
+AI-based system<span class="indexref" entry="AI-based system"></span>s,
+focusing on their design approaches, adaptability, and explainability.
+It describes the spectrum of AI capabilities, ranging from narrow AI to
+general AI and super AI, and outlines core technologies such as ML, deep
+learning, and GenAI. The chapter describes common hardware and
+development environments for AI-based systems, as well as popular ML
+frameworks. Finally, it considers essential regulatory and technical
+standards that guide responsible AI development and deployment within
+various domains.
+
+### AI-Based and Conventional Systems
+
+Conventional computer systems are typically programmed using imperative
+languages, where human developers explicitly define step-by-step
+instructions, including constructs such as if-then-else statements and
+loops. This deterministic approach helps make the system's behavior
+predictable and transparent, making it easier for humans to understand
+how inputs produce different outputs. In contrast, most
+AI<span class="indexref" entry="artificial intelligence"></span>-based
+systems, particularly those leveraging ML<span class="indexref"
+entry="machine learning"></span>, do not follow predefined rules.
+Instead, they analyze patterns in the data to determine how to respond
+to new inputs. For example, an AI-based image recognition system trained
+to identify cats does not rely on explicitly coded rules. Instead, it
+learns from a dataset of cat images, extracting patterns that it later
+applies to unseen images to classify them accurately.
+
+One fundamental difference between conventional and AI-based
+systems<span class="indexref" entry="AI-based systems"></span> is how
+they approach problem-solving. Many AI-based systems rely on
+probabilistic reasoning, statistical inference, and pattern recognition
+to generate results. This allows AI models to handle complex forms of
+uncertainty and ambiguity more effectively, resulting in outputs that
+are not always predictable.
+
+A key challenge in AI-based systems is explainability. Many AI models,
+particularly deep learning architectures, can contain billions of
+parameters, making their internal workings difficult for humans to
+interpret. This “black-box” nature raises concerns in critical domains
+such as healthcare, finance, defence, and transportation, where
+understanding why an AI model made a particular decision is crucial.
+Achieving transparency (see 2.1.1) and explainability in AI-driven
+decision-making has become a critical focus in AI regulation.
+
+Another significant distinction is adaptability. Conventional systems
+are static and typically require manual updates to incorporate new
+knowledge or respond to environmental changes. AI-based systems, in
+contrast, can be self-learning, continuously improving their performance
+as they encounter new data. This adaptability makes AI particularly
+powerful in dynamic environments. Adaptability also requires continuous
+monitoring to maintain ongoing alignment with core requirements.
+
+### Narrow AI, General AI, and Super AI
+
+Narrow AI<span class="indexref" entry="narrow AI"></span>, also known as
+weak AI, is designed to perform specific tasks and represents all
+deployed AI systems in use today. Narrow AI-based systems operate within
+a limited domain and can be highly efficient at solving specialized
+problems, such as image recognition, speech processing, and language
+translation. However, they lack the ability to generalize beyond the
+functions they have learned. For instance, an AI-based system that
+excels at recognizing faces cannot perform language translation unless
+it is explicitly retrained to do so. Frontier AI<span class="indexref"
+entry="frontier AI"></span>, a subset of narrow AI, represents the most
+advanced form of these systems, pushing the boundaries of current
+capabilities with GenAI models. Frontier AI includes large-scale systems
+with highly autonomous decision-making capabilities; however, they
+remain task-specific and have not yet achieved the versatility of
+general AI.
+
+General AI<span class="indexref" entry="general AI"></span>, also known
+as strong AI, refers to an AI-based system that possesses the ability to
+perform most intellectual tasks that a human can. General AI would be
+able to understand, learn, and apply knowledge across a broad range of
+tasks without needing to be retrained for each new task. This type of AI
+would exhibit human-like reasoning and adaptability, capable of solving
+unfamiliar problems in various domains, much like humans do. Despite
+significant progress in AI, no AI-based system today possesses general
+intelligence.
+
+Super AI<span class="indexref" entry="super AI"></span> (artificial
+superintelligence) is the form of AI in which an AI-based system
+continuously improves itself without the need for human intervention or
+control. For Super AI to be possible, access to the Internet is not
+strictly required, but such access could significantly expand its
+capabilities and influence. It would surpass human intelligence and
+general AI, which many believe would pose an existential risk to
+humanity. The point at which AI-based systems transition from general AI
+to super AI, if it were to occur, is commonly known as the technological
+singularity.
+
+###  Different Types of AI Technologies
+
+Artificial Intelligence encompasses a range of technologies, each suited
+to specific tasks and challenges. One of the core branches of AI is
+ML<span class="indexref" entry="machine learning"></span>, which enables
+systems to learn from data and build models without explicit
+programming. While some MLS can adapt and improve continuously with new
+data throughout their lifetimes, others operate on the knowledge they
+initially learned and require explicit retraining to update their
+capabilities. ML includes several approaches:
+
+- Supervised learning<span class="indexref"
+  entry="supervised learning"></span> utilizes labeled data and
+  algorithms, such as linear regression and decision trees, for tasks
+  like prediction and classification.
+
+- Unsupervised learning<span class="indexref"
+  entry="unsupervised learning"></span> uncovers patterns in unlabeled
+  data through techniques like clustering (using clustering algorithms).
+
+- Reinforcement learning<span class="indexref"
+  entry="reinforcement learning"></span> enables intelligent agents to
+  learn optimal behaviors through trial-and-error interactions with
+  their environment.
+
+Key ML technologies include neural networks, Bayesian models, support
+vector machines (SVM) and random forests. See Chapter 3 for more on ML.
+
+Deep Learning (DL), a subset of ML methods, uses deep neural networks to
+solve complex problems. For example:
+
+- Convolutional neural networks (CNN) are highly effective for image
+  recognition and object detection.
+
+- Recurrent neural networks (RNN) specialize in processing sequential
+  data, such as text or time series.
+
+- Transformers handle long-range dependencies in sequences, powering
+  models for natural language processing and vision transformers for
+  images.
+
+GenAI builds on these technologies to create new content, including
+text, images, and audio (see 1.1.4). This is driven by models such as
+LLM, which combine deep neural networks (DNN) with natural language
+processing (NLP) to analyze and generate human-like language.
+
+Other specialized AI technologies include:
+
+- NLP for language analysis, including tasks like sentiment analysis and
+  machine translation.
+
+- Computer vision for analyzing visual data, supporting applications
+  like facial recognition and robotics.
+
+- Fuzzy logic for reasoning under uncertainty.
+
+- Search algorithms for solving optimization problems, such as
+  navigation, and strategic decision-making.
+
+- Rule-based reasoning systems, or expert systems, for structured
+  decision support.
+
+Although the full integration of these AI technologies remains limited,
+new developments such as LLM demonstrate the potential to combine
+different AI technologies into unified, intelligent systems. Agentic AI
+extends these technologies through autonomous agents that plan, reason,
+and act independently to achieve goals in dynamic environments.
+
+## Generative AI
+
+Generative AI (GenAI)<span class="indexref"
+entry="generative AI"></span> refers to AI-based systems specialized in
+creating new content, such as text, images, video, music, or complex
+data, while many also support classification and prediction. These
+systems learn from vast amounts of data to produce outputs that resemble
+their training data, enabling a wide range of creative and practical
+applications.
+
+The main technologies behind GenAI include generative adversarial
+networks (GANs), diffusion models, and transformers. GANs use two neural
+networks in competition to create highly realistic synthetic data.
+Diffusion models generate content by gradually adding and then removing
+noise from data, resulting in high-quality outputs. Transformer models,
+which underpin LLM, utilize self-attention mechanisms to generate
+coherent and contextually relevant text, and are increasingly being
+adapted for multimodal tasks.
+
+Beyond their technical foundations, GenAI systems raise significant
+societal and ethical concerns. Misuse is a major concern: these models
+can be exploited to create deepfakes, spread misinformation, or generate
+convincing fraudulent content, thereby undermining trust in digital
+media and public discourse. The ease of producing synthetic content
+amplifies risks related to privacy, security, and manipulation, but it
+can bring notable benefits and opens opportunities for innovation in
+entertainment, marketing, education, and research.
+
+The impact on employment is also notable, particularly among
+white-collar professions. As GenAI automates tasks such as writing,
+design, coding, and even legal or medical documentation, there is
+increasing debate about potential job displacement. While these
+technologies can boost productivity and foster new creative
+opportunities, they may also lead to workforce disruption and
+necessitate widespread reskilling.
+
+Sustainability is another pressing issue. Training and running large
+GenAI models involve substantial computational resources, resulting in
+high energy consumption and a significant carbon footprint. This
+environmental impact has prompted calls for more efficient model designs
+and greener infrastructure.
+
+Most practical GenAI tools today are based on foundation models, which
+are then fine-tuned for specific applications. The field is also
+advancing toward multimodal models capable of processing and generating
+content across text, images, and audio, enabling richer, more flexible
+AI-based systems. Regulatory frameworks, such as the EU AI Act \[EU AI
+Act\], are emerging to guide the responsible development and use of
+these technologies.
+
+For more on GenAI and testing, see [Certified Tester – Testing with Generative AI (CT-GenAI)](https://istqb.org/certifications/gen-ai/).
+
+## Machine Learning Development Frameworks
+
+ML development framework<span class="indexref"
+entry="ML development framework"></span>s provide a toolkit for building
+and training ML models. Typical functionality provided by these
+frameworks includes:
+
+- **Data Handling:** They assist with loading, preprocessing, and managing
+  the data used to train and test the model. This might involve
+  cleaning, formatting, and transforming the data into a suitable format
+  for the chosen model.
+
+- **Model Building:** These frameworks offer libraries of ML algorithms and
+  tools to design the architecture of the constructed ML model. This
+  includes specifying the type of model (e.g., neural network, decision
+  tree), the number of layers and connections, and the mathematical
+  operations performed within the model.
+
+- **Training and Optimization:** Frameworks provide algorithms that
+  iteratively adjust the model's internal parameters based on the
+  training data and on the desired result. The goal is to optimize the
+  model's performance in accomplishing the desired task (e.g.,
+  classification, ML regression). Some frameworks may support
+  distributed training and enhance or fine-tune pretrained models.
+
+- **Evaluation:** They offer tools to evaluate how well the trained model
+  performs on unseen data. This might involve measuring accuracy,
+  precision, and recall for classification tasks, or error rates for ML
+  regression tasks (see 3.1.1).
+
+- **Deployment:** Some frameworks provide capabilities for deploying the
+  trained model for real-world use. This could involve converting the
+  model into a format suitable for integration with web applications,
+  mobile devices, edge devices or embedded systems.
+
+These frameworks can operate at different levels of abstraction. Some
+offer a lower-level application programming interface (API), providing
+developers with more control over model building but requiring more
+coding expertise. Others offer a higher-level API, simplifying model
+creation but offering fewer customization options.
+
+Different frameworks can focus on different application domains. Some
+are general purpose and support a wide range of application areas. In
+contrast, others are more specialized, focusing on specific areas such
+as image recognition, speech recognition, and language translation.
+
+Selecting the most appropriate framework can depend on several factors,
+such as:
+
+- the application area;
+
+- the need for a user-friendly interface for rapid prototyping;
+
+- configurability for complex models;
+
+- the expertise of the users;
+
+- deployment considerations, as some frameworks are better suited for
+  resource-constrained environments;
+
+- level of (community) support;
+
+- ecosystem maturity.
+
+**TBD** add more on popular frameworks such as TensorFlow, PyTorch, Keras, Scikit-learn, Hugging Face Transformers, and others.

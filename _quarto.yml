@@ -3,13 +3,13 @@ project:
   output-dir: docs
 
 book:
-  title: "AITestingBook"
+  title: "AI QA Workbook"
   author: "Mario Winter"
   date: last-modified
   favicon: img/favicon.ico
   search: true
   sidebar:
-    logo: img/19811870MW.jpeg"
+    logo: img/CT-AI-LogoMW.png
   repo-url: https://github.com/marioww42/AITestingWorkbook
   repo-actions: [edit, issue]
   back-to-top-navigation: true
@@ -38,6 +38,7 @@ book:
     - part: Appendices
       chapters:
         - Quarto Introduction.qmd
+        - Using Jupyter Notebooks.ipynb
         - Markdown Syntax.qmd
         - MoreMarkdown.qmd
         - git.qmd
@@ -51,7 +52,8 @@ format:
   html:
     Theme: cosmo
     css: include/webex.css
-    include-after-body: include/webex.js
+    #toc-depth: 2    # Shows H1 and H2
+    #toc-expand: true # Keeps sub-levels expanded    include-after-body: include/webex.js
     link-external-icon: true
     link-external-newwindow: true
     author-meta: "Mario Winter"

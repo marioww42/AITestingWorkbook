@@ -1,0 +1,549 @@
+---
+title: "Evaluation of ML-Models and ML-based Systems"
+#toc-depth: 2    # Shows H1 and H2 MW: Don't work, only "Table of Contents" is shown ... should show H2 in the TOC, as they are not numbered and not all of them are relevant for the TOC. I will add a custom TOC with only the relevant H2s in the chapter.
+---
+
+
+The following chapters cover the evaluation of ML models and systems. This includes the evaluation of the model itself, as well as the evaluation of the system in which the model is embedded. The evaluation of ML models and systems is a crucial step in the development process, as it helps to ensure that the model and system are performing as expected and are meeting the requirements of the stakeholders.
+
+# Evaluation of ML Models {.unnumbered}
+
+### Test Levels for ML models {markdown="block" .unnumbered}
+
+There are two test levels that can be used to evaluate ML models: 
+- Input data testing and 
+- ML model testing. 
+
+Input data testing focuses on evaluating the quality of the input data, such as checking for missing values, outliers, and data distribution. ML model testing focuses on evaluating the performance of the model on a given dataset, using metrics such as accuracy, precision, recall, F1 score, and AUC-ROC.
+
+## Input data testing 
+
+Input data testing is important because the quality of the input data can have a significant impact on the performance of the ML model. If the input data is of poor quality, the model may not be able to learn effectively and may produce inaccurate results. Therefore, it is important to perform input data testing before training the ML model to ensure that the data is suitable for training and that any issues with the data are addressed.
+
+The objective of input data testing<span class="indexref"
+entry="input data testing"></span> is to confirm that the data used by
+the MLS for training, testing, and prediction is of sufficient quality
+(see 3.2). It includes reviews, statistical techniques (e.g., testing
+data for bias), EDA of the training data, and static and dynamic
+testing<span class="indexref" entry="dynamic testing"></span> of the
+data pipeline.
+
+### Input Data Risks and Mitigations
+
+The following table lists examples of input data risks and corresponding
+testing that could be used for risk mitigation:
+
+<table>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Potential Risks</strong></th>
+<th style="text-align: left;"><strong>Possible Risk
+Mitigations</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>Defects in the training data leading to bias</p>
+<p>Problems within the algorithm, model, or ML development framework
+that introduce systemic unfairness</p></td>
+<td style="text-align: left;">Testing for bias – see 5.1.2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Training data acquired from
+untrustworthy sources</p>
+<p>Data is poorly managed</p></td>
+<td style="text-align: left;">Data provenance testing</td>
+</tr>
+<tr>
+<td style="text-align: left;">Poisoned training data</td>
+<td style="text-align: left;"><p>A/B testing – see 6.1.9</p>
+<p>Data provenance testing</p>
+<p>EDA – see 3.2.1</p>
+<p>Attacks as part of red teaming – see 4.2.2</p></td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Internally inconsistent dataset</p>
+<p>Out of range data</p>
+<p>Wrong data types</p></td>
+<td style="text-align: left;">Dataset constraint testing – see
+5.1.5</td>
+</tr>
+<tr>
+<td style="text-align: left;">Sub-optimal feature selection</td>
+<td style="text-align: left;">Feature testing</td>
+</tr>
+<tr>
+<td style="text-align: left;"><p>Imbalanced dataset due to insufficient
+coverage of all target classes</p>
+<p>Skewed dataset through data augmentation</p>
+<p>Missing data</p>
+<p>Training data focused on a subset of all use cases</p>
+<p>Full range of values not covered in the dataset</p></td>
+<td style="text-align: left;">Data representativeness testing – see
+5.1.4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>Poor labelling guidelines</p>
+<p>Ambiguous data</p>
+<p>Poor annotation leading to inaccurate or inconsistent labels</p>
+</blockquote></td>
+<td style="text-align: left;">Label correctness testing – see
+5.1.66</td>
+</tr>
+<tr>
+<td style="text-align: left;"><blockquote>
+<p>Poor design or integration leading to data pipeline failures</p>
+<p>Data quality defects compromising data pipeline outputs</p>
+<p>Performance degradation in the operational use of the data
+pipeline</p>
+<p>Security breaches or uncontrolled changes impacting the data
+pipeline</p>
+</blockquote></td>
+<td style="text-align: left;">Data pipeline testing – see 5.1.3</td>
+</tr>
+</tbody>
+</table>
+
+### Testing for Bias 
+
+Bias in an MLS refers to non-random, unfair differences in treatment
+based on sensitive attributes like gender, age, or race, which is often
+unlawful and renders the system discriminatory.
+
+Testing for bias<span class="indexref" entry="testing for bias"></span>
+in an MLS involves understanding its potential sources, which primarily
+include:
+
+- Defects in the training data, such as unrepresentativeness, historical
+  skews, or deliberate poisoning (data bias).
+
+- Defects within the algorithm, model, or development framework that
+  introduce systemic unfairness, such as an algorithm using a decision
+  threshold for credit scores in a loan approval system (algorithmic
+  bias).
+
+Test approaches for detecting bias include the following:
+
+- Review<span class="indexref" entry="review"></span>s of the overall ML
+  workflow, and especially the data preparation, to identify their
+  potential for introducing bias.
+
+- Reviews of dataset documentation to identify and mitigate potential
+  sources of unfairness by examining how the data was collected,
+  annotated, and what populations are represented.
+
+- Static analysis<span class="indexref" entry="static analysis"></span>
+  of both data preparation programs and the model implementation code to
+  identify anti-patterns or the mishandling of sensitive attributes.
+
+- EDA<span class="indexref" entry="exploratory data analysis"></span> of
+  training data by using visualization and clustering methods to reveal
+  imbalanced data, skewed distributions, or anomalous groupings across
+  different sensitive attributes.
+
+- Dynamic testing<span class="indexref" entry="dynamic testing"></span>
+  to help detect bias in an ML model by feeding a known unbiased and
+  representative dataset through the system and analyzing its
+  predictions for statistically significant differences in outcomes
+  across various sensitive groups. This identifies bias in model
+  outputs, regardless of whether the bias was introduced during data
+  training or during model development.
+
+- Label correctness testing<span class="indexref"
+  entry="label correctness testing"></span> (see 5.1.6) to identify
+  mislabeling that causes incorrect associations to be learned between
+  attributes and outcomes for specific sensitive attributes.
+
+- Disparate impact analysis<span class="indexref"
+  entry="disparate impact analysis"></span>:
+
+  1.  Identify sensitive attributes for the model.
+
+  2.  Generate counterfactuals for the sensitive attributes. (e.g.,
+      example scenarios where gender is changed from male to female in a
+      loan application).
+
+  3.  Generate model output by presenting it with the counterfactuals.
+
+  4.  Analyze the results of multiple tests to achieve a statistically
+      significant result, which determines if changing a sensitive
+      attribute causes the model results to change, signaling the
+      presence of bias.
+
+Note: Disparate impact analysis can also be applied to combinations of
+sensitive attributes, allowing hidden bias associated with attribute
+combinations to be identified. However, take care to confirm that
+counterfactual examples are not unrealistic, as the model may then
+respond to them rather than to any underlying bias.
+
+### Data Pipeline Testing
+
+Effective data pipeline testing<span class="indexref"
+entry="data pipeline testing"></span> is essential not only for
+confirming the reliability and performance of data-driven systems but
+also for maintaining high data quality throughout the entire ML workflow
+(see 3.1.2).
+
+A layered approach is employed, beginning with data-pipeline design
+reviews during the design phase.
+
+Component testing includes testing of data ingestion components,
+transformation scripts, and sensor interfaces. This testing uses code
+reviews, static analysis, and hardware-specific tests to verify reliable
+data capture. Component tests validate data transformation logic, test
+the implementation of data validation rules, confirm robust error
+handling, and test for vulnerabilities that could be exploited to
+introduce malware or poisoned data.
+
+Component integration testing verifies the seamless flow of data across
+internal interfaces and the correct interpretation of data as it moves
+through the pipeline. It detects defects arising from mismatched
+interfaces or incorrect assumptions between components. 
+
+System testing assesses the fully assembled pipeline, beginning
+with smoke testing to confirm basic pipeline functionality. Functional
+testing verifies the pipeline's compliance with specified requirements,
+including data transformations and data routing. Non-functional
+testing evaluates performance under load, scalability to handle
+increasing data volumes, and security measures to protect data
+integrity. Fault injection testing measures pipeline robustness by
+simulating defective data inputs, assessing the system’s ability to
+maintain data integrity when faced with unexpected or corrupted data.
+Back-to-back testing (see 6.1.10) compares the operational pipeline
+against the training pipeline to verify consistent functionality.
+
+System integration testing verifies correct interaction between the data
+pipeline and external systems or services, including data sources,
+storage platforms, monitoring tools, and downstream consumers such as ML
+models.
+
+Testing in production is performed on the operational system.
+Back-to-back testing verifies that performance is consistent or improved
+compared to previous versions. A/B testing (see 6.1.9) enables
+comparisons of new pipeline iterations against baselines, validating
+improvements while confirming no degradation in the live data stream.
+Tools can be integrated to continuously monitor and observe model
+behavior, performance, and potential defects in real time.
+
+Configuration management reviews help verify that the correct pipeline
+code versions, configurations, and datasets are used across training,
+testing, and production. 
+
+Finally, the test strategies must align with the pipeline's purpose.
+Training pipelines, often exploratory prototypes, have different
+priorities than robust operational pipelines. The testing of training
+pipelines may focus on data integrity, while operational pipeline
+testing prioritizes reliability, performance, and maintainability.
+
+### Testing for Data Representativeness 
+
+Data representativeness testing<span class="indexref"
+entry="data representativeness testing"></span> determines how closely
+the characteristics of the datasets used for training, validation, and
+testing ML models match the real-world data that the ML model will
+encounter in operation. This testing addresses various forms of
+misrepresentation, including skewed datasets, missing data,
+disproportionate feature distributions, inadequate coverage of
+operational scenarios, and imbalanced class representation (see 5.1.1).
+
+This testing typically includes the following steps:
+
+1\. Define the target population:
+
+- Understand the intended use cases and operational context of the MLS
+
+- Analyze the characteristics of end users and operational environments
+
+- Identify the expected operational data distributions and critical edge
+  cases by:
+
+  - consulting domain experts to understand real-world data patterns
+
+  - analyzing data from existing systems or similar applications
+
+  - using benchmark datasets from trusted sources (e.g., NIST, industry
+    databases)
+
+- Apply stratified sampling to the representative reference data to
+  create a baseline that covers all relevant subgroups in the target
+  domain
+
+2\. Analyze data characteristics:
+
+- Apply EDA (see 3.2.1) to:
+
+  - training/test datasets being evaluated for representativeness
+
+  - reference dataset that represents the expected operational data
+
+  - visualize distributions through histograms, scatter plots, and other
+    graphical techniques
+
+- Examine feature relationships, and correlations in particular, to
+  identify patterns that should be preserved
+
+- Identify potential anomalies, gaps, or unusual concentrations in the
+  data
+
+3\. Apply statistical assessment techniques:
+
+- Use formal statistical tests such as Chi-squared and
+  Kolmogorov-Smirnov to compare distributions \[STATS\]
+
+- Check for data imbalances, particularly in classification problems
+
+- Verify adequate coverage of both typical scenarios and edge/boundary
+  cases
+
+Testing for data representativeness should be performed before model
+training to prevent building models on unrepresentative data. After
+deployment, the properties of operational input data should be
+continuously monitored to detect changes that might indicate data drift
+from the original training data distributions (see 6.1.7 on drift
+testing).
+
+### Dataset Constraint Testing
+
+Dataset constraint testing<span class="indexref"
+entry="dataset constraint testing"></span> verifies whether the data in
+a dataset adheres to predefined rules or constraints. The goal is to
+confirm the integrity and consistency of the data used in ML. For
+instance, a test of the consistency of values in a dataset could be
+carried out.
+
+Constraints on data are typically found in database schemas. A database
+schema defines the structure, types, and relationships of the data.
+Similarly, for ML datasets, a set of constraints can be defined that act
+as a logical model of the data in the dataset, which should be satisfied
+if the data are correct. There are several ways of categorizing dataset
+constraints. A constraint can be applied to a single value for an
+attribute, which is found in a single instance (a single-value
+constraint), for example:
+
+- Missing – tests for missing values and missing attributes.
+
+- Range – tests that a value is in a given range.
+
+- Type – tests that an attribute value matches the specified type (e.g.,
+  that if an attribute is specified as an integer, the provided value is
+  not a string or real number).
+
+Alternatively, a constraint can apply across multiple values, typically
+considering the values for a single attribute across several instances
+(a multi-value constraint), for example:
+
+- Sum – tests that the sum of all values equals, exceeds, or does not
+  exceed a specified value (e.g., the total value of all points awarded
+  for a Formula 1 race cannot exceed 102, and must exceed 50.5 points).
+
+- Count – tests that the count of all non-null values for attributes or
+  instances equals, exceeds, or does not exceed a specified value.
+
+- Duplicate – tests for identical or near identical attribute values or
+  instances in a dataset and enforces a limit on how many are allowed
+  (often zero).
+
+- Useful – tests that an attribute contains some repeated values, as if
+  every entry is unique (like an ID or timestamp), typically provides no
+  useful patterns to be learned for an ML model.
+
+- Outlier – identifies any values that could be considered as
+  statistical outliers.
+
+A special form of multi-value constraint can compare different values (a
+comparison constraint), for example:
+
+- Greater Than – tests that one value for an attribute is greater than a
+  value for a second attribute (e.g., the count of lines of code for a
+  program exceeds its count of lines of code with defects).
+
+- Correlate – tests that the values for one attribute correlate with the
+  values for a second attribute (e.g., all students with a marks
+  attribute value at least 1.33 standard deviations above the mean also
+  have a value of ‘A’ for their grade attribute).
+
+Testing data against the defined constraints can be performed manually.
+Still, the scale of the activity and the typically large size of the
+dataset would require this to be automated as part of the data pipeline.
+When implemented as part of the pipeline, the tool that implements
+dataset constraint testing can provide reports to data scientists (for
+training data anomalies) or to operations staff (for operational data
+problems).
+
+### Label Correctness Testing
+
+Data label correctness<span class="indexref"
+entry="label correctness testing"></span> is essential in supervised
+learning. Inaccurate or inconsistent labels directly undermine the
+performance and generalization of ML models.
+
+Common approaches to data label correctness testing include:
+
+- Expert Review: Domain experts or trained annotators manually review a
+  sample of labelled data. They evaluate label accuracy using their
+  domain knowledge and guidelines.
+
+- Multiple Annotation<span class="indexref"
+  entry="multiple annotation"></span>: Data points are independently
+  labelled by multiple annotators and compared using a form of
+  back-to-back testing (see 6.1.10). Disagreements highlight defects
+  that need investigation and resolution. The inter-annotator agreement
+  (IAA) can be measured using metrics such as Cohen's Kappa or simple
+  percentage agreement \[STATS\]. Low IAA scores can indicate defects in
+  labelling guidelines, ambiguous data, or poor annotation.
+
+- Risk-Based Prioritization for Review and Annotation: Both expert
+  reviews and multiple annotations can be focused using a risk-based
+  approach to identify samples for review and multiple annotations.
+  Prioritization can be based on the likelihood of mislabeling, such as
+  with ambiguous data points (e.g., it is unclear to which category they
+  belong or are near a boundary between classes), and the data that is
+  most likely to impact the application's success or safety.
+
+- Data Distribution Analysis: When comparable datasets exist, comparing
+  the label distribution of the dataset under test to similar datasets
+  can reveal anomalies and potentially incorrect labels.
+
+- Automated Rule-Based Tests: Automated tests can be implemented based
+  on predefined label rules or constraints for certain tasks. For
+  instance, verifying that bounding boxes (rectangles used to locate
+  objects in images) do not overlap or extend beyond image boundaries.
+
+- Model Loss Analysis: Data points exhibiting high loss during model
+  training – meaning the model’s predictions for these points deviate
+  substantially from their true labels – can indicate mislabeling. High
+  loss reflects significant error, indicating the model struggles to
+  learn the assigned label and pointing to a potential defect.
+
+- Model Confidence Score Analysis: Data points with low prediction
+  confidence from a trained model may be mislabeled, ambiguous, or lie
+  outside the model's training data distribution.
+
+Using a combination of approaches is often most effective. For example,
+expert reviews are valuable in establishing clear labelling guidelines
+early on. IAA scores from multiple annotations can then refine the
+labelling process. Subsequently, model-based approaches can further
+identify potential label defects as the model continues to develop.
+
+### Hands-on Exercise: Input Data Testing
+
+For a given dataset (e.g., structured, tabular data), perform input data
+testing for things like missing data, duplicate data, and outliers.
+
+
+
+### ML Model Testing
+
+Testing ML models is different from testing traditional software. Traditional software testing focuses on verifying that the software behaves as expected for a given set of inputs and outputs. In contrast, testing ML models involves evaluating the performance of the model on a given dataset, and comparing it to a baseline or to other models. This is because ML models are often probabilistic in nature, and their performance can vary depending on the data they are trained on and the data they are tested on.
+
+The evaluation of ML models is typically done using a set of metrics that measure the performance of the model on a given dataset. These metrics can be used to compare different models and to select the best model for a given task. Some common metrics for evaluating ML models include accuracy, precision, recall, F1 score, and area under the ROC curve (AUC-ROC) (see @sec-metrics-for-classification).
+
+
+*TBD: add more details on evaluation of ML models, including different types of metrics, how to interpret them, and how to use them for model selection.*
+
+# Evaluation of ML-based Systems
+
+The evaluation of ML-based systems is more complex than the evaluation of ML models, as it involves not only the performance of the model, but also the performance of the system as a whole. This includes factors such as the integration of the model into the system, the user experience, and the overall functionality of the system. The evaluation of ML-based systems typically involves a combination of quantitative and qualitative methods, including user testing, usability testing, and field testing. 
+
+## Test Levels for ML-based Systems
+There are several testing methods that can be used to evaluate ML-based systems, including:
+
+- **Unit testing**: testing individual components of the system, such as the ML model, to ensure that they are functioning correctly.
+
+- **Integration testing**: testing the integration of the ML model with other components of the system to ensure that they are working together as expected.
+
+- **System testing**: testing the entire system to ensure that it meets the requirements and performs as expected in real-world conditions.
+
+- **User acceptance testing**: testing the system with end-users to ensure that it meets their needs and is usable.
+
+### Adversarial Testing
+
+**What is Adversarial Testing?**
+
+Adversarial testing<span class="indexref" entry="adversarial testing"></span> is a testing method that involves intentionally introducing adversarial examples to the ML model to evaluate its robustness and security. Adversarial examples are inputs that are designed to deceive the model into making incorrect predictions. 
+
+**Why to Perform Adversarial Testing?**
+Adversarial testing is important because it helps to identify vulnerabilities in the ML model and to improve its robustness against attacks. Adversarial examples can be used to test the model's ability to generalize to new and unseen data, and to identify potential weaknesses in the model that could be exploited by attackers. By performing adversarial testing, developers can improve the security and reliability of the ML model, and ensure that it is able to perform well in real-world conditions where adversarial attacks may be present.
+
+**When to Perform Adversarial Testing?**
+Adversarial testing should be performed during the development and testing phases of the ML model, as well as during the deployment phase. It is important to perform adversarial testing early in the development process to identify vulnerabilities in the model and to improve its robustness against attacks. Additionally, adversarial testing should be performed regularly during the deployment phase to ensure that the model remains secure and robust against new types of attacks.
+
+**How to Perform Adversarial Testing?**
+
+Adversarial testing can be performed using techniques such as:  
+- *FGSM (Fast Gradient Sign Method)*: a method that generates adversarial examples by adding small perturbations to the input data in the direction of the gradient of the loss function.
+- *PGD (Projected Gradient Descent)*: an iterative method that generates adversarial examples by repeatedly applying the FGSM method and projecting the perturbed input back onto a specified constraint set.
+- *CW (Carlini & Wagner)*: a method that generates adversarial examples by optimizing a loss function that combines the model's output and the distance between the original input and the adversarial example.
+
+
+
+*TBD: add more details on evaluation of ML-based systems, including different types of evaluation methods, how to design and conduct evaluations, and how to interpret the results.*
+
+# German: Praktische Übungen zum Buch "KI-Testen"
+<img src="https://dpunkt.de/wp-content/uploads/2024/01/13867.jpg" align="right" width="30%" min-width="150px"/>
+
+Das Repository [KI-Übungen](https://github.com/KI-Testen/Uebungen/tree/main) enthält das Begleitmaterial und praktische Übungen zum Buch "[**Basiswissen KI-Testen** - Qualität von und mit KI-basierten Systemen](https://dpunkt.de/produkt/basiswissen-ki-testen/)" aus dem **dpunkt.Verlag**, ISBN 978-3-86490-947-4. Die Übungen sind so konzipiert, dass sie von jedem mit einem Laptop oder PC durchgeführt werden können, der über grundlegende Kenntnisse in Python und JupyterLab verfügt. 
+
+Die folgenden Abschnitte sind eine 1:1 Kopie aus dem RTepository.
+
+Um die Übungen selbst auf *deinem eigenen Laptop oder PC* durchführen zu können, benötigst du folgendes:
+* Einen Laptop oder PC (ein Smartphone oder Tablet ist eher unpraktisch).
+* Eine Installation von Python auf deinem Computer (sie [Punkt 2 unten](#2.-Installation-von-python)).
+* Grundkenntnisse in der [Programmiersprache Python](https://tutorial.djangogirls.org/de/python_introduction)
+* Grundkenntnisse in der [Benutzung von JupyterLab](https://jupyter-tutorial.readthedocs.io/de/latest/index.html)
+
+## 1. Download des Übungsmaterials
+* Lade von der GitHub-Seite [KI-Testen - Übungen](https://github.com/KI-Testen/Uebungen) das gesamte Repository als ZIP-Datei (Code (grüner Button) > Download ZIP)
+* Entpacke die ZIP in ein Verzeichnis deiner Wahl.
+
+## 2. Installation von Python, ML-Paketen und JupyterLab
+* Als erstes musst du, wenn nicht schon vorhanden, [Python installieren](Einstieg_Vorbereitung/Installation_Python.md).
+* Ist Python installiert, geht es mit der [Installation der Python-Pakete](Einstieg_Vorbereitung/Installation_Pakete.md) weiter
+* Zum Schluss ist die [Installation von JupyterLab](Einstieg_Vorbereitung/Installation_JupyterLab.md) an der Reihe.
+
+## 3. Los geht's: Starten von JupyterLab
+Von nun ab kannst du JupyterLab per Doppelklick auf:</br>
+`04_starte_jupyterlab.cmd` starten. Als erstes öffnet sich ein Kommandozeilenfenster mit dem Titel "JupyterLab Server".
+
+Nach dem Start des CMD-Skriptes startet zudem dein Browser und öffnet eine Seite, die sich mit dem JupyterLab-Server (localhost:8888/lab/tree) verbindet, der im Kommandozeilenfenster läuft - lasse dieses also im Hintergrund weiter laufen!
+
+Wenn du einen bestimmten Browser bevorzugst, kannst du die Datei `04_starte_jupyterlab.cmd` editieren und eine der drei per `::` auskommentierten Zeilen durch das Entfernen des `::` aktivieren und so deinen Lieblingsbrowser festlegen.
+
+![snapshot von JupyterLab](Einstieg_Vorbereitung/jupyterlab_snapshot01_blanko.png)
+
+* *Diese* Anleitung (die du gerade liest) kannst du dir ansehen, wenn du mit der rechten Maustaste auf `Readme.md` klickst und *Open With > Markdown Preview* auswählst.
+
+## 4. Mit den Aufgaben loslegen
+*Hinweis:* Wir empfehlen dir, die Aufgaben nicht ohne eine gewisse Vorbereitung durch den entsprechenden Abschnitt im Buch zu beginnen.
+
+*Außerdem:* Es ist gut, wenn du einfache Grundkenntnisse in Python als Programmiersprache mitbringst, und dich mit der Bedienung von **JupyterLab** und **Juypter Notebooks** schon etwas vertraut gemacht hast ([siehe oben](#Praktische-%C3%9Cbungen-zum-Buch-%22KI-Testen%22)).
+
+Zum Bearbeiten einer Aufgabe - zum Beispiel zum Abschnitt 3.3:
+* öffnest du in JupyterLab per Doppel-Click das Verzeichnis `Kap03.3_ML-Art-wählen` und
+* öffnest das Notebook `Übung_...` ebenfalls per Doppel-Click.
+
+und schon kann's losgehen!
+
+## Lizenzbedingungen {.unnumbered}
+
+**der Inhalte *dieses* GitHub-Repos (Notebooks, Grafiken, Code...):**
+
+![cc-license](Einstieg_Vorbereitung/cc-by-nc-sa.svg)<br/>
+CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+**der genutzten Werkzeuge und Daten:**
+
+- pyhton: [PSF License](https://docs.python.org/3/license.html) - GPL-kompatibel
+- jupyterlab: [BSD License](https://jupyterlab.readthedocs.io/en/latest/api/index.html?highlight=license#md:license)
+- iris dataset: [CC-BY 4.0, donated by R. A. Fisher](https://archive.ics.uci.edu/dataset/53/iris)
+- tensorflow playground: [Apache License](https://github.com/tensorflow/playground/blob/master/LICENSE)
+- lime: Copyright &copy; 2016, Marco Tulio Correia Ribeiro [BSD-2-Clause License](https://de.wikipedia.org/wiki/BSD-Lizenz)
+- shap: Copyright &copy; 2018, Scott Lundberg [MIT License](https://en.wikipedia.org/wiki/MIT_License)
+- pict: Copyright &copy; Microsoft Corporation [MIT License](https://en.wikipedia.org/wiki/MIT_License)
+- chatGPT: OpenAI [Terms of Use](https://openai.com/policies/terms-of-use)
+- [OpenML](http://creativecommons.org/licenses/by/4.0/) [sowie BSD-3](https://opensource.org/licenses/BSD-3-Clause)

@@ -1,6 +1,5 @@
 ---
-bibliography: references.bib
-client: "MW"
+title: Working with git and GitHub
 ---
 
 # Working with git and GitHub

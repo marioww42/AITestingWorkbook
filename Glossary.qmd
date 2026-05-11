@@ -1,12 +1,22 @@
 ---
 bibliography: references.bib
-client: "MW"
 ---
 # Glossary
 
-For all terms related to Quarto, see the [Quarto Glossary](https://quarto.org/docs/authoring/glossary/). For a more general glossary of terms related to data science and AI, see the [Data Science Glossary](https://datascienceglossary.org/).
+For general terms related to testing, see the [ISTQB Glossary](https://glossary.istqb.org/en_US/search?term=&attributes=%5B%22name%22%2C%22abbreviation%22%2C%22synonyms%22%5D&exact_matches_first=true&second_language=de_DE). 
+The ISTQB® Standard Glossary of Terms Used in Software Testing contains the definitions of testing terms used in the various ISTQB® Syllabi. This includes all terms stated as keywords in the ISTQB® Syllabi as well as other terms of major importance to testing.
+ The ISTQB® Glossary focuses on terms that have a specific meaning in testing. Some related non-testing terms are also included if they play a major role in testing, such as terms used in software quality assurance and software development lifecycle models. Many terms within other software engineering disciplines are not covered in the Glossary, even if they are used in various ISTQB® syllabi.
 
-For general terms related to testing, see the [ISTQB Glossary](https://glossary.istqb.org/en_US/search?term=&attributes=%5B%22name%22%2C%22abbreviation%22%2C%22synonyms%22%5D&exact_matches_first=true&second_language=de_DE).
+For general Terms related to software enginering, see the [SEVOCAB: Software and Systems Engineering Vocabulary](https://pascal.computer.org/sev_display/index.action).
+There you find authoritative definitions for software and systems engineering terms in SEVOCAB, a project of the IEEE Computer Society and ISO/IEC JTC 1/SC7. SEVOCAB includes definitions from international standards. You can search for a term as defined in the standards, or for all the definitions in a source standard. To give you an understanding of related concepts, SEVOCAB will return any definition for the term, as well as all the definitions that use the term.
+
+For tems related to AI, see the [Wikipedia AI Glossary](https://en.wikipedia.org/wiki/Glossary_of_artificial_intelligence). This glossary of artificial intelligence is a list of definitions of terms and concepts relevant to the study of artificial intelligence (AI), its subdisciplines, and related fields. Related glossaries include Glossary of [computer science](), [Glossary of robotics](https://en.wikipedia.org/wiki/Glossary_of_robotics), [Glossary of machine vision](https://en.wikipedia.org/wiki/Glossary_of_machine_vision), and [Glossary of logic](https://en.wikipedia.org/wiki/Glossary_of_logic).
+
+Alternatively, see the Google [AI Glossary](https://ai.google.dev/learn/glossary). The AI Glossary is a collection of definitions for common terms in artificial intelligence (AI) and machine learning (ML). It includes definitions for terms related to AI concepts, techniques, and applications. The glossary is designed to help people understand the terminology used in the field of AI and ML, and to provide a common language for discussing these topics. 
 
 For terms related to git and GitHub, see the [git and GitHub section](#terminology) in the [Working with git and GitHub chapter](git.qmd).
+
+For all terms related to Quarto, see the [Quarto Glossary](https://quarto.org/docs/authoring/glossary/). For a more general glossary of terms related to data science and AI, see the [Data Science Glossary](https://datascienceglossary.org/).
+
+
 

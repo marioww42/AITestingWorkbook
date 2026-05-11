@@ -1,6 +1,5 @@
 ---
-bibliography: references.bib
-client: "MW"
+title: "Even more on Markdown"
 ---
 
 # Even more on Markdown {#sec-authoring}
