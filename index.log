@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.5.16)  16 MAY 2026 16:21
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.5.16)  16 MAY 2026 17:06
  restricted system commands enabled.
 **index.tex
 (./index.tex
@@ -1581,1624 +1581,1291 @@ Overfull \hbox (1.69344pt too wide) in paragraph at lines 3333--3334
 
 
 Overfull \hbox (16.8513pt too wide) in paragraph at lines 3333--3334
-\TU/lmr/m/n/10.95 Models 
+\TU/lmr/m/n/10.95 Models|  
  []
 
 
-Overfull \hbox (0.68887pt too wide) in paragraph at lines 3333--3334
-\TU/lmr/m/n/10.95 and 
+Overfull \hbox (3196.5234pt too wide) in paragraph at lines 3342--3342
+[]\TU/lmtt/m/n/10.95 The following chapters cover the evaluation of ML models. This includes the evaluation of the model itself. The evaluation of ML models is a crucial step in the development process, as it helps to ensure that the model is performing as expected and is meeting the requirements of the stakeholders. The evaluation of ML models typically involves a combination of quantitative and qualitative methods, including the use of metrics, visualizations, and user feedback. The evaluation process can be used to identify areas for improvement in the model, as well as to validate the performance of the model on real-
  []
 
 
-Overfull \hbox (1.69344pt too wide) in paragraph at lines 3333--3334
-\TU/lmr/m/n/10.95 ML- 
+Underfull \hbox (badness 10000) in paragraph at lines 3344--3344
+[]\TU/lmtt/m/n/10.95 # Test Levels for ML models {#sec-test-levels-for-
  []
 
 
-Overfull \hbox (9.68146pt too wide) in paragraph at lines 3333--3334
-\TU/lmr/m/n/10.95 based 
- []
-
-
-Overfull \hbox (1.00664pt too wide) in paragraph at lines 3333--3334
-\TU/lmr/m/n/10.95 Sys- 
- []
-
-
-Overfull \hbox (5.49637pt too wide) in paragraph at lines 3333--3334
-\TU/lmr/m/n/10.95 tems|  
- []
-
-
-Overfull \hbox (2035.27615pt too wide) in paragraph at lines 3342--3342
-[]\TU/lmtt/m/n/10.95 The following chapters cover the evaluation of ML models and systems. This includes the evaluation of the model itself, as well as the evaluation of the system in which the model is embedded. The evaluation of ML models and systems is a crucial step in the development process, as it helps to ensure that the model and system are performing as expected and are meeting the requirements of the stakeholders.[] 
- []
-
-
-Overfull \hbox (46.20908pt too wide) in paragraph at lines 3346--3346
-[]\TU/lmtt/m/n/10.95 ### Test Levels for ML models {markdown="block" .unnumbered}[] 
- []
-
-
-Overfull \hbox (74.95282pt too wide) in paragraph at lines 3348--3348
+Overfull \hbox (74.95282pt too wide) in paragraph at lines 3346--3346
 []\TU/lmtt/m/n/10.95 There are two test levels that can be used to evaluate ML models:[] 
  []
 
 
-Overfull \hbox (1420.16003pt too wide) in paragraph at lines 3352--3352
+Overfull \hbox (1420.16003pt too wide) in paragraph at lines 3350--3350
 []\TU/lmtt/m/n/10.95 Input data testing focuses on evaluating the quality of the input data, such as checking for missing values, outliers, and data distribution. ML model testing focuses on evaluating the performance of the model on a given dataset, using metrics such as accuracy, precision, recall, F1 score, and AUC-
+ []
+
+
+Overfull \hbox (2230.73361pt too wide) in paragraph at lines 3354--3354
+[]\TU/lmtt/m/n/10.95 Input data testing is important because the quality of the input data can have a significant impact on the performance of the ML model. If the input data is of poor quality, the model may not be able to learn effectively and may produce inaccurate results. Therefore, it is important to perform input data testing before training the ML model to ensure that the data is suitable for training and that any issues with the data are addressed.[] 
  []
 
 [79
 
 ]
-Overfull \hbox (2230.73361pt too wide) in paragraph at lines 3356--3356
-[]\TU/lmtt/m/n/10.95 Input data testing is important because the quality of the input data can have a significant impact on the performance of the ML model. If the input data is of poor quality, the model may not be able to learn effectively and may produce inaccurate results. Therefore, it is important to perform input data testing before training the ML model to ensure that the data is suitable for training and that any issues with the data are addressed.[] 
- []
-
-
-Overfull \hbox (28.96283pt too wide) in paragraph at lines 3358--3358
+Overfull \hbox (28.96283pt too wide) in paragraph at lines 3356--3356
 []\TU/lmtt/m/n/10.95 The objective of input data testing<span class="indexref"[] 
  []
 
 
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3359--3359
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3357--3357
 []\TU/lmtt/m/n/10.95 entry="input data testing"></span> is to confirm that the data used by[] 
  []
 
 
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3360--3360
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3358--3358
 []\TU/lmtt/m/n/10.95 the MLS for training, testing, and prediction is of sufficient quality[] 
  []
 
 
-Overfull \hbox (97.94781pt too wide) in paragraph at lines 3361--3361
+Overfull \hbox (97.94781pt too wide) in paragraph at lines 3359--3359
 []\TU/lmtt/m/n/10.95 (see 3.2). It includes reviews, statistical techniques (e.g., testing[] 
  []
 
 
-Overfull \hbox (69.20407pt too wide) in paragraph at lines 3362--3362
+Overfull \hbox (69.20407pt too wide) in paragraph at lines 3360--3360
 []\TU/lmtt/m/n/10.95 data for bias), EDA of the training data, and static and dynamic[] 
  []
 
 
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3363--3363
+Overfull \hbox (92.19907pt too wide) in paragraph at lines 3361--3361
 []\TU/lmtt/m/n/10.95 testing<span class="indexref" entry="dynamic testing"></span> of the[] 
  []
 
 
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3368--3368
+Overfull \hbox (115.19406pt too wide) in paragraph at lines 3366--3366
 []\TU/lmtt/m/n/10.95 The following table lists examples of input data risks and corresponding[] 
  []
 
 
-Overfull \hbox (86.45032pt too wide) in paragraph at lines 3378--3378
+Overfull \hbox (86.45032pt too wide) in paragraph at lines 3376--3376
 []\TU/lmtt/m/n/10.95 <th style="text-align: left;"><strong>Potential Risks</strong></th>[] 
  []
 
 
-Overfull \hbox (17.46533pt too wide) in paragraph at lines 3385--3385
+Overfull \hbox (17.46533pt too wide) in paragraph at lines 3383--3383
 []\TU/lmtt/m/n/10.95 <td><p>Defects in the training data leading to bias</p>[] 
  []
 
 
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3386--3386
+Overfull \hbox (92.19907pt too wide) in paragraph at lines 3384--3384
 []\TU/lmtt/m/n/10.95 <p>Problems within the algorithm, model, or ML development framework[] 
  []
 
 
-Overfull \hbox (63.45532pt too wide) in paragraph at lines 3388--3388
+Overfull \hbox (63.45532pt too wide) in paragraph at lines 3386--3386
 []\TU/lmtt/m/n/10.95 <td style="text-align: left;">Testing for bias – see 5.1.2</td>[] 
  []
 
 
-Overfull \hbox (46.20908pt too wide) in paragraph at lines 3391--3391
+Overfull \hbox (46.20908pt too wide) in paragraph at lines 3389--3389
 []\TU/lmtt/m/n/10.95 <td style="text-align: left;"><p>Training data acquired from[] 
  []
 
-[80]
-Overfull \hbox (34.71158pt too wide) in paragraph at lines 3394--3394
+
+Overfull \hbox (34.71158pt too wide) in paragraph at lines 3392--3392
 []\TU/lmtt/m/n/10.95 <td style="text-align: left;">Data provenance testing</td>[] 
  []
 
 
-Overfull \hbox (28.96283pt too wide) in paragraph at lines 3397--3397
+Overfull \hbox (28.96283pt too wide) in paragraph at lines 3395--3395
 []\TU/lmtt/m/n/10.95 <td style="text-align: left;">Poisoned training data</td>[] 
  []
 
 
-Overfull \hbox (46.20908pt too wide) in paragraph at lines 3398--3398
+Overfull \hbox (46.20908pt too wide) in paragraph at lines 3396--3396
 []\TU/lmtt/m/n/10.95 <td style="text-align: left;"><p>A/B testing – see 6.1.9</p>[] 
  []
 
-
-Overfull \hbox (11.71658pt too wide) in paragraph at lines 3401--3401
+[80]
+Overfull \hbox (11.71658pt too wide) in paragraph at lines 3399--3399
 []\TU/lmtt/m/n/10.95 <p>Attacks as part of red teaming – see 4.2.2</p></td>[] 
  []
 
 
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3404--3404
+Overfull \hbox (92.19907pt too wide) in paragraph at lines 3402--3402
 []\TU/lmtt/m/n/10.95 <td style="text-align: left;"><p>Internally inconsistent dataset</p>[] 
  []
 
 
-Overfull \hbox (57.70657pt too wide) in paragraph at lines 3407--3407
+Overfull \hbox (57.70657pt too wide) in paragraph at lines 3405--3405
 []\TU/lmtt/m/n/10.95 <td style="text-align: left;">Dataset constraint testing – see[] 
  []
 
 
-Overfull \hbox (69.20407pt too wide) in paragraph at lines 3411--3411
+Overfull \hbox (69.20407pt too wide) in paragraph at lines 3409--3409
 []\TU/lmtt/m/n/10.95 <td style="text-align: left;">Sub-optimal feature selection</td>[] 
  []
 
 
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3415--3415
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3413--3413
 []\TU/lmtt/m/n/10.95 <td style="text-align: left;"><p>Imbalanced dataset due to insufficient[] 
  []
 
 
-Overfull \hbox (28.96283pt too wide) in paragraph at lines 3419--3419
+Overfull \hbox (28.96283pt too wide) in paragraph at lines 3417--3417
 []\TU/lmtt/m/n/10.95 <p>Training data focused on a subset of all use cases</p>[] 
  []
 
 
-Overfull \hbox (40.46033pt too wide) in paragraph at lines 3420--3420
+Overfull \hbox (40.46033pt too wide) in paragraph at lines 3418--3418
 []\TU/lmtt/m/n/10.95 <p>Full range of values not covered in the dataset</p></td>[] 
  []
 
 
-Overfull \hbox (86.45032pt too wide) in paragraph at lines 3421--3421
+Overfull \hbox (86.45032pt too wide) in paragraph at lines 3419--3419
 []\TU/lmtt/m/n/10.95 <td style="text-align: left;">Data representativeness testing – see[] 
  []
 
 
-Overfull \hbox (86.45032pt too wide) in paragraph at lines 3428--3428
+Overfull \hbox (86.45032pt too wide) in paragraph at lines 3426--3426
 []\TU/lmtt/m/n/10.95 <p>Poor annotation leading to inaccurate or inconsistent labels</p>[] 
  []
 
 
-Overfull \hbox (51.95782pt too wide) in paragraph at lines 3430--3430
+Overfull \hbox (51.95782pt too wide) in paragraph at lines 3428--3428
 []\TU/lmtt/m/n/10.95 <td style="text-align: left;">Label correctness testing – see[] 
  []
 
-[81]
-Overfull \hbox (86.45032pt too wide) in paragraph at lines 3435--3435
+
+Overfull \hbox (86.45032pt too wide) in paragraph at lines 3433--3433
 []\TU/lmtt/m/n/10.95 <p>Poor design or integration leading to data pipeline failures</p>[] 
  []
 
 
-Overfull \hbox (57.70657pt too wide) in paragraph at lines 3436--3436
+Overfull \hbox (57.70657pt too wide) in paragraph at lines 3434--3434
 []\TU/lmtt/m/n/10.95 <p>Data quality defects compromising data pipeline outputs</p>[] 
  []
 
 
-Overfull \hbox (51.95782pt too wide) in paragraph at lines 3437--3437
+Overfull \hbox (51.95782pt too wide) in paragraph at lines 3435--3435
 []\TU/lmtt/m/n/10.95 <p>Performance degradation in the operational use of the data[] 
  []
 
 
-Overfull \hbox (63.45532pt too wide) in paragraph at lines 3439--3439
+Overfull \hbox (63.45532pt too wide) in paragraph at lines 3437--3437
 []\TU/lmtt/m/n/10.95 <p>Security breaches or uncontrolled changes impacting the data[] 
  []
 
-
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3442--3442
+[81]
+Overfull \hbox (92.19907pt too wide) in paragraph at lines 3440--3440
 []\TU/lmtt/m/n/10.95 <td style="text-align: left;">Data pipeline testing – see 5.1.3</td>[] 
  []
 
 
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3449--3449
+Overfull \hbox (92.19907pt too wide) in paragraph at lines 3447--3447
 []\TU/lmtt/m/n/10.95 Bias in an MLS refers to non-random, unfair differences in treatment[] 
  []
 
 
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3450--3450
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3448--3448
 []\TU/lmtt/m/n/10.95 based on sensitive attributes like gender, age, or race, which is often[] 
  []
 
 
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3453--3453
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3451--3451
 []\TU/lmtt/m/n/10.95 Testing for bias<span class="indexref" entry="testing for bias"></span>[] 
  []
 
 
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3454--3454
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3452--3452
 []\TU/lmtt/m/n/10.95 in an MLS involves understanding its potential sources, which primarily[] 
  []
 
 
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3457--3457
+Overfull \hbox (115.19406pt too wide) in paragraph at lines 3455--3455
 []\TU/lmtt/m/n/10.95 - Defects in the training data, such as unrepresentativeness, historical[] 
  []
 
 
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3460--3460
+Overfull \hbox (92.19907pt too wide) in paragraph at lines 3458--3458
 []\TU/lmtt/m/n/10.95 - Defects within the algorithm, model, or development framework that[] 
  []
 
 
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3461--3461
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3459--3459
 []  \TU/lmtt/m/n/10.95 introduce systemic unfairness, such as an algorithm using a decision[] 
  []
 
 
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3462--3462
+Overfull \hbox (92.19907pt too wide) in paragraph at lines 3460--3460
 []  \TU/lmtt/m/n/10.95 threshold for credit scores in a loan approval system (algorithmic[] 
  []
 
 
-Overfull \hbox (28.96283pt too wide) in paragraph at lines 3465--3465
+Overfull \hbox (28.96283pt too wide) in paragraph at lines 3463--3463
 []\TU/lmtt/m/n/10.95 Test approaches for detecting bias include the following:[] 
  []
 
 
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3467--3467
+Overfull \hbox (115.19406pt too wide) in paragraph at lines 3465--3465
 []\TU/lmtt/m/n/10.95 - Review<span class="indexref" entry="review"></span>s of the overall ML[] 
  []
 
 
-Overfull \hbox (80.70157pt too wide) in paragraph at lines 3468--3468
+Overfull \hbox (80.70157pt too wide) in paragraph at lines 3466--3466
 []  \TU/lmtt/m/n/10.95 workflow, and especially the data preparation, to identify their[] 
  []
 
 
-Overfull \hbox (97.94781pt too wide) in paragraph at lines 3471--3471
+Overfull \hbox (97.94781pt too wide) in paragraph at lines 3469--3469
 []\TU/lmtt/m/n/10.95 - Reviews of dataset documentation to identify and mitigate potential[] 
  []
 
 
-Overfull \hbox (69.20407pt too wide) in paragraph at lines 3472--3472
+Overfull \hbox (69.20407pt too wide) in paragraph at lines 3470--3470
 []  \TU/lmtt/m/n/10.95 sources of unfairness by examining how the data was collected,[] 
  []
 
-[82]
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3475--3475
+
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3473--3473
 []\TU/lmtt/m/n/10.95 - Static analysis<span class="indexref" entry="static analysis"></span>[] 
  []
 
 
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3476--3476
+Overfull \hbox (115.19406pt too wide) in paragraph at lines 3474--3474
 []  \TU/lmtt/m/n/10.95 of both data preparation programs and the model implementation code to[] 
  []
 
 
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3477--3477
+Overfull \hbox (92.19907pt too wide) in paragraph at lines 3475--3475
 []  \TU/lmtt/m/n/10.95 identify anti-patterns or the mishandling of sensitive attributes.[] 
  []
 
 
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3479--3479
+Overfull \hbox (115.19406pt too wide) in paragraph at lines 3477--3477
 []\TU/lmtt/m/n/10.95 - EDA<span class="indexref" entry="exploratory data analysis"></span> of[] 
  []
 
 
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3480--3480
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3478--3478
 []  \TU/lmtt/m/n/10.95 training data by using visualization and clustering methods to reveal[] 
  []
 
-
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3481--3481
+[82]
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3479--3479
 []  \TU/lmtt/m/n/10.95 imbalanced data, skewed distributions, or anomalous groupings across[] 
  []
 
 
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3484--3484
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3482--3482
 []\TU/lmtt/m/n/10.95 - Dynamic testing<span class="indexref" entry="dynamic testing"></span>[] 
  []
 
 
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3485--3485
+Overfull \hbox (92.19907pt too wide) in paragraph at lines 3483--3483
 []  \TU/lmtt/m/n/10.95 to help detect bias in an ML model by feeding a known unbiased and[] 
  []
 
 
-Overfull \hbox (51.95782pt too wide) in paragraph at lines 3486--3486
+Overfull \hbox (51.95782pt too wide) in paragraph at lines 3484--3484
 []  \TU/lmtt/m/n/10.95 representative dataset through the system and analyzing its[] 
  []
 
 
-Overfull \hbox (86.45032pt too wide) in paragraph at lines 3487--3487
+Overfull \hbox (86.45032pt too wide) in paragraph at lines 3485--3485
 []  \TU/lmtt/m/n/10.95 predictions for statistically significant differences in outcomes[] 
  []
 
 
-Overfull \hbox (69.20407pt too wide) in paragraph at lines 3488--3488
+Overfull \hbox (69.20407pt too wide) in paragraph at lines 3486--3486
 []  \TU/lmtt/m/n/10.95 across various sensitive groups. This identifies bias in model[] 
  []
 
 
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3489--3489
+Overfull \hbox (92.19907pt too wide) in paragraph at lines 3487--3487
 []  \TU/lmtt/m/n/10.95 outputs, regardless of whether the bias was introduced during data[] 
  []
 
 
-Overfull \hbox (86.45032pt too wide) in paragraph at lines 3493--3493
+Overfull \hbox (86.45032pt too wide) in paragraph at lines 3491--3491
 []  \TU/lmtt/m/n/10.95 entry="label correctness testing"></span> (see 5.1.6) to identify[] 
  []
 
 
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3494--3494
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3492--3492
 []  \TU/lmtt/m/n/10.95 mislabeling that causes incorrect associations to be learned between[] 
  []
 
 
-Overfull \hbox (46.20908pt too wide) in paragraph at lines 3495--3495
+Overfull \hbox (46.20908pt too wide) in paragraph at lines 3493--3493
 []  \TU/lmtt/m/n/10.95 attributes and outcomes for specific sensitive attributes.[] 
  []
 
 
-Overfull \hbox (86.45032pt too wide) in paragraph at lines 3502--3502
+Overfull \hbox (86.45032pt too wide) in paragraph at lines 3500--3500
 []  \TU/lmtt/m/n/10.95 2.  Generate counterfactuals for the sensitive attributes. (e.g.,[] 
  []
 
 
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3503--3503
+Overfull \hbox (115.19406pt too wide) in paragraph at lines 3501--3501
 []      \TU/lmtt/m/n/10.95 example scenarios where gender is changed from male to female in a[] 
  []
 
 
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3506--3506
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3504--3504
 []  \TU/lmtt/m/n/10.95 3.  Generate model output by presenting it with the counterfactuals.[] 
  []
 
 
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3508--3508
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3506--3506
 []  \TU/lmtt/m/n/10.95 4.  Analyze the results of multiple tests to achieve a statistically[] 
  []
 
 
-Overfull \hbox (80.70157pt too wide) in paragraph at lines 3509--3509
+Overfull \hbox (80.70157pt too wide) in paragraph at lines 3507--3507
 []      \TU/lmtt/m/n/10.95 significant result, which determines if changing a sensitive[] 
  []
 
 
-Overfull \hbox (74.95282pt too wide) in paragraph at lines 3510--3510
+Overfull \hbox (74.95282pt too wide) in paragraph at lines 3508--3508
 []      \TU/lmtt/m/n/10.95 attribute causes the model results to change, signaling the[] 
  []
 
 
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3513--3513
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3511--3511
 []\TU/lmtt/m/n/10.95 Note: Disparate impact analysis can also be applied to combinations of[] 
  []
 
 
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3514--3514
+Overfull \hbox (92.19907pt too wide) in paragraph at lines 3512--3512
 []\TU/lmtt/m/n/10.95 sensitive attributes, allowing hidden bias associated with attribute[] 
  []
 
 
-Overfull \hbox (74.95282pt too wide) in paragraph at lines 3515--3515
+Overfull \hbox (74.95282pt too wide) in paragraph at lines 3513--3513
 []\TU/lmtt/m/n/10.95 combinations to be identified. However, take care to confirm that[] 
  []
 
-[83]
-Overfull \hbox (80.70157pt too wide) in paragraph at lines 3516--3516
+
+Overfull \hbox (80.70157pt too wide) in paragraph at lines 3514--3514
 []\TU/lmtt/m/n/10.95 counterfactual examples are not unrealistic, as the model may then[] 
  []
 
 
-Overfull \hbox (5.96783pt too wide) in paragraph at lines 3521--3521
+Overfull \hbox (5.96783pt too wide) in paragraph at lines 3519--3519
 []\TU/lmtt/m/n/10.95 Effective data pipeline testing<span class="indexref"[] 
  []
 
-
-Overfull \hbox (63.45532pt too wide) in paragraph at lines 3522--3522
+[83]
+Overfull \hbox (63.45532pt too wide) in paragraph at lines 3520--3520
 []\TU/lmtt/m/n/10.95 entry="data pipeline testing"></span> is essential not only for[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3523--3523
+Underfull \hbox (badness 10000) in paragraph at lines 3521--3521
 []\TU/lmtt/m/n/10.95 confirming the reliability and performance of data-
  []
 
 
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3524--3524
+Overfull \hbox (115.19406pt too wide) in paragraph at lines 3522--3522
 []\TU/lmtt/m/n/10.95 also for maintaining high data quality throughout the entire ML workflow[] 
  []
 
 
-Overfull \hbox (0.21909pt too wide) in paragraph at lines 3527--3527
+Overfull \hbox (0.21909pt too wide) in paragraph at lines 3525--3525
 []\TU/lmtt/m/n/10.95 A layered approach is employed, beginning with data-
  []
 
 
-Overfull \hbox (69.20407pt too wide) in paragraph at lines 3530--3530
+Overfull \hbox (69.20407pt too wide) in paragraph at lines 3528--3528
 []\TU/lmtt/m/n/10.95 Component testing includes testing of data ingestion components,[] 
  []
 
 
-Overfull \hbox (97.94781pt too wide) in paragraph at lines 3531--3531
+Overfull \hbox (97.94781pt too wide) in paragraph at lines 3529--3529
 []\TU/lmtt/m/n/10.95 transformation scripts, and sensor interfaces. This testing uses code[] 
  []
 
 
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3532--3532
+Overfull \hbox (115.19406pt too wide) in paragraph at lines 3530--3530
 []\TU/lmtt/m/n/10.95 reviews, static analysis, and hardware-specific tests to verify reliable[] 
  []
 
 
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3533--3533
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3531--3531
 []\TU/lmtt/m/n/10.95 data capture. Component tests validate data transformation logic, test[] 
  []
 
 
-Overfull \hbox (74.95282pt too wide) in paragraph at lines 3534--3534
+Overfull \hbox (74.95282pt too wide) in paragraph at lines 3532--3532
 []\TU/lmtt/m/n/10.95 the implementation of data validation rules, confirm robust error[] 
  []
 
 
-Overfull \hbox (74.95282pt too wide) in paragraph at lines 3535--3535
+Overfull \hbox (74.95282pt too wide) in paragraph at lines 3533--3533
 []\TU/lmtt/m/n/10.95 handling, and test for vulnerabilities that could be exploited to[] 
  []
 
 
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3538--3538
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3536--3536
 []\TU/lmtt/m/n/10.95 Component integration testing verifies the seamless flow of data across[] 
  []
 
 
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3539--3539
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3537--3537
 []\TU/lmtt/m/n/10.95 internal interfaces and the correct interpretation of data as it moves[] 
  []
 
 
-Overfull \hbox (69.20407pt too wide) in paragraph at lines 3540--3540
+Overfull \hbox (69.20407pt too wide) in paragraph at lines 3538--3538
 []\TU/lmtt/m/n/10.95 through the pipeline. It detects defects arising from mismatched[] 
  []
 
 
-Overfull \hbox (23.21408pt too wide) in paragraph at lines 3541--3541
+Overfull \hbox (23.21408pt too wide) in paragraph at lines 3539--3539
 []\TU/lmtt/m/n/10.95 interfaces or incorrect assumptions between components. [] 
  []
 
 
-Overfull \hbox (63.45532pt too wide) in paragraph at lines 3543--3543
+Overfull \hbox (63.45532pt too wide) in paragraph at lines 3541--3541
 []\TU/lmtt/m/n/10.95 System testing assesses the fully assembled pipeline, beginning[] 
  []
 
 
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3544--3544
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3542--3542
 []\TU/lmtt/m/n/10.95 with smoke testing to confirm basic pipeline functionality. Functional[] 
  []
 
 
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3545--3545
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3543--3543
 []\TU/lmtt/m/n/10.95 testing verifies the pipeline's compliance with specified requirements,[] 
  []
 
 
-Overfull \hbox (5.96783pt too wide) in paragraph at lines 3546--3546
+Overfull \hbox (5.96783pt too wide) in paragraph at lines 3544--3544
 []\TU/lmtt/m/n/10.95 including data transformations and data routing. Non-
  []
 
 
-Overfull \hbox (63.45532pt too wide) in paragraph at lines 3547--3547
+Overfull \hbox (63.45532pt too wide) in paragraph at lines 3545--3545
 []\TU/lmtt/m/n/10.95 testing evaluates performance under load, scalability to handle[] 
  []
 
 
-Overfull \hbox (57.70657pt too wide) in paragraph at lines 3548--3548
+Overfull \hbox (57.70657pt too wide) in paragraph at lines 3546--3546
 []\TU/lmtt/m/n/10.95 increasing data volumes, and security measures to protect data[] 
  []
 
 
-Overfull \hbox (80.70157pt too wide) in paragraph at lines 3549--3549
+Overfull \hbox (80.70157pt too wide) in paragraph at lines 3547--3547
 []\TU/lmtt/m/n/10.95 integrity. Fault injection testing measures pipeline robustness by[] 
  []
 
 
-Overfull \hbox (86.45032pt too wide) in paragraph at lines 3550--3550
+Overfull \hbox (86.45032pt too wide) in paragraph at lines 3548--3548
 []\TU/lmtt/m/n/10.95 simulating defective data inputs, assessing the system’s ability to[] 
  []
 
 
-Overfull \hbox (97.94781pt too wide) in paragraph at lines 3551--3551
+Overfull \hbox (97.94781pt too wide) in paragraph at lines 3549--3549
 []\TU/lmtt/m/n/10.95 maintain data integrity when faced with unexpected or corrupted data.[] 
  []
 
 
-Overfull \hbox (86.45032pt too wide) in paragraph at lines 3552--3552
+Overfull \hbox (86.45032pt too wide) in paragraph at lines 3550--3550
 []\TU/lmtt/m/n/10.95 Back-to-back testing (see 6.1.10) compares the operational pipeline[] 
  []
 
 
-Overfull \hbox (74.95282pt too wide) in paragraph at lines 3553--3553
+Overfull \hbox (74.95282pt too wide) in paragraph at lines 3551--3551
 []\TU/lmtt/m/n/10.95 against the training pipeline to verify consistent functionality.[] 
  []
 
-[84]
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3555--3555
+
+Overfull \hbox (115.19406pt too wide) in paragraph at lines 3553--3553
 []\TU/lmtt/m/n/10.95 System integration testing verifies correct interaction between the data[] 
  []
 
 
-Overfull \hbox (80.70157pt too wide) in paragraph at lines 3556--3556
+Overfull \hbox (80.70157pt too wide) in paragraph at lines 3554--3554
 []\TU/lmtt/m/n/10.95 pipeline and external systems or services, including data sources,[] 
  []
 
 
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3557--3557
+Overfull \hbox (115.19406pt too wide) in paragraph at lines 3555--3555
 []\TU/lmtt/m/n/10.95 storage platforms, monitoring tools, and downstream consumers such as ML[] 
  []
 
-
-Overfull \hbox (51.95782pt too wide) in paragraph at lines 3560--3560
+[84]
+Overfull \hbox (51.95782pt too wide) in paragraph at lines 3558--3558
 []\TU/lmtt/m/n/10.95 Testing in production is performed on the operational system.[] 
  []
 
 
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3561--3561
+Overfull \hbox (115.19406pt too wide) in paragraph at lines 3559--3559
 []\TU/lmtt/m/n/10.95 Back-to-back testing verifies that performance is consistent or improved[] 
  []
 
 
-Overfull \hbox (57.70657pt too wide) in paragraph at lines 3562--3562
+Overfull \hbox (57.70657pt too wide) in paragraph at lines 3560--3560
 []\TU/lmtt/m/n/10.95 compared to previous versions. A/B testing (see 6.1.9) enables[] 
  []
 
 
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3563--3563
+Overfull \hbox (92.19907pt too wide) in paragraph at lines 3561--3561
 []\TU/lmtt/m/n/10.95 comparisons of new pipeline iterations against baselines, validating[] 
  []
 
 
-Overfull \hbox (97.94781pt too wide) in paragraph at lines 3564--3564
+Overfull \hbox (97.94781pt too wide) in paragraph at lines 3562--3562
 []\TU/lmtt/m/n/10.95 improvements while confirming no degradation in the live data stream.[] 
  []
 
 
-Overfull \hbox (74.95282pt too wide) in paragraph at lines 3565--3565
+Overfull \hbox (74.95282pt too wide) in paragraph at lines 3563--3563
 []\TU/lmtt/m/n/10.95 Tools can be integrated to continuously monitor and observe model[] 
  []
 
 
-Overfull \hbox (34.71158pt too wide) in paragraph at lines 3566--3566
+Overfull \hbox (34.71158pt too wide) in paragraph at lines 3564--3564
 []\TU/lmtt/m/n/10.95 behavior, performance, and potential defects in real time.[] 
  []
 
 
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3568--3568
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3566--3566
 []\TU/lmtt/m/n/10.95 Configuration management reviews help verify that the correct pipeline[] 
  []
 
 
-Overfull \hbox (97.94781pt too wide) in paragraph at lines 3569--3569
+Overfull \hbox (97.94781pt too wide) in paragraph at lines 3567--3567
 []\TU/lmtt/m/n/10.95 code versions, configurations, and datasets are used across training,[] 
  []
 
 
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3572--3572
+Overfull \hbox (92.19907pt too wide) in paragraph at lines 3570--3570
 []\TU/lmtt/m/n/10.95 Finally, the test strategies must align with the pipeline's purpose.[] 
  []
 
 
-Overfull \hbox (69.20407pt too wide) in paragraph at lines 3573--3573
+Overfull \hbox (69.20407pt too wide) in paragraph at lines 3571--3571
 []\TU/lmtt/m/n/10.95 Training pipelines, often exploratory prototypes, have different[] 
  []
 
 
-Overfull \hbox (97.94781pt too wide) in paragraph at lines 3574--3574
+Overfull \hbox (97.94781pt too wide) in paragraph at lines 3572--3572
 []\TU/lmtt/m/n/10.95 priorities than robust operational pipelines. The testing of training[] 
  []
 
 
-Overfull \hbox (74.95282pt too wide) in paragraph at lines 3575--3575
+Overfull \hbox (74.95282pt too wide) in paragraph at lines 3573--3573
 []\TU/lmtt/m/n/10.95 pipelines may focus on data integrity, while operational pipeline[] 
  []
 
 
-Overfull \hbox (80.70157pt too wide) in paragraph at lines 3576--3576
+Overfull \hbox (80.70157pt too wide) in paragraph at lines 3574--3574
 []\TU/lmtt/m/n/10.95 testing prioritizes reliability, performance, and maintainability.[] 
  []
 
 
-Overfull \hbox (5.96783pt too wide) in paragraph at lines 3580--3580
+Overfull \hbox (5.96783pt too wide) in paragraph at lines 3578--3578
 []\TU/lmtt/m/n/10.95 Data representativeness testing<span class="indexref"[] 
  []
 
 
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3581--3581
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3579--3579
 []\TU/lmtt/m/n/10.95 entry="data representativeness testing"></span> determines how closely[] 
  []
 
 
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3582--3582
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3580--3580
 []\TU/lmtt/m/n/10.95 the characteristics of the datasets used for training, validation, and[] 
  []
 
 
-Overfull \hbox (80.70157pt too wide) in paragraph at lines 3583--3583
+Overfull \hbox (80.70157pt too wide) in paragraph at lines 3581--3581
 []\TU/lmtt/m/n/10.95 testing ML models match the real-world data that the ML model will[] 
  []
 
 
-Overfull \hbox (63.45532pt too wide) in paragraph at lines 3584--3584
+Overfull \hbox (63.45532pt too wide) in paragraph at lines 3582--3582
 []\TU/lmtt/m/n/10.95 encounter in operation. This testing addresses various forms of[] 
  []
 
 
-Overfull \hbox (40.46033pt too wide) in paragraph at lines 3585--3585
+Overfull \hbox (40.46033pt too wide) in paragraph at lines 3583--3583
 []\TU/lmtt/m/n/10.95 misrepresentation, including skewed datasets, missing data,[] 
  []
 
 
-Overfull \hbox (57.70657pt too wide) in paragraph at lines 3586--3586
+Overfull \hbox (57.70657pt too wide) in paragraph at lines 3584--3584
 []\TU/lmtt/m/n/10.95 disproportionate feature distributions, inadequate coverage of[] 
  []
 
 
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3587--3587
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3585--3585
 []\TU/lmtt/m/n/10.95 operational scenarios, and imbalanced class representation (see 5.1.1).[] 
  []
 
 
-Overfull \hbox (0.21909pt too wide) in paragraph at lines 3589--3589
+Overfull \hbox (0.21909pt too wide) in paragraph at lines 3587--3587
 []\TU/lmtt/m/n/10.95 This testing typically includes the following steps:[] 
  []
 
 
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3593--3593
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3591--3591
 []\TU/lmtt/m/n/10.95 - Understand the intended use cases and operational context of the MLS[] 
  []
 
-[85]
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3595--3595
+
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3593--3593
 []\TU/lmtt/m/n/10.95 - Analyze the characteristics of end users and operational environments[] 
  []
 
 
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3597--3597
+Overfull \hbox (115.19406pt too wide) in paragraph at lines 3595--3595
 []\TU/lmtt/m/n/10.95 - Identify the expected operational data distributions and critical edge[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3600--3600
+Underfull \hbox (badness 10000) in paragraph at lines 3598--3598
 []  \TU/lmtt/m/n/10.95 - consulting domain experts to understand real-
  []
 
-
-Overfull \hbox (69.20407pt too wide) in paragraph at lines 3602--3602
+[85]
+Overfull \hbox (69.20407pt too wide) in paragraph at lines 3600--3600
 []  \TU/lmtt/m/n/10.95 - analyzing data from existing systems or similar applications[] 
  []
 
 
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3604--3604
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3602--3602
 []  \TU/lmtt/m/n/10.95 - using benchmark datasets from trusted sources (e.g., NIST, industry[] 
  []
 
 
-Overfull \hbox (86.45032pt too wide) in paragraph at lines 3607--3607
+Overfull \hbox (86.45032pt too wide) in paragraph at lines 3605--3605
 []\TU/lmtt/m/n/10.95 - Apply stratified sampling to the representative reference data to[] 
  []
 
 
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3608--3608
+Overfull \hbox (92.19907pt too wide) in paragraph at lines 3606--3606
 []  \TU/lmtt/m/n/10.95 create a baseline that covers all relevant subgroups in the target[] 
  []
 
 
-Overfull \hbox (74.95282pt too wide) in paragraph at lines 3615--3615
+Overfull \hbox (74.95282pt too wide) in paragraph at lines 3613--3613
 []  \TU/lmtt/m/n/10.95 - training/test datasets being evaluated for representativeness[] 
  []
 
 
-Overfull \hbox (86.45032pt too wide) in paragraph at lines 3617--3617
+Overfull \hbox (86.45032pt too wide) in paragraph at lines 3615--3615
 []  \TU/lmtt/m/n/10.95 - reference dataset that represents the expected operational data[] 
  []
 
 
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3619--3619
+Overfull \hbox (115.19406pt too wide) in paragraph at lines 3617--3617
 []  \TU/lmtt/m/n/10.95 - visualize distributions through histograms, scatter plots, and other[] 
  []
 
 
-Overfull \hbox (86.45032pt too wide) in paragraph at lines 3622--3622
+Overfull \hbox (86.45032pt too wide) in paragraph at lines 3620--3620
 []\TU/lmtt/m/n/10.95 - Examine feature relationships, and correlations in particular, to[] 
  []
 
 
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3625--3625
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3623--3623
 []\TU/lmtt/m/n/10.95 - Identify potential anomalies, gaps, or unusual concentrations in the[] 
  []
 
 
-Overfull \hbox (11.71658pt too wide) in paragraph at lines 3630--3630
+Overfull \hbox (11.71658pt too wide) in paragraph at lines 3628--3628
 []\TU/lmtt/m/n/10.95 - Use formal statistical tests such as Chi-squared and[] 
  []
 
 
-Overfull \hbox (17.46533pt too wide) in paragraph at lines 3631--3631
+Overfull \hbox (17.46533pt too wide) in paragraph at lines 3629--3629
 []  \TU/lmtt/m/n/10.95 Kolmogorov-Smirnov to compare distributions \[STATS\][] 
  []
 
 
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3633--3633
+Overfull \hbox (92.19907pt too wide) in paragraph at lines 3631--3631
 []\TU/lmtt/m/n/10.95 - Check for data imbalances, particularly in classification problems[] 
  []
 
-[86]
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3635--3635
+
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3633--3633
 []\TU/lmtt/m/n/10.95 - Verify adequate coverage of both typical scenarios and edge/boundary[] 
  []
 
 
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3638--3638
+Overfull \hbox (92.19907pt too wide) in paragraph at lines 3636--3636
 []\TU/lmtt/m/n/10.95 Testing for data representativeness should be performed before model[] 
  []
 
 
-Overfull \hbox (86.45032pt too wide) in paragraph at lines 3639--3639
+Overfull \hbox (86.45032pt too wide) in paragraph at lines 3637--3637
 []\TU/lmtt/m/n/10.95 training to prevent building models on unrepresentative data. After[] 
  []
 
 
-Overfull \hbox (57.70657pt too wide) in paragraph at lines 3640--3640
+Overfull \hbox (57.70657pt too wide) in paragraph at lines 3638--3638
 []\TU/lmtt/m/n/10.95 deployment, the properties of operational input data should be[] 
  []
 
-
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3641--3641
+[86]
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3639--3639
 []\TU/lmtt/m/n/10.95 continuously monitored to detect changes that might indicate data drift[] 
  []
 
 
-Overfull \hbox (74.95282pt too wide) in paragraph at lines 3642--3642
+Overfull \hbox (74.95282pt too wide) in paragraph at lines 3640--3640
 []\TU/lmtt/m/n/10.95 from the original training data distributions (see 6.1.7 on drift[] 
  []
 
 
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3648--3648
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3646--3646
 []\TU/lmtt/m/n/10.95 entry="dataset constraint testing"></span> verifies whether the data in[] 
  []
 
 
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3649--3649
+Overfull \hbox (92.19907pt too wide) in paragraph at lines 3647--3647
 []\TU/lmtt/m/n/10.95 a dataset adheres to predefined rules or constraints. The goal is to[] 
  []
 
 
-Overfull \hbox (74.95282pt too wide) in paragraph at lines 3650--3650
+Overfull \hbox (74.95282pt too wide) in paragraph at lines 3648--3648
 []\TU/lmtt/m/n/10.95 confirm the integrity and consistency of the data used in ML. For[] 
  []
 
 
-Overfull \hbox (86.45032pt too wide) in paragraph at lines 3651--3651
+Overfull \hbox (86.45032pt too wide) in paragraph at lines 3649--3649
 []\TU/lmtt/m/n/10.95 instance, a test of the consistency of values in a dataset could be[] 
  []
 
 
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3654--3654
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3652--3652
 []\TU/lmtt/m/n/10.95 Constraints on data are typically found in database schemas. A database[] 
  []
 
 
-Overfull \hbox (86.45032pt too wide) in paragraph at lines 3655--3655
+Overfull \hbox (86.45032pt too wide) in paragraph at lines 3653--3653
 []\TU/lmtt/m/n/10.95 schema defines the structure, types, and relationships of the data.[] 
  []
 
 
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3656--3656
+Overfull \hbox (115.19406pt too wide) in paragraph at lines 3654--3654
 []\TU/lmtt/m/n/10.95 Similarly, for ML datasets, a set of constraints can be defined that act[] 
  []
 
 
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3657--3657
+Overfull \hbox (115.19406pt too wide) in paragraph at lines 3655--3655
 []\TU/lmtt/m/n/10.95 as a logical model of the data in the dataset, which should be satisfied[] 
  []
 
 
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3658--3658
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3656--3656
 []\TU/lmtt/m/n/10.95 if the data are correct. There are several ways of categorizing dataset[] 
  []
 
 
-Overfull \hbox (74.95282pt too wide) in paragraph at lines 3659--3659
+Overfull \hbox (74.95282pt too wide) in paragraph at lines 3657--3657
 []\TU/lmtt/m/n/10.95 constraints. A constraint can be applied to a single value for an[] 
  []
 
 
-Overfull \hbox (28.96283pt too wide) in paragraph at lines 3660--3660
+Overfull \hbox (28.96283pt too wide) in paragraph at lines 3658--3658
 []\TU/lmtt/m/n/10.95 attribute, which is found in a single instance (a single-
  []
 
 
-Overfull \hbox (46.20908pt too wide) in paragraph at lines 3663--3663
+Overfull \hbox (46.20908pt too wide) in paragraph at lines 3661--3661
 []\TU/lmtt/m/n/10.95 - Missing – tests for missing values and missing attributes.[] 
  []
 
 
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3667--3667
+Overfull \hbox (115.19406pt too wide) in paragraph at lines 3665--3665
 []\TU/lmtt/m/n/10.95 - Type – tests that an attribute value matches the specified type (e.g.,[] 
  []
 
 
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3668--3668
+Overfull \hbox (115.19406pt too wide) in paragraph at lines 3666--3666
 []  \TU/lmtt/m/n/10.95 that if an attribute is specified as an integer, the provided value is[] 
  []
 
 
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3671--3671
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3669--3669
 []\TU/lmtt/m/n/10.95 Alternatively, a constraint can apply across multiple values, typically[] 
  []
 
 
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3672--3672
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3670--3670
 []\TU/lmtt/m/n/10.95 considering the values for a single attribute across several instances[] 
  []
 
-[87]
-Overfull \hbox (97.94781pt too wide) in paragraph at lines 3675--3675
+
+Overfull \hbox (97.94781pt too wide) in paragraph at lines 3673--3673
 []\TU/lmtt/m/n/10.95 - Sum – tests that the sum of all values equals, exceeds, or does not[] 
  []
 
 
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3676--3676
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3674--3674
 []  \TU/lmtt/m/n/10.95 exceed a specified value (e.g., the total value of all points awarded[] 
  []
 
 
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3677--3677
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3675--3675
 []  \TU/lmtt/m/n/10.95 for a Formula 1 race cannot exceed 102, and must exceed 50.5 points).[] 
  []
 
 
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3679--3679
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3677--3677
 []\TU/lmtt/m/n/10.95 - Count – tests that the count of all non-null values for attributes or[] 
  []
 
 
-Overfull \hbox (80.70157pt too wide) in paragraph at lines 3680--3680
+Overfull \hbox (80.70157pt too wide) in paragraph at lines 3678--3678
 []  \TU/lmtt/m/n/10.95 instances equals, exceeds, or does not exceed a specified value.[] 
  []
 
-
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3682--3682
+[87]
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3680--3680
 []\TU/lmtt/m/n/10.95 - Duplicate – tests for identical or near identical attribute values or[] 
  []
 
 
-Overfull \hbox (97.94781pt too wide) in paragraph at lines 3683--3683
+Overfull \hbox (97.94781pt too wide) in paragraph at lines 3681--3681
 []  \TU/lmtt/m/n/10.95 instances in a dataset and enforces a limit on how many are allowed[] 
  []
 
 
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3686--3686
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3684--3684
 []\TU/lmtt/m/n/10.95 - Useful – tests that an attribute contains some repeated values, as if[] 
  []
 
 
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3687--3687
+Overfull \hbox (115.19406pt too wide) in paragraph at lines 3685--3685
 []  \TU/lmtt/m/n/10.95 every entry is unique (like an ID or timestamp), typically provides no[] 
  []
 
 
-Overfull \hbox (51.95782pt too wide) in paragraph at lines 3690--3690
+Overfull \hbox (51.95782pt too wide) in paragraph at lines 3688--3688
 []\TU/lmtt/m/n/10.95 - Outlier – identifies any values that could be considered as[] 
  []
 
 
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3693--3693
+Overfull \hbox (115.19406pt too wide) in paragraph at lines 3691--3691
 []\TU/lmtt/m/n/10.95 A special form of multi-value constraint can compare different values (a[] 
  []
 
 
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3696--3696
+Overfull \hbox (115.19406pt too wide) in paragraph at lines 3694--3694
 []\TU/lmtt/m/n/10.95 - Greater Than – tests that one value for an attribute is greater than a[] 
  []
 
 
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3697--3697
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3695--3695
 []  \TU/lmtt/m/n/10.95 value for a second attribute (e.g., the count of lines of code for a[] 
  []
 
 
-Overfull \hbox (40.46033pt too wide) in paragraph at lines 3698--3698
+Overfull \hbox (40.46033pt too wide) in paragraph at lines 3696--3696
 []  \TU/lmtt/m/n/10.95 program exceeds its count of lines of code with defects).[] 
  []
 
 
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3700--3700
+Overfull \hbox (115.19406pt too wide) in paragraph at lines 3698--3698
 []\TU/lmtt/m/n/10.95 - Correlate – tests that the values for one attribute correlate with the[] 
  []
 
 
-Overfull \hbox (69.20407pt too wide) in paragraph at lines 3701--3701
+Overfull \hbox (69.20407pt too wide) in paragraph at lines 3699--3699
 []  \TU/lmtt/m/n/10.95 values for a second attribute (e.g., all students with a marks[] 
  []
 
 
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3702--3702
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3700--3700
 []  \TU/lmtt/m/n/10.95 attribute value at least 1.33 standard deviations above the mean also[] 
  []
 
 
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3705--3705
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3703--3703
 []\TU/lmtt/m/n/10.95 Testing data against the defined constraints can be performed manually.[] 
  []
 
 
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3706--3706
+Overfull \hbox (92.19907pt too wide) in paragraph at lines 3704--3704
 []\TU/lmtt/m/n/10.95 Still, the scale of the activity and the typically large size of the[] 
  []
 
 
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3707--3707
+Overfull \hbox (115.19406pt too wide) in paragraph at lines 3705--3705
 []\TU/lmtt/m/n/10.95 dataset would require this to be automated as part of the data pipeline.[] 
  []
 
 
-Overfull \hbox (80.70157pt too wide) in paragraph at lines 3708--3708
+Overfull \hbox (80.70157pt too wide) in paragraph at lines 3706--3706
 []\TU/lmtt/m/n/10.95 When implemented as part of the pipeline, the tool that implements[] 
  []
 
 
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3709--3709
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3707--3707
 []\TU/lmtt/m/n/10.95 dataset constraint testing can provide reports to data scientists (for[] 
  []
 
 
-Overfull \hbox (97.94781pt too wide) in paragraph at lines 3710--3710
+Overfull \hbox (97.94781pt too wide) in paragraph at lines 3708--3708
 []\TU/lmtt/m/n/10.95 training data anomalies) or to operations staff (for operational data[] 
  []
 
-[88]
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3716--3716
+
+Overfull \hbox (92.19907pt too wide) in paragraph at lines 3714--3714
 []\TU/lmtt/m/n/10.95 entry="label correctness testing"></span> is essential in supervised[] 
  []
 
 
-Overfull \hbox (80.70157pt too wide) in paragraph at lines 3717--3717
+Overfull \hbox (80.70157pt too wide) in paragraph at lines 3715--3715
 []\TU/lmtt/m/n/10.95 learning. Inaccurate or inconsistent labels directly undermine the[] 
  []
 
 
-Overfull \hbox (46.20908pt too wide) in paragraph at lines 3720--3720
+Overfull \hbox (46.20908pt too wide) in paragraph at lines 3718--3718
 []\TU/lmtt/m/n/10.95 Common approaches to data label correctness testing include:[] 
  []
 
-
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3722--3722
+[88]
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3720--3720
 []\TU/lmtt/m/n/10.95 - Expert Review: Domain experts or trained annotators manually review a[] 
  []
 
 
-Overfull \hbox (86.45032pt too wide) in paragraph at lines 3723--3723
+Overfull \hbox (86.45032pt too wide) in paragraph at lines 3721--3721
 []  \TU/lmtt/m/n/10.95 sample of labelled data. They evaluate label accuracy using their[] 
  []
 
 
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3727--3727
+Overfull \hbox (92.19907pt too wide) in paragraph at lines 3725--3725
 []  \TU/lmtt/m/n/10.95 entry="multiple annotation"></span>: Data points are independently[] 
  []
 
 
-Overfull \hbox (57.70657pt too wide) in paragraph at lines 3728--3728
+Overfull \hbox (57.70657pt too wide) in paragraph at lines 3726--3726
 []  \TU/lmtt/m/n/10.95 labelled by multiple annotators and compared using a form of[] 
  []
 
 
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3729--3729
+Overfull \hbox (92.19907pt too wide) in paragraph at lines 3727--3727
 []  \TU/lmtt/m/n/10.95 back-to-back testing (see 6.1.10). Disagreements highlight defects[] 
  []
 
 
-Overfull \hbox (0.21909pt too wide) in paragraph at lines 3730--3730
+Overfull \hbox (0.21909pt too wide) in paragraph at lines 3728--3728
 []  \TU/lmtt/m/n/10.95 that need investigation and resolution. The inter-
  []
 
 
-Overfull \hbox (97.94781pt too wide) in paragraph at lines 3731--3731
+Overfull \hbox (97.94781pt too wide) in paragraph at lines 3729--3729
 []  \TU/lmtt/m/n/10.95 (IAA) can be measured using metrics such as Cohen's Kappa or simple[] 
  []
 
 
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3732--3732
+Overfull \hbox (115.19406pt too wide) in paragraph at lines 3730--3730
 []  \TU/lmtt/m/n/10.95 percentage agreement \[STATS\]. Low IAA scores can indicate defects in[] 
  []
 
 
-Overfull \hbox (40.46033pt too wide) in paragraph at lines 3733--3733
+Overfull \hbox (40.46033pt too wide) in paragraph at lines 3731--3731
 []  \TU/lmtt/m/n/10.95 labelling guidelines, ambiguous data, or poor annotation.[] 
  []
 
 
-Overfull \hbox (80.70157pt too wide) in paragraph at lines 3735--3735
+Overfull \hbox (80.70157pt too wide) in paragraph at lines 3733--3733
 []\TU/lmtt/m/n/10.95 - Risk-Based Prioritization for Review and Annotation: Both expert[] 
  []
 
 
-Overfull \hbox (63.45532pt too wide) in paragraph at lines 3736--3736
+Overfull \hbox (63.45532pt too wide) in paragraph at lines 3734--3734
 []  \TU/lmtt/m/n/10.95 reviews and multiple annotations can be focused using a risk-
  []
 
 
-Overfull \hbox (86.45032pt too wide) in paragraph at lines 3737--3737
+Overfull \hbox (86.45032pt too wide) in paragraph at lines 3735--3735
 []  \TU/lmtt/m/n/10.95 approach to identify samples for review and multiple annotations.[] 
  []
 
 
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3738--3738
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3736--3736
 []  \TU/lmtt/m/n/10.95 Prioritization can be based on the likelihood of mislabeling, such as[] 
  []
 
 
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3739--3739
+Overfull \hbox (115.19406pt too wide) in paragraph at lines 3737--3737
 []  \TU/lmtt/m/n/10.95 with ambiguous data points (e.g., it is unclear to which category they[] 
  []
 
 
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3740--3740
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3738--3738
 []  \TU/lmtt/m/n/10.95 belong or are near a boundary between classes), and the data that is[] 
  []
 
 
-Overfull \hbox (46.20908pt too wide) in paragraph at lines 3741--3741
+Overfull \hbox (46.20908pt too wide) in paragraph at lines 3739--3739
 []  \TU/lmtt/m/n/10.95 most likely to impact the application's success or safety.[] 
  []
 
 
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3743--3743
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3741--3741
 []\TU/lmtt/m/n/10.95 - Data Distribution Analysis: When comparable datasets exist, comparing[] 
  []
 
 
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3744--3744
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3742--3742
 []  \TU/lmtt/m/n/10.95 the label distribution of the dataset under test to similar datasets[] 
  []
 
 
-Overfull \hbox (23.21408pt too wide) in paragraph at lines 3745--3745
+Overfull \hbox (23.21408pt too wide) in paragraph at lines 3743--3743
 []  \TU/lmtt/m/n/10.95 can reveal anomalies and potentially incorrect labels.[] 
  []
 
 
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3747--3747
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3745--3745
 []\TU/lmtt/m/n/10.95 - Automated Rule-Based Tests: Automated tests can be implemented based[] 
  []
 
 
-Overfull \hbox (74.95282pt too wide) in paragraph at lines 3748--3748
+Overfull \hbox (74.95282pt too wide) in paragraph at lines 3746--3746
 []  \TU/lmtt/m/n/10.95 on predefined label rules or constraints for certain tasks. For[] 
  []
 
 
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3749--3749
+Overfull \hbox (92.19907pt too wide) in paragraph at lines 3747--3747
 []  \TU/lmtt/m/n/10.95 instance, verifying that bounding boxes (rectangles used to locate[] 
  []
 
 
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3750--3750
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3748--3748
 []  \TU/lmtt/m/n/10.95 objects in images) do not overlap or extend beyond image boundaries.[] 
  []
 
 
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3752--3752
+Overfull \hbox (92.19907pt too wide) in paragraph at lines 3750--3750
 []\TU/lmtt/m/n/10.95 - Model Loss Analysis: Data points exhibiting high loss during model[] 
  []
 
 
-Overfull \hbox (97.94781pt too wide) in paragraph at lines 3753--3753
+Overfull \hbox (97.94781pt too wide) in paragraph at lines 3751--3751
 []  \TU/lmtt/m/n/10.95 training – meaning the model’s predictions for these points deviate[] 
  []
 
 
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3754--3754
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3752--3752
 []  \TU/lmtt/m/n/10.95 substantially from their true labels – can indicate mislabeling. High[] 
  []
 
-[89]
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3755--3755
+
+Overfull \hbox (92.19907pt too wide) in paragraph at lines 3753--3753
 []  \TU/lmtt/m/n/10.95 loss reflects significant error, indicating the model struggles to[] 
  []
 
 
-Overfull \hbox (57.70657pt too wide) in paragraph at lines 3756--3756
+Overfull \hbox (57.70657pt too wide) in paragraph at lines 3754--3754
 []  \TU/lmtt/m/n/10.95 learn the assigned label and pointing to a potential defect.[] 
  []
 
 
-Overfull \hbox (80.70157pt too wide) in paragraph at lines 3758--3758
+Overfull \hbox (80.70157pt too wide) in paragraph at lines 3756--3756
 []\TU/lmtt/m/n/10.95 - Model Confidence Score Analysis: Data points with low prediction[] 
  []
 
 
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3759--3759
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3757--3757
 []  \TU/lmtt/m/n/10.95 confidence from a trained model may be mislabeled, ambiguous, or lie[] 
  []
 
-
-Overfull \hbox (109.44531pt too wide) in paragraph at lines 3762--3762
+[89]
+Overfull \hbox (109.44531pt too wide) in paragraph at lines 3760--3760
 []\TU/lmtt/m/n/10.95 Using a combination of approaches is often most effective. For example,[] 
  []
 
 
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3763--3763
+Overfull \hbox (103.69656pt too wide) in paragraph at lines 3761--3761
 []\TU/lmtt/m/n/10.95 expert reviews are valuable in establishing clear labelling guidelines[] 
  []
 
 
-Overfull \hbox (80.70157pt too wide) in paragraph at lines 3764--3764
+Overfull \hbox (80.70157pt too wide) in paragraph at lines 3762--3762
 []\TU/lmtt/m/n/10.95 early on. IAA scores from multiple annotations can then refine the[] 
  []
 
 
-Overfull \hbox (86.45032pt too wide) in paragraph at lines 3765--3765
+Overfull \hbox (86.45032pt too wide) in paragraph at lines 3763--3763
 []\TU/lmtt/m/n/10.95 labelling process. Subsequently, model-based approaches can further[] 
  []
 
 
-Overfull \hbox (86.45032pt too wide) in paragraph at lines 3766--3766
+Overfull \hbox (86.45032pt too wide) in paragraph at lines 3764--3764
 []\TU/lmtt/m/n/10.95 identify potential label defects as the model continues to develop.[] 
  []
 
 
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3770--3770
+Overfull \hbox (115.19406pt too wide) in paragraph at lines 3768--3768
 []\TU/lmtt/m/n/10.95 For a given dataset (e.g., structured, tabular data), perform input data[] 
  []
 
 
-Overfull \hbox (86.45032pt too wide) in paragraph at lines 3771--3771
+Overfull \hbox (86.45032pt too wide) in paragraph at lines 3769--3769
 []\TU/lmtt/m/n/10.95 testing for things like missing data, duplicate data, and outliers.[] 
  []
 
 
-Overfull \hbox (2633.14603pt too wide) in paragraph at lines 3777--3777
-[]\TU/lmtt/m/n/10.95 Testing ML models is different from testing traditional software. Traditional software testing focuses on verifying that the software behaves as expected for a given set of inputs and outputs. In contrast, testing ML models involves evaluating the performance of the model on a given dataset, and comparing it to a baseline or to other models. This is because ML models are often probabilistic in nature, and their performance can vary depending on the data they are trained on and the data they are tested on.[] 
- []
-
-
-Overfull \hbox (1759.33621pt too wide) in paragraph at lines 3779--3779
-[]\TU/lmtt/m/n/10.95 The evaluation of ML models is typically done using a set of metrics that measure the performance of the model on a given dataset. These metrics can be used to compare different models and to select the best model for a given task. Some common metrics for evaluating ML models include accuracy, precision, recall, F1 score, and area under the ROC curve (AUC-
- []
-
-
-Overfull \hbox (580.84271pt too wide) in paragraph at lines 3782--3782
-[]\TU/lmtt/m/n/10.95 *TBD: add more details on evaluation of ML models, including different types of metrics, how to interpret them, and how to use them for model selection.*[] 
- []
-
-
-Overfull \hbox (1730.59247pt too wide) in paragraph at lines 3786--3786
-[]\TU/lmtt/m/n/10.95 The evaluation of ML-based systems is more complex than the evaluation of ML models, as it involves not only the performance of the model, but also the performance of the system as a whole. This includes factors such as the integration of the model into the system, the user experience, and the overall functionality of the system. The evaluation of ML-
- []
-
-
-Overfull \hbox (557.84772pt too wide) in paragraph at lines 3786--3786
-\TU/lmtt/m/n/10.95 based systems typically involves a combination of quantitative and qualitative methods, including user testing, usability testing, and field testing.[] 
- []
-
-
-Overfull \hbox (80.70157pt too wide) in paragraph at lines 3789--3789
-[]\TU/lmtt/m/n/10.95 There are several testing methods that can be used to evaluate ML-
- []
-
-
-Overfull \hbox (465.86774pt too wide) in paragraph at lines 3791--3791
-[]\TU/lmtt/m/n/10.95 - **Unit testing**: testing individual components of the system, such as the ML model, to ensure that they are functioning correctly.[] 
- []
-
-[90]
-Overfull \hbox (598.08896pt too wide) in paragraph at lines 3793--3793
-[]\TU/lmtt/m/n/10.95 - **Integration testing**: testing the integration of the ML model with other components of the system to ensure that they are working together as expected.[] 
- []
-
-
-Overfull \hbox (402.6315pt too wide) in paragraph at lines 3795--3795
-[]\TU/lmtt/m/n/10.95 - **System testing**: testing the entire system to ensure that it meets the requirements and performs as expected in real-
- []
-
-
-Overfull \hbox (40.46033pt too wide) in paragraph at lines 3797--3797
-[]\TU/lmtt/m/n/10.95 - **User acceptance testing**: testing the system with end-
- []
-
-
-Overfull \hbox (23.21408pt too wide) in paragraph at lines 3797--3797
-\TU/lmtt/m/n/10.95 users to ensure that it meets their needs and is usable.[] 
- []
-
-
-Overfull \hbox (1546.6325pt too wide) in paragraph at lines 3803--3803
-[]\TU/lmtt/m/n/10.95 Adversarial testing<span class="indexref" entry="adversarial testing"></span> is a testing method that involves intentionally introducing adversarial examples to the ML model to evaluate its robustness and security. Adversarial examples are inputs that are designed to deceive the model into making incorrect predictions.[] 
- []
-
-
-Overfull \hbox (2477.92981pt too wide) in paragraph at lines 3806--3806
-[]\TU/lmtt/m/n/10.95 Adversarial testing is important because it helps to identify vulnerabilities in the ML model and to improve its robustness against attacks. Adversarial examples can be used to test the model's ability to generalize to new and unseen data, and to identify potential weaknesses in the model that could be exploited by attackers. By performing adversarial testing, developers can improve the security and reliability of the ML model, and ensure that it is able to perform well in real-
- []
-
-
-Overfull \hbox (34.71158pt too wide) in paragraph at lines 3806--3806
-\TU/lmtt/m/n/10.95 world conditions where adversarial attacks may be present.[] 
- []
-
-
-Overfull \hbox (2454.93481pt too wide) in paragraph at lines 3809--3809
-[]\TU/lmtt/m/n/10.95 Adversarial testing should be performed during the development and testing phases of the ML model, as well as during the deployment phase. It is important to perform adversarial testing early in the development process to identify vulnerabilities in the model and to improve its robustness against attacks. Additionally, adversarial testing should be performed regularly during the deployment phase to ensure that the model remains secure and robust against new types of attacks.[] 
- []
-
-
-Overfull \hbox (57.70657pt too wide) in paragraph at lines 3813--3813
-[]\TU/lmtt/m/n/10.95 Adversarial testing can be performed using techniques such as:[] 
- []
-
-
-Overfull \hbox (764.80267pt too wide) in paragraph at lines 3814--3814
-[]\TU/lmtt/m/n/10.95 - *FGSM (Fast Gradient Sign Method)*: a method that generates adversarial examples by adding small perturbations to the input data in the direction of the gradient of the loss function.[] 
- []
-
-
-Overfull \hbox (879.77765pt too wide) in paragraph at lines 3815--3815
-[]\TU/lmtt/m/n/10.95 - *PGD (Projected Gradient Descent)*: an iterative method that generates adversarial examples by repeatedly applying the FGSM method and projecting the perturbed input back onto a specified constraint set.[] 
- []
-
-
-Overfull \hbox (891.27515pt too wide) in paragraph at lines 3816--3816
-[]\TU/lmtt/m/n/10.95 - *CW (Carlini & Wagner)*: a method that generates adversarial examples by optimizing a loss function that combines the model's output and the distance between the original input and the adversarial example.[] 
- []
-
-
-Overfull \hbox (736.05893pt too wide) in paragraph at lines 3820--3820
-[]\TU/lmtt/m/n/10.95 *TBD: add more details on evaluation of ML-based systems, including different types of evaluation methods, how to design and conduct evaluations, and how to interpret the results.*[] 
- []
-
-
-Overfull \hbox (253.16403pt too wide) in paragraph at lines 3823--3823
-[]\TU/lmtt/m/n/10.95 <img src="https://dpunkt.de/wp-content/uploads/2024/01/13867.jpg" align="right" width="30%" min-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3825--3825
-[]\TU/lmtt/m/n/10.95 Das Repository [KI-Übungen](https://github.com/KI-
- []
-
-
-Overfull \hbox (310.65152pt too wide) in paragraph at lines 3825--3825
-\TU/lmtt/m/n/10.95 Testen/Uebungen/tree/main) enthält das Begleitmaterial und praktische Übungen zum Buch "[**Basiswissen KI-
- []
-
-
-Overfull \hbox (235.91779pt too wide) in paragraph at lines 3825--3825
-\TU/lmtt/m/n/10.95 Testen** - Qualität von und mit KI-basierten Systemen](https://dpunkt.de/produkt/basiswissen-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3825--3825
-\TU/lmtt/m/n/10.95 ki-testen/)" aus dem **dpunkt.Verlag**, ISBN 978-3-
- []
-
-
-Overfull \hbox (753.30518pt too wide) in paragraph at lines 3825--3825
-\TU/lmtt/m/n/10.95 86490-947-4. Die Übungen sind so konzipiert, dass sie von jedem mit einem Laptop oder PC durchgeführt werden können, der über grundlegende Kenntnisse in Python und JupyterLab verfügt.[] 
- []
-
-[91]
-Overfull \hbox (74.95282pt too wide) in paragraph at lines 3827--3827
-[]\TU/lmtt/m/n/10.95 Die folgenden Abschnitte sind eine 1:1 Kopie aus dem RTepository.[] 
- []
-
-
-Overfull \hbox (299.15402pt too wide) in paragraph at lines 3829--3829
-[]\TU/lmtt/m/n/10.95 Um die Übungen selbst auf *deinem eigenen Laptop oder PC* durchführen zu können, benötigst du folgendes:[] 
- []
-
-
-Overfull \hbox (120.94281pt too wide) in paragraph at lines 3830--3830
-[]\TU/lmtt/m/n/10.95 * Einen Laptop oder PC (ein Smartphone oder Tablet ist eher unpraktisch).[] 
- []
-
-
-Overfull \hbox (138.18906pt too wide) in paragraph at lines 3831--3831
-[]\TU/lmtt/m/n/10.95 * Eine Installation von Python auf deinem Computer (sie [Punkt 2 unten](#2.-
- []
-
-
-Overfull \hbox (327.89777pt too wide) in paragraph at lines 3832--3832
-[]\TU/lmtt/m/n/10.95 * Grundkenntnisse in der [Programmiersprache Python](https://tutorial.djangogirls.org/de/python_introduction)[] 
- []
-
-
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3833--3833
-[]\TU/lmtt/m/n/10.95 * Grundkenntnisse in der [Benutzung von JupyterLab](https://jupyter-
- []
-
-
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3836--3836
-[]\TU/lmtt/m/n/10.95 * Lade von der GitHub-Seite [KI-Testen - Übungen](https://github.com/KI-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3836--3836
-\TU/lmtt/m/n/10.95 Testen/Uebungen) das gesamte Repository als ZIP-
- []
-
-
-Overfull \hbox (23.21408pt too wide) in paragraph at lines 3839--3839
-[]\TU/lmtt/m/n/10.95 ## 2. Installation von Python, ML-Paketen und JupyterLab[] 
- []
-
-
-Overfull \hbox (385.38525pt too wide) in paragraph at lines 3840--3840
-[]\TU/lmtt/m/n/10.95 * Als erstes musst du, wenn nicht schon vorhanden, [Python installieren](Einstieg_Vorbereitung/Installation_Python.md).[] 
- []
-
-
-Overfull \hbox (86.45032pt too wide) in paragraph at lines 3841--3841
-[]\TU/lmtt/m/n/10.95 * Ist Python installiert, geht es mit der [Installation der Python-
- []
-
-
-Overfull \hbox (46.20908pt too wide) in paragraph at lines 3841--3841
-\TU/lmtt/m/n/10.95 Pakete](Einstieg_Vorbereitung/Installation_Pakete.md) weiter[] 
- []
-
-
-Overfull \hbox (362.39026pt too wide) in paragraph at lines 3842--3842
-[]\TU/lmtt/m/n/10.95 * Zum Schluss ist die [Installation von JupyterLab](Einstieg_Vorbereitung/Installation_JupyterLab.md) an der Reihe.[] 
- []
-
-
-Overfull \hbox (28.96283pt too wide) in paragraph at lines 3845--3845
-[]\TU/lmtt/m/n/10.95 Von nun ab kannst du JupyterLab per Doppelklick auf:</br>[] 
- []
-
-
-Overfull \hbox (385.38525pt too wide) in paragraph at lines 3846--3846
-[]\TU/lmtt/m/n/10.95 `04_starte_jupyterlab.cmd` starten. Als erstes öffnet sich ein Kommandozeilenfenster mit dem Titel "JupyterLab Server".[] 
- []
-
-
-Overfull \hbox (333.64651pt too wide) in paragraph at lines 3848--3848
-[]\TU/lmtt/m/n/10.95 Nach dem Start des CMD-Skriptes startet zudem dein Browser und öffnet eine Seite, die sich mit dem JupyterLab-
- []
-
-
-Overfull \hbox (437.124pt too wide) in paragraph at lines 3848--3848
-\TU/lmtt/m/n/10.95 Server (localhost:8888/lab/tree) verbindet, der im Kommandozeilenfenster läuft - lasse dieses also im Hintergrund weiter laufen![] 
- []
-
-
-Overfull \hbox (1046.49136pt too wide) in paragraph at lines 3850--3850
-[]\TU/lmtt/m/n/10.95 Wenn du einen bestimmten Browser bevorzugst, kannst du die Datei `04_starte_jupyterlab.cmd` editieren und eine der drei per `::` auskommentierten Zeilen durch das Entfernen des `::` aktivieren und so deinen Lieblingsbrowser festlegen.[] 
- []
-
-
-Overfull \hbox (172.68155pt too wide) in paragraph at lines 3852--3852
-[]\TU/lmtt/m/n/10.95 ![snapshot von JupyterLab](Einstieg_Vorbereitung/jupyterlab_snapshot01_blanko.png)[] 
- []
-
-
-Overfull \hbox (667.07394pt too wide) in paragraph at lines 3854--3854
-[]\TU/lmtt/m/n/10.95 * *Diese* Anleitung (die du gerade liest) kannst du dir ansehen, wenn du mit der rechten Maustaste auf `Readme.md` klickst und *Open With > Markdown Preview* auswählst.[] 
- []
-
-
-Overfull \hbox (477.36523pt too wide) in paragraph at lines 3857--3857
-[]\TU/lmtt/m/n/10.95 *Hinweis:* Wir empfehlen dir, die Aufgaben nicht ohne eine gewisse Vorbereitung durch den entsprechenden Abschnitt im Buch zu beginnen.[] 
- []
-
-
-Overfull \hbox (1046.49136pt too wide) in paragraph at lines 3859--3859
-[]\TU/lmtt/m/n/10.95 *Außerdem:* Es ist gut, wenn du einfache Grundkenntnisse in Python als Programmiersprache mitbringst, und dich mit der Bedienung von **JupyterLab** und **Juypter Notebooks** schon etwas vertraut gemacht hast ([siehe oben](#Praktische-
- []
-
-[92]
-Overfull \hbox (57.70657pt too wide) in paragraph at lines 3861--3861
-[]\TU/lmtt/m/n/10.95 Zum Bearbeiten einer Aufgabe - zum Beispiel zum Abschnitt 3.3:[] 
- []
-
-
-Overfull \hbox (115.19406pt too wide) in paragraph at lines 3862--3862
-[]\TU/lmtt/m/n/10.95 * öffnest du in JupyterLab per Doppel-Click das Verzeichnis `Kap03.3_ML-
- []
-
-
-Overfull \hbox (23.21408pt too wide) in paragraph at lines 3863--3863
-[]\TU/lmtt/m/n/10.95 * öffnest das Notebook `Übung_...` ebenfalls per Doppel-
- []
-
-
-Overfull \hbox (97.94781pt too wide) in paragraph at lines 3869--3869
-[]\TU/lmtt/m/n/10.95 **der Inhalte *dieses* GitHub-Repos (Notebooks, Grafiken, Code...):**[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3871--3871
-[]\TU/lmtt/m/n/10.95 ![cc-license](Einstieg_Vorbereitung/cc-by-nc-
- []
-
-
-Overfull \hbox (28.96283pt too wide) in paragraph at lines 3872--3872
-[]\TU/lmtt/m/n/10.95 CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-
- []
-
-
-Overfull \hbox (103.69656pt too wide) in paragraph at lines 3876--3876
-[]\TU/lmtt/m/n/10.95 - pyhton: [PSF License](https://docs.python.org/3/license.html) - GPL-
- []
-
-
-Overfull \hbox (368.139pt too wide) in paragraph at lines 3877--3877
-[]\TU/lmtt/m/n/10.95 - jupyterlab: [BSD License](https://jupyterlab.readthedocs.io/en/latest/api/index.html?highlight=license#md:license)[] 
- []
-
-
-Overfull \hbox (258.91278pt too wide) in paragraph at lines 3878--3878
-[]\TU/lmtt/m/n/10.95 - iris dataset: [CC-BY 4.0, donated by R. A. Fisher](https://archive.ics.uci.edu/dataset/53/iris)[] 
- []
-
-
-Overfull \hbox (293.40527pt too wide) in paragraph at lines 3879--3879
-[]\TU/lmtt/m/n/10.95 - tensorflow playground: [Apache License](https://github.com/tensorflow/playground/blob/master/LICENSE)[] 
- []
-
-
-Overfull \hbox (69.20407pt too wide) in paragraph at lines 3880--3880
-[]\TU/lmtt/m/n/10.95 - lime: Copyright &copy; 2016, Marco Tulio Correia Ribeiro [BSD-
- []
-
-
-Overfull \hbox (0.21909pt too wide) in paragraph at lines 3880--3880
-\TU/lmtt/m/n/10.95 2-Clause License](https://de.wikipedia.org/wiki/BSD-
- []
-
-
-Overfull \hbox (287.65652pt too wide) in paragraph at lines 3881--3881
-[]\TU/lmtt/m/n/10.95 - shap: Copyright &copy; 2018, Scott Lundberg [MIT License](https://en.wikipedia.org/wiki/MIT_License)[] 
- []
-
-
-Overfull \hbox (293.40527pt too wide) in paragraph at lines 3882--3882
-[]\TU/lmtt/m/n/10.95 - pict: Copyright &copy; Microsoft Corporation [MIT License](https://en.wikipedia.org/wiki/MIT_License)[] 
- []
-
-
-Overfull \hbox (86.45032pt too wide) in paragraph at lines 3883--3883
-[]\TU/lmtt/m/n/10.95 - chatGPT: OpenAI [Terms of Use](https://openai.com/policies/terms-
- []
-
-
-Overfull \hbox (86.45032pt too wide) in paragraph at lines 3884--3884
-[]\TU/lmtt/m/n/10.95 - [OpenML](http://creativecommons.org/licenses/by/4.0/) [sowie BSD-
- []
-
-
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3886--3886
+Overfull \hbox (92.19907pt too wide) in paragraph at lines 3775--3775
 []\TU/lmtt/m/n/10.95 `<!-- quarto-file-metadata: eyJyZXNvdXJjZURpciI6Ii4ifQ== -->`{=html}[] 
  []
 
 
-Overfull \hbox (937.26514pt too wide) in paragraph at lines 3889--3889
-[]\TU/lmtt/m/n/10.95 <!-- quarto-file-metadata: eyJyZXNvdXJjZURpciI6Ii4iLCJib29rSXRlbVR5cGUiOiJjaGFwdGVyIiwiYm9va0l0ZW1OdW1iZXIiOjgsImJvb2tJdGVtRmlsZSI6IlRlc3RpbmcgTExNcywgQ2hhdGJvdHMsIGFuZCBBZ2VudHMucW1kIiwiYm9va0l0ZW1EZXB0aCI6MX0= -->[] 
- []
-
-[93]
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3896--3896
-[]\TU/lmtt/m/n/10.95 `<!-- quarto-file-metadata: eyJyZXNvdXJjZURpciI6Ii4ifQ== -->`{=html}[] 
+Overfull \hbox (868.28015pt too wide) in paragraph at lines 3778--3778
+[]\TU/lmtt/m/n/10.95 <!-- quarto-file-metadata: eyJyZXNvdXJjZURpciI6Ii4iLCJib29rSXRlbVR5cGUiOiJjaGFwdGVyIiwiYm9va0l0ZW1OdW1iZXIiOjgsImJvb2tJdGVtRmlsZSI6IlRlc3RpbmcgQUktYmFzZWQgU3lzdGVtcy5xbWQiLCJib29rSXRlbURlcHRoIjoxfQ== -->[] 
  []
 
 
-Overfull \hbox (937.26514pt too wide) in paragraph at lines 3899--3899
-[]\TU/lmtt/m/n/10.95 <!-- quarto-file-metadata: eyJyZXNvdXJjZURpciI6Ii4iLCJib29rSXRlbVR5cGUiOiJjaGFwdGVyIiwiYm9va0l0ZW1OdW1iZXIiOjksImJvb2tJdGVtRmlsZSI6Ik1vbml0b3JpbmcgQUkgU3lzdGVtcyBpbiBQcm9kdWN0aW9uLnFtZCIsImJvb2tJdGVtRGVwdGgiOjF9 -->[] 
- []
-
-
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3909--3909
-[]\TU/lmtt/m/n/10.95 `<!-- quarto-file-metadata: eyJyZXNvdXJjZURpciI6Ii4ifQ== -->`{=html}[] 
- []
-
-
-Overfull \hbox (500.36023pt too wide) in paragraph at lines 3912--3912
-[]\TU/lmtt/m/n/10.95 <!-- quarto-file-metadata: eyJyZXNvdXJjZURpciI6Ii4iLCJib29rSXRlbVR5cGUiOiJwYXJ0IiwiYm9va0l0ZW1OdW1iZXIiOm51bGwsImJvb2tJdGVtRGVwdGgiOjB9 -->[] 
- []
-
-
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3922--3922
-[]\TU/lmtt/m/n/10.95 `<!-- quarto-file-metadata: eyJyZXNvdXJjZURpciI6Ii4ifQ== -->`{=html}[] 
- []
-
-
-Overfull \hbox (914.27014pt too wide) in paragraph at lines 3925--3925
-[]\TU/lmtt/m/n/10.95 <!-- quarto-file-metadata: eyJyZXNvdXJjZURpciI6Ii4iLCJib29rSXRlbVR5cGUiOiJjaGFwdGVyIiwiYm9va0l0ZW1OdW1iZXIiOjEwLCJib29rSXRlbUZpbGUiOiJBSSBUZXN0aW5nIFRvb2xzIGFuZCBGcmFtZXdvcmtzLnFtZCIsImJvb2tJdGVtRGVwdGgiOjF9 -->[] 
- []
-
-[94]
-Overfull \hbox (1862.81369pt too wide) in paragraph at lines 3934--3934
-[]\TU/lmtt/m/n/10.95 In this section, we will explore various tools and frameworks that are commonly used for testing AI models. These tools can help you evaluate the performance, robustness, and fairness of your AI models, as well as identify potential issues and biases. We will cover a range of tools, including those for unit testing, integration testing, and performance testing of AI models.[] 
- []
-
-
-Overfull \hbox (92.19907pt too wide) in paragraph at lines 3936--3936
-[]\TU/lmtt/m/n/10.95 `<!-- quarto-file-metadata: eyJyZXNvdXJjZURpciI6Ii4ifQ== -->`{=html}[] 
- []
-
-
-Overfull \hbox (914.27014pt too wide) in paragraph at lines 3939--3939
-[]\TU/lmtt/m/n/10.95 <!-- quarto-file-metadata: eyJyZXNvdXJjZURpciI6Ii4iLCJib29rSXRlbVR5cGUiOiJjaGFwdGVyIiwiYm9va0l0ZW1OdW1iZXIiOjExLCJib29rSXRlbUZpbGUiOiJDYXNlIFN0dWRpZXMgYW5kIEJlc3QgUHJhY3RpY2VzLnFtZCIsImJvb2tJdGVtRGVwdGgiOjF9 -->[] 
- []
-
-
-Overfull \hbox (230.16904pt too wide) in paragraph at lines 3944--3944
+Overfull \hbox (230.16904pt too wide) in paragraph at lines 3783--3783
 []\TU/lmtt/m/n/10.95 ```````{.quarto-title-block template='/Applications/quarto/share/projects/book/pandoc/title-
  []
 
-[95]
-part III.
-Package scrkbase Info: You've told me to use the font selection of the element
-(scrkbase)             `partprefix' that is an alias of element `partnumber'
-(scrkbase)              on input line 3957.
+[90]
+
+LaTeX Warning: Reference `sec-metrics-for-classification' on page 91 undefined on input line 3806.
+
+[91]
+chapter 15.
+[92
+
+] [93] [94]
+chapter 16.
+[95
+
+]
+chapter 17.
 [96
 
 ]
-chapter 15.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 3973.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 3973.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 3973.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 3973.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 3973.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 3973.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 3973.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 3973.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 3973.
+part III.
+Package scrkbase Info: You've told me to use the font selection of the element
+(scrkbase)             `partprefix' that is an alias of element `partnumber'
+(scrkbase)              on input line 3904.
 [97
 
-] [98] [99]
+]
+chapter 18.
+[98
 
-LaTeX Warning: Reference `sec-authoring' on page 100 undefined on input line 4119.
+]
+chapter 19.
+[99
 
-[100]
-Package hyperref Info: bookmark level for unknown codelisting defaults to 0 on input line 4128.
-[101] [102]
+]
+chapter 20.
+[100
 
-LaTeX Warning: Reference `sec-authoring' on page 103 undefined on input line 4217.
+]
+chapter 21.
+
+LaTeX Warning: Hyper reference `2.-Installation-von-python' on page 101 undefined on input line 3948.
+
+[101
+
+]
+<Einstieg_Vorbereitung/jupyterlab_snapshot01_blanko.png, id=681, 677.53125pt x 452.4403pt>
+File: Einstieg_Vorbereitung/jupyterlab_snapshot01_blanko.png Graphic file (type png)
+<use Einstieg_Vorbereitung/jupyterlab_snapshot01_blanko.png>
+Package luatex.def Info: Einstieg_Vorbereitung/jupyterlab_snapshot01_blanko.png  used on input line 4007.
+(luatex.def)             Requested size: 677.52959pt x 452.43921pt.
+[102]
+
+LaTeX Warning: Hyper reference `Praktische-ux5cux25C3ux5cux259Cbungen-zum-Buch-ux5cux2522KI-Testenux5cux2522' on page 103 undefined on input line 4033.
+
+<index_files/mediabag/Einstieg_Vorbereitung/cc-by-nc-sa.pdf, id=691, 101.62968pt x 22.58438pt>
+File: index_files/mediabag/Einstieg_Vorbereitung/cc-by-nc-sa.pdf Graphic file (type pdf)
+<use index_files/mediabag/Einstieg_Vorbereitung/cc-by-nc-sa.pdf>
+Package luatex.def Info: index_files/mediabag/Einstieg_Vorbereitung/cc-by-nc-sa.pdf  used on input line 4050.
+(luatex.def)             Requested size: 101.62943pt x 22.5843pt.
+[103<./Einstieg_Vorbereitung/jupyterlab_snapshot01_blanko.png>] [104<./index_files/mediabag/Einstieg_Vorbereitung/cc-by-nc-sa.pdf>]
+part IV.
+Package scrkbase Info: You've told me to use the font selection of the element
+(scrkbase)             `partprefix' that is an alias of element `partnumber'
+(scrkbase)              on input line 4088.
+[105
+
+]
+chapter 22.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 4104.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 4104.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 4104.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 4104.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 4104.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 4104.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 4104.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 4104.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 4104.
+[106
+
+] [107] [108]
+
+LaTeX Warning: Reference `sec-authoring' on page 109 undefined on input line 4250.
+
+[109]
+Package hyperref Info: bookmark level for unknown codelisting defaults to 0 on input line 4259.
+[110] [111]
+
+LaTeX Warning: Reference `sec-authoring' on page 112 undefined on input line 4348.
 
 
-LaTeX Warning: Reference `tip-attributes' on page 103 undefined on input line 4218.
+LaTeX Warning: Reference `tip-attributes' on page 112 undefined on input line 4349.
 
 
-LaTeX Warning: Reference `sec-authoring' on page 103 undefined on input line 4236.
+LaTeX Warning: Reference `sec-authoring' on page 112 undefined on input line 4367.
 
-[103]
+[112]
 
-LaTeX Warning: Reference `sec-code-blocks' on page 104 undefined on input line 4338.
+LaTeX Warning: Reference `sec-code-blocks' on page 113 undefined on input line 4469.
 
-[104] [105]
-chapter 16.
-<img/jupyter-lab.png, id=710, 762.85pt x 854.19125pt>
+[113] [114]
+chapter 23.
+<img/jupyter-lab.png, id=791, 762.85pt x 854.19125pt>
 File: img/jupyter-lab.png Graphic file (type png)
 <use img/jupyter-lab.png>
-Package luatex.def Info: img/jupyter-lab.png  used on input line 4373.
+Package luatex.def Info: img/jupyter-lab.png  used on input line 4504.
 (luatex.def)             Requested size: 762.84814pt x 854.18918pt.
 
-Overfull \hbox (10.94339pt too wide) in paragraph at lines 4373--4374
+Overfull \hbox (10.94339pt too wide) in paragraph at lines 4504--4505
 [][] 
  []
 
-[106
+[115
 
 ]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/jupyterlab-preview.png, id=718, 1524.69624pt x 955.57pt>
+<img/jupyterlab-preview.png, id=799, 1524.69624pt x 955.57pt>
 File: img/jupyterlab-preview.png Graphic file (type png)
 <use img/jupyterlab-preview.png>
-Package luatex.def Info: img/jupyterlab-preview.png  used on input line 4400.
+Package luatex.def Info: img/jupyterlab-preview.png  used on input line 4531.
 (luatex.def)             Requested size: 1524.69254pt x 955.56767pt.
 
-Overfull \hbox (10.93298pt too wide) in paragraph at lines 4400--4401
+Overfull \hbox (10.93298pt too wide) in paragraph at lines 4531--4532
 [][] 
  []
 
-[107<./img/jupyter-lab.png>]
+[116<./img/jupyter-lab.png>]
 
 ! LaTeX Error: Not in outer par mode.
 
@@ -3206,16 +2873,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.4461 
+l.4592 
      
 
 Here is how much of LuaTeX's memory you used:
- 43252 strings out of 475892
- 125007,1648299 words of node,token memory allocated
- 30510 words of node memory still in use:
-   128 hlist, 21 vlist, 34 rule, 55 disc, 21 local_par, 4 dir, 351 glue, 86 kern, 79 penalty, 1 unset, 11 margin_kern, 841 glyph, 2 align_record, 6486 attribute, 91 glue_spec, 2544 attribute_list, 9 temp, 1 align_stack, 1 if_stack, 4 write, 103 pdf_literal, 1 pdf_start_link, 1 pdf_end_link, 3 pdf_dest, 9 pdf_action, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
-   avail lists: 1:8,2:14863,3:1010,4:71,5:245,6:245,7:6503,8:81,9:292,10:18,11:503,12:1
- 64833 multiletter control sequences out of 65536+600000
- 87 fonts using 27435295 bytes
+ 43316 strings out of 475892
+ 100000,1648299 words of node,token memory allocated
+ 29544 words of node memory still in use:
+   128 hlist, 21 vlist, 34 rule, 55 disc, 21 local_par, 4 dir, 351 glue, 86 kern, 79 penalty, 1 unset, 11 margin_kern, 841 glyph, 2 align_record, 6158 attribute, 91 glue_spec, 2380 attribute_list, 9 temp, 1 align_stack, 1 if_stack, 4 write, 103 pdf_literal, 1 pdf_start_link, 1 pdf_end_link, 3 pdf_dest, 12 pdf_action, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
+   avail lists: 1:2,2:8843,3:754,4:70,5:257,6:193,7:4227,8:81,9:243,10:18,11:503,12:1
+ 64866 multiletter control sequences out of 65536+600000
+ 88 fonts using 27566711 bytes
  108i,8n,114p,11226b,1126s stack positions out of 10000i,1000n,20000p,200000b,200000s
 !  ==> Fatal error occurred, no output PDF file produced!

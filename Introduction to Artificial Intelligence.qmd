@@ -2,10 +2,6 @@
 title: Introduction to Artificial Intelligence
 ---
 
-
-
-## Introduction to AI
-
 Adapted from [ISTQB Certified Tester - AI Testing Syllabus](https://istqb.org/certifications/certified-tester-ai-testing-ct-ai/); other sources are cited in the text.
 
 This chapter introduces key distinctions between conventional and
@@ -19,7 +15,7 @@ frameworks. Finally, it considers essential regulatory and technical
 standards that guide responsible AI development and deployment within
 various domains.
 
-### AI-Based and Conventional Systems
+## AI-Based and Conventional Systems
 
 Conventional computer systems are typically programmed using imperative
 languages, where human developers explicitly define step-by-step
@@ -61,7 +57,7 @@ as they encounter new data. This adaptability makes AI particularly
 powerful in dynamic environments. Adaptability also requires continuous
 monitoring to maintain ongoing alignment with core requirements.
 
-### Narrow AI, General AI, and Super AI
+## Narrow AI, General AI, and Super AI
 
 Narrow AI<span class="indexref" entry="narrow AI"></span>, also known as
 weak AI, is designed to perform specific tasks and represents all
@@ -100,7 +96,7 @@ humanity. The point at which AI-based systems transition from general AI
 to super AI, if it were to occur, is commonly known as the technological
 singularity.
 
-###  Different Types of AI Technologies
+##  Different Types of AI Technologies
 
 Artificial Intelligence encompasses a range of technologies, each suited
 to specific tasks and challenges. One of the core branches of AI is

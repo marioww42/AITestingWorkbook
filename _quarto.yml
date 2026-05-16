@@ -29,12 +29,14 @@ book:
       chapters:
         - Data Quality and Test Data.qmd
         - Evaluating ML Models.qmd
+        - Testing AI-based Systems.qmd
         - Testing LLMs, Chatbots, and Agents.qmd
         - Monitoring AI Systems in Production.qmd
     - part: AI Testing in Practice
       chapters:
         - AI Testing Tools and Frameworks.qmd
         - Case Studies and Best Practices.qmd
+        - Hands-On Exercises.qmd
     - part: Appendices
       chapters:
         - Quarto Introduction.qmd

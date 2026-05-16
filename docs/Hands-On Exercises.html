@@ -8,7 +8,7 @@
 
 <meta name="author" content="Mario Winter">
 
-<title>7&nbsp; Evaluation of ML-Models – AI QA Workbook</title>
+<title>13&nbsp; Hands-On Exercises – AI QA Workbook</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -34,8 +34,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Testing AI-based Systems.html" rel="next">
-<link href="./Data Quality and Test Data.html" rel="prev">
+<link href="./Quarto Introduction.html" rel="next">
+<link href="./Case Studies and Best Practices.html" rel="prev">
 <link href="./img/favicon.ico" rel="icon">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -88,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Data Quality and Test Data.html">Testing AI-Based Systems</a></li><li class="breadcrumb-item"><a href="./Evaluating ML Models.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Evaluation of ML-Models</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./AI Testing Tools and Frameworks.html">AI Testing in Practice</a></li><li class="breadcrumb-item"><a href="./Hands-On Exercises.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Hands-On Exercises</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -184,7 +184,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Evaluating ML Models.html" class="sidebar-item-text sidebar-link active">
+  <a href="./Evaluating ML Models.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Evaluation of ML-Models</span></span></a>
   </div>
 </li>
@@ -231,7 +231,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Hands-On Exercises.html" class="sidebar-item-text sidebar-link">
+  <a href="./Hands-On Exercises.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Hands-On Exercises</span></span></a>
   </div>
 </li>
@@ -306,28 +306,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#test-levels-for-ml-models" id="toc-test-levels-for-ml-models" class="nav-link active" data-scroll-target="#test-levels-for-ml-models">Test Levels for ML models</a>
+  <li><a href="#german-praktische-übungen-zum-buch-ki-testen" id="toc-german-praktische-übungen-zum-buch-ki-testen" class="nav-link active" data-scroll-target="#german-praktische-übungen-zum-buch-ki-testen"><span class="header-section-number">14</span> German: Praktische Übungen zum Buch “KI-Testen”</a>
   <ul class="collapse">
-  <li><a href="#input-data-testing" id="toc-input-data-testing" class="nav-link" data-scroll-target="#input-data-testing"><span class="header-section-number">7.1</span> Input data testing</a>
-  <ul class="collapse">
-  <li><a href="#input-data-risks-and-mitigations" id="toc-input-data-risks-and-mitigations" class="nav-link" data-scroll-target="#input-data-risks-and-mitigations"><span class="header-section-number">7.1.1</span> Input Data Risks and Mitigations</a></li>
-  <li><a href="#testing-for-bias" id="toc-testing-for-bias" class="nav-link" data-scroll-target="#testing-for-bias"><span class="header-section-number">7.1.2</span> Testing for Bias</a></li>
-  <li><a href="#data-pipeline-testing" id="toc-data-pipeline-testing" class="nav-link" data-scroll-target="#data-pipeline-testing"><span class="header-section-number">7.1.3</span> Data Pipeline Testing</a></li>
-  <li><a href="#testing-for-data-representativeness" id="toc-testing-for-data-representativeness" class="nav-link" data-scroll-target="#testing-for-data-representativeness"><span class="header-section-number">7.1.4</span> Testing for Data Representativeness</a></li>
-  <li><a href="#dataset-constraint-testing" id="toc-dataset-constraint-testing" class="nav-link" data-scroll-target="#dataset-constraint-testing"><span class="header-section-number">7.1.5</span> Dataset Constraint Testing</a></li>
-  <li><a href="#label-correctness-testing" id="toc-label-correctness-testing" class="nav-link" data-scroll-target="#label-correctness-testing"><span class="header-section-number">7.1.6</span> Label Correctness Testing</a></li>
-  </ul></li>
-  <li><a href="#hands-on-exercise-input-data-testing" id="toc-hands-on-exercise-input-data-testing" class="nav-link" data-scroll-target="#hands-on-exercise-input-data-testing"><span class="header-section-number">7.2</span> Hands-on Exercise: Input Data Testing</a></li>
+  <li><a href="#download-des-übungsmaterials" id="toc-download-des-übungsmaterials" class="nav-link" data-scroll-target="#download-des-übungsmaterials"><span class="header-section-number">14.1</span> 1. Download des Übungsmaterials</a></li>
+  <li><a href="#installation-von-python-ml-paketen-und-jupyterlab" id="toc-installation-von-python-ml-paketen-und-jupyterlab" class="nav-link" data-scroll-target="#installation-von-python-ml-paketen-und-jupyterlab"><span class="header-section-number">14.2</span> 2. Installation von Python, ML-Paketen und JupyterLab</a></li>
+  <li><a href="#los-gehts-starten-von-jupyterlab" id="toc-los-gehts-starten-von-jupyterlab" class="nav-link" data-scroll-target="#los-gehts-starten-von-jupyterlab"><span class="header-section-number">14.3</span> 3. Los geht’s: Starten von JupyterLab</a></li>
+  <li><a href="#mit-den-aufgaben-loslegen" id="toc-mit-den-aufgaben-loslegen" class="nav-link" data-scroll-target="#mit-den-aufgaben-loslegen"><span class="header-section-number">14.4</span> 4. Mit den Aufgaben loslegen</a></li>
+  <li><a href="#lizenzbedingungen" id="toc-lizenzbedingungen" class="nav-link" data-scroll-target="#lizenzbedingungen">Lizenzbedingungen</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/marioww42/AITestingWorkbook/edit/main/Evaluating ML Models.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/marioww42/AITestingWorkbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/marioww42/AITestingWorkbook/edit/main/Hands-On Exercises.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/marioww42/AITestingWorkbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Data Quality and Test Data.html">Testing AI-Based Systems</a></li><li class="breadcrumb-item"><a href="./Evaluating ML Models.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Evaluation of ML-Models</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./AI Testing Tools and Frameworks.html">AI Testing in Practice</a></li><li class="breadcrumb-item"><a href="./Hands-On Exercises.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Hands-On Exercises</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Evaluation of ML-Models</span></h1>
+<h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Hands-On Exercises</span></h1>
 </div>
 
 
@@ -344,283 +339,65 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The following chapters cover the evaluation of ML models. This includes the evaluation of the model itself. The evaluation of ML models is a crucial step in the development process, as it helps to ensure that the model is performing as expected and is meeting the requirements of the stakeholders. The evaluation of ML models typically involves a combination of quantitative and qualitative methods, including the use of metrics, visualizations, and user feedback. The evaluation process can be used to identify areas for improvement in the model, as well as to validate the performance of the model on real-world data.</p>
-<section id="test-levels-for-ml-models" class="level1 unnumbered">
-<h1 class="unnumbered">Test Levels for ML models</h1>
-<p>There are two test levels that can be used to evaluate ML models: - Input data testing and - ML model testing.</p>
-<p>Input data testing focuses on evaluating the quality of the input data, such as checking for missing values, outliers, and data distribution. ML model testing focuses on evaluating the performance of the model on a given dataset, using metrics such as accuracy, precision, recall, F1 score, and AUC-ROC.</p>
-<section id="input-data-testing" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="input-data-testing"><span class="header-section-number">7.1</span> Input data testing</h2>
-<p>Input data testing is important because the quality of the input data can have a significant impact on the performance of the ML model. If the input data is of poor quality, the model may not be able to learn effectively and may produce inaccurate results. Therefore, it is important to perform input data testing before training the ML model to ensure that the data is suitable for training and that any issues with the data are addressed.</p>
-<p>The objective of input data testing<span class="indexref" data-entry="input data testing"></span> is to confirm that the data used by the MLS for training, testing, and prediction is of sufficient quality (see 3.2). It includes reviews, statistical techniques (e.g., testing data for bias), EDA of the training data, and static and dynamic testing<span class="indexref" data-entry="dynamic testing"></span> of the data pipeline.</p>
-<section id="input-data-risks-and-mitigations" class="level3" data-number="7.1.1">
-<h3 data-number="7.1.1" class="anchored" data-anchor-id="input-data-risks-and-mitigations"><span class="header-section-number">7.1.1</span> Input Data Risks and Mitigations</h3>
-<p>The following table lists examples of input data risks and corresponding testing that could be used for risk mitigation:</p>
-<table>
-<colgroup>
-<col style="width: 36%">
-<col style="width: 63%">
-</colgroup>
-<thead>
-<tr>
-<th style="text-align: left;">
-<strong>Potential Risks</strong>
-</th>
-<th style="text-align: left;">
-<strong>Possible Risk Mitigations</strong>
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>
-Defects in the training data leading to bias
-</p>
-<p>
-Problems within the algorithm, model, or ML development framework that introduce systemic unfairness
-</p>
-</td>
-<td style="text-align: left;">
-Testing for bias – see 5.1.2
-</td>
-</tr>
-<tr>
-<td style="text-align: left;">
-<p>
-Training data acquired from untrustworthy sources
-</p>
-<p>
-Data is poorly managed
-</p>
-</td>
-<td style="text-align: left;">
-Data provenance testing
-</td>
-</tr>
-<tr>
-<td style="text-align: left;">
-Poisoned training data
-</td>
-<td style="text-align: left;">
-<p>
-A/B testing – see 6.1.9
-</p>
-<p>
-Data provenance testing
-</p>
-<p>
-EDA – see 3.2.1
-</p>
-<p>
-Attacks as part of red teaming – see 4.2.2
-</p>
-</td>
-</tr>
-<tr>
-<td style="text-align: left;">
-<p>
-Internally inconsistent dataset
-</p>
-<p>
-Out of range data
-</p>
-<p>
-Wrong data types
-</p>
-</td>
-<td style="text-align: left;">
-Dataset constraint testing – see 5.1.5
-</td>
-</tr>
-<tr>
-<td style="text-align: left;">
-Sub-optimal feature selection
-</td>
-<td style="text-align: left;">
-Feature testing
-</td>
-</tr>
-<tr>
-<td style="text-align: left;">
-<p>
-Imbalanced dataset due to insufficient coverage of all target classes
-</p>
-<p>
-Skewed dataset through data augmentation
-</p>
-<p>
-Missing data
-</p>
-<p>
-Training data focused on a subset of all use cases
-</p>
-<p>
-Full range of values not covered in the dataset
-</p>
-</td>
-<td style="text-align: left;">
-Data representativeness testing – see 5.1.4
-</td>
-</tr>
-<tr>
-<td style="text-align: left;">
-<blockquote class="blockquote">
-<p>
-Poor labelling guidelines
-</p>
-<p>
-Ambiguous data
-</p>
-<p>
-Poor annotation leading to inaccurate or inconsistent labels
-</p>
-</blockquote>
-</td>
-<td style="text-align: left;">
-Label correctness testing – see 5.1.66
-</td>
-</tr>
-<tr>
-<td style="text-align: left;">
-<blockquote class="blockquote">
-<p>
-Poor design or integration leading to data pipeline failures
-</p>
-<p>
-Data quality defects compromising data pipeline outputs
-</p>
-<p>
-Performance degradation in the operational use of the data pipeline
-</p>
-<p>
-Security breaches or uncontrolled changes impacting the data pipeline
-</p>
-</blockquote>
-</td>
-<td style="text-align: left;">
-Data pipeline testing – see 5.1.3
-</td>
-</tr>
-</tbody>
-</table>
+<section id="german-praktische-übungen-zum-buch-ki-testen" class="level1" data-number="14">
+<h1 data-number="14"><span class="header-section-number">14</span> German: Praktische Übungen zum Buch “KI-Testen”</h1>
+<p><img src="https://dpunkt.de/wp-content/uploads/2024/01/13867.jpg" align="right" width="30%" min-width="150px"></p>
+<p>Das Repository <a href="https://github.com/KI-Testen/Uebungen/tree/main">KI-Übungen</a> enthält das Begleitmaterial und praktische Übungen zum Buch “<a href="https://dpunkt.de/produkt/basiswissen-ki-testen/"><strong>Basiswissen KI-Testen</strong> - Qualität von und mit KI-basierten Systemen</a>” aus dem <strong>dpunkt.Verlag</strong>, ISBN 978-3-86490-947-4. Die Übungen sind so konzipiert, dass sie von jedem mit einem Laptop oder PC durchgeführt werden können, der über grundlegende Kenntnisse in Python und JupyterLab verfügt.</p>
+<p>Die folgenden Abschnitte sind eine 1:1 Kopie aus dem RTepository.</p>
+<p>Um die Übungen selbst auf <em>deinem eigenen Laptop oder PC</em> durchführen zu können, benötigst du folgendes: * Einen Laptop oder PC (ein Smartphone oder Tablet ist eher unpraktisch). * Eine Installation von Python auf deinem Computer (sie <a href="#2.-Installation-von-python">Punkt 2 unten</a>). * Grundkenntnisse in der <a href="https://tutorial.djangogirls.org/de/python_introduction">Programmiersprache Python</a> * Grundkenntnisse in der <a href="https://jupyter-tutorial.readthedocs.io/de/latest/index.html">Benutzung von JupyterLab</a></p>
+<section id="download-des-übungsmaterials" class="level2" data-number="14.1">
+<h2 data-number="14.1" class="anchored" data-anchor-id="download-des-übungsmaterials"><span class="header-section-number">14.1</span> 1. Download des Übungsmaterials</h2>
+<ul>
+<li>Lade von der GitHub-Seite <a href="https://github.com/KI-Testen/Uebungen">KI-Testen - Übungen</a> das gesamte Repository als ZIP-Datei (Code (grüner Button) &gt; Download ZIP)</li>
+<li>Entpacke die ZIP in ein Verzeichnis deiner Wahl.</li>
+</ul>
 </section>
-<section id="testing-for-bias" class="level3" data-number="7.1.2">
-<h3 data-number="7.1.2" class="anchored" data-anchor-id="testing-for-bias"><span class="header-section-number">7.1.2</span> Testing for Bias</h3>
-<p>Bias in an MLS refers to non-random, unfair differences in treatment based on sensitive attributes like gender, age, or race, which is often unlawful and renders the system discriminatory.</p>
-<p>Testing for bias<span class="indexref" data-entry="testing for bias"></span> in an MLS involves understanding its potential sources, which primarily include:</p>
+<section id="installation-von-python-ml-paketen-und-jupyterlab" class="level2" data-number="14.2">
+<h2 data-number="14.2" class="anchored" data-anchor-id="installation-von-python-ml-paketen-und-jupyterlab"><span class="header-section-number">14.2</span> 2. Installation von Python, ML-Paketen und JupyterLab</h2>
 <ul>
-<li><p>Defects in the training data, such as unrepresentativeness, historical skews, or deliberate poisoning (data bias).</p></li>
-<li><p>Defects within the algorithm, model, or development framework that introduce systemic unfairness, such as an algorithm using a decision threshold for credit scores in a loan approval system (algorithmic bias).</p></li>
+<li>Als erstes musst du, wenn nicht schon vorhanden, <a href="Einstieg_Vorbereitung/Installation_Python.md">Python installieren</a>.</li>
+<li>Ist Python installiert, geht es mit der <a href="Einstieg_Vorbereitung/Installation_Pakete.md">Installation der Python-Pakete</a> weiter</li>
+<li>Zum Schluss ist die <a href="Einstieg_Vorbereitung/Installation_JupyterLab.md">Installation von JupyterLab</a> an der Reihe.</li>
 </ul>
-<p>Test approaches for detecting bias include the following:</p>
-<ul>
-<li><p>Review<span class="indexref" data-entry="review"></span>s of the overall ML workflow, and especially the data preparation, to identify their potential for introducing bias.</p></li>
-<li><p>Reviews of dataset documentation to identify and mitigate potential sources of unfairness by examining how the data was collected, annotated, and what populations are represented.</p></li>
-<li><p>Static analysis<span class="indexref" data-entry="static analysis"></span> of both data preparation programs and the model implementation code to identify anti-patterns or the mishandling of sensitive attributes.</p></li>
-<li><p>EDA<span class="indexref" data-entry="exploratory data analysis"></span> of training data by using visualization and clustering methods to reveal imbalanced data, skewed distributions, or anomalous groupings across different sensitive attributes.</p></li>
-<li><p>Dynamic testing<span class="indexref" data-entry="dynamic testing"></span> to help detect bias in an ML model by feeding a known unbiased and representative dataset through the system and analyzing its predictions for statistically significant differences in outcomes across various sensitive groups. This identifies bias in model outputs, regardless of whether the bias was introduced during data training or during model development.</p></li>
-<li><p>Label correctness testing<span class="indexref" data-entry="label correctness testing"></span> (see 5.1.6) to identify mislabeling that causes incorrect associations to be learned between attributes and outcomes for specific sensitive attributes.</p></li>
-<li><p>Disparate impact analysis<span class="indexref" data-entry="disparate impact analysis"></span>:</p>
-<ol type="1">
-<li><p>Identify sensitive attributes for the model.</p></li>
-<li><p>Generate counterfactuals for the sensitive attributes. (e.g., example scenarios where gender is changed from male to female in a loan application).</p></li>
-<li><p>Generate model output by presenting it with the counterfactuals.</p></li>
-<li><p>Analyze the results of multiple tests to achieve a statistically significant result, which determines if changing a sensitive attribute causes the model results to change, signaling the presence of bias.</p></li>
-</ol></li>
-</ul>
-<p>Note: Disparate impact analysis can also be applied to combinations of sensitive attributes, allowing hidden bias associated with attribute combinations to be identified. However, take care to confirm that counterfactual examples are not unrealistic, as the model may then respond to them rather than to any underlying bias.</p>
 </section>
-<section id="data-pipeline-testing" class="level3" data-number="7.1.3">
-<h3 data-number="7.1.3" class="anchored" data-anchor-id="data-pipeline-testing"><span class="header-section-number">7.1.3</span> Data Pipeline Testing</h3>
-<p>Effective data pipeline testing<span class="indexref" data-entry="data pipeline testing"></span> is essential not only for confirming the reliability and performance of data-driven systems but also for maintaining high data quality throughout the entire ML workflow (see 3.1.2).</p>
-<p>A layered approach is employed, beginning with&nbsp;data-pipeline design reviews during the design phase.</p>
-<p>Component testing includes testing of data ingestion components, transformation scripts, and sensor interfaces. This testing uses code reviews, static analysis, and hardware-specific tests to verify reliable data capture. Component tests validate data transformation logic, test the implementation of data validation rules, confirm robust error handling, and test for vulnerabilities that could be exploited to introduce malware or poisoned data.</p>
-<p>Component integration testing&nbsp;verifies the seamless flow of data across internal interfaces and the correct interpretation of data as it moves through the pipeline. It detects defects arising from mismatched interfaces or incorrect assumptions between components.&nbsp;</p>
-<p>System testing&nbsp;assesses the fully assembled pipeline, beginning with&nbsp;smoke testing&nbsp;to confirm basic pipeline functionality.&nbsp;Functional testing&nbsp;verifies the pipeline’s compliance with specified requirements, including data transformations and data routing.&nbsp;Non-functional testing&nbsp;evaluates performance under load, scalability to handle increasing data volumes, and security measures to protect data integrity. Fault injection testing&nbsp;measures pipeline robustness by simulating defective data inputs, assessing the system’s ability to maintain data integrity when faced with unexpected or corrupted data. Back-to-back testing&nbsp;(see 6.1.10) compares the operational pipeline against the training pipeline to verify consistent functionality.</p>
-<p>System integration testing verifies correct interaction between the data pipeline and external systems or services, including data sources, storage platforms, monitoring tools, and downstream consumers such as ML models.</p>
-<p>Testing in production is performed on the operational system. Back-to-back testing verifies that performance is consistent or improved compared to previous versions.&nbsp;A/B testing&nbsp;(see 6.1.9) enables comparisons of new pipeline iterations against baselines, validating improvements while confirming no degradation in the live data stream. Tools can be integrated to continuously monitor and observe model behavior, performance, and potential defects in real time.</p>
-<p>Configuration management reviews help verify that the correct pipeline code versions, configurations, and datasets are used across training, testing, and production.&nbsp;</p>
-<p>Finally, the test strategies must align with the pipeline’s purpose. Training pipelines, often exploratory prototypes, have different priorities than robust operational pipelines. The testing of training pipelines may focus on data integrity, while operational pipeline testing prioritizes reliability, performance, and maintainability.</p>
+<section id="los-gehts-starten-von-jupyterlab" class="level2" data-number="14.3">
+<h2 data-number="14.3" class="anchored" data-anchor-id="los-gehts-starten-von-jupyterlab"><span class="header-section-number">14.3</span> 3. Los geht’s: Starten von JupyterLab</h2>
+<p>Von nun ab kannst du JupyterLab per Doppelklick auf:<br> <code>04_starte_jupyterlab.cmd</code> starten. Als erstes öffnet sich ein Kommandozeilenfenster mit dem Titel “JupyterLab Server”.</p>
+<p>Nach dem Start des CMD-Skriptes startet zudem dein Browser und öffnet eine Seite, die sich mit dem JupyterLab-Server (localhost:8888/lab/tree) verbindet, der im Kommandozeilenfenster läuft - lasse dieses also im Hintergrund weiter laufen!</p>
+<p>Wenn du einen bestimmten Browser bevorzugst, kannst du die Datei <code>04_starte_jupyterlab.cmd</code> editieren und eine der drei per <code>::</code> auskommentierten Zeilen durch das Entfernen des <code>::</code> aktivieren und so deinen Lieblingsbrowser festlegen.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Einstieg_Vorbereitung/jupyterlab_snapshot01_blanko.png" class="img-fluid figure-img"></p>
+<figcaption>snapshot von JupyterLab</figcaption>
+</figure>
+</div>
+<ul>
+<li><em>Diese</em> Anleitung (die du gerade liest) kannst du dir ansehen, wenn du mit der rechten Maustaste auf <code>Readme.md</code> klickst und <em>Open With &gt; Markdown Preview</em> auswählst.</li>
+</ul>
 </section>
-<section id="testing-for-data-representativeness" class="level3" data-number="7.1.4">
-<h3 data-number="7.1.4" class="anchored" data-anchor-id="testing-for-data-representativeness"><span class="header-section-number">7.1.4</span> Testing for Data Representativeness</h3>
-<p>Data representativeness testing<span class="indexref" data-entry="data representativeness testing"></span> determines how closely the characteristics of the datasets used for training, validation, and testing ML models match the real-world data that the ML model will encounter in operation. This testing addresses various forms of misrepresentation, including skewed datasets, missing data, disproportionate feature distributions, inadequate coverage of operational scenarios, and imbalanced class representation (see 5.1.1).</p>
-<p>This testing typically includes the following steps:</p>
-<p>1. Define the target population:</p>
-<ul>
-<li><p>Understand the intended use cases and operational context of the MLS</p></li>
-<li><p>Analyze the characteristics of end users and operational environments</p></li>
-<li><p>Identify the expected operational data distributions and critical edge cases by:</p>
-<ul>
-<li><p>consulting domain experts to understand real-world data patterns</p></li>
-<li><p>analyzing data from existing systems or similar applications</p></li>
-<li><p>using benchmark datasets from trusted sources (e.g., NIST, industry databases)</p></li>
-</ul></li>
-<li><p>Apply stratified sampling to the representative reference data to create a baseline that covers all relevant subgroups in the target domain</p></li>
-</ul>
-<p>2. Analyze data characteristics:</p>
-<ul>
-<li><p>Apply EDA (see 3.2.1) to:</p>
-<ul>
-<li><p>training/test datasets being evaluated for representativeness</p></li>
-<li><p>reference dataset that represents the expected operational data</p></li>
-<li><p>visualize distributions through histograms, scatter plots, and other graphical techniques</p></li>
-</ul></li>
-<li><p>Examine feature relationships, and correlations in particular, to identify patterns that should be preserved</p></li>
-<li><p>Identify potential anomalies, gaps, or unusual concentrations in the data</p></li>
-</ul>
-<p>3. Apply statistical assessment techniques:</p>
-<ul>
-<li><p>Use formal statistical tests such as Chi-squared and Kolmogorov-Smirnov to compare distributions [STATS]</p></li>
-<li><p>Check for data imbalances, particularly in classification problems</p></li>
-<li><p>Verify adequate coverage of both typical scenarios and edge/boundary cases</p></li>
-</ul>
-<p>Testing for data representativeness should be performed before model training to prevent building models on unrepresentative data. After deployment, the properties of operational input data should be continuously monitored to detect changes that might indicate data drift from the original training data distributions (see 6.1.7 on drift testing).</p>
+<section id="mit-den-aufgaben-loslegen" class="level2" data-number="14.4">
+<h2 data-number="14.4" class="anchored" data-anchor-id="mit-den-aufgaben-loslegen"><span class="header-section-number">14.4</span> 4. Mit den Aufgaben loslegen</h2>
+<p><em>Hinweis:</em> Wir empfehlen dir, die Aufgaben nicht ohne eine gewisse Vorbereitung durch den entsprechenden Abschnitt im Buch zu beginnen.</p>
+<p><em>Außerdem:</em> Es ist gut, wenn du einfache Grundkenntnisse in Python als Programmiersprache mitbringst, und dich mit der Bedienung von <strong>JupyterLab</strong> und <strong>Juypter Notebooks</strong> schon etwas vertraut gemacht hast (<a href="#Praktische-%C3%9Cbungen-zum-Buch-%22KI-Testen%22">siehe oben</a>).</p>
+<p>Zum Bearbeiten einer Aufgabe - zum Beispiel zum Abschnitt 3.3: * öffnest du in JupyterLab per Doppel-Click das Verzeichnis <code>Kap03.3_ML-Art-wählen</code> und * öffnest das Notebook <code>Übung_...</code> ebenfalls per Doppel-Click.</p>
+<p>und schon kann’s losgehen!</p>
 </section>
-<section id="dataset-constraint-testing" class="level3" data-number="7.1.5">
-<h3 data-number="7.1.5" class="anchored" data-anchor-id="dataset-constraint-testing"><span class="header-section-number">7.1.5</span> Dataset Constraint Testing</h3>
-<p>Dataset constraint testing<span class="indexref" data-entry="dataset constraint testing"></span> verifies whether the data in a dataset adheres to predefined rules or constraints. The goal is to confirm the integrity and consistency of the data used in ML. For instance, a test of the consistency of values in a dataset could be carried out.</p>
-<p>Constraints on data are typically found in database schemas. A database schema defines the structure, types, and relationships of the data. Similarly, for ML datasets, a set of constraints can be defined that act as a logical model of the data in the dataset, which should be satisfied if the data are correct. There are several ways of categorizing dataset constraints. A constraint can be applied to a single value for an attribute, which is found in a single instance (a single-value constraint), for example:</p>
+<section id="lizenzbedingungen" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="lizenzbedingungen">Lizenzbedingungen</h2>
+<p><strong>der Inhalte <em>dieses</em> GitHub-Repos (Notebooks, Grafiken, Code…):</strong></p>
+<p><img src="Einstieg_Vorbereitung/cc-by-nc-sa.svg" class="img-fluid" alt="cc-license"><br> CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)</p>
+<p><strong>der genutzten Werkzeuge und Daten:</strong></p>
 <ul>
-<li><p>Missing – tests for missing values and missing attributes.</p></li>
-<li><p>Range – tests that a value is in a given range.</p></li>
-<li><p>Type – tests that an attribute value matches the specified type (e.g., that if an attribute is specified as an integer, the provided value is not a string or real number).</p></li>
+<li>pyhton: <a href="https://docs.python.org/3/license.html">PSF License</a> - GPL-kompatibel</li>
+<li>jupyterlab: <a href="https://jupyterlab.readthedocs.io/en/latest/api/index.html?highlight=license#md:license">BSD License</a></li>
+<li>iris dataset: <a href="https://archive.ics.uci.edu/dataset/53/iris">CC-BY 4.0, donated by R. A. Fisher</a></li>
+<li>tensorflow playground: <a href="https://github.com/tensorflow/playground/blob/master/LICENSE">Apache License</a></li>
+<li>lime: Copyright © 2016, Marco Tulio Correia Ribeiro <a href="https://de.wikipedia.org/wiki/BSD-Lizenz">BSD-2-Clause License</a></li>
+<li>shap: Copyright © 2018, Scott Lundberg <a href="https://en.wikipedia.org/wiki/MIT_License">MIT License</a></li>
+<li>pict: Copyright © Microsoft Corporation <a href="https://en.wikipedia.org/wiki/MIT_License">MIT License</a></li>
+<li>chatGPT: OpenAI <a href="https://openai.com/policies/terms-of-use">Terms of Use</a></li>
+<li><a href="http://creativecommons.org/licenses/by/4.0/">OpenML</a> <a href="https://opensource.org/licenses/BSD-3-Clause">sowie BSD-3</a></li>
 </ul>
-<p>Alternatively, a constraint can apply across multiple values, typically considering the values for a single attribute across several instances (a multi-value constraint), for example:</p>
-<ul>
-<li><p>Sum – tests that the sum of all values equals, exceeds, or does not exceed a specified value (e.g., the total value of all points awarded for a Formula 1 race cannot exceed 102, and must exceed 50.5 points).</p></li>
-<li><p>Count – tests that the count of all non-null values for attributes or instances equals, exceeds, or does not exceed a specified value.</p></li>
-<li><p>Duplicate – tests for identical or near identical attribute values or instances in a dataset and enforces a limit on how many are allowed (often zero).</p></li>
-<li><p>Useful&nbsp;– tests that an attribute contains some repeated values, as if every entry is unique (like an ID or timestamp), typically provides no useful patterns to be learned for an ML model.</p></li>
-<li><p>Outlier – identifies any values that could be considered as statistical outliers.</p></li>
-</ul>
-<p>A special form of multi-value constraint can compare different values (a comparison constraint), for example:</p>
-<ul>
-<li><p>Greater Than – tests that one value for an attribute is greater than a value for a second attribute (e.g., the count of lines of code for a program exceeds its count of lines of code with defects).</p></li>
-<li><p>Correlate – tests that the values for one attribute correlate with the values for a second attribute (e.g., all students with a marks attribute value at least 1.33 standard deviations above the mean also have a value of ‘A’ for their grade attribute).</p></li>
-</ul>
-<p>Testing data against the defined constraints can be performed manually. Still, the scale of the activity and the typically large size of the dataset would require this to be automated as part of the data pipeline. When implemented as part of the pipeline, the tool that implements dataset constraint testing can provide reports to data scientists (for training data anomalies) or to operations staff (for operational data problems).</p>
-</section>
-<section id="label-correctness-testing" class="level3" data-number="7.1.6">
-<h3 data-number="7.1.6" class="anchored" data-anchor-id="label-correctness-testing"><span class="header-section-number">7.1.6</span> Label Correctness Testing</h3>
-<p>Data label correctness<span class="indexref" data-entry="label correctness testing"></span> is essential in supervised learning. Inaccurate or inconsistent labels directly undermine the performance and generalization of ML models.</p>
-<p>Common approaches to data label correctness testing include:</p>
-<ul>
-<li><p>Expert Review: Domain experts or trained annotators manually review a sample of labelled data. They evaluate label accuracy using their domain knowledge and guidelines.</p></li>
-<li><p>Multiple Annotation<span class="indexref" data-entry="multiple annotation"></span>: Data points are independently labelled by multiple annotators and compared using a form of back-to-back testing (see 6.1.10). Disagreements highlight defects that need investigation and resolution. The inter-annotator agreement (IAA) can be measured using metrics such as Cohen’s Kappa or simple percentage agreement [STATS]. Low IAA scores can indicate defects in labelling guidelines, ambiguous data, or poor annotation.</p></li>
-<li><p>Risk-Based Prioritization for Review and Annotation: Both expert reviews and multiple annotations can be focused using a risk-based approach to identify samples for review and multiple annotations. Prioritization can be based on the likelihood of mislabeling, such as with ambiguous data points (e.g., it is unclear to which category they belong or are near a boundary between classes), and the data that is most likely to impact the application’s success or safety.</p></li>
-<li><p>Data Distribution Analysis: When comparable datasets exist, comparing the label distribution of the dataset under test to similar datasets can reveal anomalies and potentially incorrect labels.</p></li>
-<li><p>Automated Rule-Based Tests: Automated tests can be implemented based on predefined label rules or constraints for certain tasks. For instance, verifying that bounding boxes (rectangles used to locate objects in images) do not overlap or extend beyond image boundaries.</p></li>
-<li><p>Model Loss Analysis: Data points exhibiting high loss during model training – meaning the model’s predictions for these points deviate substantially from their true labels – can indicate mislabeling. High loss reflects significant error, indicating the model struggles to learn the assigned label and pointing to a potential defect.</p></li>
-<li><p>Model Confidence Score Analysis: Data points with low prediction confidence from a trained model may be mislabeled, ambiguous, or lie outside the model’s training data distribution.</p></li>
-</ul>
-<p>Using a combination of approaches is often most effective. For example, expert reviews are valuable in establishing clear labelling guidelines early on. IAA scores from multiple annotations can then refine the labelling process. Subsequently, model-based approaches can further identify potential label defects as the model continues to develop.</p>
-</section>
-</section>
-<section id="hands-on-exercise-input-data-testing" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="hands-on-exercise-input-data-testing"><span class="header-section-number">7.2</span> Hands-on Exercise: Input Data Testing</h2>
-<p>For a given dataset (e.g., structured, tabular data), perform input data testing for things like missing data, duplicate data, and outliers.</p>
 
 
 </section>
@@ -1036,13 +813,13 @@ Data pipeline testing – see 5.1.3
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./Data Quality and Test Data.html" class="pagination-link" aria-label="title: &quot;AI Testing Tools and Frameworks&quot;">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">title: “AI Testing Tools and Frameworks”</span></span>
+      <a href="./Case Studies and Best Practices.html" class="pagination-link" aria-label="Case Studies and Best Practices">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Case Studies and Best Practices</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Testing AI-based Systems.html" class="pagination-link" aria-label="Testing AI-based Systems">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Testing AI-based Systems</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./Quarto Introduction.html" class="pagination-link" aria-label="An Introduction to Quarto">
+        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">An Introduction to Quarto</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1054,7 +831,7 @@ Data pipeline testing – see 5.1.3
     </div>   
     <div class="nav-footer-center">
 <p>Created 2026 by Mario Winter, Wuppertal</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/marioww42/AITestingWorkbook/edit/main/Evaluating ML Models.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/marioww42/AITestingWorkbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/marioww42/AITestingWorkbook/edit/main/Hands-On Exercises.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/marioww42/AITestingWorkbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

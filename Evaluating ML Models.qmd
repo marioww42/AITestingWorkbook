@@ -1,14 +1,12 @@
 ---
-title: "Evaluation of ML-Models and ML-based Systems"
+title: "Evaluation of ML-Models"
 #toc-depth: 2    # Shows H1 and H2 MW: Don't work, only "Table of Contents" is shown ... should show H2 in the TOC, as they are not numbered and not all of them are relevant for the TOC. I will add a custom TOC with only the relevant H2s in the chapter.
 ---
 
 
-The following chapters cover the evaluation of ML models and systems. This includes the evaluation of the model itself, as well as the evaluation of the system in which the model is embedded. The evaluation of ML models and systems is a crucial step in the development process, as it helps to ensure that the model and system are performing as expected and are meeting the requirements of the stakeholders.
+The following chapters cover the evaluation of ML models. This includes the evaluation of the model itself. The evaluation of ML models is a crucial step in the development process, as it helps to ensure that the model is performing as expected and is meeting the requirements of the stakeholders. The evaluation of ML models typically involves a combination of quantitative and qualitative methods, including the use of metrics, visualizations, and user feedback. The evaluation process can be used to identify areas for improvement in the model, as well as to validate the performance of the model on real-world data.
 
-# Evaluation of ML Models {.unnumbered}
-
-### Test Levels for ML models {markdown="block" .unnumbered}
+# Test Levels for ML models {.unnumbered}
 
 There are two test levels that can be used to evaluate ML models: 
 - Input data testing and 
@@ -430,120 +428,10 @@ early on. IAA scores from multiple annotations can then refine the
 labelling process. Subsequently, model-based approaches can further
 identify potential label defects as the model continues to develop.
 
-### Hands-on Exercise: Input Data Testing
+## Hands-on Exercise: Input Data Testing
 
 For a given dataset (e.g., structured, tabular data), perform input data
 testing for things like missing data, duplicate data, and outliers.
 
 
 
-### ML Model Testing
-
-Testing ML models is different from testing traditional software. Traditional software testing focuses on verifying that the software behaves as expected for a given set of inputs and outputs. In contrast, testing ML models involves evaluating the performance of the model on a given dataset, and comparing it to a baseline or to other models. This is because ML models are often probabilistic in nature, and their performance can vary depending on the data they are trained on and the data they are tested on.
-
-The evaluation of ML models is typically done using a set of metrics that measure the performance of the model on a given dataset. These metrics can be used to compare different models and to select the best model for a given task. Some common metrics for evaluating ML models include accuracy, precision, recall, F1 score, and area under the ROC curve (AUC-ROC) (see @sec-metrics-for-classification).
-
-
-*TBD: add more details on evaluation of ML models, including different types of metrics, how to interpret them, and how to use them for model selection.*
-
-# Evaluation of ML-based Systems
-
-The evaluation of ML-based systems is more complex than the evaluation of ML models, as it involves not only the performance of the model, but also the performance of the system as a whole. This includes factors such as the integration of the model into the system, the user experience, and the overall functionality of the system. The evaluation of ML-based systems typically involves a combination of quantitative and qualitative methods, including user testing, usability testing, and field testing. 
-
-## Test Levels for ML-based Systems
-There are several testing methods that can be used to evaluate ML-based systems, including:
-
-- **Unit testing**: testing individual components of the system, such as the ML model, to ensure that they are functioning correctly.
-
-- **Integration testing**: testing the integration of the ML model with other components of the system to ensure that they are working together as expected.
-
-- **System testing**: testing the entire system to ensure that it meets the requirements and performs as expected in real-world conditions.
-
-- **User acceptance testing**: testing the system with end-users to ensure that it meets their needs and is usable.
-
-### Adversarial Testing
-
-**What is Adversarial Testing?**
-
-Adversarial testing<span class="indexref" entry="adversarial testing"></span> is a testing method that involves intentionally introducing adversarial examples to the ML model to evaluate its robustness and security. Adversarial examples are inputs that are designed to deceive the model into making incorrect predictions. 
-
-**Why to Perform Adversarial Testing?**
-Adversarial testing is important because it helps to identify vulnerabilities in the ML model and to improve its robustness against attacks. Adversarial examples can be used to test the model's ability to generalize to new and unseen data, and to identify potential weaknesses in the model that could be exploited by attackers. By performing adversarial testing, developers can improve the security and reliability of the ML model, and ensure that it is able to perform well in real-world conditions where adversarial attacks may be present.
-
-**When to Perform Adversarial Testing?**
-Adversarial testing should be performed during the development and testing phases of the ML model, as well as during the deployment phase. It is important to perform adversarial testing early in the development process to identify vulnerabilities in the model and to improve its robustness against attacks. Additionally, adversarial testing should be performed regularly during the deployment phase to ensure that the model remains secure and robust against new types of attacks.
-
-**How to Perform Adversarial Testing?**
-
-Adversarial testing can be performed using techniques such as:  
-- *FGSM (Fast Gradient Sign Method)*: a method that generates adversarial examples by adding small perturbations to the input data in the direction of the gradient of the loss function.
-- *PGD (Projected Gradient Descent)*: an iterative method that generates adversarial examples by repeatedly applying the FGSM method and projecting the perturbed input back onto a specified constraint set.
-- *CW (Carlini & Wagner)*: a method that generates adversarial examples by optimizing a loss function that combines the model's output and the distance between the original input and the adversarial example.
-
-
-
-*TBD: add more details on evaluation of ML-based systems, including different types of evaluation methods, how to design and conduct evaluations, and how to interpret the results.*
-
-# German: Praktische Übungen zum Buch "KI-Testen"
-<img src="https://dpunkt.de/wp-content/uploads/2024/01/13867.jpg" align="right" width="30%" min-width="150px"/>
-
-Das Repository [KI-Übungen](https://github.com/KI-Testen/Uebungen/tree/main) enthält das Begleitmaterial und praktische Übungen zum Buch "[**Basiswissen KI-Testen** - Qualität von und mit KI-basierten Systemen](https://dpunkt.de/produkt/basiswissen-ki-testen/)" aus dem **dpunkt.Verlag**, ISBN 978-3-86490-947-4. Die Übungen sind so konzipiert, dass sie von jedem mit einem Laptop oder PC durchgeführt werden können, der über grundlegende Kenntnisse in Python und JupyterLab verfügt. 
-
-Die folgenden Abschnitte sind eine 1:1 Kopie aus dem RTepository.
-
-Um die Übungen selbst auf *deinem eigenen Laptop oder PC* durchführen zu können, benötigst du folgendes:
-* Einen Laptop oder PC (ein Smartphone oder Tablet ist eher unpraktisch).
-* Eine Installation von Python auf deinem Computer (sie [Punkt 2 unten](#2.-Installation-von-python)).
-* Grundkenntnisse in der [Programmiersprache Python](https://tutorial.djangogirls.org/de/python_introduction)
-* Grundkenntnisse in der [Benutzung von JupyterLab](https://jupyter-tutorial.readthedocs.io/de/latest/index.html)
-
-## 1. Download des Übungsmaterials
-* Lade von der GitHub-Seite [KI-Testen - Übungen](https://github.com/KI-Testen/Uebungen) das gesamte Repository als ZIP-Datei (Code (grüner Button) > Download ZIP)
-* Entpacke die ZIP in ein Verzeichnis deiner Wahl.
-
-## 2. Installation von Python, ML-Paketen und JupyterLab
-* Als erstes musst du, wenn nicht schon vorhanden, [Python installieren](Einstieg_Vorbereitung/Installation_Python.md).
-* Ist Python installiert, geht es mit der [Installation der Python-Pakete](Einstieg_Vorbereitung/Installation_Pakete.md) weiter
-* Zum Schluss ist die [Installation von JupyterLab](Einstieg_Vorbereitung/Installation_JupyterLab.md) an der Reihe.
-
-## 3. Los geht's: Starten von JupyterLab
-Von nun ab kannst du JupyterLab per Doppelklick auf:</br>
-`04_starte_jupyterlab.cmd` starten. Als erstes öffnet sich ein Kommandozeilenfenster mit dem Titel "JupyterLab Server".
-
-Nach dem Start des CMD-Skriptes startet zudem dein Browser und öffnet eine Seite, die sich mit dem JupyterLab-Server (localhost:8888/lab/tree) verbindet, der im Kommandozeilenfenster läuft - lasse dieses also im Hintergrund weiter laufen!
-
-Wenn du einen bestimmten Browser bevorzugst, kannst du die Datei `04_starte_jupyterlab.cmd` editieren und eine der drei per `::` auskommentierten Zeilen durch das Entfernen des `::` aktivieren und so deinen Lieblingsbrowser festlegen.
-
-![snapshot von JupyterLab](Einstieg_Vorbereitung/jupyterlab_snapshot01_blanko.png)
-
-* *Diese* Anleitung (die du gerade liest) kannst du dir ansehen, wenn du mit der rechten Maustaste auf `Readme.md` klickst und *Open With > Markdown Preview* auswählst.
-
-## 4. Mit den Aufgaben loslegen
-*Hinweis:* Wir empfehlen dir, die Aufgaben nicht ohne eine gewisse Vorbereitung durch den entsprechenden Abschnitt im Buch zu beginnen.
-
-*Außerdem:* Es ist gut, wenn du einfache Grundkenntnisse in Python als Programmiersprache mitbringst, und dich mit der Bedienung von **JupyterLab** und **Juypter Notebooks** schon etwas vertraut gemacht hast ([siehe oben](#Praktische-%C3%9Cbungen-zum-Buch-%22KI-Testen%22)).
-
-Zum Bearbeiten einer Aufgabe - zum Beispiel zum Abschnitt 3.3:
-* öffnest du in JupyterLab per Doppel-Click das Verzeichnis `Kap03.3_ML-Art-wählen` und
-* öffnest das Notebook `Übung_...` ebenfalls per Doppel-Click.
-
-und schon kann's losgehen!
-
-## Lizenzbedingungen {.unnumbered}
-
-**der Inhalte *dieses* GitHub-Repos (Notebooks, Grafiken, Code...):**
-
-![cc-license](Einstieg_Vorbereitung/cc-by-nc-sa.svg)<br/>
-CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
-
-**der genutzten Werkzeuge und Daten:**
-
-- pyhton: [PSF License](https://docs.python.org/3/license.html) - GPL-kompatibel
-- jupyterlab: [BSD License](https://jupyterlab.readthedocs.io/en/latest/api/index.html?highlight=license#md:license)
-- iris dataset: [CC-BY 4.0, donated by R. A. Fisher](https://archive.ics.uci.edu/dataset/53/iris)
-- tensorflow playground: [Apache License](https://github.com/tensorflow/playground/blob/master/LICENSE)
-- lime: Copyright &copy; 2016, Marco Tulio Correia Ribeiro [BSD-2-Clause License](https://de.wikipedia.org/wiki/BSD-Lizenz)
-- shap: Copyright &copy; 2018, Scott Lundberg [MIT License](https://en.wikipedia.org/wiki/MIT_License)
-- pict: Copyright &copy; Microsoft Corporation [MIT License](https://en.wikipedia.org/wiki/MIT_License)
-- chatGPT: OpenAI [Terms of Use](https://openai.com/policies/terms-of-use)
-- [OpenML](http://creativecommons.org/licenses/by/4.0/) [sowie BSD-3](https://opensource.org/licenses/BSD-3-Clause)

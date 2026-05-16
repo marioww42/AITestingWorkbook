@@ -14,9 +14,11 @@ For tems related to AI, see the [Wikipedia AI Glossary](https://en.wikipedia.org
 
 Alternatively, see the Google [AI Glossary](https://ai.google.dev/learn/glossary). The AI Glossary is a collection of definitions for common terms in artificial intelligence (AI) and machine learning (ML). It includes definitions for terms related to AI concepts, techniques, and applications. The glossary is designed to help people understand the terminology used in the field of AI and ML, and to provide a common language for discussing these topics. 
 
-For terms related to git and GitHub, see the [git and GitHub section](#terminology) in the [Working with git and GitHub chapter](git.qmd).
+For terms related to git and GitHub, see the [git and GitHub section](#resources) in the [Working with git and GitHub chapter](git.qmd).
 
-For all terms related to Quarto, see the [Quarto Glossary](https://quarto.org/docs/authoring/glossary/). For a more general glossary of terms related to data science and AI, see the [Data Science Glossary](https://datascienceglossary.org/).
+For all terms related to Quarto, see the [Quarto Glossary](https://quarto.org/docs/authoring/glossary/). 
+
+For a more general glossary of terms related to data science and AI, see the [Data Science Glossary](https://datascienceglossary.org/).
 
 
 
