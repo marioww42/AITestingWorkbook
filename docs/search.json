@@ -1138,5 +1138,16 @@
     "crumbs": [
       "<span class='chapter-number'>18</span>  <span class='chapter-title'>Summary</span>"
     ]
+  },
+  {
+    "objectID": "Case Studies and Best Practices.html",
+    "href": "Case Studies and Best Practices.html",
+    "title": "11  Case Studies and Best Practices",
+    "section": "",
+    "text": "TODO In this section, we will explore various case studies and best practices related to data analysis, machine learning, and data science projects. These case studies will provide insights into real-world applications, challenges faced, and solutions implemented by professionals in the field.",
+    "crumbs": [
+      "AI Testing in Practice",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Case Studies and Best Practices</span>"
+    ]
   }
 ]
