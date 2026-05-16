@@ -42,7 +42,9 @@ Adversarial testing should be performed during the development and testing phase
 
 Adversarial testing can be performed using techniques such as:  
 - *FGSM (Fast Gradient Sign Method)*: a method that generates adversarial examples by adding small perturbations to the input data in the direction of the gradient of the loss function.
+
 - *PGD (Projected Gradient Descent)*: an iterative method that generates adversarial examples by repeatedly applying the FGSM method and projecting the perturbed input back onto a specified constraint set.
+
 - *CW (Carlini & Wagner)*: a method that generates adversarial examples by optimizing a loss function that combines the model's output and the distance between the original input and the adversarial example.
 
 

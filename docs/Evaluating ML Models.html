@@ -179,7 +179,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Data Quality and Test Data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">title: “AI Testing Tools and Frameworks”</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data Quality and Test Data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -306,19 +306,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#test-levels-for-ml-models" id="toc-test-levels-for-ml-models" class="nav-link active" data-scroll-target="#test-levels-for-ml-models">Test Levels for ML models</a>
+  <li><a href="#test-levels-for-ml-models" id="toc-test-levels-for-ml-models" class="nav-link active" data-scroll-target="#test-levels-for-ml-models"><span class="header-section-number">8</span> Test Levels for ML models</a>
   <ul class="collapse">
-  <li><a href="#input-data-testing" id="toc-input-data-testing" class="nav-link" data-scroll-target="#input-data-testing"><span class="header-section-number">7.1</span> Input data testing</a>
+  <li><a href="#input-data-testing" id="toc-input-data-testing" class="nav-link" data-scroll-target="#input-data-testing"><span class="header-section-number">8.1</span> Input data testing</a>
   <ul class="collapse">
-  <li><a href="#input-data-risks-and-mitigations" id="toc-input-data-risks-and-mitigations" class="nav-link" data-scroll-target="#input-data-risks-and-mitigations"><span class="header-section-number">7.1.1</span> Input Data Risks and Mitigations</a></li>
-  <li><a href="#testing-for-bias" id="toc-testing-for-bias" class="nav-link" data-scroll-target="#testing-for-bias"><span class="header-section-number">7.1.2</span> Testing for Bias</a></li>
-  <li><a href="#data-pipeline-testing" id="toc-data-pipeline-testing" class="nav-link" data-scroll-target="#data-pipeline-testing"><span class="header-section-number">7.1.3</span> Data Pipeline Testing</a></li>
-  <li><a href="#testing-for-data-representativeness" id="toc-testing-for-data-representativeness" class="nav-link" data-scroll-target="#testing-for-data-representativeness"><span class="header-section-number">7.1.4</span> Testing for Data Representativeness</a></li>
-  <li><a href="#dataset-constraint-testing" id="toc-dataset-constraint-testing" class="nav-link" data-scroll-target="#dataset-constraint-testing"><span class="header-section-number">7.1.5</span> Dataset Constraint Testing</a></li>
-  <li><a href="#label-correctness-testing" id="toc-label-correctness-testing" class="nav-link" data-scroll-target="#label-correctness-testing"><span class="header-section-number">7.1.6</span> Label Correctness Testing</a></li>
+  <li><a href="#input-data-risks-and-mitigations" id="toc-input-data-risks-and-mitigations" class="nav-link" data-scroll-target="#input-data-risks-and-mitigations"><span class="header-section-number">8.1.1</span> Input Data Risks and Mitigations</a></li>
+  <li><a href="#testing-for-bias" id="toc-testing-for-bias" class="nav-link" data-scroll-target="#testing-for-bias"><span class="header-section-number">8.1.2</span> Testing for Bias</a></li>
+  <li><a href="#data-pipeline-testing" id="toc-data-pipeline-testing" class="nav-link" data-scroll-target="#data-pipeline-testing"><span class="header-section-number">8.1.3</span> Data Pipeline Testing</a></li>
+  <li><a href="#testing-for-data-representativeness" id="toc-testing-for-data-representativeness" class="nav-link" data-scroll-target="#testing-for-data-representativeness"><span class="header-section-number">8.1.4</span> Testing for Data Representativeness</a></li>
+  <li><a href="#dataset-constraint-testing" id="toc-dataset-constraint-testing" class="nav-link" data-scroll-target="#dataset-constraint-testing"><span class="header-section-number">8.1.5</span> Dataset Constraint Testing</a></li>
+  <li><a href="#label-correctness-testing" id="toc-label-correctness-testing" class="nav-link" data-scroll-target="#label-correctness-testing"><span class="header-section-number">8.1.6</span> Label Correctness Testing</a></li>
   </ul></li>
-  <li><a href="#hands-on-exercise-input-data-testing" id="toc-hands-on-exercise-input-data-testing" class="nav-link" data-scroll-target="#hands-on-exercise-input-data-testing"><span class="header-section-number">7.2</span> Hands-on Exercise: Input Data Testing</a></li>
+  <li><a href="#hands-on-exercise-input-data-testing" id="toc-hands-on-exercise-input-data-testing" class="nav-link" data-scroll-target="#hands-on-exercise-input-data-testing"><span class="header-section-number">8.2</span> Hands-on Exercise: Input Data Testing</a></li>
   </ul></li>
+  <li><a href="#model-testing" id="toc-model-testing" class="nav-link" data-scroll-target="#model-testing"><span class="header-section-number">9</span> Model Testing</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/marioww42/AITestingWorkbook/edit/main/Evaluating ML Models.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/marioww42/AITestingWorkbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -344,17 +345,17 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The following chapters cover the evaluation of ML models. This includes the evaluation of the model itself. The evaluation of ML models is a crucial step in the development process, as it helps to ensure that the model is performing as expected and is meeting the requirements of the stakeholders. The evaluation of ML models typically involves a combination of quantitative and qualitative methods, including the use of metrics, visualizations, and user feedback. The evaluation process can be used to identify areas for improvement in the model, as well as to validate the performance of the model on real-world data.</p>
-<section id="test-levels-for-ml-models" class="level1 unnumbered">
-<h1 class="unnumbered">Test Levels for ML models</h1>
+<p>The following chapters cover the evaluation of ML models. This is a crucial step in the development process, as it helps to ensure that the model is performing as expected and is meeting the requirements of the stakeholders. The evaluation of ML models typically involves a combination of quantitative and qualitative methods, including the use of metrics, visualizations, and user feedback. The evaluation process can be used to identify areas for improvement in the model, as well as to validate the performance of the model on real-world data.</p>
+<section id="test-levels-for-ml-models" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Test Levels for ML models</h1>
 <p>There are two test levels that can be used to evaluate ML models: - Input data testing and - ML model testing.</p>
 <p>Input data testing focuses on evaluating the quality of the input data, such as checking for missing values, outliers, and data distribution. ML model testing focuses on evaluating the performance of the model on a given dataset, using metrics such as accuracy, precision, recall, F1 score, and AUC-ROC.</p>
-<section id="input-data-testing" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="input-data-testing"><span class="header-section-number">7.1</span> Input data testing</h2>
+<section id="input-data-testing" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="input-data-testing"><span class="header-section-number">8.1</span> Input data testing</h2>
 <p>Input data testing is important because the quality of the input data can have a significant impact on the performance of the ML model. If the input data is of poor quality, the model may not be able to learn effectively and may produce inaccurate results. Therefore, it is important to perform input data testing before training the ML model to ensure that the data is suitable for training and that any issues with the data are addressed.</p>
 <p>The objective of input data testing<span class="indexref" data-entry="input data testing"></span> is to confirm that the data used by the MLS for training, testing, and prediction is of sufficient quality (see 3.2). It includes reviews, statistical techniques (e.g., testing data for bias), EDA of the training data, and static and dynamic testing<span class="indexref" data-entry="dynamic testing"></span> of the data pipeline.</p>
-<section id="input-data-risks-and-mitigations" class="level3" data-number="7.1.1">
-<h3 data-number="7.1.1" class="anchored" data-anchor-id="input-data-risks-and-mitigations"><span class="header-section-number">7.1.1</span> Input Data Risks and Mitigations</h3>
+<section id="input-data-risks-and-mitigations" class="level3" data-number="8.1.1">
+<h3 data-number="8.1.1" class="anchored" data-anchor-id="input-data-risks-and-mitigations"><span class="header-section-number">8.1.1</span> Input Data Risks and Mitigations</h3>
 <p>The following table lists examples of input data risks and corresponding testing that could be used for risk mitigation:</p>
 <table>
 <colgroup>
@@ -505,8 +506,8 @@ Data pipeline testing – see 5.1.3
 </tbody>
 </table>
 </section>
-<section id="testing-for-bias" class="level3" data-number="7.1.2">
-<h3 data-number="7.1.2" class="anchored" data-anchor-id="testing-for-bias"><span class="header-section-number">7.1.2</span> Testing for Bias</h3>
+<section id="testing-for-bias" class="level3" data-number="8.1.2">
+<h3 data-number="8.1.2" class="anchored" data-anchor-id="testing-for-bias"><span class="header-section-number">8.1.2</span> Testing for Bias</h3>
 <p>Bias in an MLS refers to non-random, unfair differences in treatment based on sensitive attributes like gender, age, or race, which is often unlawful and renders the system discriminatory.</p>
 <p>Testing for bias<span class="indexref" data-entry="testing for bias"></span> in an MLS involves understanding its potential sources, which primarily include:</p>
 <ul>
@@ -531,8 +532,8 @@ Data pipeline testing – see 5.1.3
 </ul>
 <p>Note: Disparate impact analysis can also be applied to combinations of sensitive attributes, allowing hidden bias associated with attribute combinations to be identified. However, take care to confirm that counterfactual examples are not unrealistic, as the model may then respond to them rather than to any underlying bias.</p>
 </section>
-<section id="data-pipeline-testing" class="level3" data-number="7.1.3">
-<h3 data-number="7.1.3" class="anchored" data-anchor-id="data-pipeline-testing"><span class="header-section-number">7.1.3</span> Data Pipeline Testing</h3>
+<section id="data-pipeline-testing" class="level3" data-number="8.1.3">
+<h3 data-number="8.1.3" class="anchored" data-anchor-id="data-pipeline-testing"><span class="header-section-number">8.1.3</span> Data Pipeline Testing</h3>
 <p>Effective data pipeline testing<span class="indexref" data-entry="data pipeline testing"></span> is essential not only for confirming the reliability and performance of data-driven systems but also for maintaining high data quality throughout the entire ML workflow (see 3.1.2).</p>
 <p>A layered approach is employed, beginning with&nbsp;data-pipeline design reviews during the design phase.</p>
 <p>Component testing includes testing of data ingestion components, transformation scripts, and sensor interfaces. This testing uses code reviews, static analysis, and hardware-specific tests to verify reliable data capture. Component tests validate data transformation logic, test the implementation of data validation rules, confirm robust error handling, and test for vulnerabilities that could be exploited to introduce malware or poisoned data.</p>
@@ -543,8 +544,8 @@ Data pipeline testing – see 5.1.3
 <p>Configuration management reviews help verify that the correct pipeline code versions, configurations, and datasets are used across training, testing, and production.&nbsp;</p>
 <p>Finally, the test strategies must align with the pipeline’s purpose. Training pipelines, often exploratory prototypes, have different priorities than robust operational pipelines. The testing of training pipelines may focus on data integrity, while operational pipeline testing prioritizes reliability, performance, and maintainability.</p>
 </section>
-<section id="testing-for-data-representativeness" class="level3" data-number="7.1.4">
-<h3 data-number="7.1.4" class="anchored" data-anchor-id="testing-for-data-representativeness"><span class="header-section-number">7.1.4</span> Testing for Data Representativeness</h3>
+<section id="testing-for-data-representativeness" class="level3" data-number="8.1.4">
+<h3 data-number="8.1.4" class="anchored" data-anchor-id="testing-for-data-representativeness"><span class="header-section-number">8.1.4</span> Testing for Data Representativeness</h3>
 <p>Data representativeness testing<span class="indexref" data-entry="data representativeness testing"></span> determines how closely the characteristics of the datasets used for training, validation, and testing ML models match the real-world data that the ML model will encounter in operation. This testing addresses various forms of misrepresentation, including skewed datasets, missing data, disproportionate feature distributions, inadequate coverage of operational scenarios, and imbalanced class representation (see 5.1.1).</p>
 <p>This testing typically includes the following steps:</p>
 <p>1. Define the target population:</p>
@@ -578,8 +579,8 @@ Data pipeline testing – see 5.1.3
 </ul>
 <p>Testing for data representativeness should be performed before model training to prevent building models on unrepresentative data. After deployment, the properties of operational input data should be continuously monitored to detect changes that might indicate data drift from the original training data distributions (see 6.1.7 on drift testing).</p>
 </section>
-<section id="dataset-constraint-testing" class="level3" data-number="7.1.5">
-<h3 data-number="7.1.5" class="anchored" data-anchor-id="dataset-constraint-testing"><span class="header-section-number">7.1.5</span> Dataset Constraint Testing</h3>
+<section id="dataset-constraint-testing" class="level3" data-number="8.1.5">
+<h3 data-number="8.1.5" class="anchored" data-anchor-id="dataset-constraint-testing"><span class="header-section-number">8.1.5</span> Dataset Constraint Testing</h3>
 <p>Dataset constraint testing<span class="indexref" data-entry="dataset constraint testing"></span> verifies whether the data in a dataset adheres to predefined rules or constraints. The goal is to confirm the integrity and consistency of the data used in ML. For instance, a test of the consistency of values in a dataset could be carried out.</p>
 <p>Constraints on data are typically found in database schemas. A database schema defines the structure, types, and relationships of the data. Similarly, for ML datasets, a set of constraints can be defined that act as a logical model of the data in the dataset, which should be satisfied if the data are correct. There are several ways of categorizing dataset constraints. A constraint can be applied to a single value for an attribute, which is found in a single instance (a single-value constraint), for example:</p>
 <ul>
@@ -602,8 +603,8 @@ Data pipeline testing – see 5.1.3
 </ul>
 <p>Testing data against the defined constraints can be performed manually. Still, the scale of the activity and the typically large size of the dataset would require this to be automated as part of the data pipeline. When implemented as part of the pipeline, the tool that implements dataset constraint testing can provide reports to data scientists (for training data anomalies) or to operations staff (for operational data problems).</p>
 </section>
-<section id="label-correctness-testing" class="level3" data-number="7.1.6">
-<h3 data-number="7.1.6" class="anchored" data-anchor-id="label-correctness-testing"><span class="header-section-number">7.1.6</span> Label Correctness Testing</h3>
+<section id="label-correctness-testing" class="level3" data-number="8.1.6">
+<h3 data-number="8.1.6" class="anchored" data-anchor-id="label-correctness-testing"><span class="header-section-number">8.1.6</span> Label Correctness Testing</h3>
 <p>Data label correctness<span class="indexref" data-entry="label correctness testing"></span> is essential in supervised learning. Inaccurate or inconsistent labels directly undermine the performance and generalization of ML models.</p>
 <p>Common approaches to data label correctness testing include:</p>
 <ul>
@@ -618,12 +619,20 @@ Data pipeline testing – see 5.1.3
 <p>Using a combination of approaches is often most effective. For example, expert reviews are valuable in establishing clear labelling guidelines early on. IAA scores from multiple annotations can then refine the labelling process. Subsequently, model-based approaches can further identify potential label defects as the model continues to develop.</p>
 </section>
 </section>
-<section id="hands-on-exercise-input-data-testing" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="hands-on-exercise-input-data-testing"><span class="header-section-number">7.2</span> Hands-on Exercise: Input Data Testing</h2>
+<section id="hands-on-exercise-input-data-testing" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="hands-on-exercise-input-data-testing"><span class="header-section-number">8.2</span> Hands-on Exercise: Input Data Testing</h2>
 <p>For a given dataset (e.g., structured, tabular data), perform input data testing for things like missing data, duplicate data, and outliers.</p>
-
-
 </section>
+</section>
+<section id="model-testing" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Model Testing</h1>
+<ul>
+<li>Discover test approaches for mitigating risks in ML models, including documentation reviews, ML functional performance testing, and detecting overfitting, underfitting,and drift.</li>
+<li>Learn advanced test approaches, including adversarial testing, A/B testing, back-to-back testing, and the use of attacks to uncover model weaknesses.</li>
+<li>Gain hands-on understanding of metamorphic testing, including how to derive and apply test cases where traditional test oracles are insufficient.</li>
+</ul>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -1036,8 +1045,8 @@ Data pipeline testing – see 5.1.3
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./Data Quality and Test Data.html" class="pagination-link" aria-label="title: &quot;AI Testing Tools and Frameworks&quot;">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">title: “AI Testing Tools and Frameworks”</span></span>
+      <a href="./Data Quality and Test Data.html" class="pagination-link" aria-label="Data Quality and Test Data">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Data Quality and Test Data</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

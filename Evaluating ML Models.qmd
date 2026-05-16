@@ -1,12 +1,11 @@
 ---
 title: "Evaluation of ML-Models"
-#toc-depth: 2    # Shows H1 and H2 MW: Don't work, only "Table of Contents" is shown ... should show H2 in the TOC, as they are not numbered and not all of them are relevant for the TOC. I will add a custom TOC with only the relevant H2s in the chapter.
 ---
 
 
-The following chapters cover the evaluation of ML models. This includes the evaluation of the model itself. The evaluation of ML models is a crucial step in the development process, as it helps to ensure that the model is performing as expected and is meeting the requirements of the stakeholders. The evaluation of ML models typically involves a combination of quantitative and qualitative methods, including the use of metrics, visualizations, and user feedback. The evaluation process can be used to identify areas for improvement in the model, as well as to validate the performance of the model on real-world data.
+The following chapters cover the evaluation of ML models. This is a crucial step in the development process, as it helps to ensure that the model is performing as expected and is meeting the requirements of the stakeholders. The evaluation of ML models typically involves a combination of quantitative and qualitative methods, including the use of metrics, visualizations, and user feedback. The evaluation process can be used to identify areas for improvement in the model, as well as to validate the performance of the model on real-world data.
 
-# Test Levels for ML models {.unnumbered}
+# Test Levels for ML models
 
 There are two test levels that can be used to evaluate ML models: 
 - Input data testing and 
@@ -432,6 +431,14 @@ identify potential label defects as the model continues to develop.
 
 For a given dataset (e.g., structured, tabular data), perform input data
 testing for things like missing data, duplicate data, and outliers.
+
+
+
+# Model Testing
+
+* Discover test approaches for mitigating risks in ML models, including documentation reviews, ML functional performance testing, and detecting overfitting, underfitting,and drift.
+* Learn advanced test approaches, including adversarial testing, A/B testing, back-to-back testing, and the use of attacks to uncover model weaknesses.
+* Gain hands-on understanding of metamorphic testing, including how to derive and apply test cases where traditional test oracles are insufficient.
 
 
 

@@ -2,6 +2,38 @@
 title: "Hands-On Exercises"
 ---
 
+# Tools and Techniques for Generating Software Tests
+
+## Fuzzing
+
+The [Fuzzing Book](https://www.fuzzingbook.org/) is a great resource for learning about fuzzing. It provides a comprehensive introduction to fuzzing, including the different types of fuzzing, how to create fuzzers, and how to use fuzzers to find bugs in software. The book also includes a number of exercises that allow you to practice fuzzing techniques and apply them to real-world software.
+
+[BASFuzz](https://github.com/lumos0514/BASFuzz) is a fuzzing framework that is designed to be easy to use and extend. It provides a simple interface for creating fuzzers and running them against software. BASFuzz also includes a number of built-in fuzzers that can be used to find bugs in software.
+
+![BASFuzz Workflow](/img/BASFuzz_Workflow.png)
+
+The BASFuzz Workflow is a step-by-step guide to using BASFuzz to find bugs in software. It includes instructions for setting up BASFuzz, creating fuzzers, and running fuzzers against oftware. The workflow also includes tips and best practices for using BASFuzz effectively. 
+
+![Example of Robustness Flaw found by BASFuzz](/img/BASFuzz_fig1.png)
+
+The figure above shows an example of a robustness flaw found by BASFuzz. In a contract translation scenario, subtly perturbed input text (red) misleads the software, causing it to mistranslate a clause expressing permission to terminate the contract into an obligation to terminate. By using BASFuzz, developers and testerscan identify and fix these vulnerabilities before they can be exploited in the wild.
+
+# Metamorphic Testing
+
+[Metamorphic Testing](https://en.wikipedia.org/wiki/Metamorphic_testing) is a technique for testing software that is based on the idea of metamorphic relations. A metamorphic relation is a relationship between the inputs and outputs of a software system that can be used to generate new, so-called follow-up  test cases from existing ones. For example, if a software system is supposed to be invariant to the order of its inputs, then we can generate new test cases by permuting the order of the inputs. Metamorphic testing can be used to find bugs in software that are difficult to detect with traditional testing techniques, such as bugs that only occur under certain conditions or with certain inputs.
+
+## LLMorph: Metamorphic Testing of Large Language Models
+
+[LLMorph](https://github.com/steven-b-cho/llmorph) is a tool to automatically test Large Language Models (LLMs) using Metamorphic Testing (MT), thorough their use on Natural Language Processing (NLP) tasks. It leverages the property-based nature MT to uncover faulty behaviours without the need for expensive labelled data. LLMorph is aimed at researchers and developers who want to evaluate the robustness of LLM-based NLP systems.
+
+![LLMorph workflow](/img/LLM-MorphFig1.png)
+
+
+## Mutation Testing
+[Mutation Testing](https://en.wikipedia.org/wiki/Mutation_testing) is a technique for evaluating the effectiveness of software tests. It involves making small changes to the code (mutations) and then running the tests to see if they fail. If the tests fail, it indicates that the tests are effective at catching bugs. If the tests pass, it may indicate that the tests are not effective at catching certain types of bugs.
+
+
+
 # German: Praktische Übungen zum Buch "KI-Testen"
 <img src="https://dpunkt.de/wp-content/uploads/2024/01/13867.jpg" align="right" width="30%" min-width="150px"/>
 
