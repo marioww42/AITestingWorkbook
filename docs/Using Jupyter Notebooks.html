@@ -367,7 +367,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="13.1" class="anchored" data-anchor-id="overview"><span class="header-section-number">13.1</span> Overview</h2>
 <p>Quarto can render Jupyter notebooks represented as plain text (.qmd) or as a normal notebook file (.ipynb). One benefit of using .ipynb is that you can use <a href="https://jupyterlab.readthedocs.io/en/stable/">JupyterLab</a> as your editor.</p>
 <p>Here is the “Hello, Quarto” example from the homepage inside JupyterLab:</p>
-<p><img src="images/jupyter-lab.png" class="border preview-image img-fluid" alt="A Jupyter notebook with, from top to bottom, some yaml frontmatter, a section heading, a code block, and the output of the code block. The contents are the same as the first part of the 'Welcome' page of this website."></p>
+<p><img src="img/jupyter-lab.png" class="border preview-image img-fluid" alt="A Jupyter notebook with, from top to bottom, some yaml frontmatter, a section heading, a code block, and the output of the code block. The contents are the same as the first part of the 'Welcome' page of this website."></p>
 <p>If you look at the source code you’ll note that YAML options were provided both at the top of the document and within the code cell. We’ll describe working with YAML options in more detail below.</p>
 </section>
 <section id="workflow" class="level2" data-number="13.2">
@@ -380,7 +380,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> preview notebook.ipynb</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>The notebook will be rendered and a web browser with a “live preview” opened. Position this browser so that you can see it as you edit and save the notebook:</p>
-<p><img src="images/jupyterlab-preview.png" class="img-fluid" alt="Two web browser windows arranged side by side. The window on the left is a JupyterLab window. The contents of this Jupyter document are rendered by Quarto in the window on the right."></p>
+<p><img src="img/jupyterlab-preview.png" class="img-fluid" alt="Two web browser windows arranged side by side. The window on the left is a JupyterLab window. The contents of this Jupyter document are rendered by Quarto in the window on the right."></p>
 <p>Every time you save within JupyterLab the preview will be automatically updated. You can use <code>quarto preview</code> for both HTML and PDF output.</p>
 <p>In the screenshot above you’ll note that we ran <code>quarto preview</code> inside a JupyterLab terminal window—this is generally recommended so that you can see progress and error messages when renders occur.</p>
 <p>Preview uses the default format specified within the document—to use an alternate format pass the <code>--to</code> option to <code>quarto preview</code>. For example:</p>
@@ -463,19 +463,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="yaml-front-matter" class="level2" data-number="13.3">
 <h2 data-number="13.3" class="anchored" data-anchor-id="yaml-front-matter"><span class="header-section-number">13.3</span> YAML Front Matter</h2>
 <p>The first cell of your notebook should be a <strong>Raw</strong> cell that contains the document title, author, and any other options you need to specify. Note that you can switch the type of a cell to <strong>Raw</strong> using the notebook toolbar:</p>
-<p><img src="images/jupyter-lab-yaml.png" class="border img-fluid" alt="The top section of a JupyterLab document. There is a Raw cell containing yaml front matter."></p>
+<p><img src="img/jupyter-lab-yaml.png" class="border img-fluid" alt="The top section of a JupyterLab document. There is a Raw cell containing yaml front matter."></p>
 <p>In this example we specify that we want code to appear collapsed by default. There are YAML options to control many other aspects of document rendering. See the documentation on <a href="./docs/authoring/markdown-basics.qmd">Authoring</a> and <a href="./docs/output-formats/html-basics.qmd">Output Formats</a> for additional details.</p>
 </section>
 <section id="markdown-cells" class="level2" data-number="13.4">
 <h2 data-number="13.4" class="anchored" data-anchor-id="markdown-cells"><span class="header-section-number">13.4</span> Markdown Cells</h2>
 <p>Here’s the underlying code for the markdown cell:</p>
-<p><img src="images/jupyter-lab-markdown.png" class="border img-fluid" alt="A snippet of a JupyterLab document containing a Markdown cell. The cell contains some text written in Markdown."></p>
+<p><img src="img/jupyter-lab-markdown.png" class="border img-fluid" alt="A snippet of a JupyterLab document containing a Markdown cell. The cell contains some text written in Markdown."></p>
 <p>Note that a Quarto cross-reference (<code>@fig-polar</code>) is included in the markdown. Any valid Pandoc markdown syntax can be included in markdown cells.</p>
 </section>
 <section id="output-options" class="level2" data-number="13.5">
 <h2 data-number="13.5" class="anchored" data-anchor-id="output-options"><span class="header-section-number">13.5</span> Output Options</h2>
 <p>Quarto uses leading comments with a special prefix (<code>#|</code>) to denote cell options. Here we specify the <code>label</code> and <code>fig-cap</code> options so that the plot generated from the cell can be cross-referenced.</p>
-<p><img src="images/jupyter-lab-output-options.png" class="img-fluid" alt="A snippet of a JupyterLab document containing a code cell. At the top of cell, before the code, are the Quarto chunk options '#| label: fig-polar' and '#| fig-cap: A line plot on a polar axis.'"></p>
+<p><img src="img/jupyter-lab-output-options.png" class="img-fluid" alt="A snippet of a JupyterLab document containing a code cell. At the top of cell, before the code, are the Quarto chunk options '#| label: fig-polar' and '#| fig-cap: A line plot on a polar axis.'"></p>
 <p>Note that options must appear at the very beginning of the cell. As with document front-matter, option names/values use YAML syntax.</p>
 <p>There are many output options available, including options to optionally hide code, warnings, and/or output. See the documentation on <a href="./docs/computations/execution-options.qmd#output-options">Output Options</a> for additional details.</p>
 </section>
@@ -571,7 +571,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="polar-axis" class="level2" data-number="13.8">
 <h2 data-number="13.8" class="anchored" data-anchor-id="polar-axis"><span class="header-section-number">13.8</span> Polar Axis</h2>
-<p>For a demonstration of a line plot on a polar axis, see <a href="#fig-polar" class="quarto-xref">Figure&nbsp;<span>13.1</span></a>.</p>
+<p>For a demonstration of a line plot on a polar axis, see <a href="#fig-polar" class="quarto-xref">Figure&nbsp;<span class="quarto-unresolved-ref">fig-polar</span></a>.</p>
 <div id="cell-fig-polar" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
