@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.5.16)  16 MAY 2026 12:37
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.5.16)  16 MAY 2026 12:53
  restricted system commands enabled.
 **index.tex
 (./index.tex
@@ -1671,26 +1671,50 @@ LaTeX Warning: Reference `sec-code-blocks' on page 112 undefined on input line 4
 
 [112] [113]
 chapter 23.
+<img/jupyter-lab.png, id=799, 762.85pt x 854.19125pt>
+File: img/jupyter-lab.png Graphic file (type png)
+<use img/jupyter-lab.png>
+Package luatex.def Info: img/jupyter-lab.png  used on input line 4480.
+(luatex.def)             Requested size: 762.84814pt x 854.18918pt.
 
-LaTeX Warning: File `img/jupyter-lab.png' not found on input line 4480.
+Overfull \hbox (10.94339pt too wide) in paragraph at lines 4480--4481
+[][] 
+ []
 
+[114
 
-! Package luatex.def Error: File `img/jupyter-lab.png' not found: using draft setting.
+]
 
-See the luatex.def package documentation for explanation.
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/jupyterlab-preview.png, id=807, 1524.69624pt x 955.57pt>
+File: img/jupyterlab-preview.png Graphic file (type png)
+<use img/jupyterlab-preview.png>
+Package luatex.def Info: img/jupyterlab-preview.png  used on input line 4507.
+(luatex.def)             Requested size: 1524.69254pt x 955.56767pt.
+
+Overfull \hbox (10.93298pt too wide) in paragraph at lines 4507--4508
+[][] 
+ []
+
+[115<./img/jupyter-lab.png>]
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.4480 ...ics[keepaspectratio]{img/jupyter-lab.png}}
-                                                  
+l.4568 
+     
 
 Here is how much of LuaTeX's memory you used:
- 43324 strings out of 475892
+ 43330 strings out of 475892
  100000,1648299 words of node,token memory allocated
- 11428 words of node memory still in use:
-   27 hlist, 4 vlist, 5 rule, 24 disc, 6 local_par, 2 dir, 121 glue, 37 kern, 22 penalty, 8 margin_kern, 403 glyph, 2269 attribute, 70 glue_spec, 875 attribute_list, 1 temp, 7 if_stack, 7 write, 1 pdf_start_link, 1 pdf_end_link, 2 pdf_dest, 12 pdf_action nodes
-   avail lists: 1:2,2:9412,3:365,4:73,5:329,6:52,7:4895,8:81,9:220,10:18,11:534,12:1
- 64871 multiletter control sequences out of 65536+600000
- 88 fonts using 27566711 bytes
+ 26286 words of node memory still in use:
+   128 hlist, 21 vlist, 34 rule, 55 disc, 21 local_par, 4 dir, 351 glue, 86 kern, 79 penalty, 1 unset, 11 margin_kern, 841 glyph, 2 align_record, 5072 attribute, 91 glue_spec, 1837 attribute_list, 9 temp, 1 align_stack, 1 if_stack, 4 write, 103 pdf_literal, 1 pdf_start_link, 1 pdf_end_link, 3 pdf_dest, 12 pdf_action, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
+   avail lists: 1:2,2:5645,3:205,4:70,5:257,6:36,7:4227,8:81,9:69,10:18,11:503,12:1
+ 64869 multiletter control sequences out of 65536+600000
+ 88 fonts using 27566823 bytes
  108i,8n,114p,11226b,1126s stack positions out of 10000i,1000n,20000p,200000b,200000s
 !  ==> Fatal error occurred, no output PDF file produced!
