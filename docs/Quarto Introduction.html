@@ -420,7 +420,7 @@ This will generate the output file in the same directory as your source file, wi
 </section>
 <section id="sec-writing" class="level2" data-number="12.7">
 <h2 data-number="12.7" class="anchored" data-anchor-id="sec-writing"><span class="header-section-number">12.7</span> Writing content</h2>
-<p>Beyond the document header and executable code cells, the content of a Quarto document is written in markdown. But not just any flavor of markdown, Quarto’s own flavor called <strong>Quarto markdown</strong>. In this chapter, you’ll learn just enough about Quarto markdown to get you writing simple documents right away. We’ll tease you with some of the rich content you can create with Quarto markdown, but delay a comprehensive coverage of things like equations, cross-references, citations, callouts, figures and tables to <a href="MoreMarkdown.html" class="quarto-xref"><span>Chapter 16</span></a>.</p>
+<p>Beyond the document header and executable code cells, the content of a Quarto document is written in markdown. But not just any flavor of markdown, Quarto’s own flavor called <strong>Quarto markdown</strong>. In this chapter, you’ll learn just enough about Quarto markdown to get you writing simple documents right away. We’ll tease you with some of the rich content you can create with Quarto markdown, but delay a comprehensive coverage of things like equations, cross-references, citations, callouts, figures and tables to <a href="#sec-authoring" class="quarto-xref"><span class="quarto-unresolved-ref">sec-authoring</span></a>.</p>
 <section id="basics" class="level3" data-number="12.7.1">
 <h3 data-number="12.7.1" class="anchored" data-anchor-id="basics"><span class="header-section-number">12.7.1</span> Basics</h3>
 <p>Markdown is a plaintext syntax for describing document structure. Here’s some example markdown in a Quarto document:</p>
@@ -469,14 +469,14 @@ This will generate the output file in the same directory as your source file, wi
 <p>It is important to remember that Quarto markdown is a specific flavor of markdown—although it shares much of its syntax with other variants you shouldn’t expect a component of any arbitrary markdown variant to work with Quarto.</p>
 <p>The above example illustrates two pieces of syntax you’ll see often in Quarto markdown that you might not have seen in other variants:</p>
 <ul>
-<li><p>Attributes: additional metadata for a component specified inside curly braces, e.g the <code>{#fig-repsonse}</code> on the image. You’ll see lots of examples in <a href="MoreMarkdown.html" class="quarto-xref"><span>Chapter 16</span></a>, and can specifically learn more in <a href="MoreMarkdown.html#tip-attributes" class="quarto-xref">Tip&nbsp;<span>16.1</span></a>.</p></li>
+<li><p>Attributes: additional metadata for a component specified inside curly braces, e.g the <code>{#fig-repsonse}</code> on the image. You’ll see lots of examples in <a href="#sec-authoring" class="quarto-xref"><span class="quarto-unresolved-ref">sec-authoring</span></a>, and can specifically learn more in <a href="#tip-attributes" class="quarto-xref">Tip&nbsp;<span class="quarto-unresolved-ref">tip-attributes</span></a>.</p></li>
 <li><p>Fenced divs: blocks of content inside colon delimited sections, often with attributes attached, e.g.&nbsp;the callout:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>::: {.callout-caution}</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>Content</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Fenced divs are used in Quarto to implement lots of different block level treatments: callouts, figure or table panels, and complex layouts.</p></li>
 </ul>
-<p><a href="MoreMarkdown.html" class="quarto-xref"><span>Chapter 16</span></a> covers the most useful features of Quarto markdown in more detail.</p>
+<p><a href="#sec-authoring" class="quarto-xref"><span class="quarto-unresolved-ref">sec-authoring</span></a> covers the most useful features of Quarto markdown in more detail.</p>
 </section>
 <section id="things-to-watch-out-for" class="level3" data-number="12.7.3">
 <h3 data-number="12.7.3" class="anchored" data-anchor-id="things-to-watch-out-for"><span class="header-section-number">12.7.3</span> Things to watch out for</h3>
@@ -510,7 +510,7 @@ This will generate the output file in the same directory as your source file, wi
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Code to be executed</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Code cells are the subject of the next chapter, <span class="quarto-unresolved-ref">?sec-code</span></p></li>
+<p>Code cells are the subject of the next chapter, <a href="#sec-code" class="quarto-xref"><span class="quarto-unresolved-ref">sec-code</span></a></p></li>
 <li><p><strong>Code blocks</strong> are code that should be syntax highlighted but simply displayed, not executed. Code blocks use the syntax:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{.r}</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Code to be displayed</span></span>
@@ -519,7 +519,7 @@ This will generate the output file in the same directory as your source file, wi
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="in">``` r</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Code to be displayed</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>You’ll can more about code blocks in <a href="MoreMarkdown.html#sec-code-blocks" class="quarto-xref"><span>Section 16.6</span></a>.</p></li>
+<p>You’ll can more about code blocks in <a href="#sec-code-blocks" class="quarto-xref"><span class="quarto-unresolved-ref">sec-code-blocks</span></a>.</p></li>
 </ul>
 <p>The syntax difference, as little as a <code>.</code>, means it is easy to mistake one for the other in your document. However, the differences in behavior are huge—code cells are handled by the computational engine, code blocks are not. When you are reading examples, or trouble-shooting your own documents, keep that distinction in mind and be wary of trying to apply solutions for code blocks to code cells and vice versa.</p>
 </section>

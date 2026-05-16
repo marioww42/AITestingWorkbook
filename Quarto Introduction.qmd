@@ -1,6 +1,5 @@
 ---
 bibliography: references.bib
-client: "MW"
 ---
 
 # An Introduction to Quarto

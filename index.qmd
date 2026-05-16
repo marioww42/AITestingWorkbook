@@ -32,6 +32,25 @@ The key message for creating this work is simple:
 
 :::
 
+## How to read this workbook?
+
+Select your own reading path!
+
+```{mermaid}
+flowchart LR
+  A[<a href='http://google.com'>Ask Google</a>] --> B(Round edge)
+  B --> C{Decision}
+  C --> D[Result one]
+  C --> E[Result two]
+```
+
+```{mermaid}
+  graph LR
+  A -- text --> B --> Stackoverflow -- msg --> myLabel2
+  click Stackoverflow "https://stackoverflow.com/" "some desc when mouse hover" _blank
+  click myLabel2 "@sec-metrics-for-classification" "some desc when mouse hover"
+```
+
 
 This is a Quarto book.
 To learn more about Quarto books visit <https://quarto.org/docs/books>.
