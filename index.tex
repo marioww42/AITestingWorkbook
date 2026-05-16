@@ -381,9 +381,7 @@ The key message for creating this work is simple:
 
 Select your own reading path!
 
-\includegraphics[width=6.94in,height=1.81in]{index_files/figure-latex/mermaid-figure-1.png}
-
-\includegraphics[width=6.78in,height=0.73in]{index_files/figure-latex/mermaid-figure-2.png}
+\includegraphics[width=5.24in,height=0.98in]{index_files/figure-latex/mermaid-figure-1.png}
 
 This is a Quarto book. To learn more about Quarto books visit
 \url{https://quarto.org/docs/books}.
@@ -392,17 +390,32 @@ This is a Quarto book. To learn more about Quarto books visit
 
 \chapter{Introduction}\label{introduction}
 
-This is a book created from markdown and executable code.
+Testing of AI-based software is different from testing traditional
+software. It requires new approaches, tools, and mindsets. This workbook
+will guide you through the key concepts, techniques, and challenges of
+AI testing. It will help you understand how to design effective tests,
+evaluate AI systems, and ensure their quality in real-world
+applications.
 
-See Knuth (1984) for additional discussion of literate programming.
-Another reference is De Angelis et al. (2023),
+This is a book created from markdown and executable code. The idea of
+combining code and documentation in a single source file is not new. It
+was first proposed by Donald Knuth in his concept of literate
+programming, where the code is written as a narrative that explains the
+logic and design decisions behind it. The goal is to make the code more
+readable, maintainable, and reusable by treating it as a form of
+literature. See Knuth (1984) for additional discussion of literate
+programming.
+
+In the context of software testing, this approach allows us to create a
+practical workbook that not only explains the concepts and techniques of
+AI testing but also provides executable examples and exercises that
+readers can run and modify. This way, readers can learn by doing, which
+is often more effective than just reading about the theory.
 
 \part{Start Here - AI QA Basics}
 
 \chapter{Introduction to Artificial
 Intelligence}\label{introduction-to-artificial-intelligence}
-
-\section{Introduction to AI}\label{introduction-to-ai}
 
 Adapted from
 \href{https://istqb.org/certifications/certified-tester-ai-testing-ct-ai/}{ISTQB
@@ -419,7 +432,7 @@ well as popular ML frameworks. Finally, it considers essential
 regulatory and technical standards that guide responsible AI development
 and deployment within various domains.
 
-\subsection{AI-Based and Conventional
+\section{AI-Based and Conventional
 Systems}\label{ai-based-and-conventional-systems}
 
 Conventional computer systems are typically programmed using imperative
@@ -459,7 +472,7 @@ as they encounter new data. This adaptability makes AI particularly
 powerful in dynamic environments. Adaptability also requires continuous
 monitoring to maintain ongoing alignment with core requirements.
 
-\subsection{Narrow AI, General AI, and Super
+\section{Narrow AI, General AI, and Super
 AI}\label{narrow-ai-general-ai-and-super-ai}
 
 Narrow AI{}, also known as weak AI, is designed to perform specific
@@ -495,7 +508,7 @@ existential risk to humanity. The point at which AI-based systems
 transition from general AI to super AI, if it were to occur, is commonly
 known as the technological singularity.
 
-\subsection{Different Types of AI
+\section{Different Types of AI
 Technologies}\label{different-types-of-ai-technologies}
 
 Artificial Intelligence encompasses a range of technologies, each suited
@@ -3316,197 +3329,200 @@ Lifecycle}\label{ai-development-mlops-and-llmops-lifecycle}
 
 \part{Testing AI-Based Systems}
 
-\chapter{title: ``AI Testing Tools and
-Frameworks''}\label{title-ai-testing-tools-and-frameworks}
+\chapter{Data Quality and Test Data}\label{data-quality-and-test-data}
 
-{\def\LTcaptype{none} % do not increment counter
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\linewidth - 0\tabcolsep) * \real{0.0556}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
 TODO
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-title: Evaluation of ML-Models \\
-\end{longtable}
-}
 
-\begin{verbatim}
+In this section, we will explore the importance of data quality and test
+data in the context of testing AI models. We will discuss the challenges
+associated with ensuring data quality, and how to create effective test
+datasets for evaluating AI models. We will also cover techniques for
+data preprocessing, data augmentation, and synthetic data generation,
+which can help to improve the quality of the test data and enhance the
+performance of AI models.
 
+\chapter{Evaluation of ML-Models}\label{evaluation-of-ml-models}
 
+The following chapters cover the evaluation of ML models. This is a
+crucial step in the development process, as it helps to ensure that the
+model is performing as expected and is meeting the requirements of the
+stakeholders. The evaluation of ML models typically involves a
+combination of quantitative and qualitative methods, including the use
+of metrics, visualizations, and user feedback. The evaluation process
+can be used to identify areas for improvement in the model, as well as
+to validate the performance of the model on real-world data.
 
+\chapter{Test Levels for ML models}\label{test-levels-for-ml-models}
 
-The following chapters cover the evaluation of ML models. This includes the evaluation of the model itself. The evaluation of ML models is a crucial step in the development process, as it helps to ensure that the model is performing as expected and is meeting the requirements of the stakeholders. The evaluation of ML models typically involves a combination of quantitative and qualitative methods, including the use of metrics, visualizations, and user feedback. The evaluation process can be used to identify areas for improvement in the model, as well as to validate the performance of the model on real-world data.
+There are two test levels that can be used to evaluate ML models: -
+Input data testing and - ML model testing.
 
-# Test Levels for ML models {#sec-test-levels-for-ml-models, .unnumbered}
+Input data testing focuses on evaluating the quality of the input data,
+such as checking for missing values, outliers, and data distribution. ML
+model testing focuses on evaluating the performance of the model on a
+given dataset, using metrics such as accuracy, precision, recall, F1
+score, and AUC-ROC.
 
-There are two test levels that can be used to evaluate ML models: 
-- Input data testing and 
-- ML model testing. 
+\section{Input data testing}\label{input-data-testing}
 
-Input data testing focuses on evaluating the quality of the input data, such as checking for missing values, outliers, and data distribution. ML model testing focuses on evaluating the performance of the model on a given dataset, using metrics such as accuracy, precision, recall, F1 score, and AUC-ROC.
+Input data testing is important because the quality of the input data
+can have a significant impact on the performance of the ML model. If the
+input data is of poor quality, the model may not be able to learn
+effectively and may produce inaccurate results. Therefore, it is
+important to perform input data testing before training the ML model to
+ensure that the data is suitable for training and that any issues with
+the data are addressed.
 
-## Input data testing 
+The objective of input data testing{} is to confirm that the data used
+by the MLS for training, testing, and prediction is of sufficient
+quality (see 3.2). It includes reviews, statistical techniques (e.g.,
+testing data for bias), EDA of the training data, and static and dynamic
+testing{} of the data pipeline.
 
-Input data testing is important because the quality of the input data can have a significant impact on the performance of the ML model. If the input data is of poor quality, the model may not be able to learn effectively and may produce inaccurate results. Therefore, it is important to perform input data testing before training the ML model to ensure that the data is suitable for training and that any issues with the data are addressed.
-
-The objective of input data testing<span class="indexref"
-entry="input data testing"></span> is to confirm that the data used by
-the MLS for training, testing, and prediction is of sufficient quality
-(see 3.2). It includes reviews, statistical techniques (e.g., testing
-data for bias), EDA of the training data, and static and dynamic
-testing<span class="indexref" entry="dynamic testing"></span> of the
-data pipeline.
-
-### Input Data Risks and Mitigations
+\subsection{Input Data Risks and
+Mitigations}\label{input-data-risks-and-mitigations}
 
 The following table lists examples of input data risks and corresponding
 testing that could be used for risk mitigation:
 
-<table>
-<colgroup>
-<col style="width: 36%" />
-<col style="width: 63%" />
-</colgroup>
-<thead>
-<tr>
-<th style="text-align: left;"><strong>Potential Risks</strong></th>
-<th style="text-align: left;"><strong>Possible Risk
-Mitigations</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p>Defects in the training data leading to bias</p>
-<p>Problems within the algorithm, model, or ML development framework
-that introduce systemic unfairness</p></td>
-<td style="text-align: left;">Testing for bias – see 5.1.2</td>
-</tr>
-<tr>
-<td style="text-align: left;"><p>Training data acquired from
-untrustworthy sources</p>
-<p>Data is poorly managed</p></td>
-<td style="text-align: left;">Data provenance testing</td>
-</tr>
-<tr>
-<td style="text-align: left;">Poisoned training data</td>
-<td style="text-align: left;"><p>A/B testing – see 6.1.9</p>
-<p>Data provenance testing</p>
-<p>EDA – see 3.2.1</p>
-<p>Attacks as part of red teaming – see 4.2.2</p></td>
-</tr>
-<tr>
-<td style="text-align: left;"><p>Internally inconsistent dataset</p>
-<p>Out of range data</p>
-<p>Wrong data types</p></td>
-<td style="text-align: left;">Dataset constraint testing – see
-5.1.5</td>
-</tr>
-<tr>
-<td style="text-align: left;">Sub-optimal feature selection</td>
-<td style="text-align: left;">Feature testing</td>
-</tr>
-<tr>
-<td style="text-align: left;"><p>Imbalanced dataset due to insufficient
-coverage of all target classes</p>
-<p>Skewed dataset through data augmentation</p>
-<p>Missing data</p>
-<p>Training data focused on a subset of all use cases</p>
-<p>Full range of values not covered in the dataset</p></td>
-<td style="text-align: left;">Data representativeness testing – see
-5.1.4</td>
-</tr>
-<tr>
-<td style="text-align: left;"><blockquote>
-<p>Poor labelling guidelines</p>
-<p>Ambiguous data</p>
-<p>Poor annotation leading to inaccurate or inconsistent labels</p>
-</blockquote></td>
-<td style="text-align: left;">Label correctness testing – see
-5.1.66</td>
-</tr>
-<tr>
-<td style="text-align: left;"><blockquote>
-<p>Poor design or integration leading to data pipeline failures</p>
-<p>Data quality defects compromising data pipeline outputs</p>
-<p>Performance degradation in the operational use of the data
-pipeline</p>
-<p>Security breaches or uncontrolled changes impacting the data
-pipeline</p>
-</blockquote></td>
-<td style="text-align: left;">Data pipeline testing – see 5.1.3</td>
-</tr>
-</tbody>
-</table>
+Potential Risks
 
-### Testing for Bias 
+Possible Risk Mitigations
+
+Defects in the training data leading to bias
+
+Problems within the algorithm, model, or ML development framework that
+introduce systemic unfairness
+
+Testing for bias -- see 5.1.2
+
+Training data acquired from untrustworthy sources
+
+Data is poorly managed
+
+Data provenance testing
+
+Poisoned training data
+
+A/B testing -- see 6.1.9
+
+Data provenance testing
+
+EDA -- see 3.2.1
+
+Attacks as part of red teaming -- see 4.2.2
+
+Internally inconsistent dataset
+
+Out of range data
+
+Wrong data types
+
+Dataset constraint testing -- see 5.1.5
+
+Sub-optimal feature selection
+
+Feature testing
+
+Imbalanced dataset due to insufficient coverage of all target classes
+
+Skewed dataset through data augmentation
+
+Missing data
+
+Training data focused on a subset of all use cases
+
+Full range of values not covered in the dataset
+
+Data representativeness testing -- see 5.1.4
+
+Poor labelling guidelines
+
+Ambiguous data
+
+Poor annotation leading to inaccurate or inconsistent labels
+
+Label correctness testing -- see 5.1.66
+
+Poor design or integration leading to data pipeline failures
+
+Data quality defects compromising data pipeline outputs
+
+Performance degradation in the operational use of the data pipeline
+
+Security breaches or uncontrolled changes impacting the data pipeline
+
+Data pipeline testing -- see 5.1.3
+
+\subsection{Testing for Bias}\label{testing-for-bias}
 
 Bias in an MLS refers to non-random, unfair differences in treatment
 based on sensitive attributes like gender, age, or race, which is often
 unlawful and renders the system discriminatory.
 
-Testing for bias<span class="indexref" entry="testing for bias"></span>
-in an MLS involves understanding its potential sources, which primarily
-include:
+Testing for bias{} in an MLS involves understanding its potential
+sources, which primarily include:
 
-- Defects in the training data, such as unrepresentativeness, historical
+\begin{itemize}
+\item
+  Defects in the training data, such as unrepresentativeness, historical
   skews, or deliberate poisoning (data bias).
-
-- Defects within the algorithm, model, or development framework that
+\item
+  Defects within the algorithm, model, or development framework that
   introduce systemic unfairness, such as an algorithm using a decision
   threshold for credit scores in a loan approval system (algorithmic
   bias).
+\end{itemize}
 
 Test approaches for detecting bias include the following:
 
-- Review<span class="indexref" entry="review"></span>s of the overall ML
-  workflow, and especially the data preparation, to identify their
-  potential for introducing bias.
-
-- Reviews of dataset documentation to identify and mitigate potential
+\begin{itemize}
+\item
+  Review{}s of the overall ML workflow, and especially the data
+  preparation, to identify their potential for introducing bias.
+\item
+  Reviews of dataset documentation to identify and mitigate potential
   sources of unfairness by examining how the data was collected,
   annotated, and what populations are represented.
+\item
+  Static analysis{} of both data preparation programs and the model
+  implementation code to identify anti-patterns or the mishandling of
+  sensitive attributes.
+\item
+  EDA{} of training data by using visualization and clustering methods
+  to reveal imbalanced data, skewed distributions, or anomalous
+  groupings across different sensitive attributes.
+\item
+  Dynamic testing{} to help detect bias in an ML model by feeding a
+  known unbiased and representative dataset through the system and
+  analyzing its predictions for statistically significant differences in
+  outcomes across various sensitive groups. This identifies bias in
+  model outputs, regardless of whether the bias was introduced during
+  data training or during model development.
+\item
+  Label correctness testing{} (see 5.1.6) to identify mislabeling that
+  causes incorrect associations to be learned between attributes and
+  outcomes for specific sensitive attributes.
+\item
+  Disparate impact analysis{}:
 
-- Static analysis<span class="indexref" entry="static analysis"></span>
-  of both data preparation programs and the model implementation code to
-  identify anti-patterns or the mishandling of sensitive attributes.
-
-- EDA<span class="indexref" entry="exploratory data analysis"></span> of
-  training data by using visualization and clustering methods to reveal
-  imbalanced data, skewed distributions, or anomalous groupings across
-  different sensitive attributes.
-
-- Dynamic testing<span class="indexref" entry="dynamic testing"></span>
-  to help detect bias in an ML model by feeding a known unbiased and
-  representative dataset through the system and analyzing its
-  predictions for statistically significant differences in outcomes
-  across various sensitive groups. This identifies bias in model
-  outputs, regardless of whether the bias was introduced during data
-  training or during model development.
-
-- Label correctness testing<span class="indexref"
-  entry="label correctness testing"></span> (see 5.1.6) to identify
-  mislabeling that causes incorrect associations to be learned between
-  attributes and outcomes for specific sensitive attributes.
-
-- Disparate impact analysis<span class="indexref"
-  entry="disparate impact analysis"></span>:
-
-  1.  Identify sensitive attributes for the model.
-
-  2.  Generate counterfactuals for the sensitive attributes. (e.g.,
-      example scenarios where gender is changed from male to female in a
-      loan application).
-
-  3.  Generate model output by presenting it with the counterfactuals.
-
-  4.  Analyze the results of multiple tests to achieve a statistically
-      significant result, which determines if changing a sensitive
-      attribute causes the model results to change, signaling the
-      presence of bias.
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \item
+    Identify sensitive attributes for the model.
+  \item
+    Generate counterfactuals for the sensitive attributes. (e.g.,
+    example scenarios where gender is changed from male to female in a
+    loan application).
+  \item
+    Generate model output by presenting it with the counterfactuals.
+  \item
+    Analyze the results of multiple tests to achieve a statistically
+    significant result, which determines if changing a sensitive
+    attribute causes the model results to change, signaling the presence
+    of bias.
+  \end{enumerate}
+\end{itemize}
 
 Note: Disparate impact analysis can also be applied to combinations of
 sensitive attributes, allowing hidden bias associated with attribute
@@ -3514,15 +3530,14 @@ combinations to be identified. However, take care to confirm that
 counterfactual examples are not unrealistic, as the model may then
 respond to them rather than to any underlying bias.
 
-### Data Pipeline Testing
+\subsection{Data Pipeline Testing}\label{data-pipeline-testing}
 
-Effective data pipeline testing<span class="indexref"
-entry="data pipeline testing"></span> is essential not only for
-confirming the reliability and performance of data-driven systems but
-also for maintaining high data quality throughout the entire ML workflow
-(see 3.1.2).
+Effective data pipeline testing{} is essential not only for confirming
+the reliability and performance of data-driven systems but also for
+maintaining high data quality throughout the entire ML workflow (see
+3.1.2).
 
-A layered approach is employed, beginning with data-pipeline design
+A layered approach is employed, beginning with~data-pipeline design
 reviews during the design phase.
 
 Component testing includes testing of data ingestion components,
@@ -3533,21 +3548,21 @@ the implementation of data validation rules, confirm robust error
 handling, and test for vulnerabilities that could be exploited to
 introduce malware or poisoned data.
 
-Component integration testing verifies the seamless flow of data across
+Component integration testing~verifies the seamless flow of data across
 internal interfaces and the correct interpretation of data as it moves
 through the pipeline. It detects defects arising from mismatched
-interfaces or incorrect assumptions between components. 
+interfaces or incorrect assumptions between components.~
 
-System testing assesses the fully assembled pipeline, beginning
-with smoke testing to confirm basic pipeline functionality. Functional
-testing verifies the pipeline's compliance with specified requirements,
-including data transformations and data routing. Non-functional
-testing evaluates performance under load, scalability to handle
+System testing~assesses the fully assembled pipeline, beginning
+with~smoke testing~to confirm basic pipeline functionality.~Functional
+testing~verifies the pipeline's compliance with specified requirements,
+including data transformations and data routing.~Non-functional
+testing~evaluates performance under load, scalability to handle
 increasing data volumes, and security measures to protect data
-integrity. Fault injection testing measures pipeline robustness by
-simulating defective data inputs, assessing the system’s ability to
+integrity. Fault injection testing~measures pipeline robustness by
+simulating defective data inputs, assessing the system's ability to
 maintain data integrity when faced with unexpected or corrupted data.
-Back-to-back testing (see 6.1.10) compares the operational pipeline
+Back-to-back testing~(see 6.1.10) compares the operational pipeline
 against the training pipeline to verify consistent functionality.
 
 System integration testing verifies correct interaction between the data
@@ -3557,7 +3572,7 @@ models.
 
 Testing in production is performed on the operational system.
 Back-to-back testing verifies that performance is consistent or improved
-compared to previous versions. A/B testing (see 6.1.9) enables
+compared to previous versions.~A/B testing~(see 6.1.9) enables
 comparisons of new pipeline iterations against baselines, validating
 improvements while confirming no degradation in the live data stream.
 Tools can be integrated to continuously monitor and observe model
@@ -3565,7 +3580,7 @@ behavior, performance, and potential defects in real time.
 
 Configuration management reviews help verify that the correct pipeline
 code versions, configurations, and datasets are used across training,
-testing, and production. 
+testing, and production.~
 
 Finally, the test strategies must align with the pipeline's purpose.
 Training pipelines, often exploratory prototypes, have different
@@ -3573,11 +3588,11 @@ priorities than robust operational pipelines. The testing of training
 pipelines may focus on data integrity, while operational pipeline
 testing prioritizes reliability, performance, and maintainability.
 
-### Testing for Data Representativeness 
+\subsection{Testing for Data
+Representativeness}\label{testing-for-data-representativeness}
 
-Data representativeness testing<span class="indexref"
-entry="data representativeness testing"></span> determines how closely
-the characteristics of the datasets used for training, validation, and
+Data representativeness testing{} determines how closely the
+characteristics of the datasets used for training, validation, and
 testing ML models match the real-world data that the ML model will
 encounter in operation. This testing addresses various forms of
 misrepresentation, including skewed datasets, missing data,
@@ -3586,52 +3601,67 @@ operational scenarios, and imbalanced class representation (see 5.1.1).
 
 This testing typically includes the following steps:
 
-1\. Define the target population:
+1. Define the target population:
 
-- Understand the intended use cases and operational context of the MLS
-
-- Analyze the characteristics of end users and operational environments
-
-- Identify the expected operational data distributions and critical edge
+\begin{itemize}
+\item
+  Understand the intended use cases and operational context of the MLS
+\item
+  Analyze the characteristics of end users and operational environments
+\item
+  Identify the expected operational data distributions and critical edge
   cases by:
 
-  - consulting domain experts to understand real-world data patterns
-
-  - analyzing data from existing systems or similar applications
-
-  - using benchmark datasets from trusted sources (e.g., NIST, industry
+  \begin{itemize}
+  \item
+    consulting domain experts to understand real-world data patterns
+  \item
+    analyzing data from existing systems or similar applications
+  \item
+    using benchmark datasets from trusted sources (e.g., NIST, industry
     databases)
-
-- Apply stratified sampling to the representative reference data to
+  \end{itemize}
+\item
+  Apply stratified sampling to the representative reference data to
   create a baseline that covers all relevant subgroups in the target
   domain
+\end{itemize}
 
-2\. Analyze data characteristics:
+2. Analyze data characteristics:
 
-- Apply EDA (see 3.2.1) to:
+\begin{itemize}
+\item
+  Apply EDA (see 3.2.1) to:
 
-  - training/test datasets being evaluated for representativeness
-
-  - reference dataset that represents the expected operational data
-
-  - visualize distributions through histograms, scatter plots, and other
+  \begin{itemize}
+  \item
+    training/test datasets being evaluated for representativeness
+  \item
+    reference dataset that represents the expected operational data
+  \item
+    visualize distributions through histograms, scatter plots, and other
     graphical techniques
-
-- Examine feature relationships, and correlations in particular, to
+  \end{itemize}
+\item
+  Examine feature relationships, and correlations in particular, to
   identify patterns that should be preserved
-
-- Identify potential anomalies, gaps, or unusual concentrations in the
+\item
+  Identify potential anomalies, gaps, or unusual concentrations in the
   data
+\end{itemize}
 
-3\. Apply statistical assessment techniques:
+3. Apply statistical assessment techniques:
 
-- Use formal statistical tests such as Chi-squared and
-  Kolmogorov-Smirnov to compare distributions \[STATS\]
-
-- Check for data imbalances, particularly in classification problems
-
-- Verify adequate coverage of both typical scenarios and edge/boundary
+\begin{itemize}
+\item
+  Use formal statistical tests such as Chi-squared and
+  Kolmogorov-Smirnov to compare distributions {[}STATS{]}
+\item
+  Check for data imbalances, particularly in classification problems
+\item
+  Verify adequate coverage of both typical scenarios and edge/boundary
   cases
+\end{itemize}
 
 Testing for data representativeness should be performed before model
 training to prevent building models on unrepresentative data. After
@@ -3640,14 +3670,13 @@ continuously monitored to detect changes that might indicate data drift
 from the original training data distributions (see 6.1.7 on drift
 testing).
 
-### Dataset Constraint Testing
+\subsection{Dataset Constraint
+Testing}\label{dataset-constraint-testing}
 
-Dataset constraint testing<span class="indexref"
-entry="dataset constraint testing"></span> verifies whether the data in
-a dataset adheres to predefined rules or constraints. The goal is to
-confirm the integrity and consistency of the data used in ML. For
-instance, a test of the consistency of values in a dataset could be
-carried out.
+Dataset constraint testing{} verifies whether the data in a dataset
+adheres to predefined rules or constraints. The goal is to confirm the
+integrity and consistency of the data used in ML. For instance, a test
+of the consistency of values in a dataset could be carried out.
 
 Constraints on data are typically found in database schemas. A database
 schema defines the structure, types, and relationships of the data.
@@ -3658,47 +3687,56 @@ constraints. A constraint can be applied to a single value for an
 attribute, which is found in a single instance (a single-value
 constraint), for example:
 
-- Missing – tests for missing values and missing attributes.
-
-- Range – tests that a value is in a given range.
-
-- Type – tests that an attribute value matches the specified type (e.g.,
-  that if an attribute is specified as an integer, the provided value is
-  not a string or real number).
+\begin{itemize}
+\item
+  Missing -- tests for missing values and missing attributes.
+\item
+  Range -- tests that a value is in a given range.
+\item
+  Type -- tests that an attribute value matches the specified type
+  (e.g., that if an attribute is specified as an integer, the provided
+  value is not a string or real number).
+\end{itemize}
 
 Alternatively, a constraint can apply across multiple values, typically
 considering the values for a single attribute across several instances
 (a multi-value constraint), for example:
 
-- Sum – tests that the sum of all values equals, exceeds, or does not
+\begin{itemize}
+\item
+  Sum -- tests that the sum of all values equals, exceeds, or does not
   exceed a specified value (e.g., the total value of all points awarded
   for a Formula 1 race cannot exceed 102, and must exceed 50.5 points).
-
-- Count – tests that the count of all non-null values for attributes or
+\item
+  Count -- tests that the count of all non-null values for attributes or
   instances equals, exceeds, or does not exceed a specified value.
-
-- Duplicate – tests for identical or near identical attribute values or
+\item
+  Duplicate -- tests for identical or near identical attribute values or
   instances in a dataset and enforces a limit on how many are allowed
   (often zero).
-
-- Useful – tests that an attribute contains some repeated values, as if
+\item
+  Useful~-- tests that an attribute contains some repeated values, as if
   every entry is unique (like an ID or timestamp), typically provides no
   useful patterns to be learned for an ML model.
-
-- Outlier – identifies any values that could be considered as
+\item
+  Outlier -- identifies any values that could be considered as
   statistical outliers.
+\end{itemize}
 
 A special form of multi-value constraint can compare different values (a
 comparison constraint), for example:
 
-- Greater Than – tests that one value for an attribute is greater than a
-  value for a second attribute (e.g., the count of lines of code for a
+\begin{itemize}
+\item
+  Greater Than -- tests that one value for an attribute is greater than
+  a value for a second attribute (e.g., the count of lines of code for a
   program exceeds its count of lines of code with defects).
-
-- Correlate – tests that the values for one attribute correlate with the
-  values for a second attribute (e.g., all students with a marks
+\item
+  Correlate -- tests that the values for one attribute correlate with
+  the values for a second attribute (e.g., all students with a marks
   attribute value at least 1.33 standard deviations above the mean also
-  have a value of ‘A’ for their grade attribute).
+  have a value of `A' for their grade attribute).
+\end{itemize}
 
 Testing data against the defined constraints can be performed manually.
 Still, the scale of the activity and the typically large size of the
@@ -3708,54 +3746,55 @@ dataset constraint testing can provide reports to data scientists (for
 training data anomalies) or to operations staff (for operational data
 problems).
 
-### Label Correctness Testing
+\subsection{Label Correctness Testing}\label{label-correctness-testing}
 
-Data label correctness<span class="indexref"
-entry="label correctness testing"></span> is essential in supervised
-learning. Inaccurate or inconsistent labels directly undermine the
-performance and generalization of ML models.
+Data label correctness{} is essential in supervised learning. Inaccurate
+or inconsistent labels directly undermine the performance and
+generalization of ML models.
 
 Common approaches to data label correctness testing include:
 
-- Expert Review: Domain experts or trained annotators manually review a
+\begin{itemize}
+\item
+  Expert Review: Domain experts or trained annotators manually review a
   sample of labelled data. They evaluate label accuracy using their
   domain knowledge and guidelines.
-
-- Multiple Annotation<span class="indexref"
-  entry="multiple annotation"></span>: Data points are independently
-  labelled by multiple annotators and compared using a form of
-  back-to-back testing (see 6.1.10). Disagreements highlight defects
-  that need investigation and resolution. The inter-annotator agreement
-  (IAA) can be measured using metrics such as Cohen's Kappa or simple
-  percentage agreement \[STATS\]. Low IAA scores can indicate defects in
-  labelling guidelines, ambiguous data, or poor annotation.
-
-- Risk-Based Prioritization for Review and Annotation: Both expert
+\item
+  Multiple Annotation{}: Data points are independently labelled by
+  multiple annotators and compared using a form of back-to-back testing
+  (see 6.1.10). Disagreements highlight defects that need investigation
+  and resolution. The inter-annotator agreement (IAA) can be measured
+  using metrics such as Cohen's Kappa or simple percentage agreement
+  {[}STATS{]}. Low IAA scores can indicate defects in labelling
+  guidelines, ambiguous data, or poor annotation.
+\item
+  Risk-Based Prioritization for Review and Annotation: Both expert
   reviews and multiple annotations can be focused using a risk-based
   approach to identify samples for review and multiple annotations.
   Prioritization can be based on the likelihood of mislabeling, such as
   with ambiguous data points (e.g., it is unclear to which category they
   belong or are near a boundary between classes), and the data that is
   most likely to impact the application's success or safety.
-
-- Data Distribution Analysis: When comparable datasets exist, comparing
+\item
+  Data Distribution Analysis: When comparable datasets exist, comparing
   the label distribution of the dataset under test to similar datasets
   can reveal anomalies and potentially incorrect labels.
-
-- Automated Rule-Based Tests: Automated tests can be implemented based
+\item
+  Automated Rule-Based Tests: Automated tests can be implemented based
   on predefined label rules or constraints for certain tasks. For
   instance, verifying that bounding boxes (rectangles used to locate
   objects in images) do not overlap or extend beyond image boundaries.
-
-- Model Loss Analysis: Data points exhibiting high loss during model
-  training – meaning the model’s predictions for these points deviate
-  substantially from their true labels – can indicate mislabeling. High
+\item
+  Model Loss Analysis: Data points exhibiting high loss during model
+  training -- meaning the model's predictions for these points deviate
+  substantially from their true labels -- can indicate mislabeling. High
   loss reflects significant error, indicating the model struggles to
   learn the assigned label and pointing to a potential defect.
-
-- Model Confidence Score Analysis: Data points with low prediction
+\item
+  Model Confidence Score Analysis: Data points with low prediction
   confidence from a trained model may be mislabeled, ambiguous, or lie
   outside the model's training data distribution.
+\end{itemize}
 
 Using a combination of approaches is often most effective. For example,
 expert reviews are valuable in establishing clear labelling guidelines
@@ -3763,29 +3802,31 @@ early on. IAA scores from multiple annotations can then refine the
 labelling process. Subsequently, model-based approaches can further
 identify potential label defects as the model continues to develop.
 
-## Hands-on Exercise: Input Data Testing
+\section{Hands-on Exercise: Input Data
+Testing}\label{hands-on-exercise-input-data-testing}
 
 For a given dataset (e.g., structured, tabular data), perform input data
 testing for things like missing data, duplicate data, and outliers.
 
+\chapter{Model Testing}\label{model-testing}
 
+\begin{itemize}
+\tightlist
+\item
+  Discover test approaches for mitigating risks in ML models, including
+  documentation reviews, ML functional performance testing, and
+  detecting overfitting, underfitting,and drift.
+\item
+  Learn advanced test approaches, including adversarial testing, A/B
+  testing, back-to-back testing, and the use of attacks to uncover model
+  weaknesses.
+\item
+  Gain hands-on understanding of metamorphic testing, including how to
+  derive and apply test cases where traditional test oracles are
+  insufficient.
+\end{itemize}
 
-
-
-`<!-- quarto-file-metadata: eyJyZXNvdXJjZURpciI6Ii4ifQ== -->`{=html}
-
-```{=html}
-<!-- quarto-file-metadata: eyJyZXNvdXJjZURpciI6Ii4iLCJib29rSXRlbVR5cGUiOiJjaGFwdGVyIiwiYm9va0l0ZW1OdW1iZXIiOjgsImJvb2tJdGVtRmlsZSI6IlRlc3RpbmcgQUktYmFzZWQgU3lzdGVtcy5xbWQiLCJib29rSXRlbURlcHRoIjoxfQ== -->
-```
-
-# Testing AI-based Systems 
-
-```````{.quarto-title-block template='/Applications/quarto/share/projects/book/pandoc/title-block.md'}
----
-title: Testing AI-based Systems
-
----
-\end{verbatim}
+\chapter{Testing AI-based Systems}\label{testing-ai-based-systems-1}
 
 \section{ML Model Testing}\label{ml-model-testing}
 
@@ -3877,13 +3918,20 @@ robust against new types of attacks.
 Adversarial testing can be performed using techniques such as:\\
 - \emph{FGSM (Fast Gradient Sign Method)}: a method that generates
 adversarial examples by adding small perturbations to the input data in
-the direction of the gradient of the loss function. - \emph{PGD
-(Projected Gradient Descent)}: an iterative method that generates
-adversarial examples by repeatedly applying the FGSM method and
-projecting the perturbed input back onto a specified constraint set. -
-\emph{CW (Carlini \& Wagner)}: a method that generates adversarial
-examples by optimizing a loss function that combines the model's output
-and the distance between the original input and the adversarial example.
+the direction of the gradient of the loss function.
+
+\begin{itemize}
+\item
+  \emph{PGD (Projected Gradient Descent)}: an iterative method that
+  generates adversarial examples by repeatedly applying the FGSM method
+  and projecting the perturbed input back onto a specified constraint
+  set.
+\item
+  \emph{CW (Carlini \& Wagner)}: a method that generates adversarial
+  examples by optimizing a loss function that combines the model's
+  output and the distance between the original input and the adversarial
+  example.
+\end{itemize}
 
 \emph{TBD: add more details on evaluation of ML-based systems, including
 different types of evaluation methods, how to design and conduct
@@ -3906,7 +3954,10 @@ time.
 \chapter{AI Testing Tools and
 Frameworks}\label{ai-testing-tools-and-frameworks}
 
-TODO
+TODO MW: add an introduction to this chapter, including an overview of
+the different types of tools and frameworks that are available for
+testing AI models, and how they can be used to improve the quality and
+reliability of AI systems.
 
 In this section, we will explore various tools and frameworks that are
 commonly used for testing AI models. These tools can help you evaluate
@@ -3925,6 +3976,100 @@ applications, challenges faced, and solutions implemented by
 professionals in the field.
 
 \chapter{Hands-On Exercises}\label{hands-on-exercises}
+
+\chapter{Tools and Techniques for Generating Software
+Tests}\label{tools-and-techniques-for-generating-software-tests}
+
+\section{Fuzzing}\label{fuzzing}
+
+The \href{https://www.fuzzingbook.org/}{Fuzzing Book} is a great
+resource for learning about fuzzing. It provides a comprehensive
+introduction to fuzzing, including the different types of fuzzing, how
+to create fuzzers, and how to use fuzzers to find bugs in software. The
+book also includes a number of exercises that allow you to practice
+fuzzing techniques and apply them to real-world software.
+
+\href{https://github.com/lumos0514/BASFuzz}{BASFuzz} is a fuzzing
+framework that is designed to be easy to use and extend. It provides a
+simple interface for creating fuzzers and running them against software.
+BASFuzz also includes a number of built-in fuzzers that can be used to
+find bugs in software.
+
+\begin{figure}[H]
+
+{\centering \pandocbounded{\includegraphics[keepaspectratio]{img/BASFuzz_Workflow.png}}
+
+}
+
+\caption{BASFuzz Workflow}
+
+\end{figure}%
+
+The BASFuzz Workflow is a step-by-step guide to using BASFuzz to find
+bugs in software. It includes instructions for setting up BASFuzz,
+creating fuzzers, and running fuzzers against oftware. The workflow also
+includes tips and best practices for using BASFuzz effectively.
+
+\begin{figure}[H]
+
+{\centering \pandocbounded{\includegraphics[keepaspectratio]{img/BASFuzz_fig1.png}}
+
+}
+
+\caption{Example of Robustness Flaw found by BASFuzz}
+
+\end{figure}%
+
+The figure above shows an example of a robustness flaw found by BASFuzz.
+In a contract translation scenario, subtly perturbed input text (red)
+misleads the software, causing it to mistranslate a clause expressing
+permission to terminate the contract into an obligation to terminate. By
+using BASFuzz, developers and testerscan identify and fix these
+vulnerabilities before they can be exploited in the wild.
+
+\chapter{Metamorphic Testing}\label{metamorphic-testing}
+
+\href{https://en.wikipedia.org/wiki/Metamorphic_testing}{Metamorphic
+Testing} is a technique for testing software that is based on the idea
+of metamorphic relations. A metamorphic relation is a relationship
+between the inputs and outputs of a software system that can be used to
+generate new, so-called follow-up test cases from existing ones. For
+example, if a software system is supposed to be invariant to the order
+of its inputs, then we can generate new test cases by permuting the
+order of the inputs. Metamorphic testing can be used to find bugs in
+software that are difficult to detect with traditional testing
+techniques, such as bugs that only occur under certain conditions or
+with certain inputs.
+
+\section{LLMorph: Metamorphic Testing of Large Language
+Models}\label{llmorph-metamorphic-testing-of-large-language-models}
+
+\href{https://github.com/steven-b-cho/llmorph}{LLMorph} is a tool to
+automatically test Large Language Models (LLMs) using Metamorphic
+Testing (MT), thorough their use on Natural Language Processing (NLP)
+tasks. It leverages the property-based nature MT to uncover faulty
+behaviours without the need for expensive labelled data. LLMorph is
+aimed at researchers and developers who want to evaluate the robustness
+of LLM-based NLP systems.
+
+\begin{figure}[H]
+
+{\centering \pandocbounded{\includegraphics[keepaspectratio]{img/LLM-MorphFig1.png}}
+
+}
+
+\caption{LLMorph workflow}
+
+\end{figure}%
+
+\section{Mutation Testing}\label{mutation-testing}
+
+\href{https://en.wikipedia.org/wiki/Mutation_testing}{Mutation Testing}
+is a technique for evaluating the effectiveness of software tests. It
+involves making small changes to the code (mutations) and then running
+the tests to see if they fail. If the tests fail, it indicates that the
+tests are effective at catching bugs. If the tests pass, it may indicate
+that the tests are not effective at catching certain types of bugs.
 
 \chapter{German: Praktische Übungen zum Buch
 ``KI-Testen''}\label{german-praktische-uxfcbungen-zum-buch-ki-testen}
@@ -6245,13 +6390,6 @@ Markdown Syntax & Output \\
 
 \protect\phantomsection\label{refs}
 \begin{CSLReferences}{1}{1}
-\bibitem[\citeproctext]{ref-DeAngelisEtAl2023}
-De Angelis, Emanuele, Guglielmo De Angelis, and Maurizio Proietti. 2023.
-{``A Classification Study on Testing and Verification of AI-Based
-Systems.''} \emph{2023 IEEE International Conference on Artificial
-Intelligence Testing (AITest)}, 1--8.
-\url{https://doi.org/10.1109/AITest58265.2023.00010}.
-
 \bibitem[\citeproctext]{ref-knuth84}
 Knuth, Donald E. 1984. {``Literate Programming.''} \emph{Comput. J.}
 (USA) 27 (2): 97--111. \url{https://doi.org/10.1093/comjnl/27.2.97}.
@@ -7375,13 +7513,6 @@ In summary, this book has the following content:
 
 \protect\phantomsection\label{refs}
 \begin{CSLReferences}{1}{1}
-\bibitem[\citeproctext]{ref-DeAngelisEtAl2023}
-De Angelis, Emanuele, Guglielmo De Angelis, and Maurizio Proietti. 2023.
-{``A Classification Study on Testing and Verification of AI-Based
-Systems.''} \emph{2023 IEEE International Conference on Artificial
-Intelligence Testing (AITest)}, 1--8.
-\url{https://doi.org/10.1109/AITest58265.2023.00010}.
-
 \bibitem[\citeproctext]{ref-knuth84}
 Knuth, Donald E. 1984. {``Literate Programming.''} \emph{Comput. J.}
 (USA) 27 (2): 97--111. \url{https://doi.org/10.1093/comjnl/27.2.97}.
