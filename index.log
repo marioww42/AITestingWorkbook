@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.5.16)  17 MAY 2026 11:47
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.5.16)  17 MAY 2026 12:09
  restricted system commands enabled.
 **index.tex
 (./index.tex
@@ -1590,117 +1590,122 @@ Package scrkbase Info: You've told me to use the font selection of the element
 chapter 16.
 chapter 17.
 chapter 18.
+
+LaTeX Warning: Reference `sec-input-data-testing' on page 12 undefined on input line 3599.
+
+
+LaTeX Warning: Reference `sec-ml-model-testing' on page 12 undefined on input line 3600.
+
 chapter 19.
+
+LaTeX Warning: Reference `sec-metrics-for-classification' on page 12 undefined on input line 4090.
+
 chapter 20.
-
-LaTeX Warning: Reference `sec-metrics-for-classification' on page 12 undefined on input line 4087.
-
 chapter 21.
 chapter 22.
-chapter 23.
 part III.
 Package scrkbase Info: You've told me to use the font selection of the element
 (scrkbase)             `partprefix' that is an alias of element `partnumber'
-(scrkbase)              on input line 4192.
+(scrkbase)              on input line 4195.
+chapter 23.
 chapter 24.
 chapter 25.
 chapter 26.
-chapter 27.
 
-LaTeX Warning: Reference `sec-metamorphic-testing' on page 12 undefined on input line 4232.
-
-
-LaTeX Warning: Reference `sec-mutation-testing' on page 12 undefined on input line 4233.
+LaTeX Warning: Reference `sec-metamorphic-testing' on page 12 undefined on input line 4235.
 
 
-LaTeX Warning: Reference `sec-property-based-testing' on page 12 undefined on input line 4234.
+LaTeX Warning: Reference `sec-mutation-testing' on page 12 undefined on input line 4236.
 
-<img/BASFuzz_Workflow.png, id=192, 2051.16313pt x 446.66875pt>
+
+LaTeX Warning: Reference `sec-property-based-testing' on page 12 undefined on input line 4237.
+
+<img/BASFuzz_Workflow.png, id=193, 2051.16313pt x 446.66875pt>
 File: img/BASFuzz_Workflow.png Graphic file (type png)
 <use img/BASFuzz_Workflow.png>
-Package luatex.def Info: img/BASFuzz_Workflow.png  used on input line 4244.
+Package luatex.def Info: img/BASFuzz_Workflow.png  used on input line 4247.
 (luatex.def)             Requested size: 2051.15816pt x 446.66765pt.
-<img/BASFuzz_fig1.png, id=193, 3553.275pt x 938.75719pt>
+<img/BASFuzz_fig1.png, id=194, 3553.275pt x 938.75719pt>
 File: img/BASFuzz_fig1.png Graphic file (type png)
 <use img/BASFuzz_fig1.png>
-Package luatex.def Info: img/BASFuzz_fig1.png  used on input line 4259.
+Package luatex.def Info: img/BASFuzz_fig1.png  used on input line 4262.
 (luatex.def)             Requested size: 3553.26637pt x 938.7549pt.
-<img/LLM-MorphFig1.png, id=196, 1115.47174pt x 215.2389pt>
+<img/LLM-MorphFig1.png, id=197, 1115.47174pt x 215.2389pt>
 File: img/LLM-MorphFig1.png Graphic file (type png)
 <use img/LLM-MorphFig1.png>
-Package luatex.def Info: img/LLM-MorphFig1.png  used on input line 4303.
+Package luatex.def Info: img/LLM-MorphFig1.png  used on input line 4306.
 (luatex.def)             Requested size: 1115.46902pt x 215.23837pt.
 
-LaTeX Warning: Hyper reference `2.-Installation-von-python' on page 12 undefined on input line 4376.
+LaTeX Warning: Hyper reference `2.-Installation-von-python' on page 12 undefined on input line 4379.
 
-<Einstieg_Vorbereitung/jupyterlab_snapshot01_blanko.png, id=209, 677.53125pt x 452.4403pt>
+<Einstieg_Vorbereitung/jupyterlab_snapshot01_blanko.png, id=210, 677.53125pt x 452.4403pt>
 File: Einstieg_Vorbereitung/jupyterlab_snapshot01_blanko.png Graphic file (type png)
 <use Einstieg_Vorbereitung/jupyterlab_snapshot01_blanko.png>
-Package luatex.def Info: Einstieg_Vorbereitung/jupyterlab_snapshot01_blanko.png  used on input line 4445.
+Package luatex.def Info: Einstieg_Vorbereitung/jupyterlab_snapshot01_blanko.png  used on input line 4448.
 (luatex.def)             Requested size: 677.52959pt x 452.43921pt.
 
-LaTeX Warning: Hyper reference `Praktische-ux5cux25C3ux5cux259Cbungen-zum-Buch-ux5cux2522KI-Testenux5cux2522' on page 12 undefined on input line 4474.
+LaTeX Warning: Hyper reference `Praktische-ux5cux25C3ux5cux259Cbungen-zum-Buch-ux5cux2522KI-Testenux5cux2522' on page 12 undefined on input line 4477.
 
-<index_files/mediabag/Einstieg_Vorbereitung/cc-by-nc-sa.pdf, id=210, 101.62968pt x 22.58438pt>
+<index_files/mediabag/Einstieg_Vorbereitung/cc-by-nc-sa.pdf, id=211, 101.62968pt x 22.58438pt>
 File: index_files/mediabag/Einstieg_Vorbereitung/cc-by-nc-sa.pdf Graphic file (type pdf)
 <use index_files/mediabag/Einstieg_Vorbereitung/cc-by-nc-sa.pdf>
-Package luatex.def Info: index_files/mediabag/Einstieg_Vorbereitung/cc-by-nc-sa.pdf  used on input line 4491.
+Package luatex.def Info: index_files/mediabag/Einstieg_Vorbereitung/cc-by-nc-sa.pdf  used on input line 4494.
 (luatex.def)             Requested size: 101.62943pt x 22.5843pt.
 part IV.
 Package scrkbase Info: You've told me to use the font selection of the element
 (scrkbase)             `partprefix' that is an alias of element `partnumber'
-(scrkbase)              on input line 4529.
-chapter 28.
+(scrkbase)              on input line 4532.
+chapter 27.
 
-Underfull \hbox (badness 1616) in paragraph at lines 4568--4572
+Underfull \hbox (badness 1616) in paragraph at lines 4571--4575
 []\TU/lmr/bx/n/10.95 Project sys-tem\TU/lmr/m/n/10.95 : Quarto pro-vides a project
  []
 
 
-LaTeX Warning: Reference `sec-authoring' on page 12 undefined on input line 4689.
+LaTeX Warning: Reference `sec-authoring' on page 12 undefined on input line 4692.
 
-Package hyperref Info: bookmark level for unknown codelisting defaults to 0 on input line 4698.
+Package hyperref Info: bookmark level for unknown codelisting defaults to 0 on input line 4701.
 
-LaTeX Warning: Reference `sec-authoring' on page 12 undefined on input line 4787.
-
-
-LaTeX Warning: Reference `tip-attributes' on page 12 undefined on input line 4788.
+LaTeX Warning: Reference `sec-authoring' on page 12 undefined on input line 4790.
 
 
-Underfull \hbox (badness 1297) in paragraph at lines 4785--4790
+LaTeX Warning: Reference `tip-attributes' on page 12 undefined on input line 4791.
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 4788--4793
 []\TU/lmr/m/n/10.95 At-tributes: ad-di-tional meta-data for a com-po-
  []
 
 
-LaTeX Warning: Reference `sec-authoring' on page 12 undefined on input line 4806.
+LaTeX Warning: Reference `sec-authoring' on page 12 undefined on input line 4809.
 
 
-LaTeX Warning: Reference `sec-code-blocks' on page 12 undefined on input line 4908.
+LaTeX Warning: Reference `sec-code-blocks' on page 12 undefined on input line 4911.
 
-chapter 29.
-<img/jupyter-lab.png, id=227, 762.85pt x 854.19125pt>
+chapter 28.
+<img/jupyter-lab.png, id=228, 762.85pt x 854.19125pt>
 File: img/jupyter-lab.png Graphic file (type png)
 <use img/jupyter-lab.png>
-Package luatex.def Info: img/jupyter-lab.png  used on input line 4943.
+Package luatex.def Info: img/jupyter-lab.png  used on input line 4946.
 (luatex.def)             Requested size: 762.84814pt x 854.18918pt.
-<img/jupyterlab-preview.png, id=228, 1524.69624pt x 955.57pt>
+<img/jupyterlab-preview.png, id=229, 1524.69624pt x 955.57pt>
 File: img/jupyterlab-preview.png Graphic file (type png)
 <use img/jupyterlab-preview.png>
-Package luatex.def Info: img/jupyterlab-preview.png  used on input line 4970.
+Package luatex.def Info: img/jupyterlab-preview.png  used on input line 4973.
 (luatex.def)             Requested size: 1524.69254pt x 955.56767pt.
 ! Misplaced \noalign.
 \caption ->\noalign 
                     \bgroup \@ifnextchar [{\egroup \LT@c@ption \@firstofone ...
-l.5027 \caption
+l.5030 \caption
              {\texttt{Terminal}}
 
 Here is how much of LuaTeX's memory you used:
- 43124 strings out of 475892
+ 43126 strings out of 475892
  2842939,1648299 words of node,token memory allocated
- 2573744 words of node memory still in use:
-   5126 hlist, 189 vlist, 125 rule, 16 mark, 14347 disc, 1194 local_par, 7 dir, 14 math, 30279 glue, 7859 kern, 4070 penalty, 1 unset, 2041 margin_kern, 137381 glyph, 2 align_record, 417207 attribute, 115 glue_spec, 142789 attribute_list, 12 temp, 1 align_stack, 304 write, 278 pdf_literal, 152 pdf_start_link, 152 pdf_end_link, 122 pdf_dest, 152 pdf_action, 7 pdf_setmatrix, 7 pdf_save, 7 pdf_restore nodes
-   avail lists: 1:12,2:4,4:1,8:81,10:20,12:1
- 64873 multiletter control sequences out of 65536+600000
+ 2576117 words of node memory still in use:
+   5130 hlist, 185 vlist, 125 rule, 16 mark, 14355 disc, 1194 local_par, 7 dir, 14 math, 30299 glue, 7868 kern, 4074 penalty, 1 unset, 2041 margin_kern, 137500 glyph, 2 align_record, 417672 attribute, 115 glue_spec, 142947 attribute_list, 12 temp, 1 align_stack, 301 write, 278 pdf_literal, 153 pdf_start_link, 153 pdf_end_link, 122 pdf_dest, 153 pdf_action, 7 pdf_setmatrix, 7 pdf_save, 7 pdf_restore nodes
+   avail lists: 1:13,2:4,4:1,8:81,10:20,12:1
+ 64875 multiletter control sequences out of 65536+600000
  68 fonts using 19825119 bytes
  108i,10n,114p,11226b,1126s stack positions out of 10000i,1000n,20000p,200000b,200000s
 !  ==> Fatal error occurred, no output PDF file produced!
