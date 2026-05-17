@@ -41,7 +41,7 @@ Select your own reading path!
   htmlLabels: false
 ---
   graph LR
-    AIMetrics[@sec-metrics-for-classification]
+    AIMetrics["@sec-metrics-for-classification"]
     Long["`AI Testing Tools
     
     and Frameworks`"]
