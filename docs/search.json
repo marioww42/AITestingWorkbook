@@ -569,7 +569,7 @@
     "href": "Hands-On Exercises.html",
     "title": "13  Hands-On Exercises",
     "section": "",
-    "text": "14 Tool Pages for Generating Software Tests",
+    "text": "14 Tools and Techniques for Generating Software Tests",
     "crumbs": [
       "AI Testing in Practice",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Hands-On Exercises</span>"
@@ -623,8 +623,8 @@
     "objectID": "Hands-On Exercises.html#download-des-übungsmaterials",
     "href": "Hands-On Exercises.html#download-des-übungsmaterials",
     "title": "13  Hands-On Exercises",
-    "section": "1. Download des Übungsmaterials",
-    "text": "1. Download des Übungsmaterials\n\nLade von der GitHub-Seite KI-Testen - Übungen das gesamte Repository als ZIP-Datei (Code (grüner Button) &gt; Download ZIP)\nEntpacke die ZIP in ein Verzeichnis deiner Wahl.",
+    "section": "16.1 1. Download des Übungsmaterials",
+    "text": "16.1 1. Download des Übungsmaterials\n\nLade von der GitHub-Seite KI-Testen - Übungen das gesamte Repository als ZIP-Datei (Code (grüner Button) &gt; Download ZIP)\nEntpacke die ZIP in ein Verzeichnis deiner Wahl.",
     "crumbs": [
       "AI Testing in Practice",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Hands-On Exercises</span>"
@@ -634,8 +634,8 @@
     "objectID": "Hands-On Exercises.html#installation-von-python-ml-paketen-und-jupyterlab",
     "href": "Hands-On Exercises.html#installation-von-python-ml-paketen-und-jupyterlab",
     "title": "13  Hands-On Exercises",
-    "section": "2. Installation von Python, ML-Paketen und JupyterLab",
-    "text": "2. Installation von Python, ML-Paketen und JupyterLab\n\nAls erstes musst du, wenn nicht schon vorhanden, Python installieren.\nIst Python installiert, geht es mit der Installation der Python-Pakete weiter\nZum Schluss ist die Installation von JupyterLab an der Reihe.",
+    "section": "16.2 2. Installation von Python, ML-Paketen und JupyterLab",
+    "text": "16.2 2. Installation von Python, ML-Paketen und JupyterLab\n\nAls erstes musst du, wenn nicht schon vorhanden, Python installieren.\nIst Python installiert, geht es mit der Installation der Python-Pakete weiter\nZum Schluss ist die Installation von JupyterLab an der Reihe.",
     "crumbs": [
       "AI Testing in Practice",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Hands-On Exercises</span>"
@@ -645,8 +645,8 @@
     "objectID": "Hands-On Exercises.html#los-gehts-starten-von-jupyterlab",
     "href": "Hands-On Exercises.html#los-gehts-starten-von-jupyterlab",
     "title": "13  Hands-On Exercises",
-    "section": "3. Los geht’s: Starten von JupyterLab",
-    "text": "3. Los geht’s: Starten von JupyterLab\nVon nun ab kannst du JupyterLab per Doppelklick auf: 04_starte_jupyterlab.cmd starten. Als erstes öffnet sich ein Kommandozeilenfenster mit dem Titel “JupyterLab Server”.\nNach dem Start des CMD-Skriptes startet zudem dein Browser und öffnet eine Seite, die sich mit dem JupyterLab-Server (localhost:8888/lab/tree) verbindet, der im Kommandozeilenfenster läuft - lasse dieses also im Hintergrund weiter laufen!\nWenn du einen bestimmten Browser bevorzugst, kannst du die Datei 04_starte_jupyterlab.cmd editieren und eine der drei per :: auskommentierten Zeilen durch das Entfernen des :: aktivieren und so deinen Lieblingsbrowser festlegen.\n\n\n\nsnapshot von JupyterLab\n\n\n\nDiese Anleitung (die du gerade liest) kannst du dir ansehen, wenn du mit der rechten Maustaste auf Readme.md klickst und Open With &gt; Markdown Preview auswählst.",
+    "section": "16.3 3. Los geht’s: Starten von JupyterLab",
+    "text": "16.3 3. Los geht’s: Starten von JupyterLab\nVon nun ab kannst du JupyterLab per Doppelklick auf: 04_starte_jupyterlab.cmd starten. Als erstes öffnet sich ein Kommandozeilenfenster mit dem Titel “JupyterLab Server”.\nNach dem Start des CMD-Skriptes startet zudem dein Browser und öffnet eine Seite, die sich mit dem JupyterLab-Server (localhost:8888/lab/tree) verbindet, der im Kommandozeilenfenster läuft - lasse dieses also im Hintergrund weiter laufen!\nWenn du einen bestimmten Browser bevorzugst, kannst du die Datei 04_starte_jupyterlab.cmd editieren und eine der drei per :: auskommentierten Zeilen durch das Entfernen des :: aktivieren und so deinen Lieblingsbrowser festlegen.\n\n\n\nsnapshot von JupyterLab\n\n\n\nDiese Anleitung (die du gerade liest) kannst du dir ansehen, wenn du mit der rechten Maustaste auf Readme.md klickst und Open With &gt; Markdown Preview auswählst.",
     "crumbs": [
       "AI Testing in Practice",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Hands-On Exercises</span>"
@@ -656,8 +656,8 @@
     "objectID": "Hands-On Exercises.html#mit-den-aufgaben-loslegen",
     "href": "Hands-On Exercises.html#mit-den-aufgaben-loslegen",
     "title": "13  Hands-On Exercises",
-    "section": "4. Mit den Aufgaben loslegen",
-    "text": "4. Mit den Aufgaben loslegen\nHinweis: Wir empfehlen dir, die Aufgaben nicht ohne eine gewisse Vorbereitung durch den entsprechenden Abschnitt im Buch zu beginnen.\nAußerdem: Es ist gut, wenn du einfache Grundkenntnisse in Python als Programmiersprache mitbringst, und dich mit der Bedienung von JupyterLab und Juypter Notebooks schon etwas vertraut gemacht hast (siehe oben).\nZum Bearbeiten einer Aufgabe - zum Beispiel zum Abschnitt 3.3: * öffnest du in JupyterLab per Doppel-Click das Verzeichnis Kap03.3_ML-Art-wählen und * öffnest das Notebook Übung_... ebenfalls per Doppel-Click.\nund schon kann’s losgehen!",
+    "section": "16.4 4. Mit den Aufgaben loslegen",
+    "text": "16.4 4. Mit den Aufgaben loslegen\nHinweis: Wir empfehlen dir, die Aufgaben nicht ohne eine gewisse Vorbereitung durch den entsprechenden Abschnitt im Buch zu beginnen.\nAußerdem: Es ist gut, wenn du einfache Grundkenntnisse in Python als Programmiersprache mitbringst, und dich mit der Bedienung von JupyterLab und Juypter Notebooks schon etwas vertraut gemacht hast (siehe oben).\nZum Bearbeiten einer Aufgabe - zum Beispiel zum Abschnitt 3.3: * öffnest du in JupyterLab per Doppel-Click das Verzeichnis Kap03.3_ML-Art-wählen und * öffnest das Notebook Übung_... ebenfalls per Doppel-Click.\nund schon kann’s losgehen!",
     "crumbs": [
       "AI Testing in Practice",
       "<span class='chapter-number'>13</span>  <span class='chapter-title'>Hands-On Exercises</span>"
