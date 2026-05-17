@@ -2,8 +2,102 @@
 
 Testing of AI-based software is different from testing traditional software. It requires new approaches, tools, and mindsets. This workbook will guide you through the key concepts, techniques, and challenges of AI testing. It will help you understand how to design effective tests, evaluate AI systems, and ensure their quality in real-world applications.
 
-
 This is a book created from markdown and executable code. The idea of combining code and documentation in a single source file is not new. It was first proposed by Donald Knuth in his concept of literate programming, where the code is written as a narrative that explains the logic and design decisions behind it. The goal is to make the code more readable, maintainable, and reusable by treating it as a form of literature. See @knuth84 for additional discussion of literate programming. 
 
 In the context of software testing, this approach allows us to create a practical workbook that not only explains the concepts and techniques of AI testing but also provides executable examples and exercises that readers can run and modify. This way, readers can learn by doing, which is often more effective than just reading about the theory.
+
+# Frequently asked Questions
+
+## I have some good test cases - how can I get more like them? {.unnumbered}
+
+One way to get more test cases like the ones you have is to use techniques such as data augmentation or metamorphic testing, which involve creating new test cases by applying transformations to existing ones. For example using data augmentation,if you have a test case that involves an image, you can create new test cases by rotating, flipping, or adding noise to the image. With metamorphic testing, you can create new test cases by applying transformations to the input data and corresponding transformations to the expected output, like creating a test case with a slightly different input and expecting a similar output. For more information on metamorphic testing, see @sec-metamorphic-testing.
+
+This can help to increase the diversity and coverage of your test cases, and can also help to identify potential issues that may not be apparent with the original test cases.
+
+Another technique is to use generative models, such as GANs, to generate new test cases based on the patterns and features of the existing ones. Additionally, you can use techniques such as active learning, where you select the most informative test cases from a larger pool of unlabeled data, and use them to train your model and improve its performance.
+
+## What is the difference between testing traditional software and testing AI-based software? {.unnumbered}
+
+  Testing traditional software focuses on verifying that the software behaves as expected for a given set of inputs and outputs. In contrast, testing AI-based software involves evaluating the performance of the AI system on a given dataset, and comparing it to a baseline or to other models. This is because AI systems are often probabilistic in nature, and their performance can vary depending on the data they are trained on and the data they are tested on.
+
+## What are the key challenges in testing AI-based software? {.unnumbered}
+
+    Some of the key challenges in testing AI-based software include:
+    - The complexity and opacity of AI models, which can make it difficult to understand how they work and to identify potential issues.
+    - The need for large and representative datasets for testing, which can be difficult to obtain and may not always be available.
+    - The potential for bias and unfairness in AI systems, which can lead to ethical and legal issues if not properly addressed.
+    - The need for new testing techniques and tools that are specifically designed for AI-based software.
+    - The need for ongoing testing and monitoring of AI systems in production, as their performance can degrade over time due to changes in the data or the environment.
+
+## How can we address these challenges? {.unnumbered}
+
+    To address these challenges, we can:
+    - Use techniques such as explainability and interpretability to better understand how AI models work and to identify potential issues.
+    - Use techniques such as data augmentation and synthetic data generation to create large and representative datasets for testing.
+    - Use techniques such as fairness testing and bias detection to identify and mitigate bias in AI systems.
+    - Use techniques such as adversarial testing and robustness testing to evaluate the performance of AI systems under different conditions and to identify potential vulnerabilities.
+    - Use techniques such as continuous testing and monitoring to ensure that AI systems remain effective and reliable over time.
+
+# Ten Questions to Learn About Actual Testing Activities
+
+The following questions help a software tester understand the actual testing activities for an LLM-based recipe recommendation system. Each question is provided as a collapsed tip callout with examples of AI-testing methods, techniques, and tool categories.
+
+::: {.callout-tip title="1. What are the main product risks for recipe recommendations?" collapse="true"}
+**AI-testing methods / techniques:** Risk-based testing, product risk analysis, hazard analysis, misuse and abuse cases, safety testing, privacy risk analysis, and bias risk analysis. Example risks include allergens, unsafe cooking advice, food poisoning risk, toxic ingredients, misleading nutrition claims, and religious or cultural dietary violations.
+
+**Example tools or tool categories:** Risk registers, Jira or Azure DevOps risk labels, threat modeling tools, food safety and allergen checklists, safety rule engines, and domain expert review templates.
+:::
+
+::: {.callout-tip title="2. Which quality characteristics are most important for this system?" collapse="true"}
+**AI-testing methods / techniques:** Quality characteristic analysis, non-functional testing, and AI-specific quality evaluation for fairness, robustness, explainability, transparency, safety, reliability, and performance efficiency.
+
+**Example tools or tool categories:** ISO/IEC 25010 quality model checklists, model cards, datasheets for datasets, latency dashboards, cost dashboards, error-rate dashboards, explainability tools, and bias analysis notebooks.
+:::
+
+::: {.callout-tip title="3. What are the acceptance criteria for good enough recommendations?" collapse="true"}
+**AI-testing methods / techniques:** Statistical acceptance criteria, threshold-based evaluation, benchmark testing, and acceptance testing with representative datasets. Example criteria include: at least 95% of vegan queries must not recommend animal products, or zero tolerance for known allergens when a user allergy is stated.
+
+**Example tools or tool categories:** Golden test sets, evaluation datasets, acceptance scorecards, ML evaluation notebooks, CI quality gates, and test management tools.
+:::
+
+::: {.callout-tip title="4. How do we decide whether an LLM answer is correct or acceptable?" collapse="true"}
+**AI-testing methods / techniques:** Test oracle strategy, expert review, proxy oracles, metamorphic testing, back-to-back testing, and A/B testing. For LLM-based systems, correctness is often not a simple expected-result comparison, so the team may need domain experts, rule-based checks, reference datasets, or statistical evaluation.
+
+**Example tools or tool categories:** Human evaluation forms, subject matter expert review workflows, LLM-as-judge with caution, rule-based validators, nutrition databases, allergen databases, and approved recipe databases.
+:::
+
+::: {.callout-tip title="5. Which test levels do we use, and what is tested at each level?" collapse="true"}
+**AI-testing methods / techniques:** Component testing, integration testing, system testing, system integration testing, acceptance testing, and maintenance testing. Example test targets include the prompt layer, retrieval layer, ranking layer, API layer, user interface, safety filters, and production behavior.
+
+**Example tools or tool categories:** Unit test frameworks, API test tools, contract testing tools, end-to-end UI automation tools, test management systems, and CI/CD pipelines.
+:::
+
+::: {.callout-tip title="6. What is the architecture of the LLM system?" collapse="true"}
+**AI-testing methods / techniques:** Architecture review, model documentation review, RAG testing, prompt testing, guardrail testing, tool-call testing, and data lineage review. Ask whether the system uses a foundation model, instruction-tuned model, reasoning model, retrieval-augmented generation, fine-tuning, vector database, agent, or external tool calls.
+
+**Example tools or tool categories:** Architecture diagrams, prompt repositories, vector database inspection tools, RAG evaluation tools, embedding similarity tools, LLM observability platforms, model registries, prompt version control, and general version control systems.
+:::
+
+::: {.callout-tip title="7. What test data do we use, and how is it managed?" collapse="true"}
+**AI-testing methods / techniques:** Test data design, synthetic test data generation, equivalence partitioning, boundary value analysis, combinatorial testing, bias testing, label correctness testing, data representativeness testing, and data pipeline testing.
+
+**Example tools or tool categories:** Curated prompt suites, golden datasets, synthetic data generators, data profiling tools, data validation frameworks, dataset versioning tools, and annotation tools.
+:::
+
+::: {.callout-tip title="8. How do we test for hallucinations, unsafe advice, and misleading confidence?" collapse="true"}
+**AI-testing methods / techniques:** Hallucination detection, cross-verification, consistency checks, logical validation, domain expert consultation, negative testing, safety testing, and red teaming. For recipe recommendations, this includes checking whether generated advice is grounded in valid recipes, safe ingredients, and correct dietary constraints.
+
+**Example tools or tool categories:** Fact-checking against recipe, nutrition, and allergen databases; rule-based safety filters; subject matter expert review queues; automated consistency checkers; toxicity or safety classifiers; and prompt-injection scanners.
+:::
+
+::: {.callout-tip title="9. Do we perform red teaming, exploratory testing, adversarial testing, or metamorphic testing?" collapse="true"}
+**AI-testing methods / techniques:** Red teaming, exploratory testing, adversarial testing, fuzz testing, metamorphic testing, A/B testing, back-to-back testing, and regression testing. Example attacks or challenges include prompt injection, jailbreak attempts, contradictory dietary constraints, rare ingredients, multilingual prompts, and malicious user input.
+
+**Example tools or tool categories:** Red-team prompt libraries, exploratory testing charters, prompt fuzzers, API fuzzers, adversarial prompt generators, regression prompt suites, and A/B experimentation platforms.
+:::
+
+::: {.callout-tip title="10. How do we monitor the system after release?" collapse="true"}
+**AI-testing methods / techniques:** Production monitoring, drift testing, regression testing, canary releases, A/B testing, incident analysis, feedback-loop testing, shadow testing, and maintenance testing. For LLMOps, ask how model changes, prompt changes, RAG index updates, embedding model changes, guardrail changes, and tool changes are versioned and evaluated.
+
+**Example tools or tool categories:** LLM observability tools, telemetry dashboards, user feedback analytics, incident management tools, model registries, prompt registries, drift 
 

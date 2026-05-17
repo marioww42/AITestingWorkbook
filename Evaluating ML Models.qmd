@@ -437,7 +437,9 @@ testing for things like missing data, duplicate data, and outliers.
 # Model Testing
 
 * Discover test approaches for mitigating risks in ML models, including documentation reviews, ML functional performance testing, and detecting overfitting, underfitting,and drift.
+
 * Learn advanced test approaches, including adversarial testing, A/B testing, back-to-back testing, and the use of attacks to uncover model weaknesses.
+
 * Gain hands-on understanding of metamorphic testing, including how to derive and apply test cases where traditional test oracles are insufficient.
 
 

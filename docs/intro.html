@@ -320,8 +320,21 @@ div.csl-indent {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#frequently-asked-questions" id="toc-frequently-asked-questions" class="nav-link active" data-scroll-target="#frequently-asked-questions"><span class="header-section-number">2</span> Frequently asked Questions</a>
+  <ul class="collapse">
+  <li><a href="#i-have-some-good-test-cases---how-can-i-get-more-like-them" id="toc-i-have-some-good-test-cases---how-can-i-get-more-like-them" class="nav-link" data-scroll-target="#i-have-some-good-test-cases---how-can-i-get-more-like-them">I have some good test cases - how can I get more like them?</a></li>
+  <li><a href="#what-is-the-difference-between-testing-traditional-software-and-testing-ai-based-software" id="toc-what-is-the-difference-between-testing-traditional-software-and-testing-ai-based-software" class="nav-link" data-scroll-target="#what-is-the-difference-between-testing-traditional-software-and-testing-ai-based-software">What is the difference between testing traditional software and testing AI-based software?</a></li>
+  <li><a href="#what-are-the-key-challenges-in-testing-ai-based-software" id="toc-what-are-the-key-challenges-in-testing-ai-based-software" class="nav-link" data-scroll-target="#what-are-the-key-challenges-in-testing-ai-based-software">What are the key challenges in testing AI-based software?</a></li>
+  <li><a href="#how-can-we-address-these-challenges" id="toc-how-can-we-address-these-challenges" class="nav-link" data-scroll-target="#how-can-we-address-these-challenges">How can we address these challenges?</a></li>
+  </ul></li>
+  <li><a href="#ten-questions-to-learn-about-actual-testing-activities" id="toc-ten-questions-to-learn-about-actual-testing-activities" class="nav-link" data-scroll-target="#ten-questions-to-learn-about-actual-testing-activities"><span class="header-section-number">3</span> Ten Questions to Learn About Actual Testing Activities</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/marioww42/AITestingWorkbook/edit/main/intro.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/marioww42/AITestingWorkbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -346,15 +359,220 @@ div.csl-indent {
 
 
 <p>Testing of AI-based software is different from testing traditional software. It requires new approaches, tools, and mindsets. This workbook will guide you through the key concepts, techniques, and challenges of AI testing. It will help you understand how to design effective tests, evaluate AI systems, and ensure their quality in real-world applications.</p>
-<p>This is a book created from markdown and executable code. The idea of combining code and documentation in a single source file is not new. It was first proposed by Donald Knuth in his concept of literate programming, where the code is written as a narrative that explains the logic and design decisions behind it. The goal is to make the code more readable, maintainable, and reusable by treating it as a form of literature. See <span class="citation" data-cites="knuth84">Knuth (<a href="#ref-knuth84" role="doc-biblioref">1984</a>)</span> for additional discussion of literate programming.</p>
+<p>This is a book created from markdown and executable code. The idea of combining code and documentation in a single source file is not new. It was first proposed by Donald Knuth in his concept of literate programming, where the code is written as a narrative that explains the logic and design decisions behind it. The goal is to make the code more readable, maintainable, and reusable by treating it as a form of literature. See <span class="citation" data-cites="knuth84">Knuth (<a href="MoreMarkdown.html#ref-knuth84" role="doc-biblioref">1984</a>)</span> for additional discussion of literate programming.</p>
 <p>In the context of software testing, this approach allows us to create a practical workbook that not only explains the concepts and techniques of AI testing but also provides executable examples and exercises that readers can run and modify. This way, readers can learn by doing, which is often more effective than just reading about the theory.</p>
+<section id="frequently-asked-questions" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Frequently asked Questions</h1>
+<section id="i-have-some-good-test-cases---how-can-i-get-more-like-them" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="i-have-some-good-test-cases---how-can-i-get-more-like-them">I have some good test cases - how can I get more like them?</h2>
+<p>One way to get more test cases like the ones you have is to use techniques such as data augmentation or metamorphic testing, which involve creating new test cases by applying transformations to existing ones. For example using data augmentation,if you have a test case that involves an image, you can create new test cases by rotating, flipping, or adding noise to the image. With metamorphic testing, you can create new test cases by applying transformations to the input data and corresponding transformations to the expected output, like creating a test case with a slightly different input and expecting a similar output. For more information on metamorphic testing, see <a href="Hands-On Exercises.html#sec-metamorphic-testing" class="quarto-xref"><span>Section 14.2</span></a>.</p>
+<p>This can help to increase the diversity and coverage of your test cases, and can also help to identify potential issues that may not be apparent with the original test cases.</p>
+<p>Another technique is to use generative models, such as GANs, to generate new test cases based on the patterns and features of the existing ones. Additionally, you can use techniques such as active learning, where you select the most informative test cases from a larger pool of unlabeled data, and use them to train your model and improve its performance.</p>
+</section>
+<section id="what-is-the-difference-between-testing-traditional-software-and-testing-ai-based-software" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="what-is-the-difference-between-testing-traditional-software-and-testing-ai-based-software">What is the difference between testing traditional software and testing AI-based software?</h2>
+<p>Testing traditional software focuses on verifying that the software behaves as expected for a given set of inputs and outputs. In contrast, testing AI-based software involves evaluating the performance of the AI system on a given dataset, and comparing it to a baseline or to other models. This is because AI systems are often probabilistic in nature, and their performance can vary depending on the data they are trained on and the data they are tested on.</p>
+</section>
+<section id="what-are-the-key-challenges-in-testing-ai-based-software" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="what-are-the-key-challenges-in-testing-ai-based-software">What are the key challenges in testing AI-based software?</h2>
+<pre><code>Some of the key challenges in testing AI-based software include:
+- The complexity and opacity of AI models, which can make it difficult to understand how they work and to identify potential issues.
+- The need for large and representative datasets for testing, which can be difficult to obtain and may not always be available.
+- The potential for bias and unfairness in AI systems, which can lead to ethical and legal issues if not properly addressed.
+- The need for new testing techniques and tools that are specifically designed for AI-based software.
+- The need for ongoing testing and monitoring of AI systems in production, as their performance can degrade over time due to changes in the data or the environment.</code></pre>
+</section>
+<section id="how-can-we-address-these-challenges" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="how-can-we-address-these-challenges">How can we address these challenges?</h2>
+<pre><code>To address these challenges, we can:
+- Use techniques such as explainability and interpretability to better understand how AI models work and to identify potential issues.
+- Use techniques such as data augmentation and synthetic data generation to create large and representative datasets for testing.
+- Use techniques such as fairness testing and bias detection to identify and mitigate bias in AI systems.
+- Use techniques such as adversarial testing and robustness testing to evaluate the performance of AI systems under different conditions and to identify potential vulnerabilities.
+- Use techniques such as continuous testing and monitoring to ensure that AI systems remain effective and reliable over time.</code></pre>
+</section>
+</section>
+<section id="ten-questions-to-learn-about-actual-testing-activities" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Ten Questions to Learn About Actual Testing Activities</h1>
+<p>The following questions help a software tester understand the actual testing activities for an LLM-based recipe recommendation system. Each question is provided as a collapsed tip callout with examples of AI-testing methods, techniques, and tool categories.</p>
+<div class="callout callout-style-simple callout-tip callout-titled" title="1. What are the main product risks for recipe recommendations?">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>What are the main product risks for recipe recommendations?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>AI-testing methods / techniques:</strong> Risk-based testing, product risk analysis, hazard analysis, misuse and abuse cases, safety testing, privacy risk analysis, and bias risk analysis. Example risks include allergens, unsafe cooking advice, food poisoning risk, toxic ingredients, misleading nutrition claims, and religious or cultural dietary violations.</p>
+<p><strong>Example tools or tool categories:</strong> Risk registers, Jira or Azure DevOps risk labels, threat modeling tools, food safety and allergen checklists, safety rule engines, and domain expert review templates.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip callout-titled" title="2. Which quality characteristics are most important for this system?">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Which quality characteristics are most important for this system?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>AI-testing methods / techniques:</strong> Quality characteristic analysis, non-functional testing, and AI-specific quality evaluation for fairness, robustness, explainability, transparency, safety, reliability, and performance efficiency.</p>
+<p><strong>Example tools or tool categories:</strong> ISO/IEC 25010 quality model checklists, model cards, datasheets for datasets, latency dashboards, cost dashboards, error-rate dashboards, explainability tools, and bias analysis notebooks.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip callout-titled" title="3. What are the acceptance criteria for good enough recommendations?">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>What are the acceptance criteria for good enough recommendations?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>AI-testing methods / techniques:</strong> Statistical acceptance criteria, threshold-based evaluation, benchmark testing, and acceptance testing with representative datasets. Example criteria include: at least 95% of vegan queries must not recommend animal products, or zero tolerance for known allergens when a user allergy is stated.</p>
+<p><strong>Example tools or tool categories:</strong> Golden test sets, evaluation datasets, acceptance scorecards, ML evaluation notebooks, CI quality gates, and test management tools.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip callout-titled" title="4. How do we decide whether an LLM answer is correct or acceptable?">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>How do we decide whether an LLM answer is correct or acceptable?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>AI-testing methods / techniques:</strong> Test oracle strategy, expert review, proxy oracles, metamorphic testing, back-to-back testing, and A/B testing. For LLM-based systems, correctness is often not a simple expected-result comparison, so the team may need domain experts, rule-based checks, reference datasets, or statistical evaluation.</p>
+<p><strong>Example tools or tool categories:</strong> Human evaluation forms, subject matter expert review workflows, LLM-as-judge with caution, rule-based validators, nutrition databases, allergen databases, and approved recipe databases.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip callout-titled" title="5. Which test levels do we use, and what is tested at each level?">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Which test levels do we use, and what is tested at each level?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>AI-testing methods / techniques:</strong> Component testing, integration testing, system testing, system integration testing, acceptance testing, and maintenance testing. Example test targets include the prompt layer, retrieval layer, ranking layer, API layer, user interface, safety filters, and production behavior.</p>
+<p><strong>Example tools or tool categories:</strong> Unit test frameworks, API test tools, contract testing tools, end-to-end UI automation tools, test management systems, and CI/CD pipelines.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip callout-titled" title="6. What is the architecture of the LLM system?">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>What is the architecture of the LLM system?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>AI-testing methods / techniques:</strong> Architecture review, model documentation review, RAG testing, prompt testing, guardrail testing, tool-call testing, and data lineage review. Ask whether the system uses a foundation model, instruction-tuned model, reasoning model, retrieval-augmented generation, fine-tuning, vector database, agent, or external tool calls.</p>
+<p><strong>Example tools or tool categories:</strong> Architecture diagrams, prompt repositories, vector database inspection tools, RAG evaluation tools, embedding similarity tools, LLM observability platforms, model registries, prompt version control, and general version control systems.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip callout-titled" title="7. What test data do we use, and how is it managed?">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>What test data do we use, and how is it managed?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>AI-testing methods / techniques:</strong> Test data design, synthetic test data generation, equivalence partitioning, boundary value analysis, combinatorial testing, bias testing, label correctness testing, data representativeness testing, and data pipeline testing.</p>
+<p><strong>Example tools or tool categories:</strong> Curated prompt suites, golden datasets, synthetic data generators, data profiling tools, data validation frameworks, dataset versioning tools, and annotation tools.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip callout-titled" title="8. How do we test for hallucinations, unsafe advice, and misleading confidence?">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>How do we test for hallucinations, unsafe advice, and misleading confidence?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>AI-testing methods / techniques:</strong> Hallucination detection, cross-verification, consistency checks, logical validation, domain expert consultation, negative testing, safety testing, and red teaming. For recipe recommendations, this includes checking whether generated advice is grounded in valid recipes, safe ingredients, and correct dietary constraints.</p>
+<p><strong>Example tools or tool categories:</strong> Fact-checking against recipe, nutrition, and allergen databases; rule-based safety filters; subject matter expert review queues; automated consistency checkers; toxicity or safety classifiers; and prompt-injection scanners.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip callout-titled" title="9. Do we perform red teaming, exploratory testing, adversarial testing, or metamorphic testing?">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Do we perform red teaming, exploratory testing, adversarial testing, or metamorphic testing?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>AI-testing methods / techniques:</strong> Red teaming, exploratory testing, adversarial testing, fuzz testing, metamorphic testing, A/B testing, back-to-back testing, and regression testing. Example attacks or challenges include prompt injection, jailbreak attempts, contradictory dietary constraints, rare ingredients, multilingual prompts, and malicious user input.</p>
+<p><strong>Example tools or tool categories:</strong> Red-team prompt libraries, exploratory testing charters, prompt fuzzers, API fuzzers, adversarial prompt generators, regression prompt suites, and A/B experimentation platforms.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip callout-titled" title="10. How do we monitor the system after release?">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>How do we monitor the system after release?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>AI-testing methods / techniques:</strong> Production monitoring, drift testing, regression testing, canary releases, A/B testing, incident analysis, feedback-loop testing, shadow testing, and maintenance testing. For LLMOps, ask how model changes, prompt changes, RAG index updates, embedding model changes, guardrail changes, and tool changes are versioned and evaluated.</p>
+<p><strong>Example tools or tool categories:</strong> LLM observability tools, telemetry dashboards, user feedback analytics, incident management tools, model registries, prompt registries, drift</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+</div>
+</div>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
 <div id="ref-knuth84" class="csl-entry" role="listitem">
 Knuth, Donald E. 1984. <span>“Literate Programming.”</span> <em>Comput. J.</em> (USA) 27 (2): 97–111. <a href="https://doi.org/10.1093/comjnl/27.2.97">https://doi.org/10.1093/comjnl/27.2.97</a>.
 </div>
 </div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -784,7 +1002,7 @@ Knuth, Donald E. 1984. <span>“Literate Programming.”</span> <em>Comput. J.</
     </div>   
     <div class="nav-footer-center">
 <p>Created 2026 by Mario Winter, Wuppertal</p>
-<div class="toc-actions"><ul><li><a href="https://github.com/marioww42/AITestingWorkbook/edit/main/intro.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/marioww42/AITestingWorkbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/marioww42/AITestingWorkbook/edit/main/intro.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/marioww42/AITestingWorkbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
