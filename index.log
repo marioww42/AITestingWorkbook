@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.5.16)  16 MAY 2026 22:39
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.5.16)  17 MAY 2026 11:47
  restricted system commands enabled.
 **index.tex
 (./index.tex
@@ -552,7 +552,7 @@ Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \c@LT@chunks=\count324
 \LT@p@ftn=\toks26
 )
-Class scrreprt Info: longtable captions redefined on input line 113.
+Class scrreprt Info: longtable captions redefined on input line 112.
 (/Users/mario/Library/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen176
@@ -1034,41 +1034,41 @@ Package: changepage 2009/10/20 v1.0c check page and change page layout
 \@sidenotes@margintablebox=\box95
 )
 \c@quartocallouttipno=\count381
-Package hyperref Info: Option `colorlinks' set `true' on input line 272.
+Package hyperref Info: Option `colorlinks' set `true' on input line 274.
 No file index.aux.
 
 \openout1 = index.aux
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 278.
-LaTeX Font Info:    ... okay on input line 278.
-Package scrbase Info: activating english \abstractname on input line 278.
-Package scrbase Info: activating english \partname on input line 278.
-Package scrbase Info: activating english \chaptername on input line 278.
-Package scrbase Info: activating english \appendixname on input line 278.
-Package scrbase Info: activating english \figurename on input line 278.
-Package scrbase Info: activating english \tablename on input line 278.
-Package scrbase Info: activating english \contentsname on input line 278.
-Package scrbase Info: activating english \listfigurename on input line 278.
-Package scrbase Info: activating english \listtablename on input line 278.
-Package scrbase Info: activating english \bibname on input line 278.
-Package scrbase Info: activating english \indexname on input line 278.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 280.
+LaTeX Font Info:    ... okay on input line 280.
+Package scrbase Info: activating english \abstractname on input line 280.
+Package scrbase Info: activating english \partname on input line 280.
+Package scrbase Info: activating english \chaptername on input line 280.
+Package scrbase Info: activating english \appendixname on input line 280.
+Package scrbase Info: activating english \figurename on input line 280.
+Package scrbase Info: activating english \tablename on input line 280.
+Package scrbase Info: activating english \contentsname on input line 280.
+Package scrbase Info: activating english \listfigurename on input line 280.
+Package scrbase Info: activating english \listtablename on input line 280.
+Package scrbase Info: activating english \bibname on input line 280.
+Package scrbase Info: activating english \indexname on input line 280.
 (/Users/mario/Library/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 (/Users/mario/Library/TinyTeX/texmf-dist/tex/latex/grfext/grfext.sty
@@ -1116,19 +1116,19 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 278.
+(Font)                  OT1/lmr/m/n --> TU/lmr/m/n on input line 280.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 278.
+(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 280.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 278.
+(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 280.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 278.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 280.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 278.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 280.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 278.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 280.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 278.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 280.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 0.9999967668407183.
@@ -1156,7 +1156,7 @@ Package fontspec Info:
 (fontspec)             <->s*[0.9999967668407183]"[latinmodern-math.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;"
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 278.
+(Font)              scaled to size 10.95pt on input line 280.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 0.9999967668407183.
@@ -1192,15 +1192,15 @@ Package fontspec Info:
 (fontspec)             <->s*[0.9999967668407183]"[latinmodern-math.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;"
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 278.
+(Font)              scaled to size 10.95pt on input line 280.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 278.
+(Font)              `operators' in the math version `normal' on input line 280.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 278.
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 280.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 278.
+(Font)              `operators' in the math version `bold' on input line 280.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 278.
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 280.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 0.9999967668407183.
@@ -1236,13 +1236,13 @@ Package fontspec Info:
 (fontspec)             <->s*[0.9999967668407183]"[latinmodern-math.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdimen=tex2;"
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 278.
+(Font)              `symbols' in the math version `normal' on input line 280.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 278.
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 280.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 278.
+(Font)              `symbols' in the math version `bold' on input line 280.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 278.
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 280.
 
 Package fontspec Info: 
 (fontspec)             latinmodern-math scale = 0.9999967668407183.
@@ -1278,50 +1278,50 @@ Package fontspec Info:
 (fontspec)             <->s*[0.9999967668407183]"[latinmodern-math.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdimen=tex3;"
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 278.
+(Font)              `largesymbols' in the math version `normal' on input line 280.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 278.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 280.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 278.
+(Font)              `largesymbols' in the math version `bold' on input line 280.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 278.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 280.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.665pt on input line 278.
+(Font)              scaled to size 7.665pt on input line 280.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.475pt on input line 278.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 278.
+(Font)              scaled to size 5.475pt on input line 280.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 280.
 (/Users/mario/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 278.
+(Font)              scaled to size 10.95pt on input line 280.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.665pt on input line 278.
+(Font)              scaled to size 7.665pt on input line 280.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.475pt on input line 278.
+(Font)              scaled to size 5.475pt on input line 280.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 278.
+(Font)              scaled to size 10.95pt on input line 280.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.665pt on input line 278.
+(Font)              scaled to size 7.665pt on input line 280.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.475pt on input line 278.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 278.
+(Font)              scaled to size 5.475pt on input line 280.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 280.
 (/Users/mario/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 278.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 280.
 (/Users/mario/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Info: Redefining \microtypecontext on input line 278.
-Package microtype Info: Applying patch `item' on input line 278.
-Package microtype Info: Applying patch `toc' on input line 278.
-Package microtype Info: Applying patch `eqnum' on input line 278.
+LaTeX Info: Redefining \microtypecontext on input line 280.
+Package microtype Info: Applying patch `item' on input line 280.
+Package microtype Info: Applying patch `toc' on input line 280.
+Package microtype Info: Applying patch `eqnum' on input line 280.
 
-Package microtype Warning: Unable to apply patch `footnote' on input line 278.
+Package microtype Warning: Unable to apply patch `footnote' on input line 280.
 
-Package microtype Info: Applying patch `verbatim' on input line 278.
-LaTeX Info: Redefining \microtypesetup on input line 278.
+Package microtype Info: Applying patch `verbatim' on input line 280.
+LaTeX Info: Redefining \microtypesetup on input line 280.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
@@ -1335,7 +1335,7 @@ Package microtype Info: No adjustment of kerning.
 (/Users/mario/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
 File: mt-LatinModernRoman.cfg 2026/02/26 v1.2 microtype config. file: Latin Modern Roman (RS)
 )
-Package hyperref Info: Link coloring ON on input line 278.
+Package hyperref Info: Link coloring ON on input line 280.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: changepage package is loaded.
 \caption@adjustwidth@hsize=\dimen321
@@ -1349,23 +1349,23 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 280.
+(Font)              scaled to size 14.4pt on input line 282.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 280.
+(Font)              scaled to size 10.0pt on input line 282.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 280.
+(Font)              scaled to size 7.0pt on input line 282.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 280.
+(Font)              scaled to size 14.4pt on input line 282.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 280.
+(Font)              scaled to size 10.0pt on input line 282.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 280.
+(Font)              scaled to size 7.0pt on input line 282.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 280.
+(Font)              scaled to size 14.4pt on input line 282.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 280.
+(Font)              scaled to size 10.0pt on input line 282.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 280.
+(Font)              scaled to size 7.0pt on input line 282.
 (/Users/mario/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 ) (/Users/mario/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -1375,7 +1375,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 
 {/Users/mario/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package tocbasic Info: character protrusion at toc deactivated on input line 284.
+Package tocbasic Info: character protrusion at toc deactivated on input line 286.
 No file index.toc.
 \tf@toc=\write5
 
@@ -1386,7 +1386,7 @@ No file index.toc.
 <img/HW-SW-AI-test-differencesV2.png, id=20, 1452.42625pt x 1091.07625pt>
 File: img/HW-SW-AI-test-differencesV2.png Graphic file (type png)
 <use img/HW-SW-AI-test-differencesV2.png>
-Package luatex.def Info: img/HW-SW-AI-test-differencesV2.png  used on input line 296.
+Package luatex.def Info: img/HW-SW-AI-test-differencesV2.png  used on input line 298.
 (luatex.def)             Requested size: 1452.42271pt x 1091.0736pt.
 [3
 
@@ -1394,16 +1394,16 @@ Package luatex.def Info: img/HW-SW-AI-test-differencesV2.png  used on input line
 File: mt-TU-empty.cfg 2021/06/22 v1.1 microtype config. file: fonts with nonstandard glyph set (RS)
 )
 
-LaTeX Warning: Reference `tip-why-workbook' on page 4 undefined on input line 359.
+LaTeX Warning: Reference `tip-why-workbook' on page 4 undefined on input line 361.
 
 [4]
 <index_files/figure-latex/mermaid-figure-1.png, id=31, 2019.545pt x 377.41pt>
 File: index_files/figure-latex/mermaid-figure-1.png Graphic file (type png)
 <use index_files/figure-latex/mermaid-figure-1.png>
-Package luatex.def Info: index_files/figure-latex/mermaid-figure-1.png  used on input line 384.
+Package luatex.def Info: index_files/figure-latex/mermaid-figure-1.png  used on input line 386.
 (luatex.def)             Requested size: 378.69458pt x 70.82178pt.
 
-Overfull \hbox (90.92873pt too wide) in paragraph at lines 384--385
+Overfull \hbox (90.92873pt too wide) in paragraph at lines 386--387
 [][] 
  []
 
@@ -1412,335 +1412,295 @@ chapter 1.
 [6
 
 ]
-part I.
-Package scrkbase Info: You've told me to use the font selection of the element
-(scrkbase)             `partprefix' that is an alias of element `partnumber'
-(scrkbase)              on input line 415.
+chapter 2.
+
+LaTeX Warning: Reference `sec-metamorphic-testing' on page 7 undefined on input line 438.
+
 [7
 
 ]
-chapter 2.
-[8
+Overfull \hbox (69.20407pt too wide) in paragraph at lines 475--475
+[]\TU/lmtt/m/n/10.95 Some of the key challenges in testing AI-based software include:[] 
+ []
 
-] [9] [10] [11] [12] [13] [14] [15]
+
+Overfull \hbox (460.11899pt too wide) in paragraph at lines 476--476
+[]\TU/lmtt/m/n/10.95 - The complexity and opacity of AI models, which can make it difficult to understand how they work and to identify potential issues.[] 
+ []
+
+
+Overfull \hbox (431.37524pt too wide) in paragraph at lines 477--477
+[]\TU/lmtt/m/n/10.95 - The need for large and representative datasets for testing, which can be difficult to obtain and may not always be available.[] 
+ []
+
+
+Overfull \hbox (414.129pt too wide) in paragraph at lines 478--478
+[]\TU/lmtt/m/n/10.95 - The potential for bias and unfairness in AI systems, which can lead to ethical and legal issues if not properly addressed.[] 
+ []
+
+
+Overfull \hbox (195.67654pt too wide) in paragraph at lines 479--479
+[]\TU/lmtt/m/n/10.95 - The need for new testing techniques and tools that are specifically designed for AI-
+ []
+
+
+Overfull \hbox (644.07895pt too wide) in paragraph at lines 480--480
+[]\TU/lmtt/m/n/10.95 - The need for ongoing testing and monitoring of AI systems in production, as their performance can degrade over time due to changes in the data or the environment.[] 
+ []
+
+
+Overfull \hbox (471.61649pt too wide) in paragraph at lines 491--491
+[]\TU/lmtt/m/n/10.95 - Use techniques such as explainability and interpretability to better understand how AI models work and to identify potential issues.[] 
+ []
+
+
+Overfull \hbox (442.87274pt too wide) in paragraph at lines 492--492
+[]\TU/lmtt/m/n/10.95 - Use techniques such as data augmentation and synthetic data generation to create large and representative datasets for testing.[] 
+ []
+
+
+Overfull \hbox (304.90277pt too wide) in paragraph at lines 493--493
+[]\TU/lmtt/m/n/10.95 - Use techniques such as fairness testing and bias detection to identify and mitigate bias in AI systems.[] 
+ []
+
+
+Overfull \hbox (730.31018pt too wide) in paragraph at lines 494--494
+[]\TU/lmtt/m/n/10.95 - Use techniques such as adversarial testing and robustness testing to evaluate the performance of AI systems under different conditions and to identify potential vulnerabilities.[] 
+ []
+
+
+Overfull \hbox (419.87775pt too wide) in paragraph at lines 495--495
+[]\TU/lmtt/m/n/10.95 - Use techniques such as continuous testing and monitoring to ensure that AI systems remain effective and reliable over time.[] 
+ []
+
+[8]
 chapter 3.
-[16
+[9
 
-]
+] [10] [11]
+part I.
+Package scrkbase Info: You've told me to use the font selection of the element
+(scrkbase)             `partprefix' that is an alias of element `partnumber'
+(scrkbase)              on input line 656.
 chapter 4.
-[17
-
-]
-
-LaTeX Warning: Reference `sec-metrics-for-classification' on page 18 undefined on input line 789.
-
-[18]
-Underfull \hbox (badness 1394) in paragraph at lines 796--802
-[]\TU/lmr/m/n/10.95 User con-trol-la-bil-ity (prod-uct qual-ity): a new sub-
- []
-
-
-Underfull \hbox (badness 4846) in paragraph at lines 796--802
-\TU/lmr/m/n/10.95 characteristic of in-ter-ac-tion ca-pa-bil-ity (note that
- []
-
-[19] [20]
-
-LaTeX Warning: Reference `sec-metrics-for-classification' on page 21 undefined on input line 912.
-
-[21] [22] [23]
 chapter 5.
-
-Overfull \hbox (7.93393pt too wide) in paragraph at lines 1005--1008
-[]\TU/lmr/m/n/10.95 --- align-ment with the re-vised ver-sion of []ISO/IEC 25010:2023[]; 
- []
-
-
-Overfull \hbox (7.93393pt too wide) in paragraph at lines 1008--1011
-[]\TU/lmr/m/n/10.95 --- align-ment with the re-vised ver-sion of []ISO/IEC 25019:2023[]; 
- []
-
-[24
-
-] [25] [26]
-Lua-only attribute luaul1 = 5 [27] [28] [29] [30] [31] [32] [33] [34] [35] [36] [37]
 chapter 6.
-[38
 
-]
-Missing character: There is no β (U+03B2) in font [lmroman10-regular]:+tlig;!
-Missing character: There is no β (U+03B2) in font [lmroman10-regular]:+tlig;!
-[39
-Missing character: There is no β (U+03B2) in font [lmroman10-regular]:+tlig;!
-]
-Missing character: There is no β (U+03B2) in font [lmroman10-regular]:+tlig;!
-Missing character: There is no β (U+03B2) in font [lmroman10-regular]:+tlig;!
-Missing character: There is no β (U+03B2) in font [lmroman10-regular]:+tlig;!
-[40
-Missing character: There is no β (U+03B2) in font [lmroman10-regular]:+tlig;!
-] [41]
-chapter 7.
-[42
+LaTeX Warning: Reference `sec-metrics-for-classification' on page 12 undefined on input line 1030.
 
-] [43]
-chapter 8.
 
-LaTeX Warning: Reference `sec-metrics-for-classification' on page 44 undefined on input line 1925.
-
-[44
-
-]
-Underfull \hbox (badness 5548) in paragraph at lines 1950--1955
-[]\TU/lmr/bx/n/10.95 In-ter-ven-abil-ity \TU/lmr/m/n/10.95 (prod-uct qual-ity): a new sub-
+Underfull \hbox (badness 1642) in paragraph at lines 1049--1056
+[]\TU/lmr/m/n/10.95 AI ro-bust-ness (prod-uct qual-ity): a new sub-
  []
 
-[45] [46] [47] [48]
-<img/KonfusionMatrixWithMetrics.jpg, id=262, 756.8275pt x 426.59375pt>
+
+Underfull \hbox (badness 1635) in paragraph at lines 1056--1060
+[]\TU/lmr/m/n/10.95 In-ter-ven-abil-ity (prod-uct qual-ity): a new sub-
+ []
+
+
+LaTeX Warning: Reference `sec-metrics-for-classification' on page 12 undefined on input line 1153.
+
+chapter 7.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1246--1249
+[]\TU/lmr/m/n/10.95 --- align-ment with the re-vised ver-sion of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1249--1252
+[]\TU/lmr/m/n/10.95 --- align-ment with the re-vised ver-sion of
+ []
+
+Lua-only attribute luaul1 = 5
+Underfull \hbox (badness 1590) in paragraph at lines 1735--1738
+[]\TU/lmr/m/n/10.95 So-ci-etal and eth-i-cal risk mit-i-ga-tion is a new sub-
+ []
+
+chapter 8.
+Missing character: There is no β (U+03B2) in font [lmroman10-regular]:+tlig;!
+Missing character: There is no β (U+03B2) in font [lmroman10-regular]:+tlig;!
+Missing character: There is no β (U+03B2) in font [lmroman10-regular]:+tlig;!
+Missing character: There is no β (U+03B2) in font [lmroman10-regular]:+tlig;!
+Missing character: There is no β (U+03B2) in font [lmroman10-regular]:+tlig;!
+
+Underfull \hbox (badness 6944) in paragraph at lines 1982--1983
+[]\TU/lmr/m/n/10.95 6.4.3 Macro-average, weighted-average and micro-
+ []
+
+chapter 9.
+chapter 10.
+
+LaTeX Warning: Reference `sec-metrics-for-classification' on page 12 undefined on input line 2166.
+
+
+Underfull \hbox (badness 3449) in paragraph at lines 2185--2191
+[]\TU/lmr/bx/n/10.95 Ro-bust-ness \TU/lmr/m/n/10.95 (prod-uct qual-ity): a new sub-
+ []
+
+<img/KonfusionMatrixWithMetrics.jpg, id=81, 756.8275pt x 426.59375pt>
 File: img/KonfusionMatrixWithMetrics.jpg Graphic file (type jpg)
 <use img/KonfusionMatrixWithMetrics.jpg>
-Package luatex.def Info: img/KonfusionMatrixWithMetrics.jpg  used on input line 2121.
+Package luatex.def Info: img/KonfusionMatrixWithMetrics.jpg  used on input line 2362.
 (luatex.def)             Requested size: 327.589pt x 254.4806pt.
 
-Overfull \hbox (28.87315pt too wide) in paragraph at lines 2121--2122
+Overfull \hbox (54.19601pt too wide) in paragraph at lines 2362--2363
  [][] 
  []
 
-[49] [50<./img/KonfusionMatrixWithMetrics.jpg>]
-chapter 9.
-[51
-
-] [52]
-chapter 10.
-[53
-
-] [54]
 chapter 11.
-[55
-
-] [56] [57] [58]
 chapter 12.
-[59
-
-] [60] [61] [62] [63] [64] [65] [66] [67] [68] [69] [70] [71] [72] [73]
-Underfull \hbox (badness 10000) in paragraph at lines 3177--3178
-[][]$\TU/lmr/m/n/10.95 https://docs.galileo.ai/galileo/gen-ai-studio-products/galileo-
- []
-
-[74]
-Underfull \hbox (badness 10000) in paragraph at lines 3201--3203
-[][]\TU/lmr/m/n/10.95 In-struc-tion Ad-her-ence:[] Scor-ers.in-struc-tion_ad-her-
- []
-
-
-Underfull \hbox (badness 1117) in paragraph at lines 3234--3236
-[][]\TU/lmr/m/n/10.95 Tool Se-lec-tion Qual-ity:[] Scor-ers.tool_se-lec-tion_qual-
- []
-
-[75] [76]
 chapter 13.
-[77
 
-]
+Underfull \hbox (badness 7888) in paragraph at lines 2505--2507
+\TU/lmr/m/n/10.95 Aus <[]$https://github.com/confident-ai/deepeval?tab=
+ []
+
+chapter 14.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3418--3419
+[][]$\TU/lmr/m/n/10.95 https://docs.galileo.ai/galileo/gen-ai-studio-products/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3447--3449
+[][]\TU/lmr/m/n/10.95 Ground Truth Ad-her-ence:[] Scor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3454--3456
+[][]\TU/lmr/m/n/10.95 Com-plete-ness Luna[]: Scor-ers.com-plete-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3469--3471
+[][]\TU/lmr/m/n/10.95 Ac-tion Com-ple-tion:[] Scor-ers.ac-tion_com-ple-
+ []
+
+
+Underfull \hbox (badness 4556) in paragraph at lines 3472--3474
+[][]\TU/lmr/m/n/10.95 Ac-tion Ad-vance-ment:[] Scor-ers.ac-tion_ad-vance-
+ []
+
+chapter 15.
 part II.
 Package scrkbase Info: You've told me to use the font selection of the element
 (scrkbase)             `partprefix' that is an alias of element `partnumber'
-(scrkbase)              on input line 3330.
-[78
-
-]
-chapter 14.
-[79
-
-]
-chapter 15.
-[80
-
-]
+(scrkbase)              on input line 3571.
 chapter 16.
-[81
-
-] [82] [83] [84] [85] [86] [87] [88] [89] [90] [91]
 chapter 17.
-[92
-
-]
 chapter 18.
-
-LaTeX Warning: Reference `sec-metrics-for-classification' on page 93 undefined on input line 3847.
-
-[93
-
-]
 chapter 19.
-[94
-
-] [95] [96]
 chapter 20.
-[97
 
-]
+LaTeX Warning: Reference `sec-metrics-for-classification' on page 12 undefined on input line 4087.
+
 chapter 21.
-[98
-
-]
+chapter 22.
+chapter 23.
 part III.
 Package scrkbase Info: You've told me to use the font selection of the element
 (scrkbase)             `partprefix' that is an alias of element `partnumber'
-(scrkbase)              on input line 3952.
-[99
-
-]
-chapter 22.
-[100
-
-]
-chapter 23.
-[101
-
-]
+(scrkbase)              on input line 4192.
 chapter 24.
-[102
-
-]
 chapter 25.
-<img/BASFuzz_Workflow.png, id=687, 2051.16313pt x 446.66875pt>
-File: img/BASFuzz_Workflow.png Graphic file (type png)
-<use img/BASFuzz_Workflow.png>
-Package luatex.def Info: img/BASFuzz_Workflow.png  used on input line 4000.
-(luatex.def)             Requested size: 2051.15816pt x 446.66765pt.
-<img/BASFuzz_fig1.png, id=688, 3553.275pt x 938.75719pt>
-File: img/BASFuzz_fig1.png Graphic file (type png)
-<use img/BASFuzz_fig1.png>
-Package luatex.def Info: img/BASFuzz_fig1.png  used on input line 4015.
-(luatex.def)             Requested size: 3553.26637pt x 938.7549pt.
-[103
-
-<./img/BASFuzz_Workflow.png>] [104<./img/BASFuzz_fig1.png>]
 chapter 26.
-<img/LLM-MorphFig1.png, id=706, 1115.47174pt x 215.2389pt>
-File: img/LLM-MorphFig1.png Graphic file (type png)
-<use img/LLM-MorphFig1.png>
-Package luatex.def Info: img/LLM-MorphFig1.png  used on input line 4057.
-(luatex.def)             Requested size: 1115.46902pt x 215.23837pt.
-[105
-
-<./img/LLM-MorphFig1.png>] [106]
 chapter 27.
 
-LaTeX Warning: Hyper reference `2.-Installation-von-python' on page 107 undefined on input line 4093.
+LaTeX Warning: Reference `sec-metamorphic-testing' on page 12 undefined on input line 4232.
 
-[107
 
-]
-<Einstieg_Vorbereitung/jupyterlab_snapshot01_blanko.png, id=739, 677.53125pt x 452.4403pt>
+LaTeX Warning: Reference `sec-mutation-testing' on page 12 undefined on input line 4233.
+
+
+LaTeX Warning: Reference `sec-property-based-testing' on page 12 undefined on input line 4234.
+
+<img/BASFuzz_Workflow.png, id=192, 2051.16313pt x 446.66875pt>
+File: img/BASFuzz_Workflow.png Graphic file (type png)
+<use img/BASFuzz_Workflow.png>
+Package luatex.def Info: img/BASFuzz_Workflow.png  used on input line 4244.
+(luatex.def)             Requested size: 2051.15816pt x 446.66765pt.
+<img/BASFuzz_fig1.png, id=193, 3553.275pt x 938.75719pt>
+File: img/BASFuzz_fig1.png Graphic file (type png)
+<use img/BASFuzz_fig1.png>
+Package luatex.def Info: img/BASFuzz_fig1.png  used on input line 4259.
+(luatex.def)             Requested size: 3553.26637pt x 938.7549pt.
+<img/LLM-MorphFig1.png, id=196, 1115.47174pt x 215.2389pt>
+File: img/LLM-MorphFig1.png Graphic file (type png)
+<use img/LLM-MorphFig1.png>
+Package luatex.def Info: img/LLM-MorphFig1.png  used on input line 4303.
+(luatex.def)             Requested size: 1115.46902pt x 215.23837pt.
+
+LaTeX Warning: Hyper reference `2.-Installation-von-python' on page 12 undefined on input line 4376.
+
+<Einstieg_Vorbereitung/jupyterlab_snapshot01_blanko.png, id=209, 677.53125pt x 452.4403pt>
 File: Einstieg_Vorbereitung/jupyterlab_snapshot01_blanko.png Graphic file (type png)
 <use Einstieg_Vorbereitung/jupyterlab_snapshot01_blanko.png>
-Package luatex.def Info: Einstieg_Vorbereitung/jupyterlab_snapshot01_blanko.png  used on input line 4152.
+Package luatex.def Info: Einstieg_Vorbereitung/jupyterlab_snapshot01_blanko.png  used on input line 4445.
 (luatex.def)             Requested size: 677.52959pt x 452.43921pt.
-[108]
 
-LaTeX Warning: Hyper reference `Praktische-ux5cux25C3ux5cux259Cbungen-zum-Buch-ux5cux2522KI-Testenux5cux2522' on page 109 undefined on input line 4178.
+LaTeX Warning: Hyper reference `Praktische-ux5cux25C3ux5cux259Cbungen-zum-Buch-ux5cux2522KI-Testenux5cux2522' on page 12 undefined on input line 4474.
 
-<index_files/mediabag/Einstieg_Vorbereitung/cc-by-nc-sa.pdf, id=751, 101.62968pt x 22.58438pt>
+<index_files/mediabag/Einstieg_Vorbereitung/cc-by-nc-sa.pdf, id=210, 101.62968pt x 22.58438pt>
 File: index_files/mediabag/Einstieg_Vorbereitung/cc-by-nc-sa.pdf Graphic file (type pdf)
 <use index_files/mediabag/Einstieg_Vorbereitung/cc-by-nc-sa.pdf>
-Package luatex.def Info: index_files/mediabag/Einstieg_Vorbereitung/cc-by-nc-sa.pdf  used on input line 4195.
+Package luatex.def Info: index_files/mediabag/Einstieg_Vorbereitung/cc-by-nc-sa.pdf  used on input line 4491.
 (luatex.def)             Requested size: 101.62943pt x 22.5843pt.
-[109<./Einstieg_Vorbereitung/jupyterlab_snapshot01_blanko.png>] [110<./index_files/mediabag/Einstieg_Vorbereitung/cc-by-nc-sa.pdf>]
 part IV.
 Package scrkbase Info: You've told me to use the font selection of the element
 (scrkbase)             `partprefix' that is an alias of element `partnumber'
-(scrkbase)              on input line 4233.
-[111
-
-]
+(scrkbase)              on input line 4529.
 chapter 28.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 4249.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 4249.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 4249.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 4249.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 4249.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 4249.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 4249.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 4249.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 4249.
-[112
 
-] [113] [114]
-
-LaTeX Warning: Reference `sec-authoring' on page 115 undefined on input line 4395.
-
-[115]
-Package hyperref Info: bookmark level for unknown codelisting defaults to 0 on input line 4404.
-[116] [117]
-
-LaTeX Warning: Reference `sec-authoring' on page 118 undefined on input line 4493.
+Underfull \hbox (badness 1616) in paragraph at lines 4568--4572
+[]\TU/lmr/bx/n/10.95 Project sys-tem\TU/lmr/m/n/10.95 : Quarto pro-vides a project
+ []
 
 
-LaTeX Warning: Reference `tip-attributes' on page 118 undefined on input line 4494.
+LaTeX Warning: Reference `sec-authoring' on page 12 undefined on input line 4689.
+
+Package hyperref Info: bookmark level for unknown codelisting defaults to 0 on input line 4698.
+
+LaTeX Warning: Reference `sec-authoring' on page 12 undefined on input line 4787.
 
 
-LaTeX Warning: Reference `sec-authoring' on page 118 undefined on input line 4512.
+LaTeX Warning: Reference `tip-attributes' on page 12 undefined on input line 4788.
 
-[118]
 
-LaTeX Warning: Reference `sec-code-blocks' on page 119 undefined on input line 4614.
+Underfull \hbox (badness 1297) in paragraph at lines 4785--4790
+[]\TU/lmr/m/n/10.95 At-tributes: ad-di-tional meta-data for a com-po-
+ []
 
-[119] [120]
+
+LaTeX Warning: Reference `sec-authoring' on page 12 undefined on input line 4806.
+
+
+LaTeX Warning: Reference `sec-code-blocks' on page 12 undefined on input line 4908.
+
 chapter 29.
-<img/jupyter-lab.png, id=850, 762.85pt x 854.19125pt>
+<img/jupyter-lab.png, id=227, 762.85pt x 854.19125pt>
 File: img/jupyter-lab.png Graphic file (type png)
 <use img/jupyter-lab.png>
-Package luatex.def Info: img/jupyter-lab.png  used on input line 4649.
+Package luatex.def Info: img/jupyter-lab.png  used on input line 4943.
 (luatex.def)             Requested size: 762.84814pt x 854.18918pt.
-
-Overfull \hbox (10.94339pt too wide) in paragraph at lines 4649--4650
-[][] 
- []
-
-[121
-
-]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<img/jupyterlab-preview.png, id=859, 1524.69624pt x 955.57pt>
+<img/jupyterlab-preview.png, id=228, 1524.69624pt x 955.57pt>
 File: img/jupyterlab-preview.png Graphic file (type png)
 <use img/jupyterlab-preview.png>
-Package luatex.def Info: img/jupyterlab-preview.png  used on input line 4676.
+Package luatex.def Info: img/jupyterlab-preview.png  used on input line 4970.
 (luatex.def)             Requested size: 1524.69254pt x 955.56767pt.
-
-Overfull \hbox (10.93298pt too wide) in paragraph at lines 4676--4677
-[][] 
- []
-
-[122<./img/jupyter-lab.png>]
-
-! LaTeX Error: Not in outer par mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4737 
-     
+! Misplaced \noalign.
+\caption ->\noalign 
+                    \bgroup \@ifnextchar [{\egroup \LT@c@ption \@firstofone ...
+l.5027 \caption
+             {\texttt{Terminal}}
 
 Here is how much of LuaTeX's memory you used:
- 43375 strings out of 475892
- 100000,1648299 words of node,token memory allocated
- 26322 words of node memory still in use:
-   128 hlist, 21 vlist, 34 rule, 55 disc, 21 local_par, 4 dir, 351 glue, 86 kern, 79 penalty, 1 unset, 11 margin_kern, 841 glyph, 2 align_record, 5084 attribute, 91 glue_spec, 1843 attribute_list, 9 temp, 1 align_stack, 1 if_stack, 4 write, 103 pdf_literal, 1 pdf_start_link, 1 pdf_end_link, 3 pdf_dest, 12 pdf_action, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
-   avail lists: 1:2,2:5621,3:199,4:70,5:271,6:36,7:4227,8:81,9:69,10:18,11:503,12:1
- 64891 multiletter control sequences out of 65536+600000
- 88 fonts using 27566823 bytes
- 108i,8n,114p,11226b,1126s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 43124 strings out of 475892
+ 2842939,1648299 words of node,token memory allocated
+ 2573744 words of node memory still in use:
+   5126 hlist, 189 vlist, 125 rule, 16 mark, 14347 disc, 1194 local_par, 7 dir, 14 math, 30279 glue, 7859 kern, 4070 penalty, 1 unset, 2041 margin_kern, 137381 glyph, 2 align_record, 417207 attribute, 115 glue_spec, 142789 attribute_list, 12 temp, 1 align_stack, 304 write, 278 pdf_literal, 152 pdf_start_link, 152 pdf_end_link, 122 pdf_dest, 152 pdf_action, 7 pdf_setmatrix, 7 pdf_save, 7 pdf_restore nodes
+   avail lists: 1:12,2:4,4:1,8:81,10:20,12:1
+ 64873 multiletter control sequences out of 65536+600000
+ 68 fonts using 19825119 bytes
+ 108i,10n,114p,11226b,1126s stack positions out of 10000i,1000n,20000p,200000b,200000s
 !  ==> Fatal error occurred, no output PDF file produced!

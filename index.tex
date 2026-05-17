@@ -66,7 +66,6 @@
   \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
 \fi
 \makeatother
-\usepackage{fancyvrb}
 
 \usepackage{color}
 \usepackage{fancyvrb}
@@ -257,10 +256,13 @@
 \makeatother
 \newcounter{quartocallouttipno}
 \newcommand{\quartocallouttip}[1]{\refstepcounter{quartocallouttipno}\label{#1}}
+\makeatletter
+\@ifpackageloaded{fancyvrb}{}{\usepackage{fancyvrb}}
+\makeatother
+\VerbatimFootnotes
 \usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
-\VerbatimFootnotes % allow verbatim text in footnotes
 \hypersetup{
   pdftitle={AI QA Workbook},
   pdfauthor={Mario Winter},
@@ -274,7 +276,7 @@
 
 \title{AI QA Workbook}
 \author{Mario Winter}
-\date{2026-05-16}
+\date{2026-05-17}
 \begin{document}
 \maketitle
 
@@ -411,6 +413,245 @@ practical workbook that not only explains the concepts and techniques of
 AI testing but also provides executable examples and exercises that
 readers can run and modify. This way, readers can learn by doing, which
 is often more effective than just reading about the theory.
+
+\bookmarksetup{startatroot}
+
+\chapter{Frequently asked Questions}\label{frequently-asked-questions}
+
+\section*{I have some good test cases - how can I get more like
+them?}\label{i-have-some-good-test-cases---how-can-i-get-more-like-them}
+\addcontentsline{toc}{section}{I have some good test cases - how can I
+get more like them?}
+
+\markright{I have some good test cases - how can I get more like them?}
+
+One way to get more test cases like the ones you have is to use
+techniques such as data augmentation or metamorphic testing, which
+involve creating new test cases by applying transformations to existing
+ones. For example using data augmentation,if you have a test case that
+involves an image, you can create new test cases by rotating, flipping,
+or adding noise to the image. With metamorphic testing, you can create
+new test cases by applying transformations to the input data and
+corresponding transformations to the expected output, like creating a
+test case with a slightly different input and expecting a similar
+output. For more information on metamorphic testing, see
+Section~\ref{sec-metamorphic-testing}.
+
+This can help to increase the diversity and coverage of your test cases,
+and can also help to identify potential issues that may not be apparent
+with the original test cases.
+
+Another technique is to use generative models, such as GANs, to generate
+new test cases based on the patterns and features of the existing ones.
+Additionally, you can use techniques such as active learning, where you
+select the most informative test cases from a larger pool of unlabeled
+data, and use them to train your model and improve its performance.
+
+\section*{What is the difference between testing traditional software
+and testing AI-based
+software?}\label{what-is-the-difference-between-testing-traditional-software-and-testing-ai-based-software}
+\addcontentsline{toc}{section}{What is the difference between testing
+traditional software and testing AI-based software?}
+
+\markright{What is the difference between testing traditional software
+and testing AI-based software?}
+
+Testing traditional software focuses on verifying that the software
+behaves as expected for a given set of inputs and outputs. In contrast,
+testing AI-based software involves evaluating the performance of the AI
+system on a given dataset, and comparing it to a baseline or to other
+models. This is because AI systems are often probabilistic in nature,
+and their performance can vary depending on the data they are trained on
+and the data they are tested on.
+
+\section*{What are the key challenges in testing AI-based
+software?}\label{what-are-the-key-challenges-in-testing-ai-based-software}
+\addcontentsline{toc}{section}{What are the key challenges in testing
+AI-based software?}
+
+\markright{What are the key challenges in testing AI-based software?}
+
+\begin{verbatim}
+Some of the key challenges in testing AI-based software include:
+- The complexity and opacity of AI models, which can make it difficult to understand how they work and to identify potential issues.
+- The need for large and representative datasets for testing, which can be difficult to obtain and may not always be available.
+- The potential for bias and unfairness in AI systems, which can lead to ethical and legal issues if not properly addressed.
+- The need for new testing techniques and tools that are specifically designed for AI-based software.
+- The need for ongoing testing and monitoring of AI systems in production, as their performance can degrade over time due to changes in the data or the environment.
+\end{verbatim}
+
+\section*{How can we address these
+challenges?}\label{how-can-we-address-these-challenges}
+\addcontentsline{toc}{section}{How can we address these challenges?}
+
+\markright{How can we address these challenges?}
+
+\begin{verbatim}
+To address these challenges, we can:
+- Use techniques such as explainability and interpretability to better understand how AI models work and to identify potential issues.
+- Use techniques such as data augmentation and synthetic data generation to create large and representative datasets for testing.
+- Use techniques such as fairness testing and bias detection to identify and mitigate bias in AI systems.
+- Use techniques such as adversarial testing and robustness testing to evaluate the performance of AI systems under different conditions and to identify potential vulnerabilities.
+- Use techniques such as continuous testing and monitoring to ensure that AI systems remain effective and reliable over time.
+\end{verbatim}
+
+\bookmarksetup{startatroot}
+
+\chapter{Ten Questions to Learn About Actual Testing
+Activities}\label{ten-questions-to-learn-about-actual-testing-activities}
+
+The following questions help a software tester understand the actual
+testing activities for an LLM-based recipe recommendation system. Each
+question is provided as a collapsed tip callout with examples of
+AI-testing methods, techniques, and tool categories.
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{What are the main product risks for recipe recommendations?}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+\textbf{AI-testing methods / techniques:} Risk-based testing, product
+risk analysis, hazard analysis, misuse and abuse cases, safety testing,
+privacy risk analysis, and bias risk analysis. Example risks include
+allergens, unsafe cooking advice, food poisoning risk, toxic
+ingredients, misleading nutrition claims, and religious or cultural
+dietary violations.
+
+\textbf{Example tools or tool categories:} Risk registers, Jira or Azure
+DevOps risk labels, threat modeling tools, food safety and allergen
+checklists, safety rule engines, and domain expert review templates.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Which quality characteristics are most important for this system?}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+\textbf{AI-testing methods / techniques:} Quality characteristic
+analysis, non-functional testing, and AI-specific quality evaluation for
+fairness, robustness, explainability, transparency, safety, reliability,
+and performance efficiency.
+
+\textbf{Example tools or tool categories:} ISO/IEC 25010 quality model
+checklists, model cards, datasheets for datasets, latency dashboards,
+cost dashboards, error-rate dashboards, explainability tools, and bias
+analysis notebooks.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{What are the acceptance criteria for good enough recommendations?}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+\textbf{AI-testing methods / techniques:} Statistical acceptance
+criteria, threshold-based evaluation, benchmark testing, and acceptance
+testing with representative datasets. Example criteria include: at least
+95\% of vegan queries must not recommend animal products, or zero
+tolerance for known allergens when a user allergy is stated.
+
+\textbf{Example tools or tool categories:} Golden test sets, evaluation
+datasets, acceptance scorecards, ML evaluation notebooks, CI quality
+gates, and test management tools.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{How do we decide whether an LLM answer is correct or acceptable?}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+\textbf{AI-testing methods / techniques:} Test oracle strategy, expert
+review, proxy oracles, metamorphic testing, back-to-back testing, and
+A/B testing. For LLM-based systems, correctness is often not a simple
+expected-result comparison, so the team may need domain experts,
+rule-based checks, reference datasets, or statistical evaluation.
+
+\textbf{Example tools or tool categories:} Human evaluation forms,
+subject matter expert review workflows, LLM-as-judge with caution,
+rule-based validators, nutrition databases, allergen databases, and
+approved recipe databases.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Which test levels do we use, and what is tested at each level?}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+\textbf{AI-testing methods / techniques:} Component testing, integration
+testing, system testing, system integration testing, acceptance testing,
+and maintenance testing. Example test targets include the prompt layer,
+retrieval layer, ranking layer, API layer, user interface, safety
+filters, and production behavior.
+
+\textbf{Example tools or tool categories:} Unit test frameworks, API
+test tools, contract testing tools, end-to-end UI automation tools, test
+management systems, and CI/CD pipelines.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{What is the architecture of the LLM system?}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+\textbf{AI-testing methods / techniques:} Architecture review, model
+documentation review, RAG testing, prompt testing, guardrail testing,
+tool-call testing, and data lineage review. Ask whether the system uses
+a foundation model, instruction-tuned model, reasoning model,
+retrieval-augmented generation, fine-tuning, vector database, agent, or
+external tool calls.
+
+\textbf{Example tools or tool categories:} Architecture diagrams, prompt
+repositories, vector database inspection tools, RAG evaluation tools,
+embedding similarity tools, LLM observability platforms, model
+registries, prompt version control, and general version control systems.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{What test data do we use, and how is it managed?}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+\textbf{AI-testing methods / techniques:} Test data design, synthetic
+test data generation, equivalence partitioning, boundary value analysis,
+combinatorial testing, bias testing, label correctness testing, data
+representativeness testing, and data pipeline testing.
+
+\textbf{Example tools or tool categories:} Curated prompt suites, golden
+datasets, synthetic data generators, data profiling tools, data
+validation frameworks, dataset versioning tools, and annotation tools.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{How do we test for hallucinations, unsafe advice, and misleading
+confidence?}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+\textbf{AI-testing methods / techniques:} Hallucination detection,
+cross-verification, consistency checks, logical validation, domain
+expert consultation, negative testing, safety testing, and red teaming.
+For recipe recommendations, this includes checking whether generated
+advice is grounded in valid recipes, safe ingredients, and correct
+dietary constraints.
+
+\textbf{Example tools or tool categories:} Fact-checking against recipe,
+nutrition, and allergen databases; rule-based safety filters; subject
+matter expert review queues; automated consistency checkers; toxicity or
+safety classifiers; and prompt-injection scanners.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Do we perform red teaming, exploratory testing, adversarial testing, or
+metamorphic testing?}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+\textbf{AI-testing methods / techniques:} Red teaming, exploratory
+testing, adversarial testing, fuzz testing, metamorphic testing, A/B
+testing, back-to-back testing, and regression testing. Example attacks
+or challenges include prompt injection, jailbreak attempts,
+contradictory dietary constraints, rare ingredients, multilingual
+prompts, and malicious user input.
+
+\textbf{Example tools or tool categories:} Red-team prompt libraries,
+exploratory testing charters, prompt fuzzers, API fuzzers, adversarial
+prompt generators, regression prompt suites, and A/B experimentation
+platforms.
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{How do we monitor the system after release?}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+\textbf{AI-testing methods / techniques:} Production monitoring, drift
+testing, regression testing, canary releases, A/B testing, incident
+analysis, feedback-loop testing, shadow testing, and maintenance
+testing. For LLMOps, ask how model changes, prompt changes, RAG index
+updates, embedding model changes, guardrail changes, and tool changes
+are versioned and evaluated.
+
+\textbf{Example tools or tool categories:} LLM observability tools,
+telemetry dashboards, user feedback analytics, incident management
+tools, model registries, prompt registries, drift
 
 \part{Start Here - AI QA Basics}
 
@@ -2114,7 +2355,7 @@ Classification}\label{sec-metrics-for-classification}
 
 {[}CT-AI 2.0 Beta{]} p 33ff
 
-\begin{figure}
+\begin{figure}[H]
 
 \centering{
 
@@ -3811,7 +4052,6 @@ testing for things like missing data, duplicate data, and outliers.
 \chapter{Model Testing}\label{model-testing}
 
 \begin{itemize}
-\tightlist
 \item
   Discover test approaches for mitigating risks in ML models, including
   documentation reviews, ML functional performance testing, and
@@ -3977,17 +4217,21 @@ professionals in the field.
 
 \chapter{Hands-On Exercises}\label{hands-on-exercises}
 
-\chapter{Tools and Techniques for Generating Software
-Tests}\label{tools-and-techniques-for-generating-software-tests}
+\chapter{Tool Pages for Generating Software
+Tests}\label{tool-pages-for-generating-software-tests}
 
-\section{Fuzzing}\label{fuzzing}
+\section{Fuzzing}\label{sec-fuzzing}
 
 The \href{https://www.fuzzingbook.org/}{Fuzzing Book} is a great
 resource for learning about fuzzing. It provides a comprehensive
 introduction to fuzzing, including the different types of fuzzing, how
 to create fuzzers, and how to use fuzzers to find bugs in software. The
 book also includes a number of exercises that allow you to practice
-fuzzing techniques and apply them to real-world software.
+fuzzing techniques and apply them to real-world software. Fuzzing can be
+done e.g.~with metamorphic testing
+(Section~\ref{sec-metamorphic-testing}), mutation testing
+(Section~\ref{sec-mutation-testing}), and property-based testing
+(Section~\ref{sec-property-based-testing}).
 
 \href{https://github.com/lumos0514/BASFuzz}{BASFuzz} is a fuzzing
 framework that is designed to be easy to use and extend. It provides a
@@ -4027,7 +4271,7 @@ permission to terminate the contract into an obligation to terminate. By
 using BASFuzz, developers and testerscan identify and fix these
 vulnerabilities before they can be exploited in the wild.
 
-\chapter{Metamorphic Testing}\label{metamorphic-testing}
+\section{Metamorphic Testing}\label{sec-metamorphic-testing}
 
 \href{https://en.wikipedia.org/wiki/Metamorphic_testing}{Metamorphic
 Testing} is a technique for testing software that is based on the idea
@@ -4041,8 +4285,10 @@ software that are difficult to detect with traditional testing
 techniques, such as bugs that only occur under certain conditions or
 with certain inputs.
 
-\section{LLMorph: Metamorphic Testing of Large Language
+\subsection*{LLMorph: Metamorphic Testing of Large Language
 Models}\label{llmorph-metamorphic-testing-of-large-language-models}
+\addcontentsline{toc}{subsection}{LLMorph: Metamorphic Testing of Large
+Language Models}
 
 \href{https://github.com/steven-b-cho/llmorph}{LLMorph} is a tool to
 automatically test Large Language Models (LLMs) using Metamorphic
@@ -4062,7 +4308,7 @@ of LLM-based NLP systems.
 
 \end{figure}%
 
-\section{Mutation Testing}\label{mutation-testing}
+\section{Mutation Testing}\label{sec-mutation-testing}
 
 \href{https://en.wikipedia.org/wiki/Mutation_testing}{Mutation Testing}
 is a technique for evaluating the effectiveness of software tests. It
@@ -4071,8 +4317,45 @@ the tests to see if they fail. If the tests fail, it indicates that the
 tests are effective at catching bugs. If the tests pass, it may indicate
 that the tests are not effective at catching certain types of bugs.
 
-\chapter{German: Praktische Übungen zum Buch
+\section{Property-Based Testing}\label{sec-property-based-testing}
+
+\href{https://en.wikipedia.org/wiki/Property-based_testing}{Property-Based
+Testing} is a technique for testing software that is based on the idea
+of properties. A property is a statement about the behavior of a
+software system that should hold true for all inputs. For example, a
+property might be that a sorting algorithm should always return a sorted
+list. Property-based testing involves generating random inputs and
+checking that the properties hold true for those inputs. This can help
+to find bugs in software that are difficult to detect with traditional
+testing techniques.
+
+\chapter*{Exercises from the book ``Software Testing with Generative
+AI''}\label{exercises-from-the-book-software-testing-with-generative-ai}
+\addcontentsline{toc}{chapter}{Exercises from the book ``Software
+Testing with Generative AI''}
+
+\markboth{Exercises from the book ``Software Testing with Generative
+AI''}{Exercises from the book ``Software Testing with Generative AI''}
+
+\href{https://github.com/mwinteringham/generative-ai-and-testing}{SW-testing-with-GenAI}
+is a repository that contains the exercises for the book
+\href{https://www.manning.com/books/software-testing-with-generative-ai}{``\textbf{Software
+Testing with Generative AI}''}. The repository includes Jupyter
+notebooks that provide hands-on exercises for testing software with
+generative AI techniques. The exercises cover a range of topics,
+including fuzzing, metamorphic testing, mutation testing, and
+property-based testing. The repository is designed to be used in
+conjunction with the book, and it provides a practical way for readers
+to apply the concepts and techniques discussed in the book to real-world
+software testing scenarios.
+
+\chapter*{German: Praktische Übungen zum Buch
 ``KI-Testen''}\label{german-praktische-uxfcbungen-zum-buch-ki-testen}
+\addcontentsline{toc}{chapter}{German: Praktische Übungen zum Buch
+``KI-Testen''}
+
+\markboth{German: Praktische Übungen zum Buch ``KI-Testen''}{German:
+Praktische Übungen zum Buch ``KI-Testen''}
 
 Das Repository
 \href{https://github.com/KI-Testen/Uebungen/tree/main}{KI-Übungen}
@@ -4097,8 +4380,11 @@ Python} * Grundkenntnisse in der
 \href{https://jupyter-tutorial.readthedocs.io/de/latest/index.html}{Benutzung
 von JupyterLab}
 
-\section{1. Download des
+\section*{1. Download des
 Übungsmaterials}\label{download-des-uxfcbungsmaterials}
+\addcontentsline{toc}{section}{1. Download des Übungsmaterials}
+
+\markright{1. Download des Übungsmaterials}
 
 \begin{itemize}
 \tightlist
@@ -4111,8 +4397,12 @@ von JupyterLab}
   Entpacke die ZIP in ein Verzeichnis deiner Wahl.
 \end{itemize}
 
-\section{2. Installation von Python, ML-Paketen und
+\section*{2. Installation von Python, ML-Paketen und
 JupyterLab}\label{installation-von-python-ml-paketen-und-jupyterlab}
+\addcontentsline{toc}{section}{2. Installation von Python, ML-Paketen
+und JupyterLab}
+
+\markright{2. Installation von Python, ML-Paketen und JupyterLab}
 
 \begin{itemize}
 \tightlist
@@ -4130,8 +4420,11 @@ JupyterLab}\label{installation-von-python-ml-paketen-und-jupyterlab}
   von JupyterLab} an der Reihe.
 \end{itemize}
 
-\section{3. Los geht's: Starten von
+\section*{3. Los geht's: Starten von
 JupyterLab}\label{los-gehts-starten-von-jupyterlab}
+\addcontentsline{toc}{section}{3. Los geht's: Starten von JupyterLab}
+
+\markright{3. Los geht's: Starten von JupyterLab}
 
 Von nun ab kannst du JupyterLab per Doppelklick auf:
 \texttt{04\_starte\_jupyterlab.cmd} starten. Als erstes öffnet sich ein
@@ -4165,7 +4458,10 @@ aktivieren und so deinen Lieblingsbrowser festlegen.
   \emph{Open With \textgreater{} Markdown Preview} auswählst.
 \end{itemize}
 
-\section{4. Mit den Aufgaben loslegen}\label{mit-den-aufgaben-loslegen}
+\section*{4. Mit den Aufgaben loslegen}\label{mit-den-aufgaben-loslegen}
+\addcontentsline{toc}{section}{4. Mit den Aufgaben loslegen}
+
+\markright{4. Mit den Aufgaben loslegen}
 
 \emph{Hinweis:} Wir empfehlen dir, die Aufgaben nicht ohne eine gewisse
 Vorbereitung durch den entsprechenden Abschnitt im Buch zu beginnen.
@@ -4246,13 +4542,11 @@ data changes.
 \section{What is Quarto?}\label{what-is-quarto}
 
 Quarto is an open-source scientific and technical publishing system
-built on Pandoc\footnote{Pandoc is a tool that converts documents to
-  different formats. Quarto leverages it to convert markdown to a
-  variety of output formats.}. It provides a unified authoring framework
-for reproducible data science, combining code, results, and narrative to
-produce outputs like HTML, PDF, Word, and more in a seamless manner. A
-few of the key features of Quarto that are applicable to Quarto users at
-any level are listed below:
+built on Pandoc\footnotemark{}. It provides a unified authoring
+framework for reproducible data science, combining code, results, and
+narrative to produce outputs like HTML, PDF, Word, and more in a
+seamless manner. A few of the key features of Quarto that are applicable
+to Quarto users at any level are listed below:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -4303,14 +4597,14 @@ download the latest release version of the Quarto CLI at
 \href{https://quarto.org/docs/get-started/}{https://quarto.org/docs/get-started}
 and install it.
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-note-color!10!white, colframe=quarto-callout-note-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+\begin{quote}
+\textbf{Note}
 
 You can also download development versions of Quarto at
 \url{https://quarto.org/docs/download/prerelease.html} however note that
 pre-release builds are intended for testing purposes, and are not
 recommended for general use.
-
-\end{tcolorbox}
+\end{quote}
 
 \section{Tools for authoring}\label{tools-for-authoring}
 
@@ -4399,7 +4693,7 @@ citations, callouts, figures and tables to Chapter~\ref{sec-authoring}.
 Markdown is a plaintext syntax for describing document structure. Here's
 some example markdown in a Quarto document:
 
-\begin{codelisting}
+\begin{codelisting}[H]
 
 \caption{\texttt{document.qmd}}
 
@@ -4458,7 +4752,7 @@ citations, and cross-references. Adding these components is a matter of
 adding the appropriate Quarto markdown. As a teaser, here's an example
 contains a callout and a cross-reference:
 
-\begin{codelisting}
+\begin{codelisting}[H]
 
 \caption{\texttt{document.qmd}}
 
@@ -4522,7 +4816,7 @@ For example, extra spaces inline with text are ignored, as are newlines
 within a paragraph. That is, the following markdown snippets are
 equivalent:
 
-\begin{figure}
+\begin{figure}[H]
 
 \begin{minipage}[t]{0.50\linewidth}
 
@@ -4657,7 +4951,7 @@ describe working with YAML options in more detail below.
 The ideal workflow for authoring Quarto notebooks in JupyterLab is to
 run the \texttt{quarto\ preview} command from within a terminal:
 
-\begin{codelisting}
+\begin{codelisting}[H]
 
 \caption{\texttt{Terminal}}
 
@@ -4687,7 +4981,7 @@ Preview uses the default format specified within the document---to use
 an alternate format pass the \texttt{-\/-to} option to
 \texttt{quarto\ preview}. For example:
 
-\begin{codelisting}
+\begin{codelisting}[H]
 
 \caption{\texttt{Terminal}}
 
@@ -4699,19 +4993,14 @@ an alternate format pass the \texttt{-\/-to} option to
 
 \end{codelisting}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, breakable, colback=white, colframe=quarto-callout-note-color-frame, left=2mm, leftrule=.75mm, opacityback=0, rightrule=.15mm, toprule=.15mm]
-\begin{minipage}[t]{5.5mm}
-\textcolor{quarto-callout-note-color}{\faInfo}
-\end{minipage}%
-\begin{minipage}[t]{\textwidth - 5.5mm}
+\begin{quote}
+\textbf{Note}
 
 Note that if you are authoring a book or website you can also use
 \href{./docs/websites/website-basics.qmd\#workflow}{\texttt{quarto\ preview}}
 on the project directory, which will create a live preview for the
 entire project.
-
-\end{minipage}%
-\end{tcolorbox}
+\end{quote}
 
 \subsubsection{Running JupyterLab}\label{running-jupyterlab}
 
@@ -4733,7 +5022,7 @@ Command
 \bottomrule\noalign{}
 \endlastfoot
 Mac/Linux & \begin{minipage}[t]{\linewidth}\raggedright
-\begin{codelisting}
+\begin{codelisting}[H]
 
 \caption{\texttt{Terminal}}
 
@@ -4746,7 +5035,7 @@ Mac/Linux & \begin{minipage}[t]{\linewidth}\raggedright
 \end{codelisting}
 \end{minipage} \\
 Windows & \begin{minipage}[t]{\linewidth}\raggedright
-\begin{codelisting}
+\begin{codelisting}[H]
 
 \caption{\texttt{Terminal}}
 
@@ -4766,7 +5055,7 @@ Windows & \begin{minipage}[t]{\linewidth}\raggedright
 You can render a notebook (or group of notebooks) without previewing
 them using the \texttt{quarto\ render} command:
 
-\begin{codelisting}
+\begin{codelisting}[H]
 
 \caption{\texttt{Terminal}}
 
@@ -4780,7 +5069,7 @@ them using the \texttt{quarto\ render} command:
 
 Use the \texttt{-\/-to} argument to render to a specific format:
 
-\begin{codelisting}
+\begin{codelisting}[H]
 
 \caption{\texttt{Terminal}}
 
@@ -4859,7 +5148,7 @@ that you have already executed them while editing the notebook). If you
 want to execute the cells you can pass the \texttt{-\/-execute} flag to
 render:
 
-\begin{codelisting}
+\begin{codelisting}[H]
 
 \caption{\texttt{Terminal}}
 
@@ -4874,7 +5163,7 @@ render:
 You can also specify this behavior within the notebook's YAML front
 matter:
 
-\begin{codelisting}
+\begin{codelisting}[H]
 
 \caption{\texttt{notebook.ipynb}}
 
@@ -4943,7 +5232,7 @@ Note that we've added the \texttt{jupyter:\ python3} option to the YAML
 front matter to indicate which Jupyter kernel to render with. You would
 render this document with:
 
-\begin{codelisting}
+\begin{codelisting}[H]
 
 \caption{\texttt{Terminal}}
 
@@ -4958,22 +5247,22 @@ render this document with:
 Markdown files with embedded code chunks should use the file extension
 \texttt{.qmd}.
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+\begin{quote}
+\textbf{Tip}
 
 If you are doing most of your work in .qmd files you should consider
 using RStudio, which includes full support for editing .qmd files that
 use Python and Jupyter (including code completion, cell-at-a-time
 execution, and side-by-side preview). See the article on using
 \href{rstudio.qmd}{RStudio} for additional details.
-
-\end{tcolorbox}
+\end{quote}
 
 \subsubsection{Converting Notebooks}\label{converting-notebooks}
 
 You can convert between .ipynb and .qmd representations of a notebook
 using the \texttt{quarto\ convert} command. For example:
 
-\begin{codelisting}
+\begin{codelisting}[H]
 
 \caption{\texttt{Terminal}}
 
@@ -5052,7 +5341,8 @@ this is done automatically when you \emph{render} the book.
 \href{https://quarto.org/docs/authoring/markdown-basics.html}{See the
 full Quarto markdown documentation}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+\begin{quote}
+\textbf{Tip}
 
 Some useful resources:
 
@@ -5068,8 +5358,7 @@ Some useful resources:
   \href{https://github.com/lifeparticle/Markdown-Cheatsheet}{this GitHub
   repository with more extensive markdown options}.
 \end{itemize}
-
-\end{tcolorbox}
+\end{quote}
 
 \section{Basic syntax}\label{basic-syntax}
 
@@ -5293,7 +5582,8 @@ Right & Left & Default & Center \\
 \end{longtable}
 }
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-note-color!10!white, colframe=quarto-callout-note-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+\begin{quote}
+\textbf{Note}
 
 It is possible to use raw html elements in a quarto document. But try to
 limit this because:
@@ -5308,8 +5598,7 @@ limit this because:
   you have pdf output, for example, the html elements are not rendered
   correctly.
 \end{itemize}
-
-\end{tcolorbox}
+\end{quote}
 
 \chapter{Even more on Markdown}\label{even-more-on-markdown}
 
@@ -5389,9 +5678,9 @@ from the table of contents:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip \ref*{tip-attributes}: What are attributes?}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
-
-\quartocallouttip{tip-attributes} 
+\protect\phantomsection\label{tip-attributes}
+\begin{quote}
+\textbf{Tip~32.1: What are attributes?}
 
 Attributes are a way to add metadata to markdown elements, usually
 inside curly braces \texttt{\{\}} after the element. Attributes are used
@@ -5413,8 +5702,7 @@ The types of thing you can add as attributes include:
 
 The order of attributes matters: identifiers must come first, followed
 by classes, and then key-value pairs.
-
-\end{tcolorbox}
+\end{quote}
 
 \section{Paragraphs}\label{paragraphs}
 
@@ -5599,7 +5887,7 @@ Section~\ref{sec-crossreferences}} & Figure~\ref{fig-elephant} &
 \end{Shaded}
 \end{minipage} \\
 \textbf{Footnotes} Section~\ref{sec-footnotes} & An inline
-note.\footnote{Content} & \begin{minipage}[t]{\linewidth}\raggedright
+note.\footnotemark{} & \begin{minipage}[t]{\linewidth}\raggedright
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{An inline note.\^{}}\CommentTok{[}\OtherTok{Content}\CommentTok{]}
@@ -5650,7 +5938,7 @@ line up with the first non-space content after the list marker.
 Figure~\ref{fig-nested-list} shows an example of a nested list, along
 with its rendered output.
 
-\begin{figure}
+\begin{figure}[H]
 
 \centering{
 
@@ -5743,7 +6031,7 @@ block attributes. For example, you might add \texttt{filename} which
 adds a header with the filename above the code block as shown in
 Figure~\ref{fig-code-block-with-filename}.
 
-\begin{figure}
+\begin{figure}[H]
 
 \centering{
 
@@ -5755,7 +6043,7 @@ Figure~\ref{fig-code-block-with-filename}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{codelisting}
+\begin{codelisting}[H]
 
 \caption{\texttt{query.sql}}
 
@@ -5774,7 +6062,8 @@ rendered output}
 
 \end{figure}%
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Supported code block languages}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+\begin{quote}
+\textbf{Supported code block languages}
 
 The language for code blocks is used only for syntax highlighting. You
 can see a list of supported languages by running the following command
@@ -5794,8 +6083,7 @@ in your terminal:
 
 Specifying a language that isn't supported will simply result in no
 syntax highlighting being applied.
-
-\end{tcolorbox}
+\end{quote}
 
 \section{Tables}\label{sec-markdown-tables}
 
@@ -5827,7 +6115,7 @@ for the table (inside curly braces \texttt{\{\}}). For example, the
 table is given the ID \texttt{\#tbl-perf} so it is numbered and can be
 cross-referenced.
 
-\begin{figure}
+\begin{figure}[H]
 
 \centering{
 
@@ -5984,14 +6272,14 @@ from the output of an executable code cell.
 Figures are so important in Quarto documents that we dedicate an entire
 part of this book to them. For more details, see \textbf{?@sec-figtab}.
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Image or figure?}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+\begin{quote}
+\textbf{Image or figure?}
 
 We use the term \textbf{figure} to refer to any image, numbered or not,
 included in a document. You may be more used to using the term figure to
 refer to an image with a numbered caption---we'll call this a
 \textbf{cross-referenceable figure}.
-
-\end{tcolorbox}
+\end{quote}
 
 \subsection{From a file}\label{from-a-file}
 
@@ -6005,13 +6293,13 @@ To include an image file in markdown you use the following syntax:
 
 Where the path to the image is a path relative to the current document.
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Project relative paths}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+\begin{quote}
+\textbf{Project relative paths}
 
 If you preface the path with \texttt{/}, it is interpreted as a path
 relative to the project root. You'll learn more about project structure
 in \hyperref[sec-projects]{Projects}.
-
-\end{tcolorbox}
+\end{quote}
 
 You can add a caption inside the square brackets, an identifier inside
 curly braces after the image path, and alternative text for
@@ -6264,7 +6552,7 @@ For more details on cross-referencing specific element types, see the
 \href{https://quarto.org/docs/authoring/cross-references.html}{Quarto
 documentation}.
 
-\begin{figure}
+\begin{figure}[H]
 
 \begin{minipage}[t]{0.50\linewidth}
 
@@ -6380,7 +6668,7 @@ Markdown Syntax & Output \\
 & (Knuth 1984; Wickham et al. 2023) \\
 \end{longtable}
 
-\begin{figure}
+\begin{figure}[H]
 
 \centering{
 
@@ -6425,9 +6713,9 @@ example:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip \ref*{tip-bib}: What's in \texttt{references.bib}?}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
-
-\quartocallouttip{tip-bib} 
+\protect\phantomsection\label{tip-bib}
+\begin{quote}
+\textbf{Tip~32.2: What's in \texttt{references.bib}?}
 
 A \texttt{.bib} file is a plain text file that contains bibliographic
 entries in a specific format:
@@ -6502,15 +6790,14 @@ You can manage this file by hand, but usually you'll use something to
 manage it for you. You could have a reference management tool of choice
 export to \texttt{.bib}. Or, in the visual editor, you can use the ``Add
 Citation'' button in the toolbar.
+\end{quote}
 
-\end{tcolorbox}
-
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-note-color!10!white, colframe=quarto-callout-note-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+\begin{quote}
+\textbf{Note}
 
 When using \texttt{format:\ typst}, by default citation processing is
 handled directly by Typst. See \textbf{?@sec-typst} for more details.
-
-\end{tcolorbox}
+\end{quote}
 
 \section{Footnotes}\label{sec-footnotes}
 
@@ -6527,7 +6814,7 @@ However, for longer footnotes, or footnotes with multiple paragraphs,
 specify a footnote identifier and define the footnote contents elsewhere
 in the document, as shown in Figure~\ref{fig-long-footnote}.
 
-\begin{figure}
+\begin{figure}[H]
 
 \centering{
 
@@ -6549,18 +6836,7 @@ in the document, as shown in Figure~\ref{fig-long-footnote}.
 \end{Highlighting}
 \end{Shaded}
 
-Here is some text that needs a long footnote.\footnote{Here's the
-  footnote contents with multiple blocks.
-
-  Subsequent paragraphs are indented to show that they belong to the
-  previous footnote.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\CommentTok{\# Some code}
-\end{Highlighting}
-\end{Shaded}
-}
+Here is some text that needs a long footnote.\footnotemark{}
 
 This paragraph won't be part of the note, because it isn't indented.
 
@@ -6590,7 +6866,8 @@ For example:
   attribute that starts with a special prefix.
 \end{itemize}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{What's a div?}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+\begin{quote}
+\textbf{What's a div?}
 
 The term \textbf{div} originates from the
 \texttt{\textless{}div\textgreater{}} tag in HTML, where it is used to
@@ -6605,8 +6882,7 @@ result is that many Quarto features use the fenced div syntax to define
 a region of content that needs special handling. Quarto recognizes these
 divs, processes them, and inserts suitable markup depending on the
 target format.
-
-\end{tcolorbox}
+\end{quote}
 
 A fenced div begins with at least three consecutive colons followed by
 possibly empty curly braces with attributes. The div ends with another
@@ -6652,7 +6928,8 @@ You can also nest fenced divs inside one another:
 The number of colons used to open and close a fenced div do not need to
 match, but it can be useful to match them for readability.
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{A single class shorthand}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+\begin{quote}
+\textbf{A single class shorthand}
 
 When the only attribute of a fenced div is a single class, it can be
 written using a shorthand syntax that omits the curly braces, and the
@@ -6665,8 +6942,7 @@ written using a shorthand syntax that omits the curly braces, and the
 \NormalTok{:::}
 \end{Highlighting}
 \end{Shaded}
-
-\end{tcolorbox}
+\end{quote}
 
 \section{Callouts}\label{sec-callouts}
 
@@ -6677,7 +6953,7 @@ Callouts are special fenced divs with one of the callout classes:
 their contents apart from the main document text, see
 Figure~\ref{fig-callout-note}.
 
-\begin{figure}
+\begin{figure}[H]
 
 \centering{
 
@@ -6789,7 +7065,7 @@ For example, to place two items side by side in two columns, set
 \texttt{layout-ncol="2"} and nest each item in its own fenced div, as
 shown in Figure~\ref{fig-two-column-layout}.
 
-\begin{figure}
+\begin{figure}[H]
 
 \centering{
 
@@ -6846,7 +7122,7 @@ classes.
 For example, to place content in the right margin use the
 \texttt{.column-margin} class:
 
-\begin{figure}
+\begin{figure}[H]
 
 \centering{
 
@@ -6874,7 +7150,7 @@ output}
 Use the \texttt{.column-page-right} class to expand content into the
 margin to give it more horizontal space:
 
-\begin{figure}
+\begin{figure}[H]
 
 \centering{
 
@@ -6944,7 +7220,7 @@ document metadata into your document. Figure~\ref{fig-meta-shortcode}
 illustrates how you might use it to extract text you commonly replace,
 into a document option you set in your header.
 
-\begin{figure}
+\begin{figure}[H]
 
 \centering{
 
@@ -6992,13 +7268,13 @@ include, relative to the current document. Files that contain content to
 include should be prefixed with an underscore (\texttt{\_}) to ensure
 they are rendered on their own.
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Project relative paths}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+\begin{quote}
+\textbf{Project relative paths}
 
 If you preface the path with \texttt{/}, it is interpreted as a path
 relative to the project root. You'll learn more about project structure
 in \textbf{?@sec-projects}.
-
-\end{tcolorbox}
+\end{quote}
 
 \section{Other features}\label{other-features}
 
@@ -7161,14 +7437,14 @@ There are many programs that you can use to work with git:
   \end{itemize}
 \end{itemize}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-note-color!10!white, colframe=quarto-callout-note-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+\begin{quote}
+\textbf{Note}
 
 On this page we only list a selection of git commands, which should be
 used in a command-line tool. This is because every user interface is a
 little bit different, whereas the command-line commands are all the
 same.
-
-\end{tcolorbox}
+\end{quote}
 
 \section{Staging and committing}\label{staging-and-committing}
 
@@ -7233,7 +7509,8 @@ repository. When you make similar edits and then want to push those to
 GitHub, there will be a \textbf{merge conflict} and you will first have
 to resolve that before you can work any further.
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+\begin{quote}
+\textbf{Tip}
 
 Before you start making edits in a git repository on your local device,
 you should update it with the online changes:
@@ -7243,10 +7520,10 @@ you should update it with the online changes:
 \FunctionTok{git}\NormalTok{ pull}
 \end{Highlighting}
 \end{Shaded}
+\end{quote}
 
-\end{tcolorbox}
-
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-note-color!10!white, colframe=quarto-callout-note-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Remotes}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+\begin{quote}
+\textbf{Remotes}
 
 Git knows two types of online versions (remotes) of a repository: origin
 and upstream. You can read about the difference between origin and
@@ -7268,8 +7545,7 @@ or
 \FunctionTok{git}\NormalTok{ pull upstream branch{-}name}
 \end{Highlighting}
 \end{Shaded}
-
-\end{tcolorbox}
+\end{quote}
 
 \section{Branches}\label{branches}
 
@@ -7523,6 +7799,27 @@ Wickham, Hadley, Mine Çetinkaya-Rundel, and Garrett Grolemund. 2023.
 Data}. 2nd ed. O'Reilly Media. \url{https://r4ds.hadley.nz/}.
 
 \end{CSLReferences}
+
+\end{tcolorbox}
+
+\footnotetext{Pandoc is a tool that converts documents to different
+formats. Quarto leverages it to convert markdown to a variety of output
+formats.}
+
+\footnotetext{Content}
+
+\footnotetext{Here's the footnote contents with multiple blocks.
+
+Subsequent paragraphs are indented to show that they belong to the
+previous footnote.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Some code}
+\end{Highlighting}
+\end{Shaded}
+
+}
 
 
 
