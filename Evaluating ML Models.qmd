@@ -8,12 +8,12 @@ The following chapters cover the evaluation of ML models. This is a crucial step
 # Test Levels for ML models
 
 There are two test levels that can be used to evaluate ML models: 
-- Input data testing and 
-- ML model testing. 
+- Input data testing (@sec-input-data-testing) and 
+- ML model testing (@sec-ml-model-testing). 
 
 Input data testing focuses on evaluating the quality of the input data, such as checking for missing values, outliers, and data distribution. ML model testing focuses on evaluating the performance of the model on a given dataset, using metrics such as accuracy, precision, recall, F1 score, and AUC-ROC.
 
-## Input data testing 
+## Input data testing {#sec-input-data-testing} 
 
 Input data testing is important because the quality of the input data can have a significant impact on the performance of the ML model. If the input data is of poor quality, the model may not be able to learn effectively and may produce inaccurate results. Therefore, it is important to perform input data testing before training the ML model to ensure that the data is suitable for training and that any issues with the data are addressed.
 
@@ -431,10 +431,10 @@ identify potential label defects as the model continues to develop.
 
 For a given dataset (e.g., structured, tabular data), perform input data
 testing for things like missing data, duplicate data, and outliers.
+See the [Tool Pages for Generating Software Tests](Hands-On%20Exercises.qmd) for tools that can be used to perform this testing.
 
 
-
-# Model Testing
+## TODO Model Testing {#sec-ml-model-testing}
 
 * Discover test approaches for mitigating risks in ML models, including documentation reviews, ML functional performance testing, and detecting overfitting, underfitting,and drift.
 

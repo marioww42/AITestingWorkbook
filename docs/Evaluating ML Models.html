@@ -308,7 +308,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#test-levels-for-ml-models" id="toc-test-levels-for-ml-models" class="nav-link active" data-scroll-target="#test-levels-for-ml-models"><span class="header-section-number">8</span> Test Levels for ML models</a>
   <ul class="collapse">
-  <li><a href="#input-data-testing" id="toc-input-data-testing" class="nav-link" data-scroll-target="#input-data-testing"><span class="header-section-number">8.1</span> Input data testing</a>
+  <li><a href="#sec-input-data-testing" id="toc-sec-input-data-testing" class="nav-link" data-scroll-target="#sec-input-data-testing"><span class="header-section-number">8.1</span> Input data testing</a>
   <ul class="collapse">
   <li><a href="#input-data-risks-and-mitigations" id="toc-input-data-risks-and-mitigations" class="nav-link" data-scroll-target="#input-data-risks-and-mitigations"><span class="header-section-number">8.1.1</span> Input Data Risks and Mitigations</a></li>
   <li><a href="#testing-for-bias" id="toc-testing-for-bias" class="nav-link" data-scroll-target="#testing-for-bias"><span class="header-section-number">8.1.2</span> Testing for Bias</a></li>
@@ -318,8 +318,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#label-correctness-testing" id="toc-label-correctness-testing" class="nav-link" data-scroll-target="#label-correctness-testing"><span class="header-section-number">8.1.6</span> Label Correctness Testing</a></li>
   </ul></li>
   <li><a href="#hands-on-exercise-input-data-testing" id="toc-hands-on-exercise-input-data-testing" class="nav-link" data-scroll-target="#hands-on-exercise-input-data-testing"><span class="header-section-number">8.2</span> Hands-on Exercise: Input Data Testing</a></li>
+  <li><a href="#sec-ml-model-testing" id="toc-sec-ml-model-testing" class="nav-link" data-scroll-target="#sec-ml-model-testing"><span class="header-section-number">8.3</span> TODO Model Testing</a></li>
   </ul></li>
-  <li><a href="#model-testing" id="toc-model-testing" class="nav-link" data-scroll-target="#model-testing"><span class="header-section-number">9</span> Model Testing</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/marioww42/AITestingWorkbook/edit/main/Evaluating ML Models.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/marioww42/AITestingWorkbook/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -348,10 +348,10 @@ ul.task-list li input[type="checkbox"] {
 <p>The following chapters cover the evaluation of ML models. This is a crucial step in the development process, as it helps to ensure that the model is performing as expected and is meeting the requirements of the stakeholders. The evaluation of ML models typically involves a combination of quantitative and qualitative methods, including the use of metrics, visualizations, and user feedback. The evaluation process can be used to identify areas for improvement in the model, as well as to validate the performance of the model on real-world data.</p>
 <section id="test-levels-for-ml-models" class="level1" data-number="8">
 <h1 data-number="8"><span class="header-section-number">8</span> Test Levels for ML models</h1>
-<p>There are two test levels that can be used to evaluate ML models: - Input data testing and - ML model testing.</p>
+<p>There are two test levels that can be used to evaluate ML models: - Input data testing (<a href="#sec-input-data-testing" class="quarto-xref"><span>Section 8.1</span></a>) and - ML model testing (<a href="#sec-ml-model-testing" class="quarto-xref"><span>Section 8.3</span></a>).</p>
 <p>Input data testing focuses on evaluating the quality of the input data, such as checking for missing values, outliers, and data distribution. ML model testing focuses on evaluating the performance of the model on a given dataset, using metrics such as accuracy, precision, recall, F1 score, and AUC-ROC.</p>
-<section id="input-data-testing" class="level2" data-number="8.1">
-<h2 data-number="8.1" class="anchored" data-anchor-id="input-data-testing"><span class="header-section-number">8.1</span> Input data testing</h2>
+<section id="sec-input-data-testing" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="sec-input-data-testing"><span class="header-section-number">8.1</span> Input data testing</h2>
 <p>Input data testing is important because the quality of the input data can have a significant impact on the performance of the ML model. If the input data is of poor quality, the model may not be able to learn effectively and may produce inaccurate results. Therefore, it is important to perform input data testing before training the ML model to ensure that the data is suitable for training and that any issues with the data are addressed.</p>
 <p>The objective of input data testing<span class="indexref" data-entry="input data testing"></span> is to confirm that the data used by the MLS for training, testing, and prediction is of sufficient quality (see 3.2). It includes reviews, statistical techniques (e.g., testing data for bias), EDA of the training data, and static and dynamic testing<span class="indexref" data-entry="dynamic testing"></span> of the data pipeline.</p>
 <section id="input-data-risks-and-mitigations" class="level3" data-number="8.1.1">
@@ -621,11 +621,10 @@ Data pipeline testing – see 5.1.3
 </section>
 <section id="hands-on-exercise-input-data-testing" class="level2" data-number="8.2">
 <h2 data-number="8.2" class="anchored" data-anchor-id="hands-on-exercise-input-data-testing"><span class="header-section-number">8.2</span> Hands-on Exercise: Input Data Testing</h2>
-<p>For a given dataset (e.g., structured, tabular data), perform input data testing for things like missing data, duplicate data, and outliers.</p>
+<p>For a given dataset (e.g., structured, tabular data), perform input data testing for things like missing data, duplicate data, and outliers. See the <a href="./Hands-On Exercises.html">Tool Pages for Generating Software Tests</a> for tools that can be used to perform this testing.</p>
 </section>
-</section>
-<section id="model-testing" class="level1" data-number="9">
-<h1 data-number="9"><span class="header-section-number">9</span> Model Testing</h1>
+<section id="sec-ml-model-testing" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="sec-ml-model-testing"><span class="header-section-number">8.3</span> TODO Model Testing</h2>
 <ul>
 <li><p>Discover test approaches for mitigating risks in ML models, including documentation reviews, ML functional performance testing, and detecting overfitting, underfitting,and drift.</p></li>
 <li><p>Learn advanced test approaches, including adversarial testing, A/B testing, back-to-back testing, and the use of attacks to uncover model weaknesses.</p></li>
@@ -633,6 +632,7 @@ Data pipeline testing – see 5.1.3
 </ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
