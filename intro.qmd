@@ -10,7 +10,7 @@ In the context of software testing, this approach allows us to create a practica
 
 ## I have some good test cases - how can I get more like them? {.unnumbered}
 
-One way to get more test cases like the ones you have is to use techniques such as data augmentation or metamorphic testing, which involve creating new test cases by applying transformations to existing ones. For example using data augmentation,if you have a test case that involves an image, you can create new test cases by rotating, flipping, or adding noise to the image. With metamorphic testing, you can create new test cases by applying transformations to the input data and corresponding transformations to the expected output, like creating a test case with a slightly different input and expecting a similar output. For more information on metamorphic testing, see @sec-metamorphic-testing.
+One way to get more test cases like the ones you have is to use techniques such as data augmentation or metamorphic testing, which involve creating new test cases by applying transformations to existing ones. For example using data augmentation,if you have a test case that involves an image, you can create new test cases by rotating, flipping, or adding noise to the image. With metamorphic testing, you can create new test cases by applying transformations to the input data and corresponding transformations to the expected output, like creating a test case with a slightly different input and expecting a similar output. For more information on metamorphic testing, (see "Hands-On Exercises" @sec-tool-pages).
 
 This can help to increase the diversity and coverage of your test cases, and can also help to identify potential issues that may not be apparent with the original test cases.
 
@@ -51,7 +51,7 @@ The following questions help a software tester understand the actual testing act
 ::: {.callout-tip title="2. Which quality characteristics are most important for this system?" collapse="true"}
 **AI-testing methods / techniques:** Quality characteristic analysis, non-functional testing, and AI-specific quality evaluation for fairness, robustness, explainability, transparency, safety, reliability, and performance efficiency.
 
-**Example tools or tool categories:** ISO/IEC 25010 quality model checklists, model cards, datasheets for datasets, latency dashboards, cost dashboards, error-rate dashboards, explainability tools, and bias analysis notebooks.
+**Example tools or tool categories:** ISO/IEC 25010 quality model checklists (see @), model cards, datasheets for datasets, latency dashboards, cost dashboards, error-rate dashboards, explainability tools, and bias analysis notebooks.
 :::
 
 ::: {.callout-tip title="3. What are the acceptance criteria for good enough recommendations?" collapse="true"}

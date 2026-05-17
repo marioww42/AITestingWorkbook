@@ -1,6 +1,6 @@
 # Preface {.unnumbered}
 
-![Cover of the "AI QA Workbook"](/img/HW-SW-AI-test-differencesV2.png)
+![Cover of the "AI QA Workbook"](/img/HW-SW-AI-test-differencesV2.png){.lightbox}
 
 
 For a mechatronic engineer, testing often starts with something physical: a sensor, a motor, a controller, a brake, a robot arm. You can measure force, voltage, temperature, speed, wear, or vibration. The system may be complex, but the laws of physics are stable.
@@ -41,7 +41,7 @@ Select your own reading path!
   htmlLabels: false
 ---
   graph LR
-    AIMetrics["`@sec-metrics-for-classification`"]
+    AIMetrics[@sec-metrics-for-classification]
     Long["`AI Testing Tools
     
     and Frameworks`"]

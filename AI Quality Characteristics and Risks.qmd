@@ -2,9 +2,8 @@
 title: AI Quality Characteristics and Risks
 ---
 
+## ISO 25000-Series Software Quality Standards{#sec-iso-25000-overview}
 
-
-## ISO 25000-Series Software Quality Standards
 The ISO 25000 series of standards defines software quality characteristics and sub-characteristics. These characteristics can be used to evaluate the quality of software, including AI systems. The main characteristics include:
 
 - **Functional suitability**: The degree to which the software meets the specified requirements and performs its intended functions.
@@ -143,8 +142,6 @@ characteristics specified in the ISO/IEC 25059 standard, as well as
 safety. For AI-based systems, acceptance criteria often need to be
 statistical, probabilistic, or threshold-based rather than binary, which
 introduces additional testing challenges.
-
-### Acceptance Criteria for AI-Based Systems
 
 When evaluating the quality of an AI-based system, it is essential to
 consider both functional and non-functional quality characteristics.
@@ -289,7 +286,7 @@ by the safety monitoring sub-system.</p></li>
 </tbody>
 </table>
 
-# Detailed Preview on ISO/IEC DIS 25059:2026
+# Detailed Preview on ISO/IEC DIS 25059:2026 {#sec-iso-25059-preview}
 
 This document was prepared by Joint Technical Committee ISO/IEC JTC 1,
 *Information technology*, Subcommittee SC 42, *Artificial intelligence*.

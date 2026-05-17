@@ -2,18 +2,19 @@
 title: "Hands-On Exercises" 
 ---
 
-# Tool Pages for Generating Software Tests
+# Tool Pages for Generating Software Tests {#sec-tool-pages}
+
 ## Fuzzing {#sec-fuzzing}
 
-The [Fuzzing Book](https://www.fuzzingbook.org/) is a great resource for learning about fuzzing. It provides a comprehensive introduction to fuzzing, including the different types of fuzzing, how to create fuzzers, and how to use fuzzers to find bugs in software. The book also includes a number of exercises that allow you to practice fuzzing techniques and apply them to real-world software. Fuzzing can be done e.g. with metamorphic testing (@sec-metamorphic-testing), mutation testing (@sec-mutation-testing), and property-based testing (@sec-property-based-testing).
+The [Fuzzing Book](https://www.fuzzingbook.org/) is a great resource for learning about fuzzing. It provides a comprehensive introduction to fuzzing, including the different types of fuzzing, how to create fuzzers, and how to use fuzzers to find bugs in software. The book also includes a number of exercises that allow you to practice fuzzing techniques and apply them to real-world software. Fuzzing can be done e.g. with metamorphic testing (@sec-metamorphic-testing) on (@sec-tool-pages), mutation testing (@sec-mutation-testing), and property-based testing (@sec-property-based-testing).
 
 [BASFuzz](https://github.com/lumos0514/BASFuzz) is a fuzzing framework that is designed to be easy to use and extend. It provides a simple interface for creating fuzzers and running them against software. BASFuzz also includes a number of built-in fuzzers that can be used to find bugs in software.
 
-![BASFuzz Workflow](/img/BASFuzz_Workflow.png)
+![BASFuzz Workflow](/img/BASFuzz_Workflow.png){.lightbox}
 
 The BASFuzz Workflow is a step-by-step guide to using BASFuzz to find bugs in software. It includes instructions for setting up BASFuzz, creating fuzzers, and running fuzzers against oftware. The workflow also includes tips and best practices for using BASFuzz effectively. 
 
-![Example of Robustness Flaw found by BASFuzz](/img/BASFuzz_fig1.png)
+![Example of Robustness Flaw found by BASFuzz](/img/BASFuzz_fig1.png){.lightbox}
 
 The figure above shows an example of a robustness flaw found by BASFuzz. In a contract translation scenario, subtly perturbed input text (red) misleads the software, causing it to mistranslate a clause expressing permission to terminate the contract into an obligation to terminate. By using BASFuzz, developers and testerscan identify and fix these vulnerabilities before they can be exploited in the wild.
 
@@ -26,7 +27,7 @@ The figure above shows an example of a robustness flaw found by BASFuzz. In a co
 
 [LLMorph](https://github.com/steven-b-cho/llmorph) is a tool to automatically test Large Language Models (LLMs) using Metamorphic Testing (MT), thorough their use on Natural Language Processing (NLP) tasks. It leverages the property-based nature MT to uncover faulty behaviours without the need for expensive labelled data. LLMorph is aimed at researchers and developers who want to evaluate the robustness of LLM-based NLP systems.
 
-![LLMorph workflow](/img/LLM-MorphFig1.png)
+![LLMorph workflow](/img/LLM-MorphFig1.png){.lightbox}
 
 
 ## Mutation Testing {#sec-mutation-testing}
