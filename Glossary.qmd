@@ -1,7 +1,7 @@
 ---
 bibliography: references.bib
 ---
-# Glossary
+# Glossary {.unnumbered}
 
 For general terms related to testing, see the [ISTQB Glossary](https://glossary.istqb.org/en_US/search?term=&attributes=%5B%22name%22%2C%22abbreviation%22%2C%22synonyms%22%5D&exact_matches_first=true&second_language=de_DE). 
 The ISTQB® Standard Glossary of Terms Used in Software Testing contains the definitions of testing terms used in the various ISTQB® Syllabi. This includes all terms stated as keywords in the ISTQB® Syllabi as well as other terms of major importance to testing.
