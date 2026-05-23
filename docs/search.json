@@ -14,7 +14,7 @@
     "href": "index.html#how-to-read-this-workbook",
     "title": "AI QA Workbook",
     "section": "How to read this workbook?",
-    "text": "How to read this workbook?\nSelect your own reading path! See the frequently asked questions for some guidance. Look also at the functional performance metrics section.\n\n\n\n\n\n---\n  htmlLabels: false\n---\n  graph LR\n    AIMetrics[\"@sec-metrics-for-classification\"]\n    Long[\"`AI Testing Tools\n    \n    and Frameworks`\"]\n    AIMetrics --&gt; Long\n\n\n\n\n\n\nThis is a Quarto book. To learn more about Quarto books visit https://quarto.org/docs/books.",
+    "text": "How to read this workbook?\nSelect your own reading path! See the frequently asked questions for some guidance.\nLook also at the functional performance metrics section.\nAnd look at the glossary terms, such as AI-QA and AI-specific quality characteristics.\n\n\n\n\n\n---\n  htmlLabels: false\n---\n  graph LR\n    AIMetrics[\"@sec-metrics-for-classification\"]\n    Long[\"`AI Testing Tools\n    \n    and Frameworks`\"]\n    AIMetrics --&gt; Long\n\n\n\n\n\n\nThis is a Quarto book. To learn more about Quarto books visit https://quarto.org/docs/books.",
     "crumbs": [
       "Preface"
     ]
@@ -1304,44 +1304,44 @@
   {
     "objectID": "Glossary.html",
     "href": "Glossary.html",
-    "title": "19  Glossary",
+    "title": "Glossary",
     "section": "",
     "text": "Special terms\nFor general terms related to testing, see the ISTQB Glossary. The ISTQB® Standard Glossary of Terms Used in Software Testing contains the definitions of testing terms used in the various ISTQB® Syllabi. This includes all terms stated as keywords in the ISTQB® Syllabi as well as other terms of major importance to testing. The ISTQB® Glossary focuses on terms that have a specific meaning in testing. Some related non-testing terms are also included if they play a major role in testing, such as terms used in software quality assurance and software development lifecycle models. Many terms within other software engineering disciplines are not covered in the Glossary, even if they are used in various ISTQB® syllabi.\nFor general Terms related to software enginering, see the SEVOCAB: Software and Systems Engineering Vocabulary. There you find authoritative definitions for software and systems engineering terms in SEVOCAB, a project of the IEEE Computer Society and ISO/IEC JTC 1/SC7. SEVOCAB includes definitions from international standards. You can search for a term as defined in the standards, or for all the definitions in a source standard. To give you an understanding of related concepts, SEVOCAB will return any definition for the term, as well as all the definitions that use the term.\nFor tems related to AI, see the Wikipedia AI Glossary. This glossary of artificial intelligence is a list of definitions of terms and concepts relevant to the study of artificial intelligence (AI), its subdisciplines, and related fields. Related glossaries include Glossary of computer science, Glossary of robotics, Glossary of machine vision, and Glossary of logic.\nAlternatively, see the Google AI Glossary. The AI Glossary is a collection of definitions for common terms in artificial intelligence (AI) and machine learning (ML). It includes definitions for terms related to AI concepts, techniques, and applications. The glossary is designed to help people understand the terminology used in the field of AI and ML, and to provide a common language for discussing these topics.\nFor terms related to git and GitHub, see the git and GitHub section in the Working with git and GitHub chapter.\nFor all terms related to Quarto, see the Quarto Glossary.\nFor a more general glossary of terms related to data science and AI, see the Data Science Glossary.",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Glossary</span>"
-    ]
-  },
-  {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "20  Summary",
-    "section": "",
-    "text": "In summary, this book has the following content:\n\nIntroduction\n\nStart Here - AI QA Basics\n\nIntroduction to Artificial Intelligence.qmd\nAI System Types and Architectures.qmd\nAI Quality Characteristics and Risks.qmd\nAI Development, MLOps, and LLMOps Lifecycle.qmd\n\nTesting AI-Based Systems\n\nData Quality and Test Data.qmd\nEvaluating ML Models.qmd\nTesting LLMs, Chatbots, and Agents.qmd\nMonitoring AI Systems in Production.qmd\n\nAI Testing in Practice\n\nAI Testing Tools and Frameworks.qmd\nCase Studies and Best Practices.qmd\n\nAppendices\n\nQuarto Introduction.qmd\nUsing Jupyter Notebooks.ipynb\nMarkdown Syntax.qmd\nMoreMarkdown.qmd\ngit.qmd\nGlossary.qmd\n\nSummary (This Chapter)\nReferences",
-    "crumbs": [
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Summary</span>"
+      "Glossary"
     ]
   },
   {
     "objectID": "Glossary.html#glossary-AI-QA",
     "href": "Glossary.html#glossary-AI-QA",
-    "title": "19  Glossary",
+    "title": "Glossary",
     "section": "AI-QA",
     "text": "AI-QA\nAI Quality Assurance, the practice of ensuring that AI-based systems meet quality standards and requirements. This includes testing, evaluation, monitoring, and risk management of AI systems to ensure they are reliable, safe, fair, robust, and useful under real-world conditions.",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Glossary</span>"
+      "Glossary"
     ]
   },
   {
     "objectID": "Glossary.html#glossary-AI-specific-quality-characteristics",
     "href": "Glossary.html#glossary-AI-specific-quality-characteristics",
-    "title": "19  Glossary",
+    "title": "Glossary",
     "section": "AI-specific quality characteristics",
-    "text": "AI-specific quality characteristics\nQuality characteristics that are particularly relevant for AI-based systems, such as reliability, safety, fairness, robustness, explainability, non-determinism, complexity, and the test oracle problem. These characteristics may require specific testing techniques and evaluation methods to assess the quality of AI systems effectively.\nTODO add more terms here, such as “AI-specific quality characteristics”, “AI-specific acceptance criteria”, “AI-specific test oracles”, “statistical testing”, “risk-based testing”, “bias checks”, “robustness checks”, “monitoring”, “human judgement”, “explainability”, “non-determinism”, “complexity”, “test oracle problem”, etc.",
+    "text": "AI-specific quality characteristics\nQuality characteristics that are particularly relevant for AI-based systems, such as reliability, safety, fairness, robustness, explainability, non-determinism, complexity, and the test oracle problem. These characteristics may require specific testing techniques and evaluation methods to assess the quality of AI systems effectively.\nTODO add more terms here, such as “AI-specific acceptance criteria”, “AI-specific test oracles”, “statistical testing”, “risk-based testing”, “bias checks”, “robustness checks”, “monitoring”, “human judgement”, “explainability”, “non-determinism”, “complexity”, “test oracle problem”, etc.",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Glossary</span>"
+      "Glossary"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "19  Summary",
+    "section": "",
+    "text": "In summary, this book has the following content:\n\nIntroduction\n\nStart Here - AI QA Basics\n\nIntroduction to Artificial Intelligence.qmd\nAI System Types and Architectures.qmd\nAI Quality Characteristics and Risks.qmd\nAI Development, MLOps, and LLMOps Lifecycle.qmd\n\nTesting AI-Based Systems\n\nData Quality and Test Data.qmd\nEvaluating ML Models.qmd\nTesting LLMs, Chatbots, and Agents.qmd\nMonitoring AI Systems in Production.qmd\n\nAI Testing in Practice\n\nAI Testing Tools and Frameworks.qmd\nCase Studies and Best Practices.qmd\n\nAppendices\n\nQuarto Introduction.qmd\nUsing Jupyter Notebooks.ipynb\nMarkdown Syntax.qmd\nMoreMarkdown.qmd\ngit.qmd\nGlossary.qmd\n\nSummary (This Chapter)\nReferences",
+    "crumbs": [
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Summary</span>"
     ]
   }
 ]
