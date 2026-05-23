@@ -35,6 +35,13 @@ The key message for creating this work is simple:
 ## How to read this workbook?
 
 Select your own reading path!
+See the [frequently asked questions](./intro.qmd#sec-faq) for some guidance. 
+
+Look also at the [functional performance metrics](./AI%20Quality%20Characteristics%20and%20Risks.qmd#sec-metrics-for-classification) section.
+
+And look at the glossary terms, such as [AI-QA](./Glossary.qmd#glossary-AI-QA) and [AI-specific quality characteristics](./Glossary.qmd#glossary-AI-specific-quality-characteristics).
+
+
 
 ```{mermaid}
 ---

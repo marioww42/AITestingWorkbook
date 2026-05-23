@@ -6,7 +6,7 @@ This is a book created from markdown and executable code. The idea of combining 
 
 In the context of software testing, this approach allows us to create a practical workbook that not only explains the concepts and techniques of AI testing but also provides executable examples and exercises that readers can run and modify. This way, readers can learn by doing, which is often more effective than just reading about the theory.
 
-# Frequently asked Questions
+# Frequently asked Questions {#sec-faq}
 
 ## I have some good test cases - how can I get more like them? {.unnumbered}
 

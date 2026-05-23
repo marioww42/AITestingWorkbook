@@ -20,5 +20,12 @@ For all terms related to Quarto, see the [Quarto Glossary](https://quarto.org/do
 
 For a more general glossary of terms related to data science and AI, see the [Data Science Glossary](https://datascienceglossary.org/).
 
+# Special terms {.unnumbered}
 
+## AI-QA {#glossary-AI-QA .unnumbered}
+AI Quality Assurance, the practice of ensuring that AI-based systems meet quality standards and requirements. This includes testing, evaluation, monitoring, and risk management of AI systems to ensure they are reliable, safe, fair, robust, and useful under real-world conditions.
 
+## AI-specific quality characteristics {#glossary-AI-specific-quality-characteristics .unnumbered}
+Quality characteristics that are particularly relevant for AI-based systems, such as reliability, safety, fairness, robustness, explainability, non-determinism, complexity, and the test oracle problem. These characteristics may require specific testing techniques and evaluation methods to assess the quality of AI systems effectively.
+
+**TODO** add more terms here, such as "AI-specific acceptance criteria", "AI-specific test oracles", "statistical testing", "risk-based testing", "bias checks", "robustness checks", "monitoring", "human judgement", "explainability", "non-determinism", "complexity", "test oracle problem", etc.
