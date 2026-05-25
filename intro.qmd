@@ -18,25 +18,35 @@ Another technique is to use generative models, such as GANs, to generate new tes
 
 ## What is the difference between testing traditional software and testing AI-based software? {.unnumbered}
 
-  Testing traditional software focuses on verifying that the software behaves as expected for a given set of inputs and outputs. In contrast, testing AI-based software involves evaluating the performance of the AI system on a given dataset, and comparing it to a baseline or to other models. This is because AI systems are often probabilistic in nature, and their performance can vary depending on the data they are trained on and the data they are tested on.
+Testing traditional software focuses on verifying that the software behaves as expected for a given set of inputs and outputs. In contrast, testing AI-based software involves evaluating the performance of the AI system on a given dataset, and comparing it to a baseline or to other models. This is because AI systems are often probabilistic in nature, and their performance can vary depending on the data they are trained on and the data they are tested on.
 
 ## What are the key challenges in testing AI-based software? {.unnumbered}
 
-    Some of the key challenges in testing AI-based software include:
-    - The complexity and opacity of AI models, which can make it difficult to understand how they work and to identify potential issues.
-    - The need for large and representative datasets for testing, which can be difficult to obtain and may not always be available.
-    - The potential for bias and unfairness in AI systems, which can lead to ethical and legal issues if not properly addressed.
-    - The need for new testing techniques and tools that are specifically designed for AI-based software.
-    - The need for ongoing testing and monitoring of AI systems in production, as their performance can degrade over time due to changes in the data or the environment.
+Some of the key challenges in testing AI-based software include:
+
+ * The complexity and opacity of AI models, which can make it difficult to understand how they work and to identify potential issues.
+
+ *  The need for large and representative datasets for testing, which can be difficult to obtain and may not always be available.
+
+* The potential for bias and unfairness in AI systems, which can lead to ethical and legal issues if not properly addressed.
+
+- The need for new testing techniques and tools that are specifically designed for AI-based software.
+
+- The need for ongoing testing and monitoring of AI systems in production, as their performance can degrade over time due to changes in the data or the environment.
 
 ## How can we address these challenges? {.unnumbered}
 
-    To address these challenges, we can:
-    - Use techniques such as explainability and interpretability to better understand how AI models work and to identify potential issues.
-    - Use techniques such as data augmentation and synthetic data generation to create large and representative datasets for testing.
-    - Use techniques such as fairness testing and bias detection to identify and mitigate bias in AI systems.
-    - Use techniques such as adversarial testing and robustness testing to evaluate the performance of AI systems under different conditions and to identify potential vulnerabilities.
-    - Use techniques such as continuous testing and monitoring to ensure that AI systems remain effective and reliable over time.
+To address these challenges, we can:
+
+* Use techniques such as explainability and interpretability to better understand how AI models work and to identify potential issues.
+
+* Use techniques such as data augmentation and synthetic data generation to create large and representative datasets for testing.
+
+* Use techniques such as fairness testing and bias detection to identify and mitigate bias in AI systems.
+
+* Use techniques such as adversarial testing and robustness testing to evaluate the performance of AI systems under different conditions and to identify potential vulnerabilities.
+
+* Use techniques such as continuous testing and monitoring to ensure that AI systems remain effective and reliable over time.
 
 # Ten Questions to Learn About Actual Testing Activities
 

@@ -14,7 +14,7 @@
     "href": "index.html#how-to-read-this-workbook",
     "title": "AI QA Workbook",
     "section": "How to read this workbook?",
-    "text": "How to read this workbook?\nSelect your own reading path! See the frequently asked questions for some guidance.\nLook also at the functional performance metrics section.\nAnd look at the glossary terms, such as AI-QA and AI-specific quality characteristics.\n\n\n\n\n\n---\n  htmlLabels: false\n---\n  graph LR\n    AIMetrics[\"@sec-metrics-for-classification\"]\n    Long[\"`AI Testing Tools\n    \n    and Frameworks`\"]\n    AIMetrics --&gt; Long\n\n\n\n\n\n\nThis is a Quarto book. To learn more about Quarto books visit https://quarto.org/docs/books.",
+    "text": "How to read this workbook?\nSelect your own reading path! See the frequently asked questions for some guidance.\nLook also at the functional performance metrics section.\nAnd look at the glossary terms, such as AI-QA and AI-specific quality characteristics.\nTest vor _variables.yml: Look at Chapter 1 and Chapter 2 for the GitHub Pages version of this workbook.\n\n\n\n\n\n  graph LR\n    AB[A link to &lt;a href=\"https://google.com\"&gt;google&lt;/a&gt;] \n    Long[\"`AI Testing Tools\n    \n    and Frameworks`\"]\n    AB --&gt; Long\n\n    click Long \"https://google.com\" \"This is a link\"\n\n\n\n\n\n\nThis is a Quarto book. To learn more about Quarto books visit https://quarto.org/docs/books.",
     "crumbs": [
       "Preface"
     ]
@@ -54,7 +54,7 @@
     "href": "intro.html#what-are-the-key-challenges-in-testing-ai-based-software",
     "title": "1  Introduction",
     "section": "What are the key challenges in testing AI-based software?",
-    "text": "What are the key challenges in testing AI-based software?\nSome of the key challenges in testing AI-based software include:\n- The complexity and opacity of AI models, which can make it difficult to understand how they work and to identify potential issues.\n- The need for large and representative datasets for testing, which can be difficult to obtain and may not always be available.\n- The potential for bias and unfairness in AI systems, which can lead to ethical and legal issues if not properly addressed.\n- The need for new testing techniques and tools that are specifically designed for AI-based software.\n- The need for ongoing testing and monitoring of AI systems in production, as their performance can degrade over time due to changes in the data or the environment.",
+    "text": "What are the key challenges in testing AI-based software?\nSome of the key challenges in testing AI-based software include:\n\nThe complexity and opacity of AI models, which can make it difficult to understand how they work and to identify potential issues.\nThe need for large and representative datasets for testing, which can be difficult to obtain and may not always be available.\nThe potential for bias and unfairness in AI systems, which can lead to ethical and legal issues if not properly addressed.\nThe need for new testing techniques and tools that are specifically designed for AI-based software.\nThe need for ongoing testing and monitoring of AI systems in production, as their performance can degrade over time due to changes in the data or the environment.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
@@ -64,7 +64,7 @@
     "href": "intro.html#how-can-we-address-these-challenges",
     "title": "1  Introduction",
     "section": "How can we address these challenges?",
-    "text": "How can we address these challenges?\nTo address these challenges, we can:\n- Use techniques such as explainability and interpretability to better understand how AI models work and to identify potential issues.\n- Use techniques such as data augmentation and synthetic data generation to create large and representative datasets for testing.\n- Use techniques such as fairness testing and bias detection to identify and mitigate bias in AI systems.\n- Use techniques such as adversarial testing and robustness testing to evaluate the performance of AI systems under different conditions and to identify potential vulnerabilities.\n- Use techniques such as continuous testing and monitoring to ensure that AI systems remain effective and reliable over time.",
+    "text": "How can we address these challenges?\nTo address these challenges, we can:\n\nUse techniques such as explainability and interpretability to better understand how AI models work and to identify potential issues.\nUse techniques such as data augmentation and synthetic data generation to create large and representative datasets for testing.\nUse techniques such as fairness testing and bias detection to identify and mitigate bias in AI systems.\nUse techniques such as adversarial testing and robustness testing to evaluate the performance of AI systems under different conditions and to identify potential vulnerabilities.\nUse techniques such as continuous testing and monitoring to ensure that AI systems remain effective and reliable over time.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]

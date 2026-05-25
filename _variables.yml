@@ -1,0 +1,12 @@
+version: 1.2
+
+email:
+  info: info@example.com
+  support: support@example.com
+links:
+  github: "[GitHub](https://github.com/marioww42/AITestingWorkbook)"
+  gh-pages_chp1: "[Chapter 1](<https://marioww42.github.io/AITestingWorkbook/intro.html>)"
+  gh-pages_chp2: "[Chapter 2](https://marioww42.github.io/AITestingWorkbook/AI%20Quality%20Characteristics%20and%20Risks.html)"
+engine:
+  jupyter: "[Jupyter](https://jupyter.org)"
+  knitr: "[Knitr](https://yihui.name/knitr)"

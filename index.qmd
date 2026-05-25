@@ -37,23 +37,25 @@ The key message for creating this work is simple:
 Select your own reading path!
 See the [frequently asked questions](./intro.qmd#sec-faq) for some guidance. 
 
-Look also at the [functional performance metrics](./AI%20Quality%20Characteristics%20and%20Risks.qmd#sec-metrics-for-classification) section.
+Look also at the [functional performance metrics](./AI Quality Characteristics and Risks.qmd#sec-metrics-for-classification) section.
 
 And look at the glossary terms, such as [AI-QA](./Glossary.qmd#glossary-AI-QA) and [AI-specific quality characteristics](./Glossary.qmd#glossary-AI-specific-quality-characteristics).
 
+Test vor _variables.yml: Look at {{< var links.gh-pages_chp1 >}} and {{< var links.gh-pages_chp2 >}} for the GitHub Pages version of this workbook.
 
 
 ```{mermaid}
----
-  htmlLabels: false
----
+
   graph LR
-    AIMetrics["@sec-metrics-for-classification"]
+    AB[A link to <a href="https://google.com">google</a>] 
     Long["`AI Testing Tools
     
     and Frameworks`"]
-    AIMetrics --> Long
+    AB --> Long
+
+    click Long "https://google.com" "This is a link"
 ```
+
 
 
 This is a Quarto book.
