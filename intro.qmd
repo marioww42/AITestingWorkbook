@@ -1,6 +1,8 @@
-# Introduction
+# Introduction {#sec-intro}
 
 Testing of AI-based software is different from testing traditional software. It requires new approaches, tools, and mindsets. This workbook will guide you through the key concepts, techniques, and challenges of AI testing. It will help you understand how to design effective tests, evaluate AI systems, and ensure their quality in real-world applications.
+
+The current version of this workbook is rather a proof-of-concept, which could evolve into a work in progress. It is based on the ISTQB AI Testing syllabus, ISO/IEC TR 29119-11, and many other sources, but it is not a comprehensive or definitive guide. It is meant to be a practical resource for testers and developers who want to learn about AI testing and apply it in their projects. The workbook should be updated and expanded by its active users over time, based on feedback and contributions from the a still to be built community-of practice. If you have suggestions, corrections, or additions, please feel free to submit a pull request or contact the author.
 
 This is a book created from markdown and executable code. The idea of combining code and documentation in a single source file is not new. It was first proposed by Donald Knuth in his concept of literate programming, where the code is written as a narrative that explains the logic and design decisions behind it. The goal is to make the code more readable, maintainable, and reusable by treating it as a form of literature. See @knuth84 for additional discussion of literate programming. 
 
@@ -50,7 +52,7 @@ To address these challenges, we can:
 
 # Ten Questions to Learn About Actual Testing Activities
 
-The following questions help a software tester understand the actual testing activities for an LLM-based recipe recommendation system. Each question is provided as a collapsed tip callout with examples of AI-testing methods, techniques, and tool categories.
+The following questions help a software tester understand the actual testing activities for a fictitious LLM-based recipe recommendation system. Each question is provided as a collapsed tip callout with examples of AI-testing methods, techniques, and tool categories.
 
 ::: {.callout-tip title="1. What are the main product risks for recipe recommendations?" collapse="true"}
 **AI-testing methods / techniques:** Risk-based testing, product risk analysis, hazard analysis, misuse and abuse cases, safety testing, privacy risk analysis, and bias risk analysis. Example risks include allergens, unsafe cooking advice, food poisoning risk, toxic ingredients, misleading nutrition claims, and religious or cultural dietary violations.
